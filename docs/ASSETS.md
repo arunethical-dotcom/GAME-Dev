@@ -154,3 +154,12 @@ Factors were measured from the scale-reference figure where one existed, and oth
 ## Seamless ground textures
 `meadow_grass`, `dirt_gravel`, `deep_water`, `shallow_water` and `flagstone` did not tile: their edges differed 2–4× more than their interiors, so a grid of seams would have shown.
 Each one was re-made seamless with an offset-and-blend that uses an irregular noise mask, then resampled to 1024×1024 with wrap padding so the edges still match after resizing.
+
+## Assets built for the curtain wall
+| File | What |
+|---|---|
+| `sprites/walls/curtain_wall_tile.png` | `wall_segment_long` levelled (top and base made horizontal), then cut at an exact 403 px repeat so it tiles horizontally with no seam |
+| `sprites/towers/tower_roof_blue.png` | Blue cone roof sized to sit on `round_tower_flat_top` |
+| `sprites/buildings/gatehouse.png` | Levelled (its base sloped 114 px) and scaled 1.3× so it rises above the wall |
+| `sprites/banners/banner_red_cross_wall.png`, `banner_red_cross_tower.png` | Red banner with gold cross from the heraldic sheet, matching the reference |
+| `sprites/banners/pennant_red.png` | Red pennant for the outer gate towers |

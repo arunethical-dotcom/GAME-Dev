@@ -3,6 +3,9 @@ extends SceneTree
 ## godot --path . -s res://scripts/tools/capture.gd -- out_dir
 var shots := [
 	["overview", Vector2(7680, 5120), 0.125],
+	["curtain_wall", Vector2(7680, 6300), 0.3],
+	["gate_closeup", Vector2(7400, 6650), 0.8],
+	["tower_closeup", Vector2(4500, 6500), 0.75],
 	["gate_moat", Vector2(7680, 7400), 0.75],
 	["shore_closeup", Vector2(1900, 8700), 1.0],
 	["garden_closeup", Vector2(4000, 3400), 1.0],

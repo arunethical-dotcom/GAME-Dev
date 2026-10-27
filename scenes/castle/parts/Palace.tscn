@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_keep_large.png" id="1"]
-[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_facade.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_keep_large_grey.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_facade_grey.png" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Tower.tscn" id="3"]
 [ext_resource type="Material" path="res://resources/glow_palace_facade.tres" id="gw"]
 [ext_resource type="Material" path="res://resources/glow_palace_keep_large.tres" id="gk"]

@@ -1,0 +1,80 @@
+"""
+Castle blueprint, traced from docs/reference/castle_reference.png on a 32 px grid.
+
+All coordinates are REFERENCE-IMAGE PIXELS in screen space (x right, y down), as seen in
+the 3/4 view. World px = ref px * 10.  Only the WEST half is listed; the castle is mirrored
+about x = 768 (the causeway axis).
+
+TERRACE  : a raised level. `top` is the outline of its top surface as seen on screen.
+           Every edge whose outward normal faces the camera gets a vertical stone face that
+           hangs `drop` px down to the level below. All edges get a crenellated parapet unless
+           listed in `open_edges` (indices of edges with no parapet, e.g. where stairs or
+           another terrace continue).
+WALL     : a free-standing wall (barbican, links between towers): a thin terrace whose top is
+           the walkway, centred on `line`, `thick` px deep.
+BRIDGE   : like WALL but the face uses the arched bridge texture.
+TOWER    : (kind, x, base_y, scale). base_y = where the tower meets the ground / water.
+"""
+AXIS = 768
+
+def mirror_pt(p):
+    return (2 * AXIS - p[0], p[1])
+
+# ---------------------------------------------------------------- terraces
+# heights (drop) measured from the plan: face top -> face bottom
+TERRACES = [
+    dict(name="LowerWard", level=1, drop=66, floor="cobble",
+         # the main island inside the curtain wall; mirrored + joined at the axis
+         top=[(768, 100), (352, 100), (262, 160), (214, 226), (214, 420), (172, 444),
+              (172, 548), (258, 592), (298, 612), (404, 612), (474, 638), (768, 638)]),
+    dict(name="CathedralTerrace", level=2, drop=22, floor="grass",
+         top=[(236, 232), (300, 232), (440, 232), (470, 300), (520, 400), (430, 466),
+              (282, 466), (236, 440)]),
+    dict(name="InnerGarden", level=2, drop=18, floor="grass",
+         top=[(548, 404), (690, 404), (690, 470), (600, 470), (600, 500), (470, 500), (500, 440)]),
+    dict(name="SouthGarden", level=2, drop=16, floor="grass",
+         top=[(452, 536), (636, 536), (636, 586), (470, 586)]),
+    dict(name="PalaceTerrace", level=3, drop=30, floor="cobble_light",
+         top=[(768, 100), (440, 100), (440, 206), (548, 214), (580, 300), (706, 300), (768, 300)],
+         open_edges=[5, 6]),   # stair opening at the front centre
+]
+
+# ---------------------------------------------------------------- free-standing walls
+WALLS = [
+    # outer barbican (south): one continuous wall per side. `drops` = face height at each vertex
+    # (the wall stands on rocks nearer the gate, so its visible face gets shorter).
+    dict(name="Barbican", line=[(150, 800), (295, 800), (395, 860), (503, 864), (712, 868)],
+         drops=[62, 62, 58, 46, 40], thick=16),
+    # north-west flank: wall from the corner tower to the palace back wall
+    dict(name="NorthWestLink", line=[(236, 168), (352, 112)], drops=[60, 60], thick=18),
+]
+BRIDGES = [  # one stone arch per ~100 px of span
+    dict(name="FlankBridgeLower", line=[(70, 528), (172, 528)], thick=24, drop=70),
+    dict(name="FlankBridgeUpper", line=[(96, 326), (214, 326)], thick=24, drop=62),
+    dict(name="FlankBridgeTop", line=[(140, 196), (236, 180)], thick=22, drop=50),
+]
+
+# ---------------------------------------------------------------- towers
+# kind: "blue" (round, blue cone roof, banner) | "flat" (barbican, crenellated top)
+#       "gate" (blue roof + pennant) | "big" (large blue tower)
+TOWERS = [
+    ("big",  57, 624, 1.35), ("blue", 80, 400, 1.0), ("blue", 123, 296, 0.95), ("blue", 236, 222, 1.0),
+    ("blue", 178, 590, 0.95), ("blue", 277, 694, 1.0), ("big", 438, 795, 1.35),
+    ("blue", 603, 728, 1.0), ("blue", 690, 705, 1.0),
+    ("flat", 150, 862, 1.0), ("flat", 295, 880, 1.0), ("flat", 395, 935, 1.0), ("flat", 503, 942, 1.05),
+    ("gate", 640, 960, 1.05),
+    ("blue", 355, 150, 1.0), ("blue", 455, 400, 0.85), ("blue", 563, 402, 0.85), ("blue", 688, 396, 0.85),
+    ("blue", 470, 598, 0.8), ("blue", 600, 598, 0.8),
+]
+
+# ---------------------------------------------------------------- set pieces
+GATEHOUSE = (768, 706)                  # base centre of the main gatehouse
+CAUSEWAY = (716, 820, 640, 1035)        # x0, x1, y_from, y_to
+GRAND_STAIRS = (768, 300, 395)          # centre x, top y, bottom y
+FOUNTAIN = (768, 448)
+PALACE = (768, 225)
+BUILDINGS = [("Cathedral", 340, 440), ("Chapel", 380, 236), ("DomedHall", 1192, 300), ("Manor", 1170, 445)]
+
+# red banners hanging on the curtain wall face (x positions, west half; mirrored)
+CURTAIN_BANNERS = [205, 330, 375, 520, 555, 650]
+BARBICAN_BANNERS = [225, 345, 455, 580]

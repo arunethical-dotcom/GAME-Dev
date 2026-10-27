@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://scripts/castle/tower.gd" id="1"]
-[ext_resource type="Texture2D" path="res://assets/sprites/towers/round_tower_flat_top.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/towers/tower_grey.png" id="2"]
 [ext_resource type="Texture2D" path="res://assets/sprites/towers/tower_roof_blue.png" id="3"]
 [ext_resource type="Texture2D" path="res://assets/sprites/banners/banner_red_cross_tower.png" id="4"]
 [ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="5"]

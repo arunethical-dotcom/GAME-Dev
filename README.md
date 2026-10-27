@@ -2,7 +2,7 @@
 
 A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle world.
 
-![World](docs/screenshots/world.jpg)
+![Plan vs build](docs/screenshots/plan_vs_build.jpg)
 
 Reference artwork: `docs/reference/castle_reference.png`
 
@@ -27,22 +27,12 @@ Reference artwork: `docs/reference/castle_reference.png`
 | `scripts/` | GDScript |
 
 ## Status
-- [x] Castle observed & documented
-- [x] Project skeleton + reference scene
-- [x] Assets uploaded, backgrounds removed, tilted assets straightened
-- [x] One shared world scale (character = 128 px)
-- [x] Seamless ground textures, quality render settings
-- [x] Ground & animated water
-- [x] Main curtain wall, 8 towers, gatehouse (with collision)
-- [x] Outer barbican: 8 flat-top towers, 2 pennant gate towers, knight statues, lanterns, braziers, animated waterfalls
-- [x] Side flanks: towers in the moat with arched bridges to the island
-- [x] Rocky cliffs under every south-facing shoreline
-- [x] Royal palace (keep, wings, towers), raised terrace, grand staircase with red carpet, gargoyles, knight statues
-- [x] Cathedral, chapel, domed hall, manor, fountain plaza, cypress avenue, ~180 trees and bushes
-- [x] Market (13 stalls, carts, crates) and training yard (dummies, weapon racks, armour stands)
-- [x] Day / golden hour / night (press **N**), glowing windows, flickering firelight, swaying banners, animated fountain water
-- [x] Town across the river: ~20 timber houses, square with fountain and stalls, cobbled streets, lanterns, stone bridge
-- [x] Outer world: forests with clearings, dirt roads, stream with waterfall into the moat, boulders, reeds, flowers; camera limits
-- [ ] Player character, walkable bridges/navigation
-- [ ] Buildings & props
-- [ ] Animation, lighting, collision
+- [x] Castle plan analysed on a 32 px grid → `docs/CASTLE_GRID_ANALYSIS.md`, `blueprint/castle_blueprint.py`
+- [x] Castle rebuilt from the blueprint: terraces at 3 levels, curtain wall with diagonals, continuous barbican, arched flank bridges, 41 towers, gatehouse, palace, grand stairs
+- [x] All stone matched to the plan's palette; seamless stone textures
+- [x] Day / golden hour / night (**N**), window glow, firelight, banner sway
+- [ ] Trees, houses, town, props (you're designing these)
+- [ ] Player
+
+## Rebuild the castle
+Edit `blueprint/castle_blueprint.py`, then run `python3 scripts/tools/gen_castle.py`.

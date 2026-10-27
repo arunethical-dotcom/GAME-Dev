@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/sprites/buildings/domed_hall.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/buildings/domed_hall_grey.png" id="1"]
 [ext_resource type="Material" path="res://resources/glow_domed_hall.tres" id="glow"]
 
 [sub_resource type="RectangleShape2D" id="c"]

@@ -64,9 +64,93 @@ The reference castle is drawn **front-facing (¾ top-down)**. Seven assets were 
 - **Fountain spray animation frames** (the fountains are static)
 - **Banner sway frames** (optional)
 
-## ⚠ Scale needs a decision
-These are high-resolution images. A single building is ~900–1400 px tall, and one "art pixel" is about 4–6 real pixels. The sheets also differ in scale from each other. Before placing them, we need **one common scale**. Two options:
-- **(a)** Downscale everything to true pixel size (≈ ÷4), which suits the 16×16 tile plan and a 640×360 screen.
-- **(b)** Keep the high-res art and use larger tiles (64×64) at a 1920×1080 base.
+## World scale (applied)
+Everything is resampled to **one shared world scale**: a character is **128 px** tall at a 1920×1080 base resolution.
+Resampling used Lanczos with premultiplied alpha, so edges stay clean and there's no dark halo.
+Factors were measured from the scale-reference figure where one existed, and otherwise estimated from doors, gates and known objects.
 
-Option (a) is the recommended one: it's crisper, lighter on memory, and matches "pixel game".
+| Asset | Factor | How it was set |
+|---|---|---|
+| `effects/torch/fire_animation_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `effects/waterfall/waterfall_animation_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/banners/heraldic_banners_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/buildings/aqueduct_bridge` | 0.637 | measured: figure 201px |
+| `sprites/buildings/balconies_railings_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/buildings/castle_gate_parts_sheet` | 0.826 | measured: figure 155px |
+| `sprites/buildings/cathedral_facade` | 0.719 | estimated: cathedral door = 2 figures |
+| `sprites/buildings/chapel` | 0.711 | measured: figure 180px |
+| `sprites/buildings/domed_hall` | 0.723 | estimated: grand door = 1.5 figures |
+| `sprites/buildings/doors_gates_ornate_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/buildings/doors_gates_portcullis_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/buildings/doors_windows_curtains_sheet` | 0.677 | measured: figure 189px |
+| `sprites/buildings/gatehouse` | 0.640 | estimated: gate arch = 2.7 figures |
+| `sprites/buildings/manor` | 0.928 | measured: figure 138px |
+| `sprites/buildings/palace_entrance_keep` | 0.826 | estimated: grand door = 1.5 figures |
+| `sprites/buildings/palace_facade` | 0.736 | estimated: windows = 1.3 doors |
+| `sprites/buildings/pillars_arches_balustrades_sheet` | 0.677 | measured: figure 189px |
+| `sprites/buildings/stone_parts_debris_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/buildings/taverns_pair` | 0.883 | measured: figure 145px |
+| `sprites/interior/armory_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/bedroom_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/carpets_drapery_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/feast_food_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/furniture_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/kitchen_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/library_sheet` | 0.677 | measured: figure 189px |
+| `sprites/interior/study_furniture_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/interior/wardrobe_sheet` | 0.677 | measured: figure 189px |
+| `sprites/items/keys_tools_potions_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/nature/islets_sheet` | 0.677 | measured: figure 189px |
+| `sprites/nature/rocks_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/nature/waterfall_cliff` | 0.688 | measured: figure 186px |
+| `sprites/props/barrels_crates_sacks_sheet` | 0.677 | measured: figure 189px |
+| `sprites/props/bridges_walkways_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/castle_details_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/chandeliers_lamps_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/dungeon_gates_chains_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/fences_gates_sheet` | 0.677 | measured: figure 189px |
+| `sprites/props/fountain_plaza_large` | 0.564 | measured: figure 227px |
+| `sprites/props/fountains_wells_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/garden_furniture_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/lanterns_lampposts_sheet` | 0.711 | estimated: lamppost = 1.7 figures |
+| `sprites/props/market_stalls_carts_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/pots_baskets_containers_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/sconces_torches_candles_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/signposts_and_signs_sheet` | 0.677 | measured: figure 189px |
+| `sprites/props/stairs_platforms_sheet` | 0.677 | measured: figure 189px |
+| `sprites/props/stairs_with_brazier` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/props/treasure_chests_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/statues/statues_gargoyles_sheet` | 0.674 | estimated: statue on plinth = 1.5 figures |
+| `sprites/towers/blue_cone_roof` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/towers/round_tower_flat_top` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/towers/tower_base_rings` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/towers/tower_pieces_angled` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/towers/tower_top_ring` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/towers/turret_tops_finials_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/vegetation/cypress_planter` | 0.531 | measured: figure 241px |
+| `sprites/vegetation/flowering_hedge` | 0.557 | measured: figure 230px |
+| `sprites/vegetation/plants_flowers_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/vegetation/trees_pines_cypress_bushes` | 0.853 | estimated: pine = 3 figures |
+| `sprites/vegetation/wetland_plants_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `sprites/walls/curved_tower_walls_pair` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/walls/wall_segment_curved` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/walls/wall_segment_long` | 0.620 | wall set: face = 4.5 figures |
+| `sprites/walls/wall_segment_short` | 0.620 | wall set: face = 4.5 figures |
+| `tilesets/floors/castle_corridor_walkway` | 0.680 | estimated: same pack density |
+| `tilesets/floors/flagstone` | 1.000 | seamless 1024 |
+| `tilesets/floors/stone_bridge_walkway` | 0.680 | estimated: same pack density |
+| `tilesets/roofs/blue_roof_pieces_sheet` | 0.680 | estimated: same pack density as measured sheets |
+| `tilesets/terrain/cliff_tileset` | 0.680 | estimated: same pack density |
+| `tilesets/terrain/dirt_gravel` | 0.817 | seamless 1254->1024 |
+| `tilesets/terrain/meadow_grass` | 0.817 | seamless 1254->1024 |
+| `tilesets/terrain/rocky_cliff_tileset` | 0.680 | estimated: same pack density |
+| `tilesets/walls/castle_walls_towers_sheet` | 0.620 | wall set: face = 4.5 figures |
+| `tilesets/water/coastal_shoreline` | 0.817 | estimated: matches meadow_grass blade size |
+| `tilesets/water/deep_water` | 0.817 | seamless 1254->1024 |
+| `tilesets/water/shallow_water` | 0.817 | seamless 1254->1024 |
+
+`tilesets/floors/causeway_road.png` is cut from `stone_bridge_walkway` at one exact pillar repeat (520 px), so it tiles vertically with no seam.
+
+## Seamless ground textures
+`meadow_grass`, `dirt_gravel`, `deep_water`, `shallow_water` and `flagstone` did not tile: their edges differed 2–4× more than their interiors, so a grid of seams would have shown.
+Each one was re-made seamless with an offset-and-blend that uses an irregular noise mask, then resampled to 1024×1024 with wrap padding so the edges still match after resizing.

@@ -31,7 +31,7 @@ def closed(poly): return pv(poly+[poly[0]])
 ext=[('Texture2D','res://docs/reference/castle_reference.png','ref'),('Script','res://scripts/debug_camera.gd','cam'),
      ('Shader','res://shaders/water.gdshader','sh_water'),('Shader','res://shaders/terrain.gdshader','sh_terrain'),('Shader','res://shaders/shore_foam.gdshader','sh_foam'),
      ('Texture2D','res://assets/tilesets/water/deep_water.png','t_water'),('Texture2D','res://assets/tilesets/terrain/meadow_grass.png','t_grass'),
-     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res'),('Texture2D','res://assets/sprites/walls/arched_bridge_tile.png','t_bridge'),('Texture2D','res://assets/tilesets/terrain/cliff_face_strip.png','t_cliff')]
+     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res'),('Texture2D','res://assets/sprites/walls/arched_bridge_tile.png','t_bridge'),('Texture2D','res://assets/tilesets/terrain/cliff_face_strip.png','t_cliff'),('PackedScene','res://scenes/castle/parts/Palace.tscn','p_palace'),('PackedScene','res://scenes/castle/parts/GrandStairs.tscn','p_stairs'),('PackedScene','res://scenes/castle/parts/Gargoyle.tscn','p_garg'),('PackedScene','res://scenes/castle/parts/KnightStatueTall.tscn','p_knight2')]
 out=[]
 sub=[]
 sub.append('[sub_resource type="FastNoiseLite" id="noise"]\nnoise_type = 3\nfrequency = 0.012\nfractal_octaves = 4')
@@ -177,6 +177,20 @@ for side in 'WE':
         pts=', '.join(f'{X+math.cos(t*math.pi/24)*230:.0f}, {iy-60+math.sin(t*math.pi/24)*80:.0f}' for t in range(49))
         n.append(f'[node name="Islet{j+1}{side}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = PackedVector2Array({pts})\nwidth = 200.0\ntexture_mode = 1')
         n.append(f'[node name="Islet{j+1}{side}" parent="YSorted/Vegetation" instance=ExtResource("p_islet")]\nposition = Vector2({X}, {iy})' + ('\nflip_h = true' if flip else ''))
+n.append('[node name="Palace" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
+PB='YSorted/Structures/Palace'
+n.append(f'[node name="RoyalPalace" parent="{PB}" instance=ExtResource("p_palace")]\nposition = Vector2({PALACE[0]}, {PALACE[1]})')
+n.append(f'[node name="GrandStairs" parent="{PB}" instance=ExtResource("p_stairs")]\nposition = Vector2({STAIRS[0]}, {STAIRS[1]})')
+for i,(a,b) in enumerate(TERRACE_WALLS):
+    n.append(f'[node name="TerraceWall{i+1}" parent="{PB}" instance=ExtResource("p_wall")]\nposition = Vector2({a}, {TERRACE_Y})\nlength = {b-a}.0\ntile_offset = {i*131}.0\nbanner_start = {420 if i==0 else 1130}.0\nbanner_spacing = 99999.0\nin_water = false')
+for i,(x,y) in enumerate(TERRACE_TOWERS):
+    n.append(f'[node name="TerraceTower{i+1}" parent="{PB}" instance=ExtResource("p_tower")]\nposition = Vector2({x}, {y})')
+for i,(x,y) in enumerate(GARGOYLES):
+    n.append(f'[node name="Gargoyle{i+1}" parent="{PB}" instance=ExtResource("p_garg")]\nposition = Vector2({x}, {y})' + ('\nflip_h = true' if i==1 else ''))
+for i,(x,y) in enumerate(STAIR_KNIGHTS):
+    n.append(f'[node name="StairKnight{i+1}" parent="{PB}" instance=ExtResource("p_knight2")]\nposition = Vector2({x}, {y})' + ('\nflip_h = true' if i==1 else ''))
+for i,(x,y) in enumerate(STAIR_LANTERNS):
+    n.append(f'[node name="StairLantern{i+1}" parent="{PB}" instance=ExtResource("p_lantern")]\nposition = Vector2({x}, {y})')
 n.append('[node name="Flanks" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
 for i,(x0,x1,y) in enumerate(FLANK_BRIDGES):
     for side in 'WE':

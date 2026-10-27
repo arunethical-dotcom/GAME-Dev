@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3]
+[gd_scene load_steps=39 format=3]
 
 [ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="ref"]
 [ext_resource type="Script" path="res://scripts/debug_camera.gd" id="cam"]
@@ -24,6 +24,10 @@
 [ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="m_foam_res"]
 [ext_resource type="Texture2D" path="res://assets/sprites/walls/arched_bridge_tile.png" id="t_bridge"]
 [ext_resource type="Texture2D" path="res://assets/tilesets/terrain/cliff_face_strip.png" id="t_cliff"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Palace.tscn" id="p_palace"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/GrandStairs.tscn" id="p_stairs"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Gargoyle.tscn" id="p_garg"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/KnightStatueTall.tscn" id="p_knight2"]
 
 [sub_resource type="FastNoiseLite" id="noise"]
 noise_type = 3
@@ -743,6 +747,57 @@ texture_mode = 1
 [node name="Islet1E" parent="YSorted/Vegetation" instance=ExtResource("p_islet")]
 position = Vector2(11660, 9760)
 flip_h = true
+
+[node name="Palace" type="Node2D" parent="YSorted/Structures"]
+y_sort_enabled = true
+
+[node name="RoyalPalace" parent="YSorted/Structures/Palace" instance=ExtResource("p_palace")]
+position = Vector2(7680, 2250)
+
+[node name="GrandStairs" parent="YSorted/Structures/Palace" instance=ExtResource("p_stairs")]
+position = Vector2(7680, 3250)
+
+[node name="TerraceWall1" parent="YSorted/Structures/Palace" instance=ExtResource("p_wall")]
+position = Vector2(5600, 3250)
+length = 1552.0
+tile_offset = 0.0
+banner_start = 420.0
+banner_spacing = 99999.0
+in_water = false
+
+[node name="TerraceWall2" parent="YSorted/Structures/Palace" instance=ExtResource("p_wall")]
+position = Vector2(8208, 3250)
+length = 1552.0
+tile_offset = 131.0
+banner_start = 1130.0
+banner_spacing = 99999.0
+in_water = false
+
+[node name="TerraceTower1" parent="YSorted/Structures/Palace" instance=ExtResource("p_tower")]
+position = Vector2(5600, 3280)
+
+[node name="TerraceTower2" parent="YSorted/Structures/Palace" instance=ExtResource("p_tower")]
+position = Vector2(9760, 3280)
+
+[node name="Gargoyle1" parent="YSorted/Structures/Palace" instance=ExtResource("p_garg")]
+position = Vector2(7060, 2700)
+
+[node name="Gargoyle2" parent="YSorted/Structures/Palace" instance=ExtResource("p_garg")]
+position = Vector2(8300, 2700)
+flip_h = true
+
+[node name="StairKnight1" parent="YSorted/Structures/Palace" instance=ExtResource("p_knight2")]
+position = Vector2(7070, 3360)
+
+[node name="StairKnight2" parent="YSorted/Structures/Palace" instance=ExtResource("p_knight2")]
+position = Vector2(8290, 3360)
+flip_h = true
+
+[node name="StairLantern1" parent="YSorted/Structures/Palace" instance=ExtResource("p_lantern")]
+position = Vector2(6930, 3380)
+
+[node name="StairLantern2" parent="YSorted/Structures/Palace" instance=ExtResource("p_lantern")]
+position = Vector2(8430, 3380)
 
 [node name="Flanks" type="Node2D" parent="YSorted/Structures"]
 y_sort_enabled = true

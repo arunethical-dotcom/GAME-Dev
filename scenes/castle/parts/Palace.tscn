@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_keep_large.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_facade.png" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Tower.tscn" id="3"]
+
+[sub_resource type="RectangleShape2D" id="keep"]
+size = Vector2(1400, 180)
+
+[sub_resource type="RectangleShape2D" id="wing"]
+size = Vector2(1624, 140)
+
+[sub_resource type="RectangleShape2D" id="wing2"]
+size = Vector2(1624, 140)
+
+[node name="Palace" type="Node2D"]
+y_sort_enabled = true
+
+[node name="WingW2" type="Sprite2D" parent="."]
+position = Vector2(-2063, -230)
+texture = ExtResource("2")
+offset = Vector2(0, -510)
+
+[node name="WingW1" type="Sprite2D" parent="."]
+position = Vector2(-1181, -230)
+texture = ExtResource("2")
+offset = Vector2(0, -510)
+flip_h = true
+
+[node name="WingE1" type="Sprite2D" parent="."]
+position = Vector2(1181, -230)
+texture = ExtResource("2")
+offset = Vector2(0, -510)
+
+[node name="WingE2" type="Sprite2D" parent="."]
+position = Vector2(2063, -230)
+texture = ExtResource("2")
+offset = Vector2(0, -510)
+flip_h = true
+
+[node name="CornerTowerW" parent="." instance=ExtResource("3")]
+position = Vector2(-2620, -150)
+scale = Vector2(1.3, 1.3)
+
+[node name="CornerTowerE" parent="." instance=ExtResource("3")]
+position = Vector2(2620, -150)
+scale = Vector2(1.3, 1.3)
+
+[node name="MidTowerW" parent="." instance=ExtResource("3")]
+position = Vector2(-1622, -160)
+
+[node name="MidTowerE" parent="." instance=ExtResource("3")]
+position = Vector2(1622, -160)
+
+[node name="Keep" type="Sprite2D" parent="."]
+texture = ExtResource("1")
+offset = Vector2(0, -795)
+
+[node name="Collision" type="StaticBody2D" parent="."]
+
+[node name="Keep" type="CollisionShape2D" parent="Collision"]
+position = Vector2(0, -80)
+shape = SubResource("keep")
+
+[node name="WingW" type="CollisionShape2D" parent="Collision"]
+position = Vector2(-1622, -300)
+shape = SubResource("wing")
+
+[node name="WingE" type="CollisionShape2D" parent="Collision"]
+position = Vector2(1622, -300)
+shape = SubResource("wing2")

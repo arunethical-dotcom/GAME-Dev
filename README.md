@@ -21,7 +21,7 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 | `assets/sprites/` | towers, buildings, statues, banners, props, vegetation, ambient |
 | `assets/effects/` | torch, water, waterfall animations |
 | `scenes/castle/Castle.tscn` | Main castle scene: ground, water, Y-sorted structures |
-| `scenes/castle/parts/` | Reusable pieces: `Tower`, `BarbicanTower`, `GateTower`, `CurtainWall` (set `length` and `wall_tile` in the inspector), `Gatehouse`, `WideWaterfall`, `KnightStatue`, `LanternPillar`, `Brazier`, `Islet`. Bridges reuse `CurtainWall` with `wall_tile = arched_bridge_tile.png` |
+| `scenes/castle/parts/` | Reusable pieces: `Tower`, `BarbicanTower`, `GateTower`, `CurtainWall` (set `length` and `wall_tile` in the inspector), `Gatehouse`, `WideWaterfall`, `KnightStatue`, `LanternPillar`, `Brazier`, `Islet`, `Palace`, `GrandStairs`, `Gargoyle`, `KnightStatueTall`. Bridges reuse `CurtainWall` with `wall_tile = arched_bridge_tile.png` |
 | `scripts/` | GDScript |
 
 ## Status
@@ -35,6 +35,7 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 - [x] Outer barbican: 8 flat-top towers, 2 pennant gate towers, knight statues, lanterns, braziers, animated waterfalls
 - [x] Side flanks: towers in the moat with arched bridges to the island
 - [x] Rocky cliffs under every south-facing shoreline
-- [ ] Inner terraces, buildings (palace, cathedral, domed hall, manor), props
+- [x] Royal palace (keep, wings, towers), raised terrace, grand staircase with red carpet, gargoyles, knight statues
+- [ ] Cathedral, domed hall, manor, market, training yard, fountain plaza, trees
 - [ ] Buildings & props
 - [ ] Animation, lighting, collision

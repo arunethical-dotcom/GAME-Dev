@@ -49,3 +49,14 @@ FLANK_TOWERS = [  # (x, base_y, in_water)
  (900, 4180, True), (860, 2780, True), (2250, 2050, False), (1950, 5050, False)]
 FLANK_BRIDGES = [  # (x_from, x_to, base_y)
  (1030, 1900, 4110), (990, 1890, 2710)]
+
+# ---- Palace and grand staircase (world px)
+PALACE = (7680, 2250)
+TERRACE_Y = 3250                       # base of the terrace retaining wall / bottom of the stairs
+TERRACE_WALLS = [(5600, 7152), (8208, 9760)]
+TERRACE_TOWERS = [(5600, 3280), (9760, 3280)]
+PALACE_Y_NOTE = 'keep scaled 1.55x so it rises above the wings'
+STAIRS = (7680, 3250)
+GARGOYLES = [(7060, 2700), (8300, 2700)]
+STAIR_KNIGHTS = [(7070, 3360), (8290, 3360)]
+STAIR_LANTERNS = [(6930, 3380), (8430, 3380)]

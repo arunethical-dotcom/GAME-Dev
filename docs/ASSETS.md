@@ -182,3 +182,13 @@ Each one was re-made seamless with an offset-and-blend that uses an irregular no
 | `tilesets/terrain/cliff_face_strip.png` | Rock face from `cliff_tileset`, made seamless sideways with a narrow overlap so there's no ghosting |
 
 Cliffs are drawn as vertical slices (`Ground/Cliffs` in the scene), so the rock columns stay upright however the shoreline curves. The generator finds every shore edge that faces the camera and hangs a cliff under it.
+
+## Assets built for the palace and staircase
+| File | What |
+|---|---|
+| `sprites/buildings/palace_keep_large.png` | `palace_entrance_keep` scaled 1.55× so the central keep rises above the wings, as in the reference |
+| `sprites/props/grand_stairs_carpet.png` | Stairs from `stairs_with_brazier` with a wine-red, gold-trimmed carpet painted down the middle; the carpet keeps each step's shading so it follows the treads |
+| `sprites/statues/gargoyle_dark.png` | Winged gargoyle from the statue sheet, recoloured to dark iron |
+| `sprites/statues/knight_statue_tall.png` | Knight statue, dark iron, for the foot of the stairs |
+
+The palace (`scenes/castle/parts/Palace.tscn`) is the keep in front of four `palace_facade` wings, broken up by two mid towers and two large corner towers.

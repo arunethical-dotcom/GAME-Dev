@@ -31,7 +31,7 @@ TERRACES = [
          top=[(236, 232), (300, 232), (440, 232), (470, 300), (520, 400), (430, 466),
               (282, 466), (236, 440)]),
     dict(name="InnerGarden", level=2, drop=18, floor="grass",
-         top=[(548, 404), (690, 404), (690, 470), (600, 470), (600, 500), (470, 500), (500, 440)]),
+         top=[(602, 410), (690, 410), (690, 498), (602, 498)]),
     dict(name="SouthGarden", level=2, drop=16, floor="grass",
          top=[(452, 536), (636, 536), (636, 586), (470, 586)]),
     dict(name="PalaceTerrace", level=3, drop=30, floor="cobble_light",
@@ -63,8 +63,9 @@ TOWERS = [
     ("blue", 603, 728, 1.0), ("blue", 690, 705, 1.0),
     ("flat", 150, 862, 1.0), ("flat", 295, 880, 1.0), ("flat", 395, 935, 1.0), ("flat", 503, 942, 1.05),
     ("gate", 640, 960, 1.05),
-    ("blue", 355, 150, 1.0), ("blue", 455, 400, 0.85), ("blue", 563, 402, 0.85), ("blue", 688, 396, 0.85),
+    ("blue", 355, 150, 1.0), ("blue", 455, 400, 0.85), ("blue", 563, 402, 0.85), ("pillar", 688, 342, 0.6),
     ("blue", 470, 598, 0.8), ("blue", 600, 598, 0.8),
+    ("blue", 497, 486, 0.6), ("blue", 593, 486, 0.6),
 ]
 
 # ---------------------------------------------------------------- set pieces
@@ -78,3 +79,18 @@ BUILDINGS = [("Cathedral", 340, 440), ("Chapel", 380, 236), ("DomedHall", 1192, 
 # red banners hanging on the curtain wall face (x positions, west half; mirrored)
 CURTAIN_BANNERS = [205, 330, 375, 520, 555, 650]
 BARBICAN_BANNERS = [225, 345, 455, 580]
+
+# ---------------------------------------------------------------- details (pass 2, from the 50% overlay)
+STAIRS_UPPER = dict(x=768, top=228, base=276, half_w=33)     # plain flight, palace door -> landing
+STAIRS_LOWER = dict(x=768, top=300, base=360, half_w=33)     # carpeted flight, landing -> plaza
+GARGOYLES = [(688, 288)]                                    # on top of the square pillar towers
+STAIR_KNIGHTS = [(720, 386)]
+COLONNADES = [dict(line=[(507, 470), (586, 470)], drop=38, arches=3)]
+POOLS = [[(505, 482), (560, 482), (560, 512), (505, 512)]]
+YARDS = [[(230, 494), (402, 482), (424, 590), (262, 590)]]     # dirt floor: market (west), training yard (mirrored)
+ROCKS = [  # rocky outcrops under the barbican (plan px), get cliff faces automatically
+    [(112, 852), (300, 850), (312, 880), (290, 905), (150, 908), (110, 890)],
+    [(330, 902), (470, 900), (505, 925), (470, 948), (345, 946), (322, 925)],
+]
+BARBICAN_FALLS = [dict(x=228, base=946, sluice_y=(842, 862), arches=3, width=56)]
+GATE_LANDING = dict(knight=(690, 934), lantern=(692, 996), block=[(664, 892), (716, 892), (716, 1002), (664, 1002)], drop=34)

@@ -109,6 +109,9 @@ import gen_scene_helpers as GH
 N('[node name="Ground" type="Node2D" parent="."]\nz_index = -90')
 N('[node name="ShoreFoam" type="Node2D" parent="Ground"]')
 LANDO = [(nm, GH.organic(p, seed=i+3)) for i, (nm, p) in enumerate(LY.LAND)]
+for i, r in enumerate(BP.ROCKS):
+    LANDO.append((f'RockW{i}', GH.organic(r, step=8, amp=3.0, seed=40+i)))
+    LANDO.append((f'RockE{i}', GH.organic([BP.mirror_pt(p) for p in reversed(r)], step=8, amp=3.0, seed=50+i)))
 for nm, p in LANDO:
     N(f'[node name="{nm}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = {fmt([W(q) for q in p + [p[0]]])}\nwidth = 420.0\ntexture_mode = 1\njoint_mode = 2')
 N('[node name="SandBanks" type="Node2D" parent="Ground"]')
@@ -291,9 +294,48 @@ for b in BP.BRIDGES:
         build_block(f"{b['name']}{'WE'[k]}", line_block(line, b['thick']), b['drop'], 'walk', parapet=True, in_water=True,
                     face_tex=TEX_BRIDGE, walkway=False, tex_k=kx)
 
+# ---- details on top of the geometry
+MAT('m_dirt', 'res://shaders/terrain.gdshader', {'albedo': T('res://assets/tilesets/terrain/dirt_gravel.png'), 'noise_tex': NT, 'tile_size': '700.0', 'brightness_variation': '0.06'})
+N(f'[node name="Details" type="Node2D" parent="{CG}"]')
+DT = f'{CG}/Details'
+def mirrored(poly): return [poly, [BP.mirror_pt(p) for p in reversed(poly)]]
+for yard in BP.YARDS:
+    for poly in mirrored(yard):
+        P = [W(p) for p in poly]
+        N(f'[node name="{nid("Yard")}" type="Polygon2D" parent="{DT}"]\nmaterial = SubResource("m_dirt")\npolygon = {fmt(P)}')
+        N(f'[node name="{nid("YardEdge")}" type="Line2D" parent="{DT}"]\nmaterial = SubResource("m_walk")\npoints = {fmt(P + [P[0]])}\nwidth = 36.0\njoint_mode = 0\nsharp_limit = 6.0')
+for pool in BP.POOLS:
+    for poly in mirrored(pool):
+        P = [W(p) for p in poly]
+        N(f'[node name="{nid("PoolRimBack")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.3, 0.31, 0.4, 1)\npolygon = {fmt([(x, y-24) for x, y in P])}')
+        N(f'[node name="{nid("Pool")}" type="Polygon2D" parent="{DT}"]\nmaterial = SubResource("m_water")\npolygon = {fmt(P)}')
+        N(f'[node name="{nid("PoolRim")}" type="Line2D" parent="{DT}"]\nmaterial = SubResource("m_walk")\npoints = {fmt(P + [P[0]])}\nwidth = 44.0\njoint_mode = 0\nsharp_limit = 6.0')
+for c in BP.COLONNADES:
+    for line in mirrored(c['line']):
+        (x0, y0), (x1, y1) = W(line[0]), W(line[1])
+        if x0 > x1: (x0, y0), (x1, y1) = (x1, y1), (x0, y0)
+        top = y0 - c['drop'] * K
+        N(f'[node name="{nid("ColonnadeBack")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.1, 0.11, 0.17, 1)\npolygon = {fmt([(x0, top), (x1, top), (x1, y0), (x0, y0)])}')
+        span = x1 - x0; kx = 1024.0 * c['arches'] / span
+        N(f'[node name="{nid("Colonnade")}" type="Polygon2D" parent="{DT}"]\ntexture_repeat = 2\ntexture = {TEX_BRIDGE}\npolygon = {fmt([(x0, top), (x1, top), (x1, y0), (x0, y0)])}\n'
+          f'uv = {fmt([(0, 0), (span*kx, 0), (span*kx, 720), (0, 720)])}')
+        band(DT, (x0, top), (x1, top), 0, MERLON_H, TEX_MERLON, up=True, shade=0.95)
+for f in BP.BARBICAN_FALLS:
+    for side in (1, -1):
+        cxp = (BP.AXIS + (f['x'] - BP.AXIS) * side) * K; y0s, y1s = f['sluice_y'][0] * K, f['sluice_y'][1] * K
+        w = f['width'] * K / f['arches']
+        for j in range(f['arches']):
+            ax = cxp - f['width'] * K / 2 + j * w + w * 0.12; aw = w * 0.76; r = aw / 2
+            pts = [(ax, y1s)] + [(ax + r - r * math.cos(t * math.pi / 12), y0s + r - r * math.sin(t * math.pi / 12)) for t in range(13)] + [(ax + aw, y1s)]
+            N(f'[node name="{nid("Sluice")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.07, 0.09, 0.16, 1)\npolygon = {fmt(pts)}')
+
 # causeway: raised stone road from the gate to the south shore
 cx0, cx1, cy0, cy1 = BP.CAUSEWAY
-build_block('Causeway', [(cx0, cy0), (cx1, cy0), (cx1, cy1), (cx0, cy1)], 34, 'cobble_light', parapet=True, corbels=False, in_water=True, walkway=False)
+cpoly = ccw([W(p) for p in [(cx0, cy0), (cx1, cy0), (cx1, cy1), (cx0, cy1)]])
+c_open = [i for i in range(4) if abs(cpoly[i][1] - cpoly[(i+1) % 4][1]) < 1]   # no parapet across either end of the road
+build_block('Causeway', [(cx0, cy0), (cx1, cy0), (cx1, cy1), (cx0, cy1)], 34, 'cobble_light', parapet=True, corbels=False, in_water=True, walkway=False, open_edges=c_open)
+for k, poly in enumerate([BP.GATE_LANDING['block'], [BP.mirror_pt(p) for p in reversed(BP.GATE_LANDING['block'])]]):
+    build_block(f'GateLanding{"WE"[k]}', poly, BP.GATE_LANDING['drop'], 'walk', corbels=True, in_water=True, walkway=False)
 
 # ------------------------------------------------------------------ set pieces (Y-sorted)
 N('[node name="YSorted" type="Node2D" parent="."]\ny_sort_enabled = true')
@@ -301,24 +343,25 @@ N('[node name="Towers" type="Node2D" parent="YSorted"]\ny_sort_enabled = true')
 P_TOWER = E('PackedScene', 'res://scenes/castle/parts/Tower.tscn')
 P_FLAT = E('PackedScene', 'res://scenes/castle/parts/BarbicanTower.tscn')
 P_GATET = E('PackedScene', 'res://scenes/castle/parts/GateTowerTall.tscn')
-KIND = {'blue': P_TOWER, 'big': P_TOWER, 'flat': P_TOWER, 'gate': P_GATET}
+KIND = {'blue': P_TOWER, 'big': P_TOWER, 'flat': P_TOWER, 'pillar': P_TOWER, 'gate': P_GATET}
 WATER_TOWERS = {(57, 624), (80, 400), (123, 296), (277, 694), (438, 795), (603, 728), (690, 705),
                 (150, 862), (163, 862), (295, 880), (395, 935), (503, 942), (640, 960)}
 for i, (kind, x, y, sc) in enumerate(BP.TOWERS):
     for side, (xx, yy) in (('W', (x, y)), ('E', BP.mirror_pt((x, y)))):
         inw = 'true' if (x, y) in WATER_TOWERS else 'false'
         N(f'[node name="{kind.capitalize()}Tower{i+1}{side}" parent="YSorted/Towers" instance=ExtResource("{KIND[kind]}")]\n'
-          f'position = Vector2({xx*K}, {yy*K})\nscale = Vector2({sc}, {sc})\nin_water = {inw}' + ('\nshow_roof = false\nshow_banner = false' if kind == 'flat' else ''))
+          f'position = Vector2({xx*K}, {yy*K})\nscale = Vector2({sc}, {sc})\nin_water = {inw}' + ('\nshow_roof = false\nshow_banner = false' if kind in ('flat', 'pillar') else ''))
 
 N('[node name="SetPieces" type="Node2D" parent="YSorted"]\ny_sort_enabled = true')
 gx, gy = BP.GATEHOUSE
 N(f'[node name="Gatehouse" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/Gatehouse.tscn")}")]\nposition = Vector2({gx*K}, {gy*K})\nscale = Vector2(1.35, 1.35)')
 px, py = BP.PALACE
 N(f'[node name="Palace" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/Palace.tscn")}")]\nposition = Vector2({px*K}, {py*K})')
-sx, st, sb = BP.GRAND_STAIRS
 P_ST = E('PackedScene', 'res://scenes/castle/parts/GrandStairs.tscn')
-N(f'[node name="StairsUpper" parent="YSorted/SetPieces" instance=ExtResource("{P_ST}")]\nposition = Vector2({sx*K}, {(st+52)*K})\nscale = Vector2(0.9, 0.9)')
-N(f'[node name="StairsLower" parent="YSorted/SetPieces" instance=ExtResource("{P_ST}")]\nposition = Vector2({sx*K}, {sb*K})\nscale = Vector2(0.9, 0.9)')
+P_STP = E('PackedScene', 'res://scenes/castle/parts/GrandStairsPlain.tscn')
+for nm, d, pid in (('StairsUpper', BP.STAIRS_UPPER, P_STP), ('StairsLower', BP.STAIRS_LOWER, P_ST)):
+    sxs = d['half_w'] * 2 * K / 1057.0; sys_ = (d['base'] - d['top']) * K / 594.0
+    N(f'[node name="{nm}" parent="YSorted/SetPieces" instance=ExtResource("{pid}")]\nposition = Vector2({d["x"]*K}, {d["base"]*K})\nscale = Vector2({sxs:.3f}, {sys_:.3f})')
 fx, fy = BP.FOUNTAIN
 N(f'[node name="Fountain" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/FountainPlaza.tscn")}")]\nposition = Vector2({fx*K}, {fy*K})\nscale = Vector2(0.85, 0.85)')
 for nm, x, y in BP.BUILDINGS:
@@ -328,8 +371,16 @@ P_KD = E('PackedScene', 'res://scenes/castle/parts/KnightStatue.tscn'); P_BR = E
 for side in (1, -1):
     def X(x): return (BP.AXIS + (x - BP.AXIS) * side) * K
     flip = '\nflip_h = true' if side < 0 else ''
-    N(f'[node name="Gargoyle{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_G}")]\nposition = Vector2({X(706)}, {300*K}){flip}')
-    N(f'[node name="StairKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KN}")]\nposition = Vector2({X(716)}, {398*K}){flip}')
+    for gx_, gy_ in BP.GARGOYLES:
+        N(f'[node name="Gargoyle{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_G}")]\nposition = Vector2({X(gx_)}, {gy_*K}){flip}\nz_index = 1')
+    for kx_, ky_ in BP.STAIR_KNIGHTS:
+        N(f'[node name="StairKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KN}")]\nposition = Vector2({X(kx_)}, {ky_*K}){flip}')
+    kx_, ky_ = BP.GATE_LANDING['knight']; lx_, ly_ = BP.GATE_LANDING['lantern']
+    N(f'[node name="LandingKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KD}")]\nposition = Vector2({X(kx_)}, {ky_*K}){flip}')
+    N(f'[node name="LandingLantern{side}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/LanternPillar.tscn")}")]\nposition = Vector2({X(lx_)}, {ly_*K})\nscale = Vector2(1.3, 1.3)')
+    for f in BP.BARBICAN_FALLS:
+        sxf = f['width'] * K / 627.0; syf = (f['base'] - f['sluice_y'][1] + 4) * K / 603.0
+        N(f'[node name="BarbicanFall{side}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/WideWaterfall.tscn")}")]\nposition = Vector2({X(f["x"])}, {f["base"]*K})\nscale = Vector2({sxf:.3f}, {syf:.3f})')
     N(f'[node name="GateKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KD}")]\nposition = Vector2({X(722)}, {722*K}){flip}')
     for j, y in enumerate(range(760, 1020, 62)):
         N(f'[node name="CausewayBrazier{side}_{j}" parent="YSorted/SetPieces" instance=ExtResource("{P_BR}")]\nposition = Vector2({X(cx0+7)}, {y*K})')

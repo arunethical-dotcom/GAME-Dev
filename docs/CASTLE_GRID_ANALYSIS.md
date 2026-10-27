@@ -56,3 +56,25 @@ a crenellated parapet. Towers stand at the corners where faces change direction.
 3. Open Godot. The scene `scenes/castle/Castle.tscn` is regenerated; press R to overlay the plan.
 
 Not in this pass, by request: trees, houses, the town and market props.
+
+## 6. Overlay check (pass 2)
+The build is rendered at exactly the plan's size and framing (`docs/screenshots/build_at_plan_size.png`)
+and laid over the plan at 50 % opacity (`docs/screenshots/overlay_50_on_plan.png`).
+
+Note: rendering at 1536 × 1024 needs camera zoom 0.125, not 0.1, because the game canvas is 1080p-based.
+
+Aligned with the plan: curtain wall and its diagonals, all moat and barbican towers, gatehouse, causeway, flank bridges, palace terrace.
+
+Added in this pass, from the differences the overlay showed:
+| Plan feature | Built |
+|---|---|
+| Two-flight grand staircase with a landing | Plain upper flight (palace door → landing), carpeted lower flight (landing → plaza) |
+| Gargoyles on square pillars at the landing | The two blue towers there replaced with roofless pillar towers topped by gargoyles |
+| Three-arch colonnades in the inner gardens | Arched colonnade wall between two small blue towers, each side |
+| Reflecting pools in front of the colonnades | Stone-rimmed pools with the animated water |
+| Inner cypress garden | Re-traced to its real outline (x 602–690), clear of the pool |
+| Market / training yard ground | Dirt floors with stone edging (no buildings, by request) |
+| Waterfalls under the barbican ends | Three sluice arches in the wall face, waterfall falling onto a rock outcrop |
+| Rock outcrops under the barbican | Two rock islands per side with cliff faces |
+| Stone landings at the barbican gate | Raised platforms on both sides of the causeway with knight statues and lantern pillars |
+| Causeway | Parapets along the sides only, open at both ends |

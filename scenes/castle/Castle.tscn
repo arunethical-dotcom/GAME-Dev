@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="1_ref"]
+[ext_resource type="Script" path="res://scripts/debug_camera.gd" id="2_cam"]
+
+[node name="Castle" type="Node2D"]
+
+[node name="Reference" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.5)
+z_index = -10
+texture = ExtResource("1_ref")
+centered = false
+
+[node name="Ground" type="TileMapLayer" parent="."]
+
+[node name="Floors" type="TileMapLayer" parent="."]
+
+[node name="Walls" type="TileMapLayer" parent="."]
+
+[node name="YSorted" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Structures" type="Node2D" parent="YSorted"]
+y_sort_enabled = true
+
+[node name="Props" type="Node2D" parent="YSorted"]
+y_sort_enabled = true
+
+[node name="Vegetation" type="Node2D" parent="YSorted"]
+y_sort_enabled = true
+
+[node name="Effects" type="Node2D" parent="."]
+
+[node name="DebugCamera" type="Camera2D" parent="."]
+position = Vector2(768, 512)
+zoom = Vector2(0.5, 0.5)
+script = ExtResource("2_cam")

@@ -43,3 +43,9 @@ STATUE = (7372, 9430)
 LANTERNS = [(ROAD_L + 40, 9515)]
 BRAZIER_X = ROAD_L + 46
 BRAZIER_Y = [7480, 8040, 8600, 9900]
+
+# ---- Side flanks (world px, west half; mirrored for east)
+FLANK_TOWERS = [  # (x, base_y, in_water)
+ (900, 4180, True), (860, 2780, True), (2250, 2050, False), (1950, 5050, False)]
+FLANK_BRIDGES = [  # (x_from, x_to, base_y)
+ (1030, 1900, 4110), (990, 1890, 2710)]

@@ -174,3 +174,11 @@ Each one was re-made seamless with an offset-and-blend that uses an irregular no
 | `sprites/props/lantern_pillar.png`, `brazier.png` | From the lantern sheet |
 | `sprites/nature/islet_pine.png` | Islet with its painted water removed so it sits in our animated water |
 | `effects/waterfall/frames/fall_wide_*.png` | 4-frame waterfall: three streams joined between two cliffs, base faded into the lake |
+
+## Assets built for the flanks and cliffs
+| File | What |
+|---|---|
+| `sprites/walls/arched_bridge_tile.png` | `aqueduct_bridge` with its painted water removed, cut at a clean two-arch repeat (seamless), scaled 1.3× |
+| `tilesets/terrain/cliff_face_strip.png` | Rock face from `cliff_tileset`, made seamless sideways with a narrow overlap so there's no ghosting |
+
+Cliffs are drawn as vertical slices (`Ground/Cliffs` in the scene), so the rock columns stay upright however the shoreline curves. The generator finds every shore edge that faces the camera and hangs a cliff under it.

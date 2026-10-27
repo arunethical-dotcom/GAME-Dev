@@ -207,7 +207,7 @@ If an asset pack comes as one big sheet, drop it in the closest folder — we'll
 1. **Reference layer** — `Castle.tscn` already contains the reference image at 50 % opacity so we can trace over it. ✅ (this commit)
 2. **Ground** — `TileMapLayer` "Ground": water, grass, cliffs, shoreline.
 3. **Floors** — `TileMapLayer` "Floors": cobble, plazas, dirt yards, causeway, carpet.
-4. **Walls**: ✅ main curtain wall + gatehouse + 8 towers (`scenes/castle/parts/`). ✅ outer barbican. Next: side walls & bridges → inner terraces → palace walls.
+4. **Walls**: ✅ main curtain wall + gatehouse + 8 towers (`scenes/castle/parts/`). ✅ outer barbican, ✅ side flanks & bridges, ✅ shore cliffs. Next: → inner terraces → palace walls.
 5. **Big structures** — `Sprite2D`/scenes in a Y-sorted node: towers, gatehouse, palace, cathedral, domed hall, manor.
 6. **Props & vegetation** — Y-sorted: trees, hedges, statues, stalls, dummies, fountains.
 7. **Life** — animated water/waterfalls/torches/banners, seagulls, lights.

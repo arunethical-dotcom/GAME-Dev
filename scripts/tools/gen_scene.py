@@ -31,7 +31,7 @@ def closed(poly): return pv(poly+[poly[0]])
 ext=[('Texture2D','res://docs/reference/castle_reference.png','ref'),('Script','res://scripts/debug_camera.gd','cam'),
      ('Shader','res://shaders/water.gdshader','sh_water'),('Shader','res://shaders/terrain.gdshader','sh_terrain'),('Shader','res://shaders/shore_foam.gdshader','sh_foam'),
      ('Texture2D','res://assets/tilesets/water/deep_water.png','t_water'),('Texture2D','res://assets/tilesets/terrain/meadow_grass.png','t_grass'),
-     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res')]
+     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res'),('Texture2D','res://assets/sprites/walls/arched_bridge_tile.png','t_bridge'),('Texture2D','res://assets/tilesets/terrain/cliff_face_strip.png','t_cliff')]
 out=[]
 sub=[]
 sub.append('[sub_resource type="FastNoiseLite" id="noise"]\nnoise_type = 3\nfrequency = 0.012\nfractal_octaves = 4')
@@ -57,9 +57,60 @@ LANDO=[(nm,organic(p,seed=i+3)) for i,(nm,p) in enumerate(LAND)]
 ISL=organic(CASTLE[0][1],step=10,amp=0.6,seed=99)
 for name,p in LANDO+[('CastleIsland',ISL)]:
     n.append(f'[node name="{name}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = {closed(p)}\nwidth = 420.0\ntexture_mode = 1\njoint_mode = 0\nsharp_limit = 4.0')
+CLIFF_H=440.0
+def inside(pt,poly):
+    x,y=pt; c=False
+    for (x0,y0),(x1,y1) in zip(poly,poly[1:]+poly[:1]):
+        if (y0>y)!=(y1>y) and x < x0+(y-y0)*(x1-x0)/(y1-y0): c=not c
+    return c
+def south_runs(poly,min_len=18):
+    N=len(poly); flags=[]
+    for i in range(N):
+        (x0,y0),(x1,y1)=poly[i],poly[(i+1)%N]; dx,dy=x1-x0,y1-y0; L=math.hypot(dx,dy) or 1
+        nx,ny=dy/L,-dx/L; mx,my=(x0+x1)/2,(y0+y1)/2
+        if inside((mx+nx*0.8,my+ny*0.8),poly): nx,ny=-nx,-ny
+        flags.append(ny>0.45)
+    # rotate so we start at a non-flagged edge
+    if all(flags): return [poly+[poly[0]]]
+    k=flags.index(False); idx=list(range(k,N))+list(range(0,k)); runs=[]; cur=[]
+    for i in idx:
+        if flags[i]:
+            if not cur: cur=[poly[i]]
+            cur.append(poly[(i+1)%N])
+        elif cur: runs.append(cur); cur=[]
+    if cur: runs.append(cur)
+    out=[]
+    for r in runs:
+        if sum(math.hypot(b[0]-a[0],b[1]-a[1]) for a,b in zip(r,r[1:]))>=min_len:
+            if r[0][0]>r[-1][0]: r=r[::-1]
+            out.append(r)
+    return out
+CLIFFS=[]
+for name,p in LANDO:
+    for j,r in enumerate(south_runs(p)):
+        CLIFFS.append((f'{name}Cliff{j+1}',[(x*K,y*K) for x,y in r]))
+for name,r in CLIFFS:
+    base=[(x,y+CLIFF_H-20) for x,y in r]
+    n.append(f'[node name="{name}BaseFoam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = PackedVector2Array({", ".join(f"{x:.0f}, {y:.0f}" for x,y in base)})\nwidth = 260.0\ntexture_mode = 1\njoint_mode = 2')
 n.append('[node name="SandBanks" type="Node2D" parent="Ground"]')
 for name,p in LANDO:
     n.append(f'[node name="{name}Bank" type="Line2D" parent="Ground/SandBanks"]\nmaterial = SubResource("m_sand")\npoints = {closed(p)}\nwidth = 110.0\njoint_mode = 0\nsharp_limit = 4.0')
+n.append('[node name="Cliffs" type="Node2D" parent="Ground"]')
+TEXW,TEXH=311.0,331.0
+for name,r in CLIFFS:
+    # keep x strictly increasing so every slice faces the camera
+    pts=[r[0]]
+    for q in r[1:]:
+        if q[0]>pts[-1][0]+2: pts.append(q)
+    if len(pts)<2: continue
+    verts=[]; uvs=[]; polys=[]
+    for (x,y) in pts:
+        verts+= [(x,y-14),(x,y-14+CLIFF_H)]
+        uvs+= [(x*TEXH/CLIFF_H,1.0),(x*TEXH/CLIFF_H,TEXH-4.0)]
+    for i in range(len(pts)-1):
+        a=2*i; polys.append(f'PackedInt32Array({a}, {a+2}, {a+3}, {a+1})')
+    V=", ".join(f"{x:.0f}, {y:.0f}" for x,y in verts); U=", ".join(f"{u:.1f}, {v:.1f}" for u,v in uvs)
+    n.append(f'[node name="{name}" type="Polygon2D" parent="Ground/Cliffs"]\ntexture_repeat = 2\ntexture = ExtResource("t_cliff")\npolygon = PackedVector2Array({V})\nuv = PackedVector2Array({U})\npolygons = [{", ".join(polys)}]')
 n.append('[node name="Land" type="Node2D" parent="Ground"]')
 for name,p in LANDO:
     n.append(f'[node name="{name}" type="Polygon2D" parent="Ground/Land"]\nmaterial = SubResource("m_grass")\npolygon = {pv(p)}')
@@ -126,6 +177,14 @@ for side in 'WE':
         pts=', '.join(f'{X+math.cos(t*math.pi/24)*230:.0f}, {iy-60+math.sin(t*math.pi/24)*80:.0f}' for t in range(49))
         n.append(f'[node name="Islet{j+1}{side}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = PackedVector2Array({pts})\nwidth = 200.0\ntexture_mode = 1')
         n.append(f'[node name="Islet{j+1}{side}" parent="YSorted/Vegetation" instance=ExtResource("p_islet")]\nposition = Vector2({X}, {iy})' + ('\nflip_h = true' if flip else ''))
+n.append('[node name="Flanks" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
+for i,(x0,x1,y) in enumerate(FLANK_BRIDGES):
+    for side in 'WE':
+        a=x0 if side=='W' else M(x1)
+        n.append(f'[node name="Bridge{i+1}{side}" parent="YSorted/Structures/Flanks" instance=ExtResource("p_wall")]\nposition = Vector2({a}, {y})\nwall_tile = ExtResource("t_bridge")\nlength = {x1-x0}.0\ntile_offset = {i*97+(53 if side=="E" else 0)}.0\nbanner_spacing = 0.0\ncollision_depth = 40.0')
+for i,(x,y,w) in enumerate(FLANK_TOWERS):
+    for side in 'WE':
+        n.append(f'[node name="FlankTower{i+1}{side}" parent="YSorted/Structures/Flanks" instance=ExtResource("p_tower")]\nposition = Vector2({x if side=="W" else M(x)}, {y})\nin_water = {"true" if w else "false"}')
 for i,(x,y,w) in enumerate(TOWERS):
     for side in 'WE':
         xx=x if side=='W' else WORLD_W-x

@@ -23,6 +23,7 @@ func _ready() -> void:
 func _apply() -> void:
 	if not is_inside_tree():
 		return
-	$Banner.visible = show_banner
-	$Roof.visible = show_roof
-	$WaterFoam.visible = in_water
+	for pair in [["Banner", show_banner], ["Roof", show_roof], ["Pennant", show_roof], ["WaterFoam", in_water]]:
+		var n := get_node_or_null(pair[0]) as CanvasItem
+		if n:
+			n.visible = pair[1]

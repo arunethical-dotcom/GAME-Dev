@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/castle/tower.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/towers/barbican_tower.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/sprites/towers/tower_roof_blue.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/banners/banner_red_cross_tower.png" id="4"]
+[ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/banners/pennant_red_top.png" id="6"]
+
+[sub_resource type="CircleShape2D" id="shape"]
+radius = 210.0
+
+[node name="BarbicanTower" type="Node2D"]
+script = ExtResource("1")
+show_banner = false
+in_water = true
+show_roof = false
+
+[node name="WaterFoam" type="Line2D" parent="."]
+z_index = -85
+z_as_relative = false
+material = ExtResource("5")
+width = 170.0
+texture_mode = 1
+
+[node name="Body" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+offset = Vector2(0, -370)
+
+[node name="Banner" type="Sprite2D" parent="."]
+position = Vector2(0, -440)
+texture = ExtResource("4")
+offset = Vector2(0, 165)
+
+[node name="Roof" type="Sprite2D" parent="."]
+position = Vector2(0, -520)
+texture = ExtResource("3")
+offset = Vector2(0, -266)
+
+[node name="Pennant" type="Sprite2D" parent="."]
+position = Vector2(51, -1083)
+texture = ExtResource("6")
+
+[node name="Collision" type="StaticBody2D" parent="."]
+scale = Vector2(1, 0.35)
+
+[node name="Shape" type="CollisionShape2D" parent="Collision"]
+position = Vector2(0, -120)
+shape = SubResource("shape")

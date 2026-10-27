@@ -3,9 +3,14 @@ extends Node2D
 ## A straight run of curtain wall built from a seamless wall tile.
 ## Origin = bottom-left of the wall face (y-sort anchor). Adjust `length` in the inspector.
 
-const WALL_TILE := preload("res://assets/sprites/walls/curtain_wall_tile.png")
-const BANNER := preload("res://assets/sprites/banners/banner_red_cross_wall.png")
 const FOAM := preload("res://resources/shore_foam_material.tres")
+
+@export var wall_tile: Texture2D = preload("res://assets/sprites/walls/curtain_wall_tile.png"):
+	set(v): wall_tile = v; _rebuild()
+@export var banner: Texture2D = preload("res://assets/sprites/banners/banner_red_cross_wall.png"):
+	set(v): banner = v; _rebuild()
+@export var banner_top := 175.0:       ## banner top, measured down from the top of the wall
+	set(v): banner_top = v; _rebuild()
 
 @export var length := 1200.0:
 	set(v): length = maxf(v, 50.0); _rebuild()
@@ -30,7 +35,9 @@ func _rebuild() -> void:
 		if c.has_meta("generated"):
 			remove_child(c)
 			c.queue_free()
-	var h := float(WALL_TILE.get_height())
+	if wall_tile == null:
+		return
+	var h := float(wall_tile.get_height())
 
 	if in_water:
 		var foam := Line2D.new()
@@ -43,7 +50,7 @@ func _rebuild() -> void:
 		_add(foam)
 
 	var face := Sprite2D.new()
-	face.texture = WALL_TILE
+	face.texture = wall_tile
 	face.centered = false
 	face.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 	face.region_enabled = true
@@ -51,13 +58,13 @@ func _rebuild() -> void:
 	face.position = Vector2(0, -h)
 	_add(face)
 
-	if banner_spacing > 0.0:
+	if banner_spacing > 0.0 and banner != null:
 		var x := banner_start
 		while x < length - 60.0:
 			var b := Sprite2D.new()
-			b.texture = BANNER
+			b.texture = banner
 			b.centered = false
-			b.position = Vector2(round(x - BANNER.get_width() * 0.5), -h + 175.0)
+			b.position = Vector2(round(x - banner.get_width() * 0.5), -h + banner_top)
 			_add(b)
 			x += banner_spacing
 

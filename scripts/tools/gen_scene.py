@@ -31,7 +31,7 @@ def closed(poly): return pv(poly+[poly[0]])
 ext=[('Texture2D','res://docs/reference/castle_reference.png','ref'),('Script','res://scripts/debug_camera.gd','cam'),
      ('Shader','res://shaders/water.gdshader','sh_water'),('Shader','res://shaders/terrain.gdshader','sh_terrain'),('Shader','res://shaders/shore_foam.gdshader','sh_foam'),
      ('Texture2D','res://assets/tilesets/water/deep_water.png','t_water'),('Texture2D','res://assets/tilesets/terrain/meadow_grass.png','t_grass'),
-     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall')]
+     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res')]
 out=[]
 sub=[]
 sub.append('[sub_resource type="FastNoiseLite" id="noise"]\nnoise_type = 3\nfrequency = 0.012\nfractal_octaves = 4')
@@ -67,6 +67,13 @@ for name,p in LANDO:
 n.append('[node name="CastleGround" type="Node2D" parent="Ground"]')
 for name,p in [('CastleIsland',ISL)]:
     n.append(f'[node name="{name}" type="Polygon2D" parent="Ground/CastleGround"]\nmaterial = SubResource("m_flag")\npolygon = {pv(p)}')
+def wpv(poly): return 'PackedVector2Array('+', '.join(f'{x}, {y}' for x,y in poly)+')'
+for side in 'WE':
+    ap=APRON if side=='W' else [(WORLD_W-x,y) for x,y in APRON]
+    if side=='E': continue   # apron spans both sides already
+    n.append(f'[node name="GateApronFoam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = {wpv(ap+[ap[0]])}\nwidth = 300.0\ntexture_mode = 1\njoint_mode = 0\nsharp_limit = 4.0')
+    n.append(f'[node name="GateApron" type="Polygon2D" parent="Ground/CastleGround"]\nmaterial = SubResource("m_flag")\npolygon = {wpv(ap)}')
+    n.append(f'[node name="GateApronEdge" type="Line2D" parent="Ground/CastleGround"]\npoints = {wpv(ap+[ap[0]])}\nwidth = 16.0\ndefault_color = Color(0.2, 0.22, 0.3, 0.8)\njoint_mode = 0\nsharp_limit = 4.0')
 n.append(f'[node name="IslandEdge" type="Line2D" parent="Ground/CastleGround"]\npoints = {closed(ISL)}\nwidth = 16.0\ndefault_color = Color(0.2, 0.22, 0.3, 0.8)\njoint_mode = 0\nsharp_limit = 4.0')
 RX,RW=768*K,469; RY0=690*K; RY1=1030*K
 for side,x in (('W',RX-RW/2+6),('E',RX+RW/2-6)):
@@ -91,6 +98,34 @@ for x0,x1,y,off in WALLS:
         a,b=(x0,x1) if side=='W' else (WORLD_W-x1,WORLD_W-x0)
         if side=='E' and x1==7240: a=8240  # gatehouse is wider on its east side
         n.append(f'[node name="Wall{k}{side}" parent="YSorted/Structures/CurtainWall" instance=ExtResource("p_wall")]\nposition = Vector2({a}, {y})\nlength = {b-a}.0\ntile_offset = {off+ (37 if side=="E" else 0)}.0\nbanner_start = {260 if side=="W" else 420}.0')
+n.append('[node name="Barbican" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
+M=lambda x: WORLD_W-x
+B='YSorted/Structures/Barbican'
+for i,(x0,x1,y,ban) in enumerate(BARB_WALLS):
+    L=x1-x0
+    for side in 'WE':
+        a=x0 if side=='W' else M(x1)
+        bn=f'banner_spacing = 99999.0\nbanner_start = {round(L*ban)}.0' if ban else 'banner_spacing = 0.0'
+        n.append(f'[node name="BWall{i+1}{side}" parent="{B}" instance=ExtResource("p_wall")]\nposition = Vector2({a}, {y})\nwall_tile = ExtResource("t_bwall")\nbanner_top = 120.0\nlength = {L}.0\ntile_offset = {i*61 + (29 if side=="E" else 0)}.0\n{bn}')
+for i,(x,y) in enumerate(BARB_TOWERS):
+    for side in 'WE':
+        n.append(f'[node name="BTower{i+1}{side}" parent="{B}" instance=ExtResource("p_btower")]\nposition = Vector2({x if side=="W" else M(x)}, {y})')
+for side in 'WE':
+    gx,gy=GATE_TOWER
+    n.append(f'[node name="GateTower{side}" parent="{B}" instance=ExtResource("p_gtower")]\nposition = Vector2({gx if side=="W" else M(gx)}, {gy})')
+    sx,sy=STATUE
+    n.append(f'[node name="KnightStatue{side}" parent="{B}" instance=ExtResource("p_statue")]\nposition = Vector2({sx if side=="W" else M(sx)}, {sy})' + ('\nflip_h = true' if side=='E' else ''))
+    for j,(lx,ly) in enumerate(LANTERNS):
+        n.append(f'[node name="Lantern{j+1}{side}" parent="{B}" instance=ExtResource("p_lantern")]\nposition = Vector2({lx if side=="W" else M(lx)}, {ly})')
+    for j,by in enumerate(BRAZIER_Y):
+        n.append(f'[node name="Brazier{j+1}{side}" parent="YSorted/Props" instance=ExtResource("p_brazier")]\nposition = Vector2({BRAZIER_X if side=="W" else M(BRAZIER_X)}, {by})')
+    for j,(fx,fy) in enumerate(WATERFALLS):
+        n.append(f'[node name="Waterfall{j+1}{side}" parent="{B}" instance=ExtResource("p_fall")]\nposition = Vector2({fx if side=="W" else M(fx)}, {fy})')
+    for j,(ix,iy,fl) in enumerate(ISLETS):
+        X=ix if side=='W' else M(ix); flip=(fl!=(side=='E'))
+        pts=', '.join(f'{X+math.cos(t*math.pi/24)*230:.0f}, {iy-60+math.sin(t*math.pi/24)*80:.0f}' for t in range(49))
+        n.append(f'[node name="Islet{j+1}{side}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = PackedVector2Array({pts})\nwidth = 200.0\ntexture_mode = 1')
+        n.append(f'[node name="Islet{j+1}{side}" parent="YSorted/Vegetation" instance=ExtResource("p_islet")]\nposition = Vector2({X}, {iy})' + ('\nflip_h = true' if flip else ''))
 for i,(x,y,w) in enumerate(TOWERS):
     for side in 'WE':
         xx=x if side=='W' else WORLD_W-x

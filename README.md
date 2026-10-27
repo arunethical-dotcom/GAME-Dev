@@ -21,7 +21,7 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 | `assets/sprites/` | towers, buildings, statues, banners, props, vegetation, ambient |
 | `assets/effects/` | torch, water, waterfall animations |
 | `scenes/castle/Castle.tscn` | Main castle scene: ground, water, Y-sorted structures |
-| `scenes/castle/parts/` | Reusable pieces: `Tower`, `CurtainWall` (set `length` in the inspector), `Gatehouse` |
+| `scenes/castle/parts/` | Reusable pieces: `Tower`, `BarbicanTower`, `GateTower`, `CurtainWall` (set `length` and `wall_tile` in the inspector), `Gatehouse`, `WideWaterfall`, `KnightStatue`, `LanternPillar`, `Brazier`, `Islet` |
 | `scripts/` | GDScript |
 
 ## Status
@@ -32,6 +32,7 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 - [x] Seamless ground textures, quality render settings
 - [x] Ground & animated water
 - [x] Main curtain wall, 8 towers, gatehouse (with collision)
-- [ ] Outer barbican wall, side walls & bridges
+- [x] Outer barbican: 8 flat-top towers, 2 pennant gate towers, knight statues, lanterns, braziers, animated waterfalls
+- [ ] Side walls & bridges, inner terraces
 - [ ] Buildings & props
 - [ ] Animation, lighting, collision

@@ -163,3 +163,14 @@ Each one was re-made seamless with an offset-and-blend that uses an irregular no
 | `sprites/buildings/gatehouse.png` | Levelled (its base sloped 114 px) and scaled 1.3× so it rises above the wall |
 | `sprites/banners/banner_red_cross_wall.png`, `banner_red_cross_tower.png` | Red banner with gold cross from the heraldic sheet, matching the reference |
 | `sprites/banners/pennant_red.png` | Red pennant for the outer gate towers |
+
+## Assets built for the outer barbican
+| File | What |
+|---|---|
+| `sprites/walls/barbican_wall_tile.png` | Curtain wall tile with the window band removed (lower wall), recoloured to the reference's cool blue-grey stone |
+| `sprites/towers/barbican_tower.png` | Round tower with the window band removed (squat), same recolour |
+| `sprites/banners/pennant_red_top.png` | Red pennant flag, pole stand removed, for the gate tower roofs |
+| `sprites/statues/knight_statue_dark.png` | Knight statue recoloured to dark iron, like the reference |
+| `sprites/props/lantern_pillar.png`, `brazier.png` | From the lantern sheet |
+| `sprites/nature/islet_pine.png` | Islet with its painted water removed so it sits in our animated water |
+| `effects/waterfall/frames/fall_wide_*.png` | 4-frame waterfall: three streams joined between two cliffs, base faded into the lake |

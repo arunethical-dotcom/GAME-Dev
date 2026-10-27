@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="SpriteFrames" path="res://resources/waterfall_wide_frames.tres" id="1"]
+[ext_resource type="SpriteFrames" path="res://resources/splash_frames.tres" id="2"]
+[ext_resource type="Script" path="res://scripts/castle/animated_offset.gd" id="3"]
+
+[node name="WideWaterfall" type="Node2D"]
+
+[node name="Fall" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1")
+offset = Vector2(0, -301)
+script = ExtResource("3")
+
+[node name="Splash1" type="AnimatedSprite2D" parent="."]
+position = Vector2(-156, 30)
+sprite_frames = ExtResource("2")
+offset = Vector2(0, -96)
+script = ExtResource("3")
+
+[node name="Splash2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 30)
+sprite_frames = ExtResource("2")
+offset = Vector2(0, -96)
+script = ExtResource("3")
+
+[node name="Splash3" type="AnimatedSprite2D" parent="."]
+position = Vector2(152, 30)
+sprite_frames = ExtResource("2")
+offset = Vector2(0, -96)
+script = ExtResource("3")

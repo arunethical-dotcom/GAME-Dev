@@ -28,3 +28,18 @@ WALLS=[  # (x_from, x_to, base_y, tile_offset)
  (4400,7240,6960,0),(960,2700,6210,90),(2700,4400,6630,170)]
 TOWERS=[  # (x, base_y, in_water)
  (6000,6985,True),(4400,7010,True),(2700,6660,True),(960,6240,True)]
+
+# ---- Outer barbican (world px, west half; mirrored for east)
+ROAD_L, ROAD_R = 7446, 7914          # causeway edges
+APRON = [(6850, 9170), (8510, 9170), (8510, 9520), (6850, 9520)]   # stone landing at the barbican gate
+BARB_WALLS = [  # (x_from, x_to, base_y, banner_at or None)
+ (1350, 2700, 8600, None), (2700, 4150, 8900, 0.5), (4150, 5600, 9200, None),
+ (5600, 7080, 9250, 0.55), (7080, ROAD_L, 9250, None)]
+BARB_TOWERS = [(1350, 8630), (2700, 8930), (4150, 9230), (5600, 9280)]
+GATE_TOWER = (7080, 9335)
+WATERFALLS = [(2025, 9175)]   # base centre of the wide waterfall under the first wall
+ISLETS = [(3700, 9760, False)]
+STATUE = (7372, 9430)
+LANTERNS = [(ROAD_L + 40, 9515)]
+BRAZIER_X = ROAD_L + 46
+BRAZIER_Y = [7480, 8040, 8600, 9900]

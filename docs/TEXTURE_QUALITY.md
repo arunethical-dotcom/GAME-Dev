@@ -30,3 +30,11 @@ What's done so textures look rich in play, and the rules to keep for new art.
 ![gate](screenshots/gate_moat.jpg)
 ![shore](screenshots/shore_closeup.jpg)
 ![grass](screenshots/garden_closeup.jpg)
+
+## Lighting and animation
+- **Day/night** (`scripts/castle/day_night.gd`, key **N**): drives a `CanvasModulate` world tint and the global shader value `night`. Default is golden hour.
+- **Window glow** (`shaders/building_glow.gdshader`): each building has a mask of its lit-window pixels in `assets/sprites/buildings/glow/`. The windows brighten above 1.0 as night falls and bloom through the `WorldEnvironment` glow. Sandstone walls and towers are left out because the mask can't tell their sunlit faces from windows.
+- **Firelight** (`scripts/castle/flicker_light.gd`): `PointLight2D`s on braziers, lantern pillars and the gate torches, with noise-driven flicker that brightens at night.
+- **Flames**: 6-frame animated fire on every brazier.
+- **Banners** (`shaders/banner_sway.gdshader`): pinned at the top and swinging at the tail, each with its own phase.
+- **Fountain** (`shaders/fountain_water.gdshader`): ripples and sparkles on the painted water, shimmer on the spray.

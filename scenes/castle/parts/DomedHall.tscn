@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/domed_hall.png" id="1"]
+[ext_resource type="Material" path="res://resources/glow_domed_hall.tres" id="glow"]
 
 [sub_resource type="RectangleShape2D" id="c"]
 size = Vector2(860, 170)
 
 [node name="DomedHall" type="Sprite2D"]
+material = ExtResource("glow")
 texture = ExtResource("1")
 offset = Vector2(0, -424)
 

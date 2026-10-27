@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/gatehouse.png" id="1"]
 [ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="2"]
+[ext_resource type="Texture2D" path="res://resources/light_radial.tres" id="light"]
+[ext_resource type="Script" path="res://scripts/castle/flicker_light.gd" id="flicker"]
 
 [sub_resource type="RectangleShape2D" id="left"]
 size = Vector2(308, 120)
@@ -41,3 +43,19 @@ shape = SubResource("left")
 [node name="Right" type="CollisionShape2D" parent="Collision"]
 position = Vector2(358, -60)
 shape = SubResource("right")
+
+[node name="TorchLightW" type="PointLight2D" parent="."]
+position = Vector2(-215, -330)
+color = Color(1, 0.66, 0.32, 1)
+texture = ExtResource("light")
+texture_scale = 3.0
+script = ExtResource("flicker")
+base_energy = 0.55
+
+[node name="TorchLightE" type="PointLight2D" parent="."]
+position = Vector2(215, -330)
+color = Color(1, 0.66, 0.32, 1)
+texture = ExtResource("light")
+texture_scale = 3.0
+script = ExtResource("flicker")
+base_energy = 0.55

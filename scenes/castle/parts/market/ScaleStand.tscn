@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/props/market/scale_stand.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="c"]
+size = Vector2(127, 31)
+
+[node name="ScaleStand" type="Sprite2D"]
+texture = ExtResource("1")
+offset = Vector2(0, -83)
+
+[node name="Collision" type="StaticBody2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="Collision"]
+position = Vector2(0, -15)
+shape = SubResource("c")

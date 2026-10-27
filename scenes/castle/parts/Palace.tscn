@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_keep_large.png" id="1"]
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_facade.png" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Tower.tscn" id="3"]
+[ext_resource type="Material" path="res://resources/glow_palace_facade.tres" id="gw"]
+[ext_resource type="Material" path="res://resources/glow_palace_keep_large.tres" id="gk"]
 
 [sub_resource type="RectangleShape2D" id="keep"]
 size = Vector2(1400, 180)
@@ -17,22 +19,26 @@ size = Vector2(1624, 140)
 y_sort_enabled = true
 
 [node name="WingW2" type="Sprite2D" parent="."]
+material = ExtResource("gw")
 position = Vector2(-2063, -230)
 texture = ExtResource("2")
 offset = Vector2(0, -510)
 
 [node name="WingW1" type="Sprite2D" parent="."]
+material = ExtResource("gw")
 position = Vector2(-1181, -230)
 texture = ExtResource("2")
 offset = Vector2(0, -510)
 flip_h = true
 
 [node name="WingE1" type="Sprite2D" parent="."]
+material = ExtResource("gw")
 position = Vector2(1181, -230)
 texture = ExtResource("2")
 offset = Vector2(0, -510)
 
 [node name="WingE2" type="Sprite2D" parent="."]
+material = ExtResource("gw")
 position = Vector2(2063, -230)
 texture = ExtResource("2")
 offset = Vector2(0, -510)
@@ -53,6 +59,7 @@ position = Vector2(-1622, -160)
 position = Vector2(1622, -160)
 
 [node name="Keep" type="Sprite2D" parent="."]
+material = ExtResource("gk")
 texture = ExtResource("1")
 offset = Vector2(0, -795)
 

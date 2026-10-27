@@ -18,6 +18,8 @@ var shots := [
 	["cathedral", Vector2(3700, 3700), 0.45],
 	["east_precinct", Vector2(11800, 3700), 0.45],
 	["fountain_avenue", Vector2(7680, 4900), 0.5],
+	["market", Vector2(3250, 5500), 0.6],
+	["training_yard", Vector2(12150, 5450), 0.6],
 	["cliffs_topleft", Vector2(2600, 1500), 0.35],
 	["cliffs_closeup", Vector2(1400, 1500), 0.8],
 	["gate_moat", Vector2(7680, 7400), 0.75],
@@ -31,7 +33,11 @@ func _initialize() -> void:
 	var cam := scene.get_node("DebugCamera") as Camera2D
 	cam.set_script(null)
 	cam.make_current()
-	for s in shots:
+	var dn := scene.get_node_or_null("DayNight")
+	var night_shots := [["night_overview", Vector2(7680, 5120), 0.125], ["night_palace", Vector2(7680, 2300), 0.35], ["night_gate", Vector2(7680, 7000), 0.45], ["golden_market", Vector2(3250, 5500), 0.6]]
+	for s in shots + night_shots:
+		if dn:
+			dn.set_preset(2 if String(s[0]).begins_with("night") else 1)
 		cam.position = s[1]
 		cam.zoom = Vector2(s[2], s[2])
 		for i in 8:

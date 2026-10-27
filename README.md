@@ -7,7 +7,7 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 ## Open it
 1. `git clone` / `git pull` this repo.
 2. Godot → **Import** → select `project.godot`.
-3. Press **F5**. You'll see the textured island with animated water. WASD/arrows pan, the mouse wheel zooms, and **R** toggles the reference castle overlay.
+3. Press **F5**. You'll see the textured island with animated water. WASD/arrows pan, the mouse wheel zooms, **R** toggles the reference castle overlay, and **N** cycles day → golden hour → night.
 
 ## Where things go
 | Folder | Contents |
@@ -37,6 +37,8 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 - [x] Rocky cliffs under every south-facing shoreline
 - [x] Royal palace (keep, wings, towers), raised terrace, grand staircase with red carpet, gargoyles, knight statues
 - [x] Cathedral, chapel, domed hall, manor, fountain plaza, cypress avenue, ~180 trees and bushes
-- [ ] Market stalls, training yard, town across the river, animation polish (fountain, torches, banners), lighting
+- [x] Market (13 stalls, carts, crates) and training yard (dummies, weapon racks, armour stands)
+- [x] Day / golden hour / night (press **N**), glowing windows, flickering firelight, swaying banners, animated fountain water
+- [ ] Town across the river, player character, walkable bridges/navigation
 - [ ] Buildings & props
 - [ ] Animation, lighting, collision

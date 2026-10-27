@@ -51,3 +51,10 @@ renderer/rendering_method.mobile="mobile"
 ; HDR 2D lets torches/windows glow (bloom) once lights are added.
 viewport/hdr_2d=true
 textures/default_filters/anisotropic_filtering_level=2
+
+[shader_globals]
+
+night={
+"type": "float",
+"value": 0.45
+}

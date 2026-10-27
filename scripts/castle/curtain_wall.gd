@@ -4,6 +4,7 @@ extends Node2D
 ## Origin = bottom-left of the wall face (y-sort anchor). Adjust `length` in the inspector.
 
 const FOAM := preload("res://resources/shore_foam_material.tres")
+const SWAY := preload("res://resources/banner_sway_material.tres")
 
 @export var wall_tile: Texture2D = preload("res://assets/sprites/walls/curtain_wall_tile.png"):
 	set(v): wall_tile = v; _rebuild()
@@ -63,6 +64,7 @@ func _rebuild() -> void:
 		while x < length - 60.0:
 			var b := Sprite2D.new()
 			b.texture = banner
+			b.material = SWAY
 			b.centered = false
 			b.position = Vector2(round(x - banner.get_width() * 0.5), -h + banner_top)
 			_add(b)

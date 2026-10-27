@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3]
+[gd_scene load_steps=99 format=3]
 
 [ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="ref"]
 [ext_resource type="Script" path="res://scripts/debug_camera.gd" id="cam"]
@@ -44,6 +44,49 @@
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Bush.tscn" id="p_Bush"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/BushWhite.tscn" id="p_BushWhite"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/BushRed.tscn" id="p_BushRed"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall1.tscn" id="pp_market_Stall1"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall2.tscn" id="pp_market_Stall2"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall3.tscn" id="pp_market_Stall3"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall4.tscn" id="pp_market_Stall4"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall5.tscn" id="pp_market_Stall5"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall6.tscn" id="pp_market_Stall6"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall7.tscn" id="pp_market_Stall7"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall8.tscn" id="pp_market_Stall8"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Stall10.tscn" id="pp_market_Stall10"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/MarketTent.tscn" id="pp_market_MarketTent"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Parasol.tscn" id="pp_market_Parasol"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/CoveredWagon.tscn" id="pp_market_CoveredWagon"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/HayCart.tscn" id="pp_market_HayCart"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/BarrelCart.tscn" id="pp_market_BarrelCart"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/CrateStack.tscn" id="pp_market_CrateStack"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Crate.tscn" id="pp_market_Crate"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Barrel.tscn" id="pp_market_Barrel"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/AppleCrate.tscn" id="pp_market_AppleCrate"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Sacks.tscn" id="pp_market_Sacks"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/BarrelStack.tscn" id="pp_market_BarrelStack"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/Baskets.tscn" id="pp_market_Baskets"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/HayBales.tscn" id="pp_market_HayBales"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/BarrelPile.tscn" id="pp_market_BarrelPile"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/HangingLantern.tscn" id="pp_market_HangingLantern"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/ScaleStand.tscn" id="pp_market_ScaleStand"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/FishRack.tscn" id="pp_market_FishRack"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/market/MeatRack.tscn" id="pp_market_MeatRack"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponRackSwords.tscn" id="pp_training_WeaponRackSwords"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponRackAxes.tscn" id="pp_training_WeaponRackAxes"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponRackBows.tscn" id="pp_training_WeaponRackBows"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponRackSpears.tscn" id="pp_training_WeaponRackSpears"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponRackMaces.tscn" id="pp_training_WeaponRackMaces"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/ShieldRack.tscn" id="pp_training_ShieldRack"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/TrainingBanner.tscn" id="pp_training_TrainingBanner"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/BannerStand.tscn" id="pp_training_BannerStand"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/Dummy.tscn" id="pp_training_Dummy"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/ArmorStand.tscn" id="pp_training_ArmorStand"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/ArmorStandBlue.tscn" id="pp_training_ArmorStandBlue"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/ArmorStandGold.tscn" id="pp_training_ArmorStandGold"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/ArmoryStall.tscn" id="pp_training_ArmoryStall"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponChest.tscn" id="pp_training_WeaponChest"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/training/WeaponBarrels.tscn" id="pp_training_WeaponBarrels"]
+[ext_resource type="Script" path="res://scripts/castle/day_night.gd" id="daynight"]
 
 [sub_resource type="FastNoiseLite" id="noise"]
 noise_type = 3
@@ -116,6 +159,15 @@ shader_parameter/warm_cool = Vector3(0.04, 0.02, -0.03)
 shader = ExtResource("sh_foam")
 shader_parameter/noise_tex = SubResource("noise_tex")
 shader_parameter/pixel_size = 4.0
+
+[sub_resource type="Environment" id="env"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.6
+glow_strength = 0.9
+glow_bloom = 0.05
+glow_blend_mode = 1
+glow_hdr_threshold = 1.05
 
 [node name="Castle" type="Node2D"]
 
@@ -1508,6 +1560,182 @@ scale = Vector2(1.11, 1.11)
 position = Vector2(12881, 4351)
 scale = Vector2(1.04, 1.04)
 
+[node name="Market" type="Node2D" parent="YSorted/Props"]
+y_sort_enabled = true
+
+[node name="Stall11" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall1")]
+position = Vector2(2420, 5150)
+
+[node name="Stall22" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall2")]
+position = Vector2(2800, 5150)
+
+[node name="Stall33" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall3")]
+position = Vector2(3180, 5150)
+
+[node name="Stall44" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall4")]
+position = Vector2(3560, 5150)
+
+[node name="Stall55" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall5")]
+position = Vector2(3940, 5150)
+
+[node name="Stall66" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall6")]
+position = Vector2(2960, 5620)
+
+[node name="Stall77" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall7")]
+position = Vector2(3340, 5620)
+
+[node name="Stall88" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall8")]
+position = Vector2(3720, 5620)
+
+[node name="Stall109" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Stall10")]
+position = Vector2(4100, 5620)
+
+[node name="MarketTent10" parent="YSorted/Props/Market" instance=ExtResource("pp_market_MarketTent")]
+position = Vector2(2330, 5560)
+
+[node name="Parasol11" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Parasol")]
+position = Vector2(2200, 5250)
+
+[node name="CoveredWagon12" parent="YSorted/Props/Market" instance=ExtResource("pp_market_CoveredWagon")]
+position = Vector2(3100, 5940)
+
+[node name="HayCart13" parent="YSorted/Props/Market" instance=ExtResource("pp_market_HayCart")]
+position = Vector2(3420, 5990)
+flip_h = true
+
+[node name="BarrelCart14" parent="YSorted/Props/Market" instance=ExtResource("pp_market_BarrelCart")]
+position = Vector2(3820, 5990)
+
+[node name="CrateStack15" parent="YSorted/Props/Market" instance=ExtResource("pp_market_CrateStack")]
+position = Vector2(4180, 5960)
+
+[node name="Crate16" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Crate")]
+position = Vector2(2610, 5180)
+
+[node name="Barrel17" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Barrel")]
+position = Vector2(2990, 5185)
+
+[node name="AppleCrate18" parent="YSorted/Props/Market" instance=ExtResource("pp_market_AppleCrate")]
+position = Vector2(3370, 5185)
+
+[node name="Sacks19" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Sacks")]
+position = Vector2(3750, 5175)
+
+[node name="BarrelStack20" parent="YSorted/Props/Market" instance=ExtResource("pp_market_BarrelStack")]
+position = Vector2(4180, 5180)
+
+[node name="Baskets21" parent="YSorted/Props/Market" instance=ExtResource("pp_market_Baskets")]
+position = Vector2(3150, 5650)
+
+[node name="HayBales22" parent="YSorted/Props/Market" instance=ExtResource("pp_market_HayBales")]
+position = Vector2(3530, 5660)
+
+[node name="BarrelPile23" parent="YSorted/Props/Market" instance=ExtResource("pp_market_BarrelPile")]
+position = Vector2(3910, 5650)
+
+[node name="HangingLantern24" parent="YSorted/Props/Market" instance=ExtResource("pp_market_HangingLantern")]
+position = Vector2(2240, 4920)
+
+[node name="HangingLantern25" parent="YSorted/Props/Market" instance=ExtResource("pp_market_HangingLantern")]
+position = Vector2(4280, 4900)
+flip_h = true
+
+[node name="ScaleStand26" parent="YSorted/Props/Market" instance=ExtResource("pp_market_ScaleStand")]
+position = Vector2(2700, 5600)
+
+[node name="FishRack27" parent="YSorted/Props/Market" instance=ExtResource("pp_market_FishRack")]
+position = Vector2(4300, 5300)
+
+[node name="MeatRack28" parent="YSorted/Props/Market" instance=ExtResource("pp_market_MeatRack")]
+position = Vector2(2150, 5000)
+
+[node name="TrainingYard" type="Node2D" parent="YSorted/Props"]
+y_sort_enabled = true
+
+[node name="WeaponRackSwords1" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponRackSwords")]
+position = Vector2(11300, 4960)
+
+[node name="WeaponRackAxes2" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponRackAxes")]
+position = Vector2(11650, 4960)
+
+[node name="WeaponRackBows3" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponRackBows")]
+position = Vector2(12000, 4960)
+
+[node name="WeaponRackSpears4" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponRackSpears")]
+position = Vector2(12350, 4960)
+
+[node name="WeaponRackMaces5" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponRackMaces")]
+position = Vector2(12700, 4960)
+
+[node name="ShieldRack6" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_ShieldRack")]
+position = Vector2(13000, 4980)
+
+[node name="TrainingBanner7" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_TrainingBanner")]
+position = Vector2(11100, 5000)
+
+[node name="BannerStand8" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_BannerStand")]
+position = Vector2(13200, 5100)
+
+[node name="Dummy9" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(11550, 5380)
+
+[node name="Dummy10" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(11900, 5380)
+flip_h = true
+
+[node name="Dummy11" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(12250, 5380)
+
+[node name="Dummy12" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(12600, 5380)
+flip_h = true
+
+[node name="Dummy13" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(11550, 5780)
+flip_h = true
+
+[node name="Dummy14" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(11900, 5780)
+
+[node name="Dummy15" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(12150, 5720)
+flip_h = true
+
+[node name="Dummy16" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_Dummy")]
+position = Vector2(12600, 5780)
+
+[node name="ArmorStand17" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_ArmorStand")]
+position = Vector2(12950, 5350)
+
+[node name="ArmorStandBlue18" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_ArmorStandBlue")]
+position = Vector2(13150, 5420)
+
+[node name="ArmorStandGold19" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_ArmorStandGold")]
+position = Vector2(12950, 5580)
+flip_h = true
+
+[node name="ArmoryStall20" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_ArmoryStall")]
+position = Vector2(11300, 5990)
+
+[node name="WeaponChest21" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponChest")]
+position = Vector2(11720, 5990)
+
+[node name="WeaponBarrels22" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_training_WeaponBarrels")]
+position = Vector2(12080, 5990)
+
+[node name="MarketTent23" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_market_MarketTent")]
+position = Vector2(12300, 5900)
+flip_h = true
+
+[node name="HayBales24" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_market_HayBales")]
+position = Vector2(13100, 5560)
+
+[node name="Barrel25" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_market_Barrel")]
+position = Vector2(11200, 5600)
+
+[node name="CrateStack26" parent="YSorted/Props/TrainingYard" instance=ExtResource("pp_market_CrateStack")]
+position = Vector2(11250, 5800)
+
 [node name="Flanks" type="Node2D" parent="YSorted/Structures"]
 y_sort_enabled = true
 
@@ -1608,6 +1836,16 @@ position = Vector2(14400, 6240)
 in_water = true
 
 [node name="Effects" type="Node2D" parent="."]
+
+[node name="WorldTint" type="CanvasModulate" parent="."]
+color = Color(1, 0.9, 0.78, 1)
+
+[node name="DayNight" type="Node" parent="."]
+script = ExtResource("daynight")
+canvas_modulate = NodePath("../WorldTint")
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("env")
 
 [node name="Reference" type="Sprite2D" parent="."]
 visible = false

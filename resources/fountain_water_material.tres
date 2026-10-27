@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/fountain_water.gdshader" id="1"]
+[ext_resource type="NoiseTexture2D" path="res://resources/noise_tex.tres" id="2"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/noise_tex = ExtResource("2")

@@ -229,6 +229,15 @@ for name,p in GARDEN:
             if r<0.12: continue
             kind=rnd.choice(['PineA','PineB','PineC','PineD']) if r<0.8 else rnd.choice(['Bush','BushWhite','BushRed','CypressA'])
             addtree(kind,x,y,rnd.random()<0.5,rnd.uniform(0.9,1.12))
+# market + training yard props (ext resources added on demand)
+used={}
+for grp,label in [(MARKET,'Market'),(TRAINING,'TrainingYard')]:
+    n.append(f'[node name="{label}" type="Node2D" parent="YSorted/Props"]\ny_sort_enabled = true')
+    for i,(part,folder,x,y,fl) in enumerate(grp):
+        rid=f'pp_{folder}_{part}'
+        if rid not in used:
+            used[rid]=1; ext.append(('PackedScene',f'res://scenes/castle/parts/{folder}/{part}.tscn',rid))
+        n.append(f'[node name="{part}{i+1}" parent="YSorted/Props/{label}" instance=ExtResource("{rid}")]\nposition = Vector2({x}, {y})' + ('\nflip_h = true' if fl else ''))
 n.append('[node name="Flanks" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
 for i,(x0,x1,y) in enumerate(FLANK_BRIDGES):
     for side in 'WE':
@@ -242,6 +251,11 @@ for i,(x,y,w) in enumerate(TOWERS):
         xx=x if side=='W' else WORLD_W-x
         n.append(f'[node name="Tower{i+1}{side}" parent="YSorted/Structures/CurtainWall" instance=ExtResource("p_tower")]\nposition = Vector2({xx}, {y})\nin_water = {"true" if w else "false"}')
 n.append('[node name="Effects" type="Node2D" parent="."]')
+ext.append(('Script','res://scripts/castle/day_night.gd','daynight'))
+n.append('[node name="WorldTint" type="CanvasModulate" parent="."]\ncolor = Color(1, 0.9, 0.78, 1)')
+n.append('[node name="DayNight" type="Node" parent="."]\nscript = ExtResource("daynight")\ncanvas_modulate = NodePath("../WorldTint")')
+sub.append('[sub_resource type="Environment" id="env"]\nbackground_mode = 3\nglow_enabled = true\nglow_intensity = 0.6\nglow_strength = 0.9\nglow_bloom = 0.05\nglow_blend_mode = 1\nglow_hdr_threshold = 1.05')
+n.append('[node name="Environment" type="WorldEnvironment" parent="."]\nenvironment = SubResource("env")')
 n.append(f'[node name="Reference" type="Sprite2D" parent="."]\nvisible = false\nmodulate = Color(1, 1, 1, 0.45)\nz_index = 100\nscale = Vector2({K}, {K})\ntexture = ExtResource("ref")\ncentered = false')
 n.append(f'[node name="DebugCamera" type="Camera2D" parent="."]\nposition = Vector2({768*K}, {800*K})\nzoom = Vector2(0.5, 0.5)\nscript = ExtResource("cam")\nreference_path = NodePath("../Reference")')
 head=f'[gd_scene load_steps={len(ext)+len(sub)+1} format=3]\n'

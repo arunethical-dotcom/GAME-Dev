@@ -1,7 +1,17 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/props/lantern_pillar.png" id="1"]
+[ext_resource type="Texture2D" path="res://resources/light_radial.tres" id="light"]
+[ext_resource type="Script" path="res://scripts/castle/flicker_light.gd" id="flicker"]
 
 [node name="LanternPillar" type="Sprite2D"]
 texture = ExtResource("1")
 offset = Vector2(0, -150)
+
+[node name="Light" type="PointLight2D" parent="."]
+position = Vector2(0, -215)
+color = Color(1, 0.66, 0.32, 1)
+texture = ExtResource("light")
+texture_scale = 3.2
+script = ExtResource("flicker")
+base_energy = 1.0

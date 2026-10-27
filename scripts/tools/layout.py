@@ -80,3 +80,25 @@ TREE_EXCLUDE = [  # world rects (x0, y0, x1, y1) kept free of scattered trees
  (5350, 2900, 5850, 3450), (9510, 2900, 10010, 3450),       # terrace towers
  (3300, 4450, 3800, 4900), (11400, 4550, 11900, 4900),                                  # cathedral doorstep
 ]
+
+# ---- Market (west yard) and training yard (east yard): (part, folder, x, y, flip)
+MARKET = [
+ ('Stall1','market',2420,5150,False),('Stall2','market',2800,5150,False),('Stall3','market',3180,5150,False),('Stall4','market',3560,5150,False),('Stall5','market',3940,5150,False),
+ ('Stall6','market',2960,5620,False),('Stall7','market',3340,5620,False),('Stall8','market',3720,5620,False),('Stall10','market',4100,5620,False),
+ ('MarketTent','market',2330,5560,False),('Parasol','market',2200,5250,False),
+ ('CoveredWagon','market',3100,5940,False),('HayCart','market',3420,5990,True),('BarrelCart','market',3820,5990,False),('CrateStack','market',4180,5960,False),
+ ('Crate','market',2610,5180,False),('Barrel','market',2990,5185,False),('AppleCrate','market',3370,5185,False),('Sacks','market',3750,5175,False),
+ ('BarrelStack','market',4180,5180,False),('Baskets','market',3150,5650,False),('HayBales','market',3530,5660,False),('BarrelPile','market',3910,5650,False),
+ ('HangingLantern','market',2240,4920,False),('HangingLantern','market',4280,4900,True),('ScaleStand','market',2700,5600,False),
+ ('FishRack','market',4300,5300,False),('MeatRack','market',2150,5000,False),
+]
+TRAINING = [
+ ('WeaponRackSwords','training',11300,4960,False),('WeaponRackAxes','training',11650,4960,False),('WeaponRackBows','training',12000,4960,False),
+ ('WeaponRackSpears','training',12350,4960,False),('WeaponRackMaces','training',12700,4960,False),('ShieldRack','training',13000,4980,False),
+ ('TrainingBanner','training',11100,5000,False),('BannerStand','training',13200,5100,False),
+ ('Dummy','training',11550,5380,False),('Dummy','training',11900,5380,True),('Dummy','training',12250,5380,False),('Dummy','training',12600,5380,True),
+ ('Dummy','training',11550,5780,True),('Dummy','training',11900,5780,False),('Dummy','training',12150,5720,True),('Dummy','training',12600,5780,False),
+ ('ArmorStand','training',12950,5350,False),('ArmorStandBlue','training',13150,5420,False),('ArmorStandGold','training',12950,5580,True),
+ ('ArmoryStall','training',11300,5990,False),('WeaponChest','training',11720,5990,False),('WeaponBarrels','training',12080,5990,False),
+ ('MarketTent','market',12300,5900,True),('HayBales','market',13100,5560,False),('Barrel','market',11200,5600,False),('CrateStack','market',11250,5800,False),
+]

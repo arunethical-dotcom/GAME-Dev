@@ -1,0 +1,363 @@
+id,plan_x,plan_y,grid_cell,note
+B1,340,370,K12,cathedral
+B2,380,191,L6,chapel
+B3,1192,240,AL8,domed hall
+B4,1170,400,AK13,manor
+B5,990,452,AE15,arched colonnade
+B5,546,452,R15,arched colonnade
+B6,768,430,Y14,central fountain
+E1,1308,870,AO28,sluice grates + waterfall + splash
+E1,228,870,H28,sluice grates + waterfall + splash
+E2,1308,870,AO28,sluice grates + waterfall + splash
+E2,228,870,H28,sluice grates + waterfall + splash
+E3,846,651,AA21,"blue tower, scale 1.0, base at y=705"
+E3,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+E3,933,674,AD22,"blue tower, scale 1.0, base at y=728"
+E3,1033,885,AG28,"flat tower, scale 1.05, base at y=942"
+E3,1098,696,AI22,"big tower, scale 1.35, base at y=795"
+E3,1141,881,AJ28,"flat tower, scale 1.0, base at y=935"
+E3,1241,826,AM26,"flat tower, scale 1.0, base at y=880"
+E3,1259,640,AN21,"blue tower, scale 1.0, base at y=694"
+E3,1386,808,AR26,"flat tower, scale 1.0, base at y=862"
+E3,1413,245,AS8,"blue tower, scale 0.95, base at y=296"
+E3,1456,346,AT11,"blue tower, scale 1.0, base at y=400"
+E3,1479,525,AU17,"big tower, scale 1.35, base at y=624"
+E3,57,525,B17,"big tower, scale 1.35, base at y=624"
+E3,80,346,C11,"blue tower, scale 1.0, base at y=400"
+E3,123,245,D8,"blue tower, scale 0.95, base at y=296"
+E3,150,808,E26,"flat tower, scale 1.0, base at y=862"
+E3,277,640,I21,"blue tower, scale 1.0, base at y=694"
+E3,295,826,J26,"flat tower, scale 1.0, base at y=880"
+E3,395,881,M28,"flat tower, scale 1.0, base at y=935"
+E3,438,696,N22,"big tower, scale 1.35, base at y=795"
+E3,503,885,P28,"flat tower, scale 1.05, base at y=942"
+E3,603,674,S22,"blue tower, scale 1.0, base at y=728"
+E3,640,903,U29,"gate tower, scale 1.05, base at y=960"
+E3,690,651,V21,"blue tower, scale 1.0, base at y=705"
+E4,768,430,Y14,central fountain
+E5,732,666,W21,gate wall torch
+E5,723,752,W24,causeway brazier
+E5,723,814,W26,causeway brazier
+E5,723,876,W28,causeway brazier
+E5,723,938,W30,causeway brazier
+E5,723,1000,W32,causeway brazier
+E5,804,666,Z21,gate wall torch
+E5,813,752,Z24,causeway brazier
+E5,813,814,Z26,causeway brazier
+E5,813,876,Z28,causeway brazier
+E5,813,938,Z30,causeway brazier
+E5,813,1000,Z32,causeway brazier
+E7,1426,720,AS23,seagulls (optional)
+E7,110,720,D23,seagulls (optional)
+F1,846,934,AA30,"knight statue, barbican landing"
+F1,690,934,V30,"knight statue, barbican landing"
+F1,722,718,W23,knight statue at the gate
+F1,814,718,Z23,knight statue at the gate
+F2,844,996,AA32,lantern pillar
+F2,692,996,V32,lantern pillar
+F3,723,752,W24,causeway brazier
+F3,723,814,W26,causeway brazier
+F3,723,876,W28,causeway brazier
+F3,723,938,W30,causeway brazier
+F3,723,1000,W32,causeway brazier
+F3,813,752,Z24,causeway brazier
+F3,813,814,Z26,causeway brazier
+F3,813,876,Z28,causeway brazier
+F3,813,938,Z30,causeway brazier
+F3,813,1000,Z32,causeway brazier
+F4,732,666,W21,gate wall torch
+F4,804,666,Z21,gate wall torch
+F5,886,660,AB21,wall banner (curtain wall)
+F5,956,872,AD28,wall banner (barbican)
+F5,981,660,AE21,wall banner (curtain wall)
+F5,1016,660,AF21,wall banner (curtain wall)
+F5,1081,872,AH28,wall banner (barbican)
+F5,1161,646,AK21,wall banner (curtain wall)
+F5,1206,646,AL21,wall banner (curtain wall)
+F5,1191,861,AL27,wall banner (barbican)
+F5,1311,820,AO26,wall banner (barbican)
+F5,1331,646,AP21,wall banner (curtain wall)
+F5,205,646,G21,wall banner (curtain wall)
+F5,225,820,H26,wall banner (barbican)
+F5,330,646,K21,wall banner (curtain wall)
+F5,345,861,K27,wall banner (barbican)
+F5,375,646,L21,wall banner (curtain wall)
+F5,455,872,O28,wall banner (barbican)
+F5,520,660,Q21,wall banner (curtain wall)
+F5,555,660,R21,wall banner (curtain wall)
+F5,580,872,S28,wall banner (barbican)
+F5,650,660,U21,wall banner (curtain wall)
+F6,1308,870,AO28,sluice grates + waterfall + splash
+F6,228,870,H28,sluice grates + waterfall + splash
+F7,926,676,AC22,"wall decals (slits, spouts, ivy)"
+F7,610,676,T22,"wall decals (slits, spouts, ivy)"
+G1,768,636,Y20,main gatehouse
+G2,768,688,Y22,portcullis + doors
+G3,768,688,Y22,portcullis + doors
+G4,768,636,Y20,main gatehouse
+P1,768,135,Y5,central keep
+P2,888,165,AB6,wing segment A
+P2,648,165,U6,wing segment A
+P3,973,165,AE6,wing segment B
+P3,563,165,R6,wing segment B
+P4,1030,155,AG5,corner pavilion
+P4,506,155,P5,corner pavilion
+P5,768,26,Y1,back turret silhouette (behind)
+P6,768,85,Y3,giant banner
+P7,768,135,Y5,central keep
+R1,1116,935,AI30,rock outcrop under barbican
+R1,1331,900,AP29,rock outcrop under barbican
+R1,205,900,G29,rock outcrop under barbican
+R1,420,935,N30,rock outcrop under barbican
+R2,1466,700,AT22,moat shore edge
+R2,70,700,C22,moat shore edge
+R3,1206,740,AL24,moat water
+R3,330,740,K24,moat water
+S1,768,252,Y8,upper flight (plain)
+S2,768,330,Y11,lower flight (carpet)
+S3,768,287,Y9,landing balustrade
+S4,848,278,AA9,gargoyle on pillar
+S4,688,278,V9,gargoyle on pillar
+S5,720,374,W12,knight at stair foot
+S5,816,374,Z12,knight at stair foot
+T1,896,318,AC10,palace terrace face
+T1,936,520,AD17,garden terrace face
+T1,976,662,AE21,curtain wall face (front)
+T1,1086,888,AH28,barbican face
+T1,1156,482,AK16,cathedral terrace face
+T1,1206,636,AL20,curtain wall face (diagonal step)
+T1,1306,830,AO26,barbican face
+T1,1340,500,AP16,curtain wall face (west side)
+T1,196,500,G16,curtain wall face (west side)
+T1,230,830,H26,barbican face
+T1,330,636,K20,curtain wall face (diagonal step)
+T1,380,482,L16,cathedral terrace face
+T1,450,888,O28,barbican face
+T1,560,662,R21,curtain wall face (front)
+T1,600,520,S17,garden terrace face
+T1,640,318,U10,palace terrace face
+T10,768,820,Y26,causeway road
+T11,890,450,AB15,cypress garden
+T11,991,560,AE18,south garden
+T11,1206,330,AL11,cathedral lawn
+T11,330,330,K11,cathedral lawn
+T11,545,560,R18,south garden
+T11,646,450,U15,cypress garden
+T12,1210,540,AL17,market / training yard
+T12,326,540,K17,market / training yard
+T13,1348,196,AQ7,top flank bridge
+T13,1381,338,AR11,upper flank bridge
+T13,1415,540,AS17,lower flank bridge
+T13,121,540,D17,lower flank bridge
+T13,155,338,E11,upper flank bridge
+T13,188,196,F7,top flank bridge
+T14,1116,935,AI30,rock outcrop under barbican
+T14,1331,900,AP29,rock outcrop under barbican
+T14,205,900,G29,rock outcrop under barbican
+T14,420,935,N30,rock outcrop under barbican
+T15,1004,497,AF16,reflecting pool rim
+T15,532,497,Q16,reflecting pool rim
+T2,976,662,AE21,curtain wall face (front)
+T2,1086,888,AH28,barbican face
+T2,1206,636,AL20,curtain wall face (diagonal step)
+T2,1306,830,AO26,barbican face
+T2,1340,500,AP16,curtain wall face (west side)
+T2,196,500,G16,curtain wall face (west side)
+T2,230,830,H26,barbican face
+T2,330,636,K20,curtain wall face (diagonal step)
+T2,450,888,O28,barbican face
+T2,560,662,R21,curtain wall face (front)
+T3,896,318,AC10,palace terrace face
+T3,936,520,AD17,garden terrace face
+T3,976,662,AE21,curtain wall face (front)
+T3,1086,888,AH28,barbican face
+T3,1156,482,AK16,cathedral terrace face
+T3,1206,636,AL20,curtain wall face (diagonal step)
+T3,1306,830,AO26,barbican face
+T3,1340,500,AP16,curtain wall face (west side)
+T3,196,500,G16,curtain wall face (west side)
+T3,230,830,H26,barbican face
+T3,330,636,K20,curtain wall face (diagonal step)
+T3,380,482,L16,cathedral terrace face
+T3,450,888,O28,barbican face
+T3,560,662,R21,curtain wall face (front)
+T3,600,520,S17,garden terrace face
+T3,640,318,U10,palace terrace face
+T4,1236,104,AM4,back of wall (seen from behind)
+T4,300,104,J4,back of wall (seen from behind)
+T5,1062,636,AH20,wall corner
+T5,1132,610,AJ20,wall corner
+T5,1141,860,AJ27,wall corner
+T5,1236,804,AM26,wall corner
+T5,1278,590,AN19,wall corner
+T5,1322,226,AP8,wall corner
+T5,214,226,G8,wall corner
+T5,258,590,I19,wall corner
+T5,300,804,J26,wall corner
+T5,404,610,M20,wall corner
+T5,395,860,M27,wall corner
+T5,474,636,O20,wall corner
+T6,976,662,AE21,curtain wall face (front)
+T6,1086,888,AH28,barbican face
+T6,1206,636,AL20,curtain wall face (diagonal step)
+T6,1306,830,AO26,barbican face
+T6,1340,500,AP16,curtain wall face (west side)
+T6,196,500,G16,curtain wall face (west side)
+T6,230,830,H26,barbican face
+T6,330,636,K20,curtain wall face (diagonal step)
+T6,450,888,O28,barbican face
+T6,560,662,R21,curtain wall face (front)
+T7,976,628,AE20,wall-walk on curtain wall
+T7,560,628,R20,wall-walk on curtain wall
+T8,896,590,AC19,lower ward courtyard
+T8,1236,180,AM6,lower ward courtyard
+T8,300,180,J6,lower ward courtyard
+T8,640,590,U19,lower ward courtyard
+T9,926,262,AC9,palace terrace paving
+T9,610,262,T9,palace terrace paving
+TW1,943,467,AD15,"blue tower, scale 0.6, base at y=486"
+TW1,1039,467,AG15,"blue tower, scale 0.6, base at y=486"
+TW1,497,467,P15,"blue tower, scale 0.6, base at y=486"
+TW1,593,467,S15,"blue tower, scale 0.6, base at y=486"
+TW2,846,651,AA21,"blue tower, scale 1.0, base at y=705"
+TW2,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+TW2,936,555,AD18,"blue tower, scale 0.8, base at y=598"
+TW2,933,674,AD22,"blue tower, scale 1.0, base at y=728"
+TW2,973,356,AE12,"blue tower, scale 0.85, base at y=402"
+TW2,1033,885,AG28,"flat tower, scale 1.05, base at y=942"
+TW2,1081,354,AH12,"blue tower, scale 0.85, base at y=400"
+TW2,1066,555,AH18,"blue tower, scale 0.8, base at y=598"
+TW2,1141,881,AJ28,"flat tower, scale 1.0, base at y=935"
+TW2,1181,96,AK4,"blue tower, scale 1.0, base at y=150"
+TW2,1241,826,AM26,"flat tower, scale 1.0, base at y=880"
+TW2,1259,640,AN21,"blue tower, scale 1.0, base at y=694"
+TW2,1300,168,AO6,"blue tower, scale 1.0, base at y=222"
+TW2,1358,539,AQ17,"blue tower, scale 0.95, base at y=590"
+TW2,1386,808,AR26,"flat tower, scale 1.0, base at y=862"
+TW2,1413,245,AS8,"blue tower, scale 0.95, base at y=296"
+TW2,1456,346,AT11,"blue tower, scale 1.0, base at y=400"
+TW2,80,346,C11,"blue tower, scale 1.0, base at y=400"
+TW2,123,245,D8,"blue tower, scale 0.95, base at y=296"
+TW2,150,808,E26,"flat tower, scale 1.0, base at y=862"
+TW2,178,539,F17,"blue tower, scale 0.95, base at y=590"
+TW2,236,168,H6,"blue tower, scale 1.0, base at y=222"
+TW2,277,640,I21,"blue tower, scale 1.0, base at y=694"
+TW2,295,826,J26,"flat tower, scale 1.0, base at y=880"
+TW2,355,96,L4,"blue tower, scale 1.0, base at y=150"
+TW2,395,881,M28,"flat tower, scale 1.0, base at y=935"
+TW2,455,354,O12,"blue tower, scale 0.85, base at y=400"
+TW2,470,555,O18,"blue tower, scale 0.8, base at y=598"
+TW2,503,885,P28,"flat tower, scale 1.05, base at y=942"
+TW2,563,356,R12,"blue tower, scale 0.85, base at y=402"
+TW2,600,555,S18,"blue tower, scale 0.8, base at y=598"
+TW2,603,674,S22,"blue tower, scale 1.0, base at y=728"
+TW2,640,903,U29,"gate tower, scale 1.05, base at y=960"
+TW2,690,651,V21,"blue tower, scale 1.0, base at y=705"
+TW3,1098,696,AI22,"big tower, scale 1.35, base at y=795"
+TW3,1479,525,AU17,"big tower, scale 1.35, base at y=624"
+TW3,57,525,B17,"big tower, scale 1.35, base at y=624"
+TW3,438,696,N22,"big tower, scale 1.35, base at y=795"
+TW4,846,651,AA21,"blue tower, scale 1.0, base at y=705"
+TW4,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+TW4,933,674,AD22,"blue tower, scale 1.0, base at y=728"
+TW4,1033,885,AG28,"flat tower, scale 1.05, base at y=942"
+TW4,1098,696,AI22,"big tower, scale 1.35, base at y=795"
+TW4,1141,881,AJ28,"flat tower, scale 1.0, base at y=935"
+TW4,1241,826,AM26,"flat tower, scale 1.0, base at y=880"
+TW4,1259,640,AN21,"blue tower, scale 1.0, base at y=694"
+TW4,1386,808,AR26,"flat tower, scale 1.0, base at y=862"
+TW4,1413,245,AS8,"blue tower, scale 0.95, base at y=296"
+TW4,1456,346,AT11,"blue tower, scale 1.0, base at y=400"
+TW4,1479,525,AU17,"big tower, scale 1.35, base at y=624"
+TW4,57,525,B17,"big tower, scale 1.35, base at y=624"
+TW4,80,346,C11,"blue tower, scale 1.0, base at y=400"
+TW4,123,245,D8,"blue tower, scale 0.95, base at y=296"
+TW4,150,808,E26,"flat tower, scale 1.0, base at y=862"
+TW4,277,640,I21,"blue tower, scale 1.0, base at y=694"
+TW4,295,826,J26,"flat tower, scale 1.0, base at y=880"
+TW4,395,881,M28,"flat tower, scale 1.0, base at y=935"
+TW4,438,696,N22,"big tower, scale 1.35, base at y=795"
+TW4,503,885,P28,"flat tower, scale 1.05, base at y=942"
+TW4,603,674,S22,"blue tower, scale 1.0, base at y=728"
+TW4,640,903,U29,"gate tower, scale 1.05, base at y=960"
+TW4,690,651,V21,"blue tower, scale 1.0, base at y=705"
+TW5,1033,885,AG28,"flat tower, scale 1.05, base at y=942"
+TW5,1141,881,AJ28,"flat tower, scale 1.0, base at y=935"
+TW5,1241,826,AM26,"flat tower, scale 1.0, base at y=880"
+TW5,1386,808,AR26,"flat tower, scale 1.0, base at y=862"
+TW5,150,808,E26,"flat tower, scale 1.0, base at y=862"
+TW5,295,826,J26,"flat tower, scale 1.0, base at y=880"
+TW5,395,881,M28,"flat tower, scale 1.0, base at y=935"
+TW5,503,885,P28,"flat tower, scale 1.05, base at y=942"
+TW6,846,651,AA21,"blue tower, scale 1.0, base at y=705"
+TW6,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+TW6,943,467,AD15,"blue tower, scale 0.6, base at y=486"
+TW6,936,555,AD18,"blue tower, scale 0.8, base at y=598"
+TW6,933,674,AD22,"blue tower, scale 1.0, base at y=728"
+TW6,973,356,AE12,"blue tower, scale 0.85, base at y=402"
+TW6,1039,467,AG15,"blue tower, scale 0.6, base at y=486"
+TW6,1081,354,AH12,"blue tower, scale 0.85, base at y=400"
+TW6,1066,555,AH18,"blue tower, scale 0.8, base at y=598"
+TW6,1098,696,AI22,"big tower, scale 1.35, base at y=795"
+TW6,1181,96,AK4,"blue tower, scale 1.0, base at y=150"
+TW6,1259,640,AN21,"blue tower, scale 1.0, base at y=694"
+TW6,1300,168,AO6,"blue tower, scale 1.0, base at y=222"
+TW6,1358,539,AQ17,"blue tower, scale 0.95, base at y=590"
+TW6,1413,245,AS8,"blue tower, scale 0.95, base at y=296"
+TW6,1456,346,AT11,"blue tower, scale 1.0, base at y=400"
+TW6,1479,525,AU17,"big tower, scale 1.35, base at y=624"
+TW6,57,525,B17,"big tower, scale 1.35, base at y=624"
+TW6,80,346,C11,"blue tower, scale 1.0, base at y=400"
+TW6,123,245,D8,"blue tower, scale 0.95, base at y=296"
+TW6,178,539,F17,"blue tower, scale 0.95, base at y=590"
+TW6,236,168,H6,"blue tower, scale 1.0, base at y=222"
+TW6,277,640,I21,"blue tower, scale 1.0, base at y=694"
+TW6,355,96,L4,"blue tower, scale 1.0, base at y=150"
+TW6,438,696,N22,"big tower, scale 1.35, base at y=795"
+TW6,455,354,O12,"blue tower, scale 0.85, base at y=400"
+TW6,470,555,O18,"blue tower, scale 0.8, base at y=598"
+TW6,497,467,P15,"blue tower, scale 0.6, base at y=486"
+TW6,563,356,R12,"blue tower, scale 0.85, base at y=402"
+TW6,593,467,S15,"blue tower, scale 0.6, base at y=486"
+TW6,600,555,S18,"blue tower, scale 0.8, base at y=598"
+TW6,603,674,S22,"blue tower, scale 1.0, base at y=728"
+TW6,640,903,U29,"gate tower, scale 1.05, base at y=960"
+TW6,690,651,V21,"blue tower, scale 1.0, base at y=705"
+TW7,848,323,AA11,"pillar tower, scale 0.6, base at y=342"
+TW7,688,323,V11,"pillar tower, scale 0.6, base at y=342"
+TW8,846,651,AA21,"blue tower, scale 1.0, base at y=705"
+TW8,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+TW8,943,467,AD15,"blue tower, scale 0.6, base at y=486"
+TW8,936,555,AD18,"blue tower, scale 0.8, base at y=598"
+TW8,933,674,AD22,"blue tower, scale 1.0, base at y=728"
+TW8,973,356,AE12,"blue tower, scale 0.85, base at y=402"
+TW8,1039,467,AG15,"blue tower, scale 0.6, base at y=486"
+TW8,1081,354,AH12,"blue tower, scale 0.85, base at y=400"
+TW8,1066,555,AH18,"blue tower, scale 0.8, base at y=598"
+TW8,1098,696,AI22,"big tower, scale 1.35, base at y=795"
+TW8,1181,96,AK4,"blue tower, scale 1.0, base at y=150"
+TW8,1259,640,AN21,"blue tower, scale 1.0, base at y=694"
+TW8,1300,168,AO6,"blue tower, scale 1.0, base at y=222"
+TW8,1358,539,AQ17,"blue tower, scale 0.95, base at y=590"
+TW8,1413,245,AS8,"blue tower, scale 0.95, base at y=296"
+TW8,1456,346,AT11,"blue tower, scale 1.0, base at y=400"
+TW8,1479,525,AU17,"big tower, scale 1.35, base at y=624"
+TW8,57,525,B17,"big tower, scale 1.35, base at y=624"
+TW8,80,346,C11,"blue tower, scale 1.0, base at y=400"
+TW8,123,245,D8,"blue tower, scale 0.95, base at y=296"
+TW8,178,539,F17,"blue tower, scale 0.95, base at y=590"
+TW8,236,168,H6,"blue tower, scale 1.0, base at y=222"
+TW8,277,640,I21,"blue tower, scale 1.0, base at y=694"
+TW8,355,96,L4,"blue tower, scale 1.0, base at y=150"
+TW8,438,696,N22,"big tower, scale 1.35, base at y=795"
+TW8,455,354,O12,"blue tower, scale 0.85, base at y=400"
+TW8,470,555,O18,"blue tower, scale 0.8, base at y=598"
+TW8,497,467,P15,"blue tower, scale 0.6, base at y=486"
+TW8,563,356,R12,"blue tower, scale 0.85, base at y=402"
+TW8,593,467,S15,"blue tower, scale 0.6, base at y=486"
+TW8,600,555,S18,"blue tower, scale 0.8, base at y=598"
+TW8,603,674,S22,"blue tower, scale 1.0, base at y=728"
+TW8,640,903,U29,"gate tower, scale 1.05, base at y=960"
+TW8,690,651,V21,"blue tower, scale 1.0, base at y=705"
+TW9,896,903,AC29,"gate tower, scale 1.05, base at y=960"
+TW9,640,903,U29,"gate tower, scale 1.05, base at y=960"

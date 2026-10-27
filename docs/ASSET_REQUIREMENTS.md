@@ -1,5 +1,7 @@
 # Castle asset requirements: highest-quality build
 
+> **Where each asset goes:** see `docs/ASSET_MAP.md`. It shows the plan with a grid (A–AV × 1–32) and every ID below marked on it.
+
 This is everything still needed to bring the castle (as built from `docs/reference/castle_reference.png`)
 to full quality: what to make, exact sizes, frames, and rules.
 

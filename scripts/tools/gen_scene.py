@@ -31,7 +31,7 @@ def closed(poly): return pv(poly+[poly[0]])
 ext=[('Texture2D','res://docs/reference/castle_reference.png','ref'),('Script','res://scripts/debug_camera.gd','cam'),
      ('Shader','res://shaders/water.gdshader','sh_water'),('Shader','res://shaders/terrain.gdshader','sh_terrain'),('Shader','res://shaders/shore_foam.gdshader','sh_foam'),
      ('Texture2D','res://assets/tilesets/water/deep_water.png','t_water'),('Texture2D','res://assets/tilesets/terrain/meadow_grass.png','t_grass'),
-     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res'),('Texture2D','res://assets/sprites/walls/arched_bridge_tile.png','t_bridge'),('Texture2D','res://assets/tilesets/terrain/cliff_face_strip.png','t_cliff'),('PackedScene','res://scenes/castle/parts/Palace.tscn','p_palace'),('PackedScene','res://scenes/castle/parts/GrandStairs.tscn','p_stairs'),('PackedScene','res://scenes/castle/parts/Gargoyle.tscn','p_garg'),('PackedScene','res://scenes/castle/parts/KnightStatueTall.tscn','p_knight2')]
+     ('Texture2D','res://assets/tilesets/terrain/dirt_gravel.png','t_dirt'),('Texture2D','res://assets/tilesets/floors/flagstone.png','t_flag'),('Texture2D','res://assets/tilesets/floors/causeway_road.png','t_road'),('PackedScene','res://scenes/castle/parts/Tower.tscn','p_tower'),('PackedScene','res://scenes/castle/parts/Gatehouse.tscn','p_gate'),('PackedScene','res://scenes/castle/parts/CurtainWall.tscn','p_wall'),('PackedScene','res://scenes/castle/parts/BarbicanTower.tscn','p_btower'),('PackedScene','res://scenes/castle/parts/GateTower.tscn','p_gtower'),('PackedScene','res://scenes/castle/parts/WideWaterfall.tscn','p_fall'),('PackedScene','res://scenes/castle/parts/KnightStatue.tscn','p_statue'),('PackedScene','res://scenes/castle/parts/LanternPillar.tscn','p_lantern'),('PackedScene','res://scenes/castle/parts/Brazier.tscn','p_brazier'),('PackedScene','res://scenes/castle/parts/Islet.tscn','p_islet'),('Texture2D','res://assets/sprites/walls/barbican_wall_tile.png','t_bwall'),('Material','res://resources/shore_foam_material.tres','m_foam_res'),('Texture2D','res://assets/sprites/walls/arched_bridge_tile.png','t_bridge'),('Texture2D','res://assets/tilesets/terrain/cliff_face_strip.png','t_cliff'),('PackedScene','res://scenes/castle/parts/Palace.tscn','p_palace'),('PackedScene','res://scenes/castle/parts/GrandStairs.tscn','p_stairs'),('PackedScene','res://scenes/castle/parts/Gargoyle.tscn','p_garg'),('PackedScene','res://scenes/castle/parts/KnightStatueTall.tscn','p_knight2')]+[('PackedScene','res://scenes/castle/parts/Cathedral.tscn','p_Cathedral'),('PackedScene','res://scenes/castle/parts/Chapel.tscn','p_Chapel'),('PackedScene','res://scenes/castle/parts/DomedHall.tscn','p_DomedHall'),('PackedScene','res://scenes/castle/parts/Manor.tscn','p_Manor'),('PackedScene','res://scenes/castle/parts/FountainPlaza.tscn','p_FountainPlaza'),('PackedScene','res://scenes/castle/parts/CypressPlanter.tscn','p_CypressPlanter'),('PackedScene','res://scenes/castle/parts/PineA.tscn','p_PineA'),('PackedScene','res://scenes/castle/parts/PineB.tscn','p_PineB'),('PackedScene','res://scenes/castle/parts/PineC.tscn','p_PineC'),('PackedScene','res://scenes/castle/parts/PineD.tscn','p_PineD'),('PackedScene','res://scenes/castle/parts/CypressA.tscn','p_CypressA'),('PackedScene','res://scenes/castle/parts/CypressB.tscn','p_CypressB'),('PackedScene','res://scenes/castle/parts/CypressC.tscn','p_CypressC'),('PackedScene','res://scenes/castle/parts/Bush.tscn','p_Bush'),('PackedScene','res://scenes/castle/parts/BushWhite.tscn','p_BushWhite'),('PackedScene','res://scenes/castle/parts/BushRed.tscn','p_BushRed')]
 out=[]
 sub=[]
 sub.append('[sub_resource type="FastNoiseLite" id="noise"]\nnoise_type = 3\nfrequency = 0.012\nfractal_octaves = 4')
@@ -191,6 +191,44 @@ for i,(x,y) in enumerate(STAIR_KNIGHTS):
     n.append(f'[node name="StairKnight{i+1}" parent="{PB}" instance=ExtResource("p_knight2")]\nposition = Vector2({x}, {y})' + ('\nflip_h = true' if i==1 else ''))
 for i,(x,y) in enumerate(STAIR_LANTERNS):
     n.append(f'[node name="StairLantern{i+1}" parent="{PB}" instance=ExtResource("p_lantern")]\nposition = Vector2({x}, {y})')
+n.append('[node name="MiddleRing" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
+MR='YSorted/Structures/MiddleRing'
+for (part,x,y,sc,fl) in BUILDINGS:
+    n.append(f'[node name="{part}" parent="{MR}" instance=ExtResource("p_{part}")]\nposition = Vector2({x}, {y})' + (f'\nscale = Vector2({sc}, {sc})' if sc!=1.0 else '') + ('\nflip_h = true' if fl else ''))
+for i,(x,y) in enumerate(AVENUE_PLANTERS):
+    n.append(f'[node name="AvenuePlanter{i+1}" parent="{MR}" instance=ExtResource("p_CypressPlanter")]\nposition = Vector2({x}, {y})' + ('\nflip_h = true' if x>7680 else ''))
+for i,(x,y) in enumerate(AVENUE_LANTERNS):
+    n.append(f'[node name="AvenueLantern{i+1}" parent="{MR}" instance=ExtResource("p_lantern")]\nposition = Vector2({x}, {y})')
+# vegetation
+V='YSorted/Vegetation'
+rnd=random.Random(42); vi=0
+def addtree(kind,x,y,flip=False,sc=1.0):
+    global vi; vi+=1
+    n.append(f'[node name="{kind}{vi}" parent="{V}" instance=ExtResource("p_{kind}")]\nposition = Vector2({x:.0f}, {y:.0f})' + ('\nflip_h = true' if flip else '') + (f'\nscale = Vector2({sc:.2f}, {sc:.2f})' if abs(sc-1)>0.01 else ''))
+for side in 'WE':
+    for cx in CYPRESS_COLS:
+        X=cx if side=='W' else M(cx)
+        for j,y in enumerate(CYPRESS_ROWS):
+            addtree(['CypressA','CypressC','CypressB'][(j+CYPRESS_COLS.index(cx))%3],X+rnd.uniform(-20,20),y+rnd.uniform(-15,15),rnd.random()<0.5)
+def in_poly(x,y,poly):
+    c=False
+    for (x0,y0),(x1,y1) in zip(poly,poly[1:]+poly[:1]):
+        if (y0>y)!=(y1>y) and x < x0+(y-y0)*(x1-x0)/(y1-y0): c=not c
+    return c
+for name,p in GARDEN:
+    if 'Avenue' in name: continue
+    poly=[(x*K,y*K) for x,y in p]
+    xs=[q[0] for q in poly]; ys=[q[1] for q in poly]
+    step=300
+    for gy in range(int(min(ys))+200,int(max(ys))-40,step):
+        for gx in range(int(min(xs))+120,int(max(xs))-80,step):
+            x=gx+rnd.uniform(-110,110)+(step/2 if (gy//step)%2 else 0); y=gy+rnd.uniform(-90,90)
+            if not in_poly(x,y,poly) or not in_poly(x,y-120,poly): continue
+            if any(a<=x<=c and b<=y<=d for a,b,c,d in TREE_EXCLUDE): continue
+            r=rnd.random()
+            if r<0.12: continue
+            kind=rnd.choice(['PineA','PineB','PineC','PineD']) if r<0.8 else rnd.choice(['Bush','BushWhite','BushRed','CypressA'])
+            addtree(kind,x,y,rnd.random()<0.5,rnd.uniform(0.9,1.12))
 n.append('[node name="Flanks" type="Node2D" parent="YSorted/Structures"]\ny_sort_enabled = true')
 for i,(x0,x1,y) in enumerate(FLANK_BRIDGES):
     for side in 'WE':

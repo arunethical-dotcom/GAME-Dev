@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/vegetation/trees/pine_c.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="c"]
+size = Vector2(46, 24)
+
+[node name="PineC" type="Sprite2D"]
+texture = ExtResource("1")
+offset = Vector2(0, -188)
+
+[node name="Collision" type="StaticBody2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="Collision"]
+position = Vector2(0, -12)
+shape = SubResource("c")

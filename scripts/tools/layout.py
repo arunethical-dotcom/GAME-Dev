@@ -60,3 +60,23 @@ STAIRS = (7680, 3250)
 GARGOYLES = [(7060, 2700), (8300, 2700)]
 STAIR_KNIGHTS = [(7070, 3360), (8290, 3360)]
 STAIR_LANTERNS = [(6930, 3380), (8430, 3380)]
+
+# ---- Middle ring buildings (world px). West side listed; mirror flag mirrors to east.
+BUILDINGS = [  # (part, x, y, scale, flip)
+ ('Cathedral', 3550, 4450, 1.5, False),
+ ('Chapel', 3950, 2780, 0.8, False),
+ ('DomedHall', 12060, 3150, 1.4, False),
+ ('Manor', 11650, 4560, 1.1, False),
+ ('FountainPlaza', 7680, 4420, 1.6, False),
+]
+AVENUE_PLANTERS = [(7680 - 600, 5980), (7680 + 600, 5980)]
+AVENUE_LANTERNS = [(7680 - 330, 4950), (7680 + 330, 4950), (7680 - 330, 5600), (7680 + 330, 5600)]
+CYPRESS_COLS = [6230, 6600, 6970]            # west avenue lawn; mirrored east
+CYPRESS_ROWS = list(range(3720, 5500, 330))
+TREE_EXCLUDE = [  # world rects (x0, y0, x1, y1) kept free of scattered trees
+ (2900, 2850, 4200, 4750), (3600, 1900, 4300, 2950),        # cathedral, chapel
+ (11300, 1850, 12800, 3350), (10850, 3500, 12450, 4800),    # domed hall, manor
+ (4700, 1500, 5500, 2400), (9860, 1500, 10660, 2400),       # palace corner towers
+ (5350, 2900, 5850, 3450), (9510, 2900, 10010, 3450),       # terrace towers
+ (3300, 4450, 3800, 4900), (11400, 4550, 11900, 4900),                                  # cathedral doorstep
+]

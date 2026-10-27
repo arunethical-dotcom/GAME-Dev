@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3]
+[gd_scene load_steps=55 format=3]
 
 [ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="ref"]
 [ext_resource type="Script" path="res://scripts/debug_camera.gd" id="cam"]
@@ -28,6 +28,22 @@
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/GrandStairs.tscn" id="p_stairs"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Gargoyle.tscn" id="p_garg"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/KnightStatueTall.tscn" id="p_knight2"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Cathedral.tscn" id="p_Cathedral"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Chapel.tscn" id="p_Chapel"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/DomedHall.tscn" id="p_DomedHall"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Manor.tscn" id="p_Manor"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/FountainPlaza.tscn" id="p_FountainPlaza"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/CypressPlanter.tscn" id="p_CypressPlanter"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/PineA.tscn" id="p_PineA"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/PineB.tscn" id="p_PineB"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/PineC.tscn" id="p_PineC"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/PineD.tscn" id="p_PineD"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/CypressA.tscn" id="p_CypressA"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/CypressB.tscn" id="p_CypressB"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/CypressC.tscn" id="p_CypressC"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/Bush.tscn" id="p_Bush"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/BushWhite.tscn" id="p_BushWhite"]
+[ext_resource type="PackedScene" path="res://scenes/castle/parts/BushRed.tscn" id="p_BushRed"]
 
 [sub_resource type="FastNoiseLite" id="noise"]
 noise_type = 3
@@ -798,6 +814,699 @@ position = Vector2(6930, 3380)
 
 [node name="StairLantern2" parent="YSorted/Structures/Palace" instance=ExtResource("p_lantern")]
 position = Vector2(8430, 3380)
+
+[node name="MiddleRing" type="Node2D" parent="YSorted/Structures"]
+y_sort_enabled = true
+
+[node name="Cathedral" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_Cathedral")]
+position = Vector2(3550, 4450)
+scale = Vector2(1.5, 1.5)
+
+[node name="Chapel" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_Chapel")]
+position = Vector2(3950, 2780)
+scale = Vector2(0.8, 0.8)
+
+[node name="DomedHall" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_DomedHall")]
+position = Vector2(12060, 3150)
+scale = Vector2(1.4, 1.4)
+
+[node name="Manor" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_Manor")]
+position = Vector2(11650, 4560)
+scale = Vector2(1.1, 1.1)
+
+[node name="FountainPlaza" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_FountainPlaza")]
+position = Vector2(7680, 4420)
+scale = Vector2(1.6, 1.6)
+
+[node name="AvenuePlanter1" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_CypressPlanter")]
+position = Vector2(7080, 5980)
+
+[node name="AvenuePlanter2" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_CypressPlanter")]
+position = Vector2(8280, 5980)
+flip_h = true
+
+[node name="AvenueLantern1" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_lantern")]
+position = Vector2(7350, 4950)
+
+[node name="AvenueLantern2" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_lantern")]
+position = Vector2(8010, 4950)
+
+[node name="AvenueLantern3" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_lantern")]
+position = Vector2(7350, 5600)
+
+[node name="AvenueLantern4" parent="YSorted/Structures/MiddleRing" instance=ExtResource("p_lantern")]
+position = Vector2(8010, 5600)
+
+[node name="CypressA1" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6236, 3706)
+flip_h = true
+
+[node name="CypressC2" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6219, 4057)
+
+[node name="CypressB3" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6246, 4368)
+flip_h = true
+
+[node name="CypressA4" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6211, 4702)
+
+[node name="CypressC5" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6211, 5031)
+
+[node name="CypressB6" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6232, 5362)
+
+[node name="CypressC7" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6612, 3705)
+
+[node name="CypressB8" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6608, 4045)
+flip_h = true
+
+[node name="CypressA9" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6618, 4375)
+flip_h = true
+
+[node name="CypressC10" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6584, 4720)
+
+[node name="CypressB11" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6612, 5047)
+
+[node name="CypressA12" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6619, 5366)
+
+[node name="CypressB13" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6983, 3724)
+
+[node name="CypressA14" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6973, 4056)
+flip_h = true
+
+[node name="CypressC15" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6959, 4374)
+flip_h = true
+
+[node name="CypressB16" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(6959, 4698)
+flip_h = true
+
+[node name="CypressA17" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(6975, 5036)
+flip_h = true
+
+[node name="CypressC18" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(6958, 5363)
+
+[node name="CypressA19" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(9136, 3723)
+flip_h = true
+
+[node name="CypressC20" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(9139, 4040)
+flip_h = true
+
+[node name="CypressB21" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(9150, 4384)
+
+[node name="CypressA22" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(9137, 4720)
+
+[node name="CypressC23" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(9119, 5026)
+flip_h = true
+
+[node name="CypressB24" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(9121, 5361)
+
+[node name="CypressC25" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(8775, 3714)
+
+[node name="CypressB26" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(8756, 4062)
+flip_h = true
+
+[node name="CypressA27" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(8751, 4372)
+
+[node name="CypressC28" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(8751, 4713)
+
+[node name="CypressB29" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(8756, 5032)
+
+[node name="CypressA30" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(8760, 5358)
+flip_h = true
+
+[node name="CypressB31" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(8374, 3724)
+
+[node name="CypressA32" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(8387, 4037)
+flip_h = true
+
+[node name="CypressC33" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(8410, 4381)
+
+[node name="CypressB34" parent="YSorted/Vegetation" instance=ExtResource("p_CypressB")]
+position = Vector2(8404, 4695)
+
+[node name="CypressA35" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(8397, 5041)
+flip_h = true
+
+[node name="CypressC36" parent="YSorted/Vegetation" instance=ExtResource("p_CypressC")]
+position = Vector2(8396, 5358)
+flip_h = true
+
+[node name="PineB37" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(3161, 1767)
+flip_h = true
+scale = Vector2(1.07, 1.07)
+
+[node name="PineA38" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(3379, 1750)
+
+[node name="PineB39" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(4077, 1755)
+scale = Vector2(1.11, 1.11)
+
+[node name="PineD40" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4627, 1748)
+scale = Vector2(0.94, 0.94)
+
+[node name="PineA41" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2408, 1991)
+flip_h = true
+scale = Vector2(1.03, 1.03)
+
+[node name="BushRed42" parent="YSorted/Vegetation" instance=ExtResource("p_BushRed")]
+position = Vector2(2949, 1951)
+flip_h = true
+scale = Vector2(0.95, 0.95)
+
+[node name="PineD43" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(3257, 1949)
+flip_h = true
+
+[node name="PineC44" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(3500, 1927)
+flip_h = true
+
+[node name="BushWhite45" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(4399, 1971)
+flip_h = true
+scale = Vector2(1.02, 1.02)
+
+[node name="PineA46" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(4641, 1943)
+flip_h = true
+scale = Vector2(1.09, 1.09)
+
+[node name="PineA47" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2467, 2248)
+flip_h = true
+scale = Vector2(0.90, 0.90)
+
+[node name="PineC48" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(2746, 2377)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineB49" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(3179, 2310)
+flip_h = true
+scale = Vector2(0.95, 0.95)
+
+[node name="PineC50" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(5669, 2225)
+scale = Vector2(0.94, 0.94)
+
+[node name="PineC51" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(2297, 2631)
+scale = Vector2(1.11, 1.11)
+
+[node name="PineA52" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2512, 2622)
+flip_h = true
+scale = Vector2(0.95, 0.95)
+
+[node name="BushWhite53" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(2868, 2678)
+flip_h = true
+scale = Vector2(0.93, 0.93)
+
+[node name="PineA54" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(3293, 2637)
+scale = Vector2(1.02, 1.02)
+
+[node name="PineC55" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(4344, 2561)
+flip_h = true
+scale = Vector2(1.04, 1.04)
+
+[node name="Bush56" parent="YSorted/Vegetation" instance=ExtResource("p_Bush")]
+position = Vector2(4668, 2598)
+flip_h = true
+
+[node name="PineC57" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(4971, 2511)
+flip_h = true
+
+[node name="PineA58" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(5718, 2634)
+scale = Vector2(1.03, 1.03)
+
+[node name="PineA59" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2093, 2833)
+scale = Vector2(0.95, 0.95)
+
+[node name="PineD60" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(2415, 2829)
+scale = Vector2(1.06, 1.06)
+
+[node name="PineB61" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(2864, 2853)
+scale = Vector2(0.91, 0.91)
+
+[node name="CypressA62" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(4649, 2850)
+flip_h = true
+scale = Vector2(1.08, 1.08)
+
+[node name="PineD63" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4952, 2850)
+flip_h = true
+scale = Vector2(1.09, 1.09)
+
+[node name="PineD64" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(5273, 2860)
+scale = Vector2(1.09, 1.09)
+
+[node name="BushRed65" parent="YSorted/Vegetation" instance=ExtResource("p_BushRed")]
+position = Vector2(5433, 2815)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineC66" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(5718, 2830)
+flip_h = true
+scale = Vector2(1.12, 1.12)
+
+[node name="PineA67" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(1935, 3272)
+scale = Vector2(0.90, 0.90)
+
+[node name="PineB68" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(2414, 3207)
+flip_h = true
+scale = Vector2(0.92, 0.92)
+
+[node name="PineA69" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2656, 3169)
+scale = Vector2(0.97, 0.97)
+
+[node name="PineC70" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(2878, 3184)
+scale = Vector2(0.94, 0.94)
+
+[node name="PineC71" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(4356, 3251)
+flip_h = true
+
+[node name="BushWhite72" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(4657, 3195)
+scale = Vector2(0.96, 0.96)
+
+[node name="Bush73" parent="YSorted/Vegetation" instance=ExtResource("p_Bush")]
+position = Vector2(2092, 3418)
+flip_h = true
+scale = Vector2(1.09, 1.09)
+
+[node name="PineD74" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(2487, 3539)
+flip_h = true
+scale = Vector2(1.04, 1.04)
+
+[node name="PineA75" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2661, 3545)
+scale = Vector2(0.95, 0.95)
+
+[node name="PineD76" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4277, 3511)
+scale = Vector2(1.06, 1.06)
+
+[node name="PineB77" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(4571, 3560)
+
+[node name="PineD78" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4817, 3455)
+scale = Vector2(0.96, 0.96)
+
+[node name="PineC79" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(5077, 3461)
+scale = Vector2(0.92, 0.92)
+
+[node name="PineB80" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(5393, 3479)
+flip_h = true
+scale = Vector2(0.99, 0.99)
+
+[node name="PineD81" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(2409, 3815)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="CypressA82" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(2576, 3780)
+scale = Vector2(1.06, 1.06)
+
+[node name="PineD83" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4512, 3887)
+scale = Vector2(1.05, 1.05)
+
+[node name="BushWhite84" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(4628, 3787)
+flip_h = true
+scale = Vector2(0.98, 0.98)
+
+[node name="PineD85" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4957, 3769)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineA86" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(5303, 3860)
+scale = Vector2(0.98, 0.98)
+
+[node name="PineA87" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(5653, 3851)
+scale = Vector2(0.94, 0.94)
+
+[node name="PineA88" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2064, 4037)
+scale = Vector2(0.95, 0.95)
+
+[node name="PineA89" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2514, 4148)
+scale = Vector2(0.94, 0.94)
+
+[node name="CypressA90" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(2728, 4114)
+flip_h = true
+scale = Vector2(1.06, 1.06)
+
+[node name="PineD91" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4376, 4151)
+scale = Vector2(0.92, 0.92)
+
+[node name="PineD92" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4602, 4012)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineD93" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(4900, 4159)
+flip_h = true
+scale = Vector2(1.01, 1.01)
+
+[node name="CypressA94" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(5203, 4121)
+flip_h = true
+scale = Vector2(1.08, 1.08)
+
+[node name="PineA95" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(5490, 4068)
+flip_h = true
+
+[node name="PineC96" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(2319, 4369)
+scale = Vector2(0.97, 0.97)
+
+[node name="PineA97" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(2704, 4436)
+scale = Vector2(0.94, 0.94)
+
+[node name="PineB98" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(2863, 4383)
+scale = Vector2(1.04, 1.04)
+
+[node name="PineC99" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(4427, 4387)
+flip_h = true
+
+[node name="PineC100" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(4677, 4351)
+flip_h = true
+scale = Vector2(1.02, 1.02)
+
+[node name="PineD101" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(5078, 4343)
+flip_h = true
+scale = Vector2(1.03, 1.03)
+
+[node name="BushWhite102" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(5377, 4417)
+flip_h = true
+scale = Vector2(0.98, 0.98)
+
+[node name="PineA103" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(5576, 4437)
+scale = Vector2(1.02, 1.02)
+
+[node name="PineA104" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10673, 1689)
+flip_h = true
+scale = Vector2(1.09, 1.09)
+
+[node name="PineB105" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(11278, 1714)
+flip_h = true
+scale = Vector2(1.02, 1.02)
+
+[node name="PineB106" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(11938, 1719)
+scale = Vector2(0.98, 0.98)
+
+[node name="PineD107" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(10727, 1962)
+flip_h = true
+scale = Vector2(0.95, 0.95)
+
+[node name="PineB108" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(11078, 2052)
+flip_h = true
+scale = Vector2(1.02, 1.02)
+
+[node name="CypressA109" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(12972, 2036)
+flip_h = true
+scale = Vector2(1.03, 1.03)
+
+[node name="PineA110" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(9803, 2215)
+scale = Vector2(1.05, 1.05)
+
+[node name="PineD111" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(10713, 2375)
+
+[node name="PineA112" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10890, 2273)
+scale = Vector2(0.97, 0.97)
+
+[node name="PineA113" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(9600, 2646)
+flip_h = true
+scale = Vector2(1.02, 1.02)
+
+[node name="PineA114" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10024, 2589)
+flip_h = true
+scale = Vector2(1.04, 1.04)
+
+[node name="PineA115" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10296, 2638)
+scale = Vector2(0.92, 0.92)
+
+[node name="PineA116" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10638, 2674)
+scale = Vector2(0.93, 0.93)
+
+[node name="PineD117" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(10925, 2563)
+scale = Vector2(1.12, 1.12)
+
+[node name="PineB118" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(11074, 2609)
+scale = Vector2(0.96, 0.96)
+
+[node name="PineD119" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(12853, 2607)
+flip_h = true
+scale = Vector2(0.97, 0.97)
+
+[node name="PineB120" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(13162, 2636)
+
+[node name="CypressA121" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(9740, 2895)
+flip_h = true
+scale = Vector2(1.05, 1.05)
+
+[node name="PineA122" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10151, 2987)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="Bush123" parent="YSorted/Vegetation" instance=ExtResource("p_Bush")]
+position = Vector2(10343, 2828)
+
+[node name="PineB124" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(10729, 2884)
+flip_h = true
+scale = Vector2(1.07, 1.07)
+
+[node name="PineA125" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10928, 2922)
+scale = Vector2(1.09, 1.09)
+
+[node name="PineA126" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(12889, 2944)
+scale = Vector2(1.05, 1.05)
+
+[node name="PineA127" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(12992, 2840)
+flip_h = true
+scale = Vector2(1.08, 1.08)
+
+[node name="BushWhite128" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(10157, 3124)
+flip_h = true
+scale = Vector2(1.03, 1.03)
+
+[node name="PineA129" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10471, 3225)
+
+[node name="PineD130" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(11228, 3288)
+
+[node name="Bush131" parent="YSorted/Vegetation" instance=ExtResource("p_Bush")]
+position = Vector2(12907, 3111)
+scale = Vector2(1.06, 1.06)
+
+[node name="PineB132" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(13303, 3273)
+scale = Vector2(0.98, 0.98)
+
+[node name="PineB133" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(9810, 3522)
+scale = Vector2(1.10, 1.10)
+
+[node name="PineC134" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(10112, 3466)
+scale = Vector2(0.92, 0.92)
+
+[node name="PineB135" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(10335, 3545)
+scale = Vector2(1.09, 1.09)
+
+[node name="PineB136" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(10650, 3500)
+flip_h = true
+scale = Vector2(1.08, 1.08)
+
+[node name="CypressA137" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(11682, 3435)
+scale = Vector2(1.08, 1.08)
+
+[node name="PineD138" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(12470, 3531)
+scale = Vector2(1.11, 1.11)
+
+[node name="BushWhite139" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(13165, 3511)
+scale = Vector2(1.04, 1.04)
+
+[node name="PineA140" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(13372, 3536)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineD141" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(9841, 3870)
+flip_h = true
+scale = Vector2(1.11, 1.11)
+
+[node name="PineB142" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(10273, 3807)
+scale = Vector2(1.04, 1.04)
+
+[node name="BushRed143" parent="YSorted/Vegetation" instance=ExtResource("p_BushRed")]
+position = Vector2(10603, 3821)
+flip_h = true
+scale = Vector2(0.98, 0.98)
+
+[node name="Bush144" parent="YSorted/Vegetation" instance=ExtResource("p_Bush")]
+position = Vector2(10818, 3881)
+scale = Vector2(0.98, 0.98)
+
+[node name="PineB145" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(12734, 3719)
+scale = Vector2(0.95, 0.95)
+
+[node name="PineB146" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(13003, 3810)
+flip_h = true
+scale = Vector2(0.93, 0.93)
+
+[node name="BushWhite147" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(13318, 3711)
+scale = Vector2(1.02, 1.02)
+
+[node name="BushWhite148" parent="YSorted/Vegetation" instance=ExtResource("p_BushWhite")]
+position = Vector2(9846, 4030)
+flip_h = true
+scale = Vector2(1.07, 1.07)
+
+[node name="PineA149" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(10022, 4068)
+flip_h = true
+
+[node name="PineC150" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(10295, 4021)
+scale = Vector2(0.92, 0.92)
+
+[node name="PineC151" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(12804, 4022)
+flip_h = true
+scale = Vector2(1.03, 1.03)
+
+[node name="PineA152" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(13035, 4101)
+scale = Vector2(1.04, 1.04)
+
+[node name="PineD153" parent="YSorted/Vegetation" instance=ExtResource("p_PineD")]
+position = Vector2(9870, 4371)
+scale = Vector2(0.97, 0.97)
+
+[node name="CypressA154" parent="YSorted/Vegetation" instance=ExtResource("p_CypressA")]
+position = Vector2(10189, 4356)
+flip_h = true
+scale = Vector2(1.08, 1.08)
+
+[node name="PineB155" parent="YSorted/Vegetation" instance=ExtResource("p_PineB")]
+position = Vector2(10441, 4327)
+scale = Vector2(1.03, 1.03)
+
+[node name="PineC156" parent="YSorted/Vegetation" instance=ExtResource("p_PineC")]
+position = Vector2(10844, 4369)
+scale = Vector2(1.11, 1.11)
+
+[node name="PineA157" parent="YSorted/Vegetation" instance=ExtResource("p_PineA")]
+position = Vector2(12881, 4351)
+scale = Vector2(1.04, 1.04)
 
 [node name="Flanks" type="Node2D" parent="YSorted/Structures"]
 y_sort_enabled = true

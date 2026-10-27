@@ -192,3 +192,7 @@ Cliffs are drawn as vertical slices (`Ground/Cliffs` in the scene), so the rock 
 | `sprites/statues/knight_statue_tall.png` | Knight statue, dark iron, for the foot of the stairs |
 
 The palace (`scenes/castle/parts/Palace.tscn`) is the keep in front of four `palace_facade` wings, broken up by two mid towers and two large corner towers.
+
+## Middle ring
+Buildings are placed at scene scale (no new art): cathedral 1.5×, domed hall 1.4×, manor 1.1×, chapel 0.8×, fountain 1.6×, so they read at the sizes in the reference.
+Trees are cut from `trees_pines_cypress_bushes` into `sprites/vegetation/trees/` (4 pines, 3 cypresses, 3 bushes). The lawns are filled by the generator with a jittered grid that keeps clear of the buildings; the avenue lawns get formal cypress rows.

@@ -196,3 +196,12 @@ The palace (`scenes/castle/parts/Palace.tscn`) is the keep in front of four `pal
 ## Middle ring
 Buildings are placed at scene scale (no new art): cathedral 1.5×, domed hall 1.4×, manor 1.1×, chapel 0.8×, fountain 1.6×, so they read at the sizes in the reference.
 Trees are cut from `trees_pines_cypress_bushes` into `sprites/vegetation/trees/` (4 pines, 3 cypresses, 3 bushes). The lawns are filled by the generator with a jittered grid that keeps clear of the buildings; the avenue lawns get formal cypress rows.
+
+## Town and outer world
+| File | What |
+|---|---|
+| `sprites/buildings/town/house{1,2}_{blue,terracotta,red,slate}.png` | The two houses from `taverns_pair`, split apart, roof recoloured into four colours (only the blue roof pixels change), white divider strip removed |
+| `sprites/nature/decor/*` | Boulders, rocks, pebbles, reeds, ferns, flowers and grass tufts cut from the rock, wetland and plant sheets (each a part in `scenes/castle/parts/nature/`) |
+| `shaders/path.gdshader` | Dirt and cobble roads drawn along lines, textured in world space with soft, ragged edges |
+
+The generator fills all outer land with forest. Density varies so there are clearings, it keeps clear of roads and the stream, and edges get boulders and reeds. Placement is seeded, so it comes out the same every time.

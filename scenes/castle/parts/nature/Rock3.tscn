@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/nature/decor/rock_3.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="c"]
+size = Vector2(91, 28)
+
+[node name="Rock3" type="Sprite2D"]
+texture = ExtResource("1")
+offset = Vector2(0, -52)
+
+[node name="Collision" type="StaticBody2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="Collision"]
+position = Vector2(0, -14)
+shape = SubResource("c")

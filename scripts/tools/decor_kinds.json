@@ -1,0 +1,75 @@
+{
+"Boulder": [
+"Boulder1",
+"Boulder2",
+"Boulder3",
+"Boulder4",
+"Boulder5",
+"Boulder6",
+"Boulder7",
+"Boulder8",
+"Boulder9",
+"Boulder10"
+],
+"Rock": [
+"Rock1",
+"Rock2",
+"Rock3",
+"Rock4",
+"Rock5",
+"Rock6",
+"Rock7",
+"Rock8"
+],
+"Pebbles": [
+"Pebbles1",
+"Pebbles2",
+"Pebbles3",
+"Pebbles4",
+"Pebbles5",
+"Pebbles6",
+"Pebbles7",
+"Pebbles8"
+],
+"Reeds": [
+"Reeds1",
+"Reeds2",
+"Reeds3",
+"Reeds4",
+"Reeds5",
+"Reeds6",
+"Reeds7",
+"Reeds8",
+"Reeds9",
+"Reeds10"
+],
+"Fern": [
+"Fern1",
+"Fern2",
+"Fern3",
+"Fern4",
+"Fern5",
+"Fern6"
+],
+"Flowers": [
+"Flowers1",
+"Flowers2",
+"Flowers3",
+"Flowers4",
+"Flowers5",
+"Flowers6",
+"Flowers7",
+"Flowers8",
+"Flowers9"
+],
+"Grass": [
+"Grass1",
+"Grass2",
+"Grass3",
+"Grass4",
+"Grass5",
+"Grass6",
+"Grass7",
+"Grass8"
+]
+}

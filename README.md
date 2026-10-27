@@ -2,7 +2,9 @@
 
 A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle world.
 
-![Castle reference](docs/reference/castle_reference.png)
+![World](docs/screenshots/world.jpg)
+
+Reference artwork: `docs/reference/castle_reference.png`
 
 ## Open it
 1. `git clone` / `git pull` this repo.
@@ -39,6 +41,8 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 - [x] Cathedral, chapel, domed hall, manor, fountain plaza, cypress avenue, ~180 trees and bushes
 - [x] Market (13 stalls, carts, crates) and training yard (dummies, weapon racks, armour stands)
 - [x] Day / golden hour / night (press **N**), glowing windows, flickering firelight, swaying banners, animated fountain water
-- [ ] Town across the river, player character, walkable bridges/navigation
+- [x] Town across the river: ~20 timber houses, square with fountain and stalls, cobbled streets, lanterns, stone bridge
+- [x] Outer world: forests with clearings, dirt roads, stream with waterfall into the moat, boulders, reeds, flowers; camera limits
+- [ ] Player character, walkable bridges/navigation
 - [ ] Buildings & props
 - [ ] Animation, lighting, collision

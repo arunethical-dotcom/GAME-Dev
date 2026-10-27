@@ -3,6 +3,11 @@ extends SceneTree
 ## godot --path . -s res://scripts/tools/capture.gd -- out_dir
 var shots := [
 	["overview", Vector2(7680, 5120), 0.125],
+	["world", Vector2(7680, 5100), 0.08],
+	["town", Vector2(16600, -900), 0.22],
+	["town_closeup", Vector2(16200, -400), 0.6],
+	["stream_waterfall", Vector2(1500, 600), 0.3],
+	["forest_path", Vector2(5000, 11800), 0.4],
 	["curtain_wall", Vector2(7680, 6300), 0.3],
 	["gate_closeup", Vector2(7400, 6650), 0.8],
 	["tower_closeup", Vector2(4500, 6500), 0.75],
@@ -34,7 +39,7 @@ func _initialize() -> void:
 	cam.set_script(null)
 	cam.make_current()
 	var dn := scene.get_node_or_null("DayNight")
-	var night_shots := [["night_overview", Vector2(7680, 5120), 0.125], ["night_palace", Vector2(7680, 2300), 0.35], ["night_gate", Vector2(7680, 7000), 0.45], ["golden_market", Vector2(3250, 5500), 0.6]]
+	var night_shots := [["night_town", Vector2(16600, -900), 0.3], ["night_overview", Vector2(7680, 5120), 0.125], ["night_palace", Vector2(7680, 2300), 0.35], ["night_gate", Vector2(7680, 7000), 0.45], ["golden_market", Vector2(3250, 5500), 0.6]]
 	for s in shots + night_shots:
 		if dn:
 			dn.set_preset(2 if String(s[0]).begins_with("night") else 1)

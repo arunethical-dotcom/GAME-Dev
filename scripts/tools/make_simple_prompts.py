@@ -294,18 +294,20 @@ F = 'Arial'
 wb = Workbook(); ws = wb.active; ws.title = 'Prompts'
 thin = Side(style='thin', color='9AA0B0'); BOX = Border(left=thin, right=thin, top=thin, bottom=thin)
 ws.column_dimensions['A'].width = 6; ws.column_dimensions['B'].width = 34; ws.column_dimensions['C'].width = 13
-ws.column_dimensions['D'].width = 120; ws.column_dimensions['E'].width = 10
-ws.merge_cells('A1:E1'); ws['A1'] = 'CASTLE ASSETS: copy the prompt, generate, save with the file name. That is all.'
+ws.column_dimensions['D'].width = 120; ws.column_dimensions['E'].width = 16; ws.column_dimensions['F'].width = 10
+PEOPLE = ['Gokhul', 'Bhuvanesh', 'Surendar']; PCOL = {'Gokhul': 'DDEBF7', 'Bhuvanesh': 'FCE4D6', 'Surendar': 'E2EFDA'}
+def who(n): return PEOPLE[min((n - 1) // 21, 2)]   # 1-21 Gokhul, 22-42 Bhuvanesh, 43-65 Surendar
+ws.merge_cells('A1:F1'); ws['A1'] = 'CASTLE ASSETS: copy the prompt, generate, save with the file name. That is all.'
 ws['A1'].font = Font(name=F, bold=True, size=15, color='FFFFFF'); ws['A1'].fill = PatternFill('solid', fgColor='1C2036')
 ws['A1'].alignment = Alignment(vertical='center', indent=1); ws.row_dimensions[1].height = 30
 steps = ('0) With EVERY prompt, attach these 3 images in this order: 1_castle_grid.png, 2_legend.png, 3_castle_labels.png (in the same folder as this file).   '
          '1) Copy the whole cell in column "PROMPT" and paste it into the image generator as it is (do not shorten it).   '
          '2) Set the image shape shown in column "SHAPE" if the tool has that option.   '
          '3) Save the image as PNG with the exact name in column "SAVE AS" and put it in the shared folder.   '
-         '4) Mark "Done" in the last column.   If an image looks tilted, has a person in it, or has more than one object: generate it again.')
-ws.merge_cells('A2:E2'); ws['A2'] = steps; ws['A2'].font = Font(name=F, size=11); ws['A2'].alignment = Alignment(wrap_text=True, vertical='center', indent=1)
+         '4) Only do the rows with YOUR name in column "ASSIGNED TO". Mark "Done" in the last column.   If an image looks tilted, has a person in it, or has more than one object: generate it again.')
+ws.merge_cells('A2:F2'); ws['A2'] = steps; ws['A2'].font = Font(name=F, size=11); ws['A2'].alignment = Alignment(wrap_text=True, vertical='center', indent=1)
 ws['A2'].fill = PatternFill('solid', fgColor='FFF2B3'); ws.row_dimensions[2].height = 80
-hdr = ['No.', 'SAVE AS (exact file name)', 'SHAPE / LOOK AT CELL', 'PROMPT (copy everything in the cell) + attach the 3 images', 'Done']
+hdr = ['No.', 'SAVE AS (exact file name)', 'SHAPE / LOOK AT CELL', 'PROMPT (copy everything in the cell) + attach the 3 images', 'ASSIGNED TO', 'Done']
 for i, h in enumerate(hdr, 1):
     c = ws.cell(3, i, h); c.font = Font(name=F, bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor='2B3249')
     c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True); c.border = BOX
@@ -316,18 +318,23 @@ txt = ['CASTLE ASSET PROMPTS', '=' * 60,
        'If an image is tilted, has a person, or has more than one object: generate it again.', '']
 for n, r in enumerate(L, 1):
     shape, p = build(r); row = n + 3
-    _cs = cells_for(r[0].split('_')[0]); vals = [n, r[0], shape + ('\n\nCell ' + _cs[0] if _cs else '\n\n(style only)'), p, None]
+    _cs = cells_for(r[0].split('_')[0]); vals = [n, r[0], shape + ('\n\nCell ' + _cs[0] if _cs else '\n\n(style only)'), p, who(n), None]
     for i, v in enumerate(vals, 1):
-        c = ws.cell(row, i, v); c.border = BOX; c.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if i in (1, 3, 5) else 'left')
+        c = ws.cell(row, i, v); c.border = BOX; c.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if i in (1, 3, 5, 6) else 'left')
         c.font = Font(name=F, size=10, bold=(i == 2))
     ws.cell(row, 2).value = f"{r[0]}\n\n{r[1]}"
     ws.row_dimensions[row].height = 409
-    txt += [f'#{n}  SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
+    txt += [f'#{n}  ASSIGNED TO: {who(n).upper()}   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
 last = len(L) + 3
-dv = DataValidation(type='list', formula1='"Done"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'E4:E{last}')
-ws.conditional_formatting.add(f'A4:E{last}', FormulaRule(formula=[f'$E4="Done"'], fill=PatternFill('solid', fgColor='C6EFCE')))
+dv = DataValidation(type='list', formula1='"Done"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'F4:F{last}')
+ws.conditional_formatting.add(f'A4:F{last}', FormulaRule(formula=[f'$F4="Done"'], fill=PatternFill('solid', fgColor='C6EFCE')))
+for _r in range(4, last + 1):
+    _c = ws.cell(_r, 5); _c.font = Font(name=F, size=11, bold=True); _c.fill = PatternFill('solid', fgColor=PCOL[_c.value]); _c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+for _i, _p in enumerate(PEOPLE):
+    ws.cell(last + 3 + _i, 2, f'{_p} done:').font = Font(name=F, bold=True)
+    ws.cell(last + 3 + _i, 3, f'=COUNTIFS(E4:E{last},"{_p}",F4:F{last},"Done")&" / "&COUNTIF(E4:E{last},"{_p}")').font = Font(name=F, bold=True)
 ws.cell(last + 2, 2, 'Images done:').font = Font(name=F, bold=True)
-ws.cell(last + 2, 3, f'=COUNTIF(E4:E{last},"Done")&" / "&COUNTA(B4:B{last})').font = Font(name=F, bold=True)
+ws.cell(last + 2, 3, f'=COUNTIF(F4:F{last},"Done")&" / "&COUNTA(B4:B{last})').font = Font(name=F, bold=True)
 ws.freeze_panes = 'A4'
 import shutil
 for src, dst in [('asset_map_grid_only.png', '1_castle_grid.png'), ('asset_map_legend.png', '2_legend.png'), ('asset_map_full.png', '3_castle_labels.png')]:

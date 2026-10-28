@@ -57,6 +57,54 @@ DONT_SPRITE = ("DO NOT include: people, characters, an adventurer or any figure 
 DONT_TILE = ("DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, "
              "perspective or tilt, a visible seam, an obvious repeating stamp pattern.")
 
+import csv as _csv
+_CELLS = {}
+for _r in _csv.DictReader(open(os.path.join(ROOT, 'docs/asset_map/asset_placements.csv'))):
+    _CELLS.setdefault(_r['id'], [])
+    _c = (_r['grid_cell'], int(_r['plan_x']))
+    if _c[0] not in [c for c, _ in _CELLS[_r['id']]]: _CELLS[_r['id']].append(_c)
+def _ck(c):
+    L = c.rstrip('0123456789'); n = 0
+    for ch in L: n = n * 26 + ord(ch) - 64
+    return (int(c[len(L):]), n)
+def ref_ids(key):
+    if key in _CELLS: return key
+    if key[:-1] in _CELLS: return key[:-1]
+    return None
+STYLE_ONLY = {'F7B', 'F7D'}
+def cells_for(key):
+    if key in STYLE_ONLY: return []
+    k = ref_ids(key)
+    if not k: return []
+    west = sorted([c for c, x in _CELLS[k] if x <= 768], key=_ck); east = sorted([c for c, x in _CELLS[k] if x > 768], key=_ck)
+    return west + east
+REF_HEAD = ("REFERENCE IMAGES (3 images are attached with this prompt): "
+            "Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). "
+            "Image 2 = the colour legend for the labels. "
+            "Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).")
+REF_RULES = ("HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). "
+             "Then draw a completely NEW, clean image of that object alone, following every rule below. "
+             "Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. "
+             "Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. "
+             "Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.")
+def ref_block(key, kind):
+    cs = cells_for(key)
+    if not cs:
+        where = ("This exact object does not appear in the plan: use Images 1 and 3 only to match the style, stone colour and level of detail of the castle.")
+    else:
+        main = cs[0]; more = cs[1:4]
+        also = f" (the same object also appears at {', '.join(more)})" if more else ""
+        code = ref_ids(key)
+        if kind == 'tile':
+            what = "the surface/material at that spot"
+        elif kind == 'band':
+            what = "that part of the wall at that spot"
+        else:
+            what = "the object at that spot"
+        where = (f"WHERE TO LOOK: in Image 3 find the label that contains the code \"{code}\" at grid cell {main}{also}. "
+                 f"Then look at the same cell {main} in Image 1 (no labels covering it) and study {what}.")
+    return REF_HEAD + "\n\n" + where + "\n\n" + REF_RULES
+
 def shape_of(w, h):
     r = w / h
     opts = [('1:1 square', 1), ('2:3 tall', 2/3), ('1:2 tall', 0.5), ('9:16 tall', 9/16), ('3:4 tall', 0.75), ('4:3 wide', 4/3),
@@ -229,15 +277,15 @@ def build(r):
     view = VIEW_SIDE if key.startswith('E7') else VIEW
     if kind == 'tile':
         shape = shape_of(*shp)
-        parts = [f"Create a seamless pixel-art texture: {subject}.", f"DETAILS: {details}", f"COLOURS (use only these): {colours}.",
+        parts = [f"Create a seamless pixel-art texture: {subject}.", f"DETAILS: {details}", ref_block(key, kind), f"COLOURS (use only these): {colours}.",
                  STYLE, TILE, f"IMAGE SHAPE: {shape}.", DONT_TILE]
     elif kind == 'band':
         shape = '16:9 wide'
-        parts = [f"Create a pixel-art game asset: {subject}.", f"DETAILS: {details}", f"COLOURS (use only these): {colours}.",
+        parts = [f"Create a pixel-art game asset: {subject}.", f"DETAILS: {details}", ref_block(key, kind), f"COLOURS (use only these): {colours}.",
                  STYLE, BAND, f"IMAGE SHAPE: {shape}.", dont.replace("anything cut off by the image edge", "anything cut off at the top or bottom of the strip")]
     else:
         shape = shape_of(*shp)
-        parts = [f"Create ONE pixel-art game asset: {subject}.", f"DETAILS: {details}", f"COLOURS (use only these): {colours}.",
+        parts = [f"Create ONE pixel-art game asset: {subject}.", f"DETAILS: {details}", ref_block(key, kind), f"COLOURS (use only these): {colours}.",
                  STYLE, view, BG, f"IMAGE SHAPE: {shape}.", dont]
     return shape, "\n\n".join(parts)
 
@@ -250,28 +298,30 @@ ws.column_dimensions['D'].width = 120; ws.column_dimensions['E'].width = 10
 ws.merge_cells('A1:E1'); ws['A1'] = 'CASTLE ASSETS: copy the prompt, generate, save with the file name. That is all.'
 ws['A1'].font = Font(name=F, bold=True, size=15, color='FFFFFF'); ws['A1'].fill = PatternFill('solid', fgColor='1C2036')
 ws['A1'].alignment = Alignment(vertical='center', indent=1); ws.row_dimensions[1].height = 30
-steps = ('1) Copy the whole cell in column "PROMPT" and paste it into the image generator as it is (do not shorten it).   '
+steps = ('0) With EVERY prompt, attach these 3 images in this order: 1_castle_grid.png, 2_legend.png, 3_castle_labels.png (in the same folder as this file).   '
+         '1) Copy the whole cell in column "PROMPT" and paste it into the image generator as it is (do not shorten it).   '
          '2) Set the image shape shown in column "SHAPE" if the tool has that option.   '
          '3) Save the image as PNG with the exact name in column "SAVE AS" and put it in the shared folder.   '
          '4) Mark "Done" in the last column.   If an image looks tilted, has a person in it, or has more than one object: generate it again.')
 ws.merge_cells('A2:E2'); ws['A2'] = steps; ws['A2'].font = Font(name=F, size=11); ws['A2'].alignment = Alignment(wrap_text=True, vertical='center', indent=1)
-ws['A2'].fill = PatternFill('solid', fgColor='FFF2B3'); ws.row_dimensions[2].height = 62
-hdr = ['No.', 'SAVE AS (exact file name)', 'SHAPE', 'PROMPT (copy everything in the cell)', 'Done']
+ws['A2'].fill = PatternFill('solid', fgColor='FFF2B3'); ws.row_dimensions[2].height = 80
+hdr = ['No.', 'SAVE AS (exact file name)', 'SHAPE / LOOK AT CELL', 'PROMPT (copy everything in the cell) + attach the 3 images', 'Done']
 for i, h in enumerate(hdr, 1):
     c = ws.cell(3, i, h); c.font = Font(name=F, bold=True, color='FFFFFF'); c.fill = PatternFill('solid', fgColor='2B3249')
     c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True); c.border = BOX
 ws.row_dimensions[3].height = 24
 txt = ['CASTLE ASSET PROMPTS', '=' * 60,
+       'With EVERY prompt attach 3 images in this order: 1_castle_grid.png, 2_legend.png, 3_castle_labels.png',
        'For each item: copy the PROMPT, generate, save as PNG with the SAVE AS name.',
        'If an image is tilted, has a person, or has more than one object: generate it again.', '']
 for n, r in enumerate(L, 1):
     shape, p = build(r); row = n + 3
-    vals = [n, r[0], shape, p, None]
+    _cs = cells_for(r[0].split('_')[0]); vals = [n, r[0], shape + ('\n\nCell ' + _cs[0] if _cs else '\n\n(style only)'), p, None]
     for i, v in enumerate(vals, 1):
         c = ws.cell(row, i, v); c.border = BOX; c.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if i in (1, 3, 5) else 'left')
         c.font = Font(name=F, size=10, bold=(i == 2))
     ws.cell(row, 2).value = f"{r[0]}\n\n{r[1]}"
-    ws.row_dimensions[row].height = 330
+    ws.row_dimensions[row].height = 409
     txt += [f'#{n}  SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
 last = len(L) + 3
 dv = DataValidation(type='list', formula1='"Done"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'E4:E{last}')
@@ -279,6 +329,9 @@ ws.conditional_formatting.add(f'A4:E{last}', FormulaRule(formula=[f'$E4="Done"']
 ws.cell(last + 2, 2, 'Images done:').font = Font(name=F, bold=True)
 ws.cell(last + 2, 3, f'=COUNTIF(E4:E{last},"Done")&" / "&COUNTA(B4:B{last})').font = Font(name=F, bold=True)
 ws.freeze_panes = 'A4'
+import shutil
+for src, dst in [('asset_map_grid_only.png', '1_castle_grid.png'), ('asset_map_legend.png', '2_legend.png'), ('asset_map_full.png', '3_castle_labels.png')]:
+    shutil.copy(os.path.join(ROOT, 'docs/asset_map', src), os.path.join(OUT, dst))
 wb.save(os.path.join(OUT, 'CASTLE_PROMPTS.xlsx'))
 open(os.path.join(OUT, 'CASTLE_PROMPTS.txt'), 'w').write('\n'.join(txt))
 print(len(L), 'prompts')

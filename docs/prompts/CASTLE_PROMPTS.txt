@@ -1,5 +1,6 @@
 CASTLE ASSET PROMPTS
 ============================================================
+With EVERY prompt attach 3 images in this order: 1_castle_grid.png, 2_legend.png, 3_castle_labels.png
 For each item: copy the PROMPT, generate, save as PNG with the SAVE AS name.
 If an image is tilted, has a person, or has more than one object: generate it again.
 
@@ -8,6 +9,12 @@ If an image is tilted, has a person, or has more than one object: generate it ag
 Create a seamless pixel-art texture: castle wall stone texture.
 
 DETAILS: Dressed rectangular ashlar blocks laid in perfectly horizontal rows (running bond, every row offset by half a block), each block about twice as wide as tall, about 10 rows from top to bottom. Thin dark mortar lines. Each block has a tiny lit bevel on its top-left edge. A few small chips and hairline cracks. No windows, no doors, no moss.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T1" at grid cell U10 (the same object also appears at G16, L16, S17). Then look at the same cell U10 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
@@ -26,6 +33,12 @@ Create a seamless pixel-art texture: castle wall stone texture (second variant).
 
 DETAILS: Same stone, same block size and row height as a matching ashlar wall, but a different arrangement of blocks, a few slightly darker weathered blocks, very slight moss in two or three mortar joints. Perfectly horizontal rows.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T1" at grid cell U10 (the same object also appears at G16, L16, S17). Then look at the same cell U10 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -42,6 +55,12 @@ DO NOT include: people, text, labels, borders, frames, a single object in the mi
 Create a pixel-art game asset: the bottom band of a castle wall where it stands in a moat.
 
 DETAILS: Ashlar stone blocks, darker and wet, a band of dark green-black algae along the lower half, thin vertical drip streaks, a thin bright wet line along the very bottom edge of the strip.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T2" at grid cell G16 (the same object also appears at K20, R21, H26). Then look at the same cell G16 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; wet stone #2a3040 and #3a4252, dark green algae #1f3326 and #2f4a2e, wet shine #8fb6c8.
 
@@ -60,6 +79,12 @@ Create a pixel-art game asset: a crenellated castle battlement (merlons) seen fr
 
 DETAILS: A row of identical square stone merlons with equal gaps between them, about 12 merlons across the image, all exactly the same height and evenly spaced, each with a lit top face and a front face, standing on a continuous stone course. The top edges of all merlons are on one straight horizontal line.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T3" at grid cell U10 (the same object also appears at G16, L16, S17). Then look at the same cell U10 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -76,6 +101,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create a pixel-art game asset: a band of stepped stone corbels (machicolations) that hangs under castle battlements.
 
 DETAILS: A row of identical three-step stacked stone brackets, evenly spaced, about 12 across the image, dark shadow gaps between them, hanging from a continuous stone course along the top of the strip.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T6" at grid cell G16 (the same object also appears at K20, R21, H26). Then look at the same cell G16 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
@@ -94,6 +125,12 @@ Create a seamless pixel-art texture: worn stone paving of a castle wall-walk, se
 
 DETAILS: Rectangular flagstone slabs in rows, thin dark joints, gentle wear and a few cracks. Lighter than the castle wall.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T7" at grid cell R20 (the same object also appears at AE20). Then look at the same cell R20 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): pale stone #5d5866, #8c8088, #a89a98, #bfb1aa, #d8cbc2; joints #2a2a3a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -111,6 +148,12 @@ Create a pixel-art game asset: a crenellated castle battlement seen from the INS
 
 DETAILS: A row of identical square stone merlons, evenly spaced, about 12 across, all in soft shade (we are looking at their back faces), standing on the stone walkway edge. Top edges on one straight line.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T4" at grid cell J4 (the same object also appears at AM4). Then look at the same cell J4 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -127,6 +170,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a round stone castle tower body.
 
 DETAILS: Round castle tower BODY only, with a flat cut top (no roof, no battlements on top). Stone blocks in horizontal rows that curve gently with the round shape. A ring of stepped stone brackets just below the top. A slightly wider stepped base at the bottom. Two narrow arrow slits stacked in the middle. A small iron rod near the top for hanging a banner. Symmetric left and right.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW2" at grid cell L4 (the same object also appears at H6, D8, C11). Then look at the same cell L4 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; dark iron #12141c, #23283a, #3a4155, #5b6378; arrow slits #0c0e16.
 
@@ -147,6 +196,12 @@ Create ONE pixel-art game asset: a large round stone castle tower body.
 
 DETAILS: Round castle tower BODY only, with a flat cut top (no roof, no battlements on top). Stone blocks in horizontal rows that curve gently with the round shape. A ring of stepped stone brackets just below the top. A slightly wider stepped base at the bottom. Two narrow arrow slits and one arched window glowing warm yellow, a carved stone band halfway up. Symmetric left and right.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW3" at grid cell B17 (the same object also appears at N22, AU17, AI22). Then look at the same cell B17 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; arrow slits #0c0e16.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -165,6 +220,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a conical tower roof.
 
 DETAILS: A steep 8-sided cone roof covered in blue slate tiles, gold trim along each ridge, a gold-trimmed overhanging rim at the bottom, a gold spike finial with a small orb at the tip. Only the roof, nothing under it. The tip is exactly above the centre. Perfectly symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW6" at grid cell L4 (the same object also appears at H6, D8, C11). Then look at the same cell L4 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a.
 
@@ -185,6 +246,12 @@ Create ONE pixel-art game asset: the bottom section of a round stone tower where
 
 DETAILS: A short wide cylinder section of stone blocks, wet and dark, a band of green-black algae, a bright wet line along its bottom edge. The bottom edge is a straight horizontal line (no water drawn). Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW4" at grid cell D8 (the same object also appears at C11, B17, I21). Then look at the same cell D8 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; wet stone #2a3040 and #3a4252, dark green algae #1f3326 and #2f4a2e, wet shine #8fb6c8.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -203,6 +270,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the open top of a round stone tower with battlements, no roof.
 
 DETAILS: A ring of 7 square stone merlons around a round flagstone floor that is visible inside, seen from the front and slightly above. Only this top section. Symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW5" at grid cell E26 (the same object also appears at J26, M28, P28). Then look at the same cell E26 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; pale stone #5d5866, #8c8088, #a89a98, #bfb1aa, #d8cbc2; joints #2a2a3a.
 
@@ -223,6 +296,12 @@ Create ONE pixel-art game asset: a square stone pedestal tower.
 
 DETAILS: A square stone pillar-tower, flat top with a low stone ledge (a statue will stand on it), one recessed niche with a small crimson banner, a stepped base. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW7" at grid cell V11 (the same object also appears at AA11). Then look at the same cell V11 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -241,6 +320,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a hanging castle banner.
 
 DETAILS: A tall crimson cloth banner hanging straight down from a horizontal iron rod with small gold end caps, a gold cross emblem in the middle, a thin gold border, a swallow-tail cut at the bottom. Hanging still, perfectly straight and symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW8" at grid cell L4 (the same object also appears at H6, D8, C11). Then look at the same cell L4 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
@@ -261,6 +346,12 @@ Create ONE pixel-art game asset: a pennant flag on a pole tip.
 
 DETAILS: The top of a thin vertical golden flagpole with a small orb, and a crimson swallow-tail pennant with a small gold emblem flying to the right. The pole is perfectly vertical.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "TW9" at grid cell U29 (the same object also appears at AC29). Then look at the same cell U29 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -279,6 +370,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a castle main gatehouse.
 
 DETAILS: A wide stone gate building with two half-round towers on its left and right, a large pointed arch in the exact centre with a dark empty passage inside (no gate, no portcullis, no doors), battlements along the top, a carved stone shield above the arch, a crimson banner on each tower, an iron wall torch with a small flame on each side of the arch, a few arrow slits. Perfectly symmetric. Only the front face is visible.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "G1" at grid cell Y20. Then look at the same cell Y20 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60; dark iron #12141c, #23283a, #3a4155, #5b6378; fire #7a1a08, #c8380e, #f07a1a, #ffb52e, #ffe680, #fffbe0; passage #0c0e16.
 
@@ -299,6 +396,12 @@ Create ONE pixel-art game asset: an iron portcullis.
 
 DETAILS: A closed iron portcullis grid: thick dark vertical bars crossed by horizontal bars, pointed spikes at the bottom of each vertical bar, rectangular overall. All bars perfectly straight and parallel.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "G2" at grid cell Y22. Then look at the same cell Y22 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -317,6 +420,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a pair of closed castle gate doors.
 
 DETAILS: Two heavy oak doors closed together, black iron straps and studs, two iron ring handles, together shaped like a pointed arch. Symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "G3" at grid cell Y22. Then look at the same cell Y22 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36; dark iron #12141c, #23283a, #3a4155, #5b6378.
 
@@ -337,6 +446,12 @@ Create ONE pixel-art game asset: a pair of castle gate doors swung open.
 
 DETAILS: The same oak and iron gate doors swung open inward, seen as two narrow door edges at the left and right, a dark stone passage between them, pointed arch outline. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "G3" at grid cell Y22. Then look at the same cell Y22 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36; dark iron #12141c, #23283a, #3a4155, #5b6378; passage #0c0e16.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -355,6 +470,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a wide straight stone staircase going up away from the viewer.
 
 DETAILS: Exactly 9 wide stone steps rising straight away from the viewer, seen from the front and slightly above: every step edge is a perfectly horizontal line, treads lit, risers in shade. A carved stone balustrade with square posts on both sides. Symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "S1" at grid cell Y8. Then look at the same cell Y8 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; pale stone #5d5866, #8c8088, #a89a98, #bfb1aa, #d8cbc2; joints #2a2a3a.
 
@@ -375,6 +496,12 @@ Create ONE pixel-art game asset: a wide straight stone staircase with a red carp
 
 DETAILS: Exactly 11 wide stone steps rising straight away from the viewer, seen from the front and slightly above, every step edge perfectly horizontal. A wine-red carpet with gold edging runs straight up the exact centre over every step. Carved stone balustrades on both sides ending in square posts with small glowing lamps. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "S2" at grid cell Y11. Then look at the same cell Y11 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; wine-red carpet #4a0e22, #7e1a39, #a3264a with gold edge #c9952e, #e0b040; lamp glow #ffd27a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -394,6 +521,12 @@ Create a pixel-art game asset: a low carved stone balustrade railing.
 
 DETAILS: Round stone balusters evenly spaced under a flat straight handrail, standing on a straight stone base. Straight-on front view.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "S3" at grid cell Y9. Then look at the same cell Y9 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -410,6 +543,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a winged gargoyle statue.
 
 DETAILS: A crouching winged gargoyle of dark iron-grey stone, wings half raised, facing the viewer, on a small square stone base. Symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "S4" at grid cell V9 (the same object also appears at AA9). Then look at the same cell V9 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
@@ -430,6 +569,12 @@ Create ONE pixel-art game asset: a knight statue on a plinth.
 
 DETAILS: A dark iron knight statue in full plate armour standing to attention, facing the viewer, both hands resting on the pommel of a sword planted point-down in front, on a square stone plinth. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "S5" at grid cell W12 (the same object also appears at Z12). Then look at the same cell W12 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -448,6 +593,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the central keep of a royal fantasy palace.
 
 DETAILS: A tall Gothic stone palace block: pinnacles and four slender spires with blue cone roofs, a huge crimson banner with a gold cross hanging down the centre, a grand arched double door of dark wood at the bottom centre with a small stone balcony above it, two knight statues in niches beside the door, rows of tall windows glowing warm yellow, blue slate roofs. Perfectly symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P1" at grid cell Y5. Then look at the same cell Y5 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36.
 
@@ -468,6 +619,12 @@ Create ONE pixel-art game asset: a straight section of a royal palace wing.
 
 DETAILS: A rectangular stone palace wall section, two storeys of tall Gothic windows glowing warm yellow, stone buttresses between the windows, a steep blue slate roof with two dormer windows and a gold ridge on top, small crimson banners between windows. The wall and roof run straight to the left and right edges of the building so several copies can be placed side by side.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P2" at grid cell U6 (the same object also appears at AB6). Then look at the same cell U6 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -486,6 +643,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a straight section of a royal palace wing (variant).
 
 DETAILS: The same palace wing style, same height, same roof line, but with a central projecting bay window and a stone chimney, so it looks different from the plain wing. The wall and roof run straight to the left and right edges of the building.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P3" at grid cell R6 (the same object also appears at AE6). Then look at the same cell R6 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f.
 
@@ -506,6 +669,12 @@ Create ONE pixel-art game asset: a square palace corner pavilion.
 
 DETAILS: A tall square stone pavilion with three storeys of glowing Gothic windows, a steep pyramid blue slate roof with a gold finial, one crimson banner. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P4" at grid cell P5 (the same object also appears at AG5). Then look at the same cell P5 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -524,6 +693,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the LEFT HALF of a palace roof skyline.
 
 DETAILS: A row of 5 slender stone towers of different heights with steep blue cone roofs and gold finials, joined by blue slate roofs, a few warm glowing windows. The towers get taller toward the RIGHT; the tallest centre spire is cut exactly in half by the right edge of the image (we mirror it to make the full skyline). The bottom of the buildings is one straight horizontal line.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P5" at grid cell Y1. Then look at the same cell Y1 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f.
 
@@ -544,6 +719,12 @@ Create ONE pixel-art game asset: a very long royal banner.
 
 DETAILS: A very long crimson banner hanging straight down from a gold rod, a large gold cross-and-fleur emblem in the upper middle, gold border, pointed bottom. Hanging still, perfectly symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "P6" at grid cell Y3. Then look at the same cell Y3 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -562,6 +743,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the front of a Gothic cathedral.
 
 DETAILS: A large circular stained-glass rose window above a pointed-arch double door, two tall spires with blue slate roofs, stone pinnacles, tall lit pointed windows, a steep blue roof behind, two crimson banners, a short stone entrance stair. Perfectly symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B1" at grid cell K12. Then look at the same cell K12 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36.
 
@@ -582,6 +769,12 @@ Create ONE pixel-art game asset: the front of a small Gothic chapel.
 
 DETAILS: A pointed-arch wooden door, a small round stained-glass window above it, a steep blue slate roof, a slender bell turret with a cross on top. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B2" at grid cell L6. Then look at the same cell L6 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -600,6 +793,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the front of a grand domed hall.
 
 DETAILS: A central dark-blue tiled dome with a small lantern cupola and gold finial, a ring of glowing arched windows under the dome, a stone facade with columns, two small side wings with blue roofs, a wide entrance stair in the centre. Perfectly symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B3" at grid cell AL8. Then look at the same cell AL8 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36.
 
@@ -620,6 +819,12 @@ Create ONE pixel-art game asset: the front of a stone manor house.
 
 DETAILS: Two storeys of stone walls with rows of warm glowing windows, a blue slate hipped roof with dormers and two chimneys, a central arched oak door with a small porch, two small crimson banners. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B4" at grid cell AK13. Then look at the same cell AK13 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; blue slate roof: #1f2f5a shadow, #2e4677, #486f91 mid, #6b8fb3, #8fb0d0 highlight; gold trim #8a6420, #c9952e, #e0b040, #ffe08a; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36; crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -638,6 +843,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a stone colonnade wall.
 
 DETAILS: A straight stone wall with exactly 3 equal tall round arches with dark shadowed insides, slender columns between the arches, a row of battlements on top. Symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B5" at grid cell R15 (the same object also appears at AE15). Then look at the same cell R15 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; arch insides #0c0e16, #1a1d2a.
 
@@ -658,6 +869,12 @@ Create ONE pixel-art game asset: an ornate tiered stone fountain WITHOUT water.
 
 DETAILS: An octagonal stone basin with a carved rim, a central column holding two stacked round bowls and a small finial on top, small flower planters at the basin corners. The basin and bowls are EMPTY and dry: absolutely no water, no spray. Seen from the front and slightly above. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "B6" at grid cell Y14. Then look at the same cell Y14 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; flowers #b3262e, #e0b040, #3f8f4f.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -677,6 +894,12 @@ Create a seamless pixel-art texture: castle courtyard cobblestones seen from dir
 
 DETAILS: Irregular rounded cobblestones of mixed sizes packed together, dark joints, a little moss in some joints, a few cracked stones. Calm and even.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T8" at grid cell J6 (the same object also appears at U19, AM6, AC19). Then look at the same cell J6 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): cobbles #6a6372, #958a8e, #ad9f9d, #b5a49f, #c0b2ac, #dacdc4; joints #2e2e3e.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -693,6 +916,12 @@ DO NOT include: people, text, labels, borders, frames, a single object in the mi
 Create a seamless pixel-art texture: large square palace paving slabs seen from directly above.
 
 DETAILS: Large neatly cut square and rectangular flagstones in a regular pattern, thin precise joints, very light wear. Clean and pale.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T9" at grid cell T9 (the same object also appears at AC9). Then look at the same cell T9 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): pale stone #5d5866, #8c8088, #a89a98, #bfb1aa, #d8cbc2; joints #2a2a3a.
 
@@ -711,6 +940,12 @@ Create a seamless pixel-art texture: a cobbled road surface seen from directly a
 
 DETAILS: Rounded cobbles, slightly warmer tone, a smoother wheel-worn band running straight from top to bottom through the middle, small gravel between stones.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T10" at grid cell Y26. Then look at the same cell Y26 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): cobbles #6a6372, #958a8e, #ad9f9d, #b5a49f, #c0b2ac, #dacdc4; joints #2e2e3e.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -727,6 +962,12 @@ DO NOT include: people, text, labels, borders, frames, a single object in the mi
 Create a seamless pixel-art texture: a short trimmed garden lawn seen from directly above.
 
 DETAILS: Fine short grass blades, very even, low contrast, a couple of tiny clover patches. No flowers, no stones.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T11" at grid cell K11 (the same object also appears at U15, R18, AL11). Then look at the same cell K11 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grass #24402a, #335a33, #4f7f3f, #6f9a45, #95b65a.
 
@@ -745,6 +986,12 @@ Create a seamless pixel-art texture: a packed earth yard seen from directly abov
 
 DETAILS: Packed tan earth with scattered small pebbles, faint footprints and cart ruts, two or three tiny dry grass tufts.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T12" at grid cell K17 (the same object also appears at AL17). Then look at the same cell K17 in Image 1 (no labels covering it) and study the surface/material at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): earth #6b4f36, #8f6e4e, #b08c6a, #c2a48a, #d6bc9e; pebbles #7a7470, #a39a90.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -761,6 +1008,12 @@ DO NOT include: people, text, labels, borders, frames, a single object in the mi
 Create ONE pixel-art game asset: the front face of one stone bridge arch.
 
 DETAILS: A stone wall section with ONE large round arch in the centre: a ring of wedge-shaped stones with a keystone at the top, a short pier on each side with dark wet algae at the bottom. The OPENING under the arch is filled with flat magenta #FF00FF (see-through). The stone wall runs to the left and right edges of the image so arches can be placed side by side.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T13" at grid cell F7 (the same object also appears at E11, D17, AQ7). Then look at the same cell F7 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; wet stone #2a3040 and #3a4252, dark green algae #1f3326 and #2f4a2e, wet shine #8fb6c8.
 
@@ -781,6 +1034,12 @@ Create a pixel-art game asset: a vertical rock cliff face under a grassy edge.
 
 DETAILS: Grey-blue vertical rock columns and ledges, a strip of green grass with a few hanging tufts along the top edge of the strip, darker wet rock along the bottom edge. The strip is tall: about one third of the image height.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T14" at grid cell G29 (the same object also appears at N30, AP29, AI30). Then look at the same cell G29 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): rock #1c2233, #2f3648, #4a5263, #6b7385, #9aa1ae; moss #3a5a2e, #5c7f3a; grass #24402a, #335a33, #4f7f3f, #6f9a45, #95b65a; wet stone #2a3040 and #3a4252, dark green algae #1f3326 and #2f4a2e, wet shine #8fb6c8.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -798,6 +1057,12 @@ Create a pixel-art game asset: the carved stone edge of an ornamental pool.
 
 DETAILS: A rounded stone lip with a lit top surface and a short shaded front face, perfectly straight.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T15" at grid cell Q16 (the same object also appears at AF16). Then look at the same cell Q16 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): pale stone #5d5866, #8c8088, #a89a98, #bfb1aa, #d8cbc2; joints #2a2a3a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -814,6 +1079,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a knight statue on a pedestal.
 
 DETAILS: A dark iron knight statue in plate armour holding a tall shield in front and a sword, facing the viewer, on a square stone pedestal with a carved crest.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F1" at grid cell W23 (the same object also appears at V30, Z23, AA30). Then look at the same cell W23 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
@@ -834,6 +1105,12 @@ Create ONE pixel-art game asset: a stone lantern pillar.
 
 DETAILS: A square carved stone pillar with a black iron lantern on top, the lantern's glass panes glowing warm yellow. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F2" at grid cell V32 (the same object also appears at AA32). Then look at the same cell V32 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; dark iron #12141c, #23283a, #3a4155, #5b6378; glowing windows #b0602a, #ffb347, #ffd27a, #fff3c4; stained glass #1d4fa0, #b3262e, #e0b040, #3f8f4f.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -852,6 +1129,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: an iron fire brazier on a tripod.
 
 DETAILS: A round black iron bowl filled with glowing orange embers on a tall three-legged iron tripod. NO flames above the bowl.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F3" at grid cell W24 (the same object also appears at W26, W28, W30). Then look at the same cell W24 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; embers #3a1a10, #ff6a1a, #ffb52e.
 
@@ -872,6 +1155,12 @@ Create ONE pixel-art game asset: an iron wall torch bracket.
 
 DETAILS: A black iron wall bracket holding a wooden torch with a charred top, as mounted on a wall. NO flame. Perfectly vertical.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F4" at grid cell W21 (the same object also appears at Z21). Then look at the same cell W21 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; dark oak #2e1c12, #4a2e1e, #6b4228, #8a5a36; charred #1a1410.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -890,6 +1179,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a castle wall banner.
 
 DETAILS: A crimson banner hanging straight down from a short iron rod, gold cross emblem, thin gold border, swallow-tail bottom. Hanging still, symmetric.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F5" at grid cell G21 (the same object also appears at K21, L21, Q21). Then look at the same cell G21 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): crimson cloth #5a1026, #7e1a39, #b64e3f; gold #c9952e, #e0b040, #ffe08a; iron rod #1e2230, #4a4f60.
 
@@ -910,6 +1205,12 @@ Create ONE pixel-art game asset: a small iron water grate in a stone arch.
 
 DETAILS: A round-topped stone arch with straight vertical iron bars inside, dark stains below. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F6" at grid cell H28 (the same object also appears at AO28). Then look at the same cell H28 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): dark iron #12141c, #23283a, #3a4155, #5b6378; grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; stain #2a3a4a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -928,6 +1229,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a single arrow slit in a stone wall.
 
 DETAILS: A narrow vertical arrow slit opening framed by a few stone blocks, dark inside. Only this small wall detail.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F7" at grid cell T22 (the same object also appears at AC22). Then look at the same cell T22 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; opening #0c0e16.
 
@@ -948,6 +1255,12 @@ Create ONE pixel-art game asset: a stone drain spout sticking out of a wall.
 
 DETAILS: A small carved stone spout with a dark stain running down below it. Only this detail.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+This exact object does not appear in the plan: use Images 1 and 3 only to match the style, stone colour and level of detail of the castle.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; stain #2a3a4a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -966,6 +1279,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a patch of ivy hanging on a wall.
 
 DETAILS: A loose cluster of dark green ivy leaves and thin vines hanging downward. Only the ivy, no wall.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "F7" at grid cell T22 (the same object also appears at AC22). Then look at the same cell T22 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): ivy #1f3326, #24402a, #335a33, #4f7f3f.
 
@@ -986,6 +1305,12 @@ Create ONE pixel-art game asset: a small barred castle window.
 
 DETAILS: A small square stone window frame with three vertical iron bars, dark inside. Symmetric.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+This exact object does not appear in the plan: use Images 1 and 3 only to match the style, stone colour and level of detail of the castle.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c; dark iron #12141c, #23283a, #3a4155, #5b6378; inside #0c0e16.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1004,6 +1329,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a waterfall.
 
 DETAILS: White-blue water falling straight down in three wide streams that merge, foamy and bright, falling perfectly vertically, slightly wider at the bottom. Only the falling water: no rocks, no cliff, no pool.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E1" at grid cell H28 (the same object also appears at AO28). Then look at the same cell H28 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): water #022448, #033361, #045282, #1d7fb8, #5fc6ff; foam #cfeeff, #ffffff.
 
@@ -1024,6 +1355,12 @@ Create ONE pixel-art game asset: white foam and spray where a waterfall hits a l
 
 DETAILS: A wide low cloud of white churning foam, spray droplets and bubbles spreading out to the left and right. Only the foam: no water surface, no rocks.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E2" at grid cell H28 (the same object also appears at AO28). Then look at the same cell H28 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): water #022448, #033361, #045282, #1d7fb8, #5fc6ff; foam #cfeeff, #ffffff.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1042,6 +1379,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: the water of a tiered fountain.
 
 DETAILS: Only the water of a two-bowl tiered fountain: a small jet at the top, thin curtains of water spilling over the edges of two round bowls, and a calm octagonal pool of blue water at the bottom. No stone at all.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E4" at grid cell Y14. Then look at the same cell Y14 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): water #022448, #033361, #045282, #1d7fb8, #5fc6ff; foam #cfeeff, #ffffff.
 
@@ -1062,6 +1405,12 @@ Create ONE pixel-art game asset: a small torch flame.
 
 DETAILS: A single bright flame: white-yellow core, orange body, red tips, two or three sparks, pointing straight up. Only the flame.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E5" at grid cell W21 (the same object also appears at W24, W26, W28). Then look at the same cell W21 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): fire #7a1a08, #c8380e, #f07a1a, #ffb52e, #ffe680, #fffbe0.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1080,6 +1429,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a flying seagull.
 
 DETAILS: A small white seagull with grey wingtips flying to the right, side view, wings raised up.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E7" at grid cell D23 (the same object also appears at AS23). Then look at the same cell D23 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): white #f4f6f8, #d8dde3; grey #4a5060; beak #e0a030.
 
@@ -1100,6 +1455,12 @@ Create ONE pixel-art game asset: a flying seagull.
 
 DETAILS: A small white seagull with grey wingtips flying to the right, side view, wings pushed down.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "E7" at grid cell D23 (the same object also appears at AS23). Then look at the same cell D23 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): white #f4f6f8, #d8dde3; grey #4a5060; beak #e0a030.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1118,6 +1479,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: a large mossy rock outcrop.
 
 DETAILS: A wide mound of grey-blue rocks with patches of moss and grass on top, flat bottom edge (it will sit in water). Only the rock.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "R1" at grid cell G29 (the same object also appears at N30, AP29, AI30). Then look at the same cell G29 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): rock #1c2233, #2f3648, #4a5263, #6b7385, #9aa1ae; moss #3a5a2e, #5c7f3a; grass #24402a, #335a33, #4f7f3f, #6f9a45, #95b65a.
 
@@ -1138,6 +1505,12 @@ Create ONE pixel-art game asset: a small mossy rock outcrop.
 
 DETAILS: A small cluster of grey-blue rocks with a little moss on top, flat bottom edge. Only the rock.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "R1" at grid cell G29 (the same object also appears at N30, AP29, AI30). Then look at the same cell G29 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): rock #1c2233, #2f3648, #4a5263, #6b7385, #9aa1ae; moss #3a5a2e, #5c7f3a; grass #24402a, #335a33, #4f7f3f, #6f9a45, #95b65a.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1157,6 +1530,12 @@ Create a pixel-art game asset: a lake shoreline seen from above.
 
 DETAILS: Green grass along the top edge of the strip turning into pebbles and wet sand along the bottom edge.
 
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "R2" at grid cell C22 (the same object also appears at AT22). Then look at the same cell C22 in Image 1 (no labels covering it) and study that part of the wall at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
+
 COLOURS (use only these): grass #24402a, #335a33, #4f7f3f, #6f9a45, #95b65a; pebbles #7a7470, #a39a90; wet sand #8f7a5e, #b8a080.
 
 STYLE: crisp high-detail pixel art for a 2D fantasy RPG (modern HD pixel art), clean hard square pixels, dark outlines, no blur, no soft brush, no painterly look, no 3D render. Warm late-afternoon light from the UPPER LEFT: the left side is lit, the right side is in shade.
@@ -1173,6 +1552,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: one castle battlement corner merlon.
 
 DETAILS: A single square stone merlon block at an outside 90-degree corner of a battlement, showing its lit top face and front face. Only this block.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T5" at grid cell G8 (the same object also appears at I19, M20, O20). Then look at the same cell G8 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 
@@ -1192,6 +1577,12 @@ DO NOT include: people, characters, an adventurer or any figure for scale; text,
 Create ONE pixel-art game asset: one inside corner of a castle battlement.
 
 DETAILS: Two short stone battlement pieces meeting at an inside 90-degree corner, with the lit tops visible. Only this corner.
+
+REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
+
+WHERE TO LOOK: in Image 3 find the label that contains the code "T5" at grid cell G8 (the same object also appears at I19, M20, O20). Then look at the same cell G8 in Image 1 (no labels covering it) and study the object at that spot.
+
+HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
 COLOURS (use only these): grey-blue stone: #151a30 outlines, #3c3e52 shadow, #595768, #706b77 mid, #887f86, #a69a96 lit faces, #dccabb top highlights, mortar #2a2b3c.
 

@@ -1,5 +1,7 @@
 # Castle asset requirements: highest-quality build
 
+> **To generate the art, use `docs/prompts/CASTLE_PROMPTS.xlsx`** (one sheet, one complete prompt per image). It splits multi-piece items into single images, and animations are done in code, so no frame sheets are needed. Sizes below are the final in-game sizes I resize to.
+
 > **Where each asset goes:** see `docs/ASSET_MAP.md`. It shows the plan with a grid (A–AV × 1–32) and every ID below marked on it.
 
 This is everything still needed to bring the castle (as built from `docs/reference/castle_reference.png`)

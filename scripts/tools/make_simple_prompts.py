@@ -71,7 +71,7 @@ def ref_ids(key):
     if key in _CELLS: return key
     if key[:-1] in _CELLS: return key[:-1]
     return None
-STYLE_ONLY = {'F7B', 'F7D'}
+STYLE_ONLY = {'F7B', 'F7D', 'T5A', 'T5B'}
 def cells_for(key):
     if key in STYLE_ONLY: return []
     k = ref_ids(key)
@@ -329,7 +329,7 @@ for n, r in enumerate(L, 1):
         c.font = Font(name=F, size=10, bold=(i == 2))
     ws.cell(row, 2).value = f"{r[0]}\n\n{r[1]}"
     ws.row_dimensions[row].height = 409
-    txt += [f'#{n}  ASSIGNED TO: {who(n).upper()}' + (f'   >>> {STATUS[r[0]].upper()} <<<' if r[0] in STATUS else '') + '   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
+    txt += [f'#{n}  ASSIGNED TO: {who(n).upper()}' + (f'   >>> {STATUS[r[0]].upper()} <<<' if r[0] in STATUS else '') + f'   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
 last = len(L) + 3
 dv = DataValidation(type='list', formula1='"Done,Redo"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'F4:F{last}')
 ws.conditional_formatting.add(f'A4:F{last}', FormulaRule(formula=[f'$F4="Done"'], fill=PatternFill('solid', fgColor='C6EFCE')))

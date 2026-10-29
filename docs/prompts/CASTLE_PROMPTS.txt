@@ -4,7 +4,7 @@ With EVERY prompt attach 3 images in this order: 1_castle_grid.png, 2_legend.png
 For each item: copy the PROMPT, generate, save as PNG with the SAVE AS name.
 If an image is tilted, has a person, or has more than one object: generate it again.
 
-#1  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#1  ASSIGNED TO: GOKHUL   SAVE AS: T1A_wall_face_a.png   (Wall face texture A)   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create a seamless pixel-art texture: castle wall stone texture.
 
@@ -27,7 +27,7 @@ IMAGE SHAPE: 2:1 wide.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#2  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#2  ASSIGNED TO: GOKHUL   SAVE AS: T1B_wall_face_b.png   (Wall face texture B)   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create a seamless pixel-art texture: castle wall stone texture (second variant).
 
@@ -50,7 +50,7 @@ IMAGE SHAPE: 2:1 wide.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#3  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#3  ASSIGNED TO: GOKHUL   SAVE AS: T2_wall_waterline.png   (Wall waterline band)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: the bottom band of a castle wall where it stands in a moat.
 
@@ -73,7 +73,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#4  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#4  ASSIGNED TO: GOKHUL   SAVE AS: T3_merlons_front.png   (Battlements (front))   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a crenellated castle battlement (merlons) seen from the front.
 
@@ -96,7 +96,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#5  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#5  ASSIGNED TO: GOKHUL   SAVE AS: T6_corbels.png   (Corbel band)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a band of stepped stone corbels (machicolations) that hangs under castle battlements.
 
@@ -119,7 +119,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#6  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#6  ASSIGNED TO: GOKHUL   SAVE AS: T7_wall_walk.png   (Wall-walk paving)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: worn stone paving of a castle wall-walk, seen from directly above.
 
@@ -142,7 +142,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#7  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#7  ASSIGNED TO: GOKHUL   SAVE AS: T4_merlons_back.png   (Battlements (back side))   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a crenellated castle battlement seen from the INSIDE of the castle.
 
@@ -165,7 +165,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#8  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#8  ASSIGNED TO: GOKHUL   SAVE AS: TW2_tower_body.png   (Tower body (standard))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a round stone castle tower body.
 
@@ -190,7 +190,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#9  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#9  ASSIGNED TO: GOKHUL   SAVE AS: TW3_tower_body_large.png   (Tower body (large))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a large round stone castle tower body.
 
@@ -215,7 +215,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#10  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#10  ASSIGNED TO: GOKHUL   SAVE AS: TW6_tower_roof.png   (Tower cone roof)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a conical tower roof.
 
@@ -240,7 +240,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#11  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#11  ASSIGNED TO: GOKHUL   SAVE AS: TW4_tower_base_water.png   (Tower base in water)   SHAPE: 21:9 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the bottom section of a round stone tower where it rises out of water.
 
@@ -265,7 +265,7 @@ IMAGE SHAPE: 21:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#12  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#12  ASSIGNED TO: GOKHUL   SAVE AS: TW5_tower_top_battlements.png   (Tower top with battlements)   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the open top of a round stone tower with battlements, no roof.
 
@@ -290,7 +290,7 @@ IMAGE SHAPE: 2:1 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#13  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#13  ASSIGNED TO: GOKHUL   SAVE AS: TW7_square_pillar.png   (Square pillar tower)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a square stone pedestal tower.
 
@@ -315,7 +315,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#14  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#14  ASSIGNED TO: GOKHUL   SAVE AS: TW8_tower_banner.png   (Tower banner)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a hanging castle banner.
 
@@ -340,7 +340,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#15  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#15  ASSIGNED TO: GOKHUL   SAVE AS: TW9_pennant.png   (Pennant flag)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a pennant flag on a pole tip.
 
@@ -365,7 +365,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#16  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#16  ASSIGNED TO: GOKHUL   SAVE AS: G1_gatehouse.png   (Main gatehouse)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a castle main gatehouse.
 
@@ -390,7 +390,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#17  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#17  ASSIGNED TO: GOKHUL   SAVE AS: G2_portcullis.png   (Portcullis)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: an iron portcullis.
 
@@ -415,7 +415,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#18  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#18  ASSIGNED TO: GOKHUL   SAVE AS: G3A_gate_doors_closed.png   (Gate doors closed)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a pair of closed castle gate doors.
 
@@ -440,7 +440,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#19  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#19  ASSIGNED TO: GOKHUL   SAVE AS: G3B_gate_doors_open.png   (Gate doors open)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a pair of castle gate doors swung open.
 
@@ -465,7 +465,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#20  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#20  ASSIGNED TO: GOKHUL   SAVE AS: S1_stairs_upper.png   (Upper grand stairs (plain))   SHAPE: 4:3 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a wide straight stone staircase going up away from the viewer.
 
@@ -490,7 +490,7 @@ IMAGE SHAPE: 4:3 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#21  ASSIGNED TO: GOKHUL   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#21  ASSIGNED TO: GOKHUL   SAVE AS: S2_stairs_lower_carpet.png   (Lower grand stairs (red carpet))   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a wide straight stone staircase with a red carpet.
 
@@ -515,7 +515,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#22  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#22  ASSIGNED TO: BHUVANESH   SAVE AS: S3_balustrade.png   (Stone balustrade)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a low carved stone balustrade railing.
 
@@ -538,7 +538,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#23  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#23  ASSIGNED TO: BHUVANESH   SAVE AS: S4_gargoyle.png   (Gargoyle statue)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a winged gargoyle statue.
 
@@ -563,7 +563,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#24  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#24  ASSIGNED TO: BHUVANESH   SAVE AS: S5_knight_statue_sword.png   (Knight statue (sword))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a knight statue on a plinth.
 
@@ -588,7 +588,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#25  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#25  ASSIGNED TO: BHUVANESH   SAVE AS: P1_palace_keep.png   (Palace central keep)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the central keep of a royal fantasy palace.
 
@@ -613,7 +613,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#26  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#26  ASSIGNED TO: BHUVANESH   SAVE AS: P2_palace_wing_a.png   (Palace wing A)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a straight section of a royal palace wing.
 
@@ -638,7 +638,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#27  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#27  ASSIGNED TO: BHUVANESH   SAVE AS: P3_palace_wing_b.png   (Palace wing B)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a straight section of a royal palace wing (variant).
 
@@ -663,7 +663,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#28  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#28  ASSIGNED TO: BHUVANESH   SAVE AS: P4_palace_pavilion.png   (Palace corner pavilion)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a square palace corner pavilion.
 
@@ -688,7 +688,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#29  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#29  ASSIGNED TO: BHUVANESH   SAVE AS: P5_palace_skyline_left_half.png   (Palace skyline (left half))   SHAPE: 21:9 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the LEFT HALF of a palace roof skyline.
 
@@ -713,7 +713,7 @@ IMAGE SHAPE: 21:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#30  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#30  ASSIGNED TO: BHUVANESH   SAVE AS: P6_palace_giant_banner.png   (Giant palace banner)   SHAPE: 9:16 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a very long royal banner.
 
@@ -738,7 +738,7 @@ IMAGE SHAPE: 9:16 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#31  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#31  ASSIGNED TO: BHUVANESH   SAVE AS: B1_cathedral.png   (Cathedral)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the front of a Gothic cathedral.
 
@@ -763,7 +763,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#32  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#32  ASSIGNED TO: BHUVANESH   SAVE AS: B2_chapel.png   (Chapel)   SHAPE: 2:3 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the front of a small Gothic chapel.
 
@@ -788,7 +788,7 @@ IMAGE SHAPE: 2:3 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#33  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#33  ASSIGNED TO: BHUVANESH   SAVE AS: B3_domed_hall.png   (Domed hall)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the front of a grand domed hall.
 
@@ -813,7 +813,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#34  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#34  ASSIGNED TO: BHUVANESH   SAVE AS: B4_manor.png   (Manor house)   SHAPE: 4:3 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the front of a stone manor house.
 
@@ -838,7 +838,7 @@ IMAGE SHAPE: 4:3 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#35  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#35  ASSIGNED TO: BHUVANESH   SAVE AS: B5_colonnade.png   (Arched colonnade)   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a stone colonnade wall.
 
@@ -863,7 +863,7 @@ IMAGE SHAPE: 2:1 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#36  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#36  ASSIGNED TO: BHUVANESH   SAVE AS: B6_fountain_dry.png   (Central fountain (no water))   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: an ornate tiered stone fountain WITHOUT water.
 
@@ -888,7 +888,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#37  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#37  ASSIGNED TO: BHUVANESH   SAVE AS: T8_courtyard_cobbles.png   (Courtyard cobbles)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: castle courtyard cobblestones seen from directly above.
 
@@ -911,7 +911,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#38  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#38  ASSIGNED TO: BHUVANESH   SAVE AS: T9_terrace_paving.png   (Palace terrace paving)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: large square palace paving slabs seen from directly above.
 
@@ -934,7 +934,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#39  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#39  ASSIGNED TO: BHUVANESH   SAVE AS: T10_road_cobbles.png   (Causeway road)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: a cobbled road surface seen from directly above.
 
@@ -957,7 +957,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#40  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#40  ASSIGNED TO: BHUVANESH   SAVE AS: T11_lawn.png   (Formal lawn)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: a short trimmed garden lawn seen from directly above.
 
@@ -980,7 +980,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#41  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#41  ASSIGNED TO: BHUVANESH   SAVE AS: T12_dirt_yard.png   (Dirt yard)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create a seamless pixel-art texture: a packed earth yard seen from directly above.
 
@@ -1003,7 +1003,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, text, labels, borders, frames, a single object in the middle, magenta, vignette or dark edges, perspective or tilt, a visible seam, an obvious repeating stamp pattern.
 
 
-#42  ASSIGNED TO: BHUVANESH   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#42  ASSIGNED TO: BHUVANESH   SAVE AS: T13_bridge_arch.png   (Stone bridge arch)   SHAPE: 3:2 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the front face of one stone bridge arch.
 
@@ -1028,7 +1028,7 @@ IMAGE SHAPE: 3:2 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#43  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#43  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: T14_cliff_face.png   (Cliff face)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a vertical rock cliff face under a grassy edge.
 
@@ -1051,7 +1051,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#44  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#44  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: T15_pool_rim.png   (Pool rim)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: the carved stone edge of an ornamental pool.
 
@@ -1074,7 +1074,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#45  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#45  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F1_knight_statue_shield.png   (Knight statue (shield))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a knight statue on a pedestal.
 
@@ -1099,7 +1099,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#46  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#46  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F2_lantern_pillar.png   (Lantern pillar)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a stone lantern pillar.
 
@@ -1124,7 +1124,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#47  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#47  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F3_brazier.png   (Brazier (no flame))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: an iron fire brazier on a tripod.
 
@@ -1149,7 +1149,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#48  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#48  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F4_wall_torch.png   (Wall torch (no flame))   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: an iron wall torch bracket.
 
@@ -1174,7 +1174,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#49  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#49  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F5_wall_banner.png   (Wall banner)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a castle wall banner.
 
@@ -1199,7 +1199,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#50  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#50  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F6_sluice_grate.png   (Sluice grate)   SHAPE: 3:4 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a small iron water grate in a stone arch.
 
@@ -1224,7 +1224,7 @@ IMAGE SHAPE: 3:4 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#51  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#51  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F7A_arrow_slit.png   (Arrow slit decal)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a single arrow slit in a stone wall.
 
@@ -1249,7 +1249,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#52  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#52  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F7B_drain_spout.png   (Drain spout decal)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a stone drain spout sticking out of a wall.
 
@@ -1274,7 +1274,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#53  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#53  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F7C_ivy_patch.png   (Ivy patch decal)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a patch of ivy hanging on a wall.
 
@@ -1299,7 +1299,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#54  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#54  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: F7D_barred_window.png   (Barred window decal)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a small barred castle window.
 
@@ -1324,7 +1324,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#55  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#55  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E1_waterfall.png   (Waterfall)   SHAPE: 2:3 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a waterfall.
 
@@ -1349,7 +1349,7 @@ IMAGE SHAPE: 2:3 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#56  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#56  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E2_splash.png   (Waterfall splash)   SHAPE: 21:9 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: white foam and spray where a waterfall hits a lake.
 
@@ -1374,7 +1374,7 @@ IMAGE SHAPE: 21:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#57  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#57  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E4_fountain_water.png   (Fountain water)   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: the water of a tiered fountain.
 
@@ -1399,7 +1399,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#58  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#58  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E5_flame.png   (Torch flame)   SHAPE: 1:2 tall
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a small torch flame.
 
@@ -1424,7 +1424,7 @@ IMAGE SHAPE: 1:2 tall.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#59  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#59  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E7A_seagull_wings_up.png   (Seagull (wings up))   SHAPE: 3:2 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a flying seagull.
 
@@ -1449,7 +1449,7 @@ IMAGE SHAPE: 3:2 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#60  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#60  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: E7B_seagull_wings_down.png   (Seagull (wings down))   SHAPE: 3:2 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a flying seagull.
 
@@ -1474,7 +1474,7 @@ IMAGE SHAPE: 3:2 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#61  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#61  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: R1A_rock_outcrop_large.png   (Rock outcrop (large))   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a large mossy rock outcrop.
 
@@ -1499,7 +1499,7 @@ IMAGE SHAPE: 2:1 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#62  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#62  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: R1B_rock_outcrop_small.png   (Rock outcrop (small))   SHAPE: 3:2 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a small mossy rock outcrop.
 
@@ -1524,7 +1524,7 @@ IMAGE SHAPE: 3:2 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#63  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#63  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: R2_shore_edge.png   (Shore edge)   SHAPE: 16:9 wide
 ------------------------------------------------------------
 Create a pixel-art game asset: a lake shoreline seen from above.
 
@@ -1547,7 +1547,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#64  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#64  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: T5A_corner_outer_90.png   (Battlement corner (outer 90°))   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: one square stone battlement block (merlon) for the outside corner of a castle wall.
 
@@ -1555,7 +1555,7 @@ DETAILS: ONE square stone merlon block seen exactly from the FRONT, like a flat 
 
 REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
 
-WHERE TO LOOK: in Image 3 find the label that contains the code "T5" at grid cell G8 (the same object also appears at I19, M20, O20). Then look at the same cell G8 in Image 1 (no labels covering it) and study the object at that spot.
+This exact object does not appear in the plan: use Images 1 and 3 only to match the style, stone colour and level of detail of the castle.
 
 HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 
@@ -1572,7 +1572,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#65  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}
+#65  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: T5B_corner_inner_90.png   (Battlement corner (inner 90°))   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a short piece of castle battlement that turns an inside corner.
 
@@ -1580,7 +1580,7 @@ DETAILS: Seen exactly from the FRONT, like a flat building drawing: two stone me
 
 REFERENCE IMAGES (3 images are attached with this prompt): Image 1 = the castle plan with a grid (columns A to AV from left to right, rows 1 to 32 from top to bottom; each cell's name is written faintly inside it). Image 2 = the colour legend for the labels. Image 3 = the same castle plan with asset labels (small dark boxes with codes like TW2, G1, B3; a dot marks the exact spot).
 
-WHERE TO LOOK: in Image 3 find the label that contains the code "T5" at grid cell G8 (the same object also appears at I19, M20, O20). Then look at the same cell G8 in Image 1 (no labels covering it) and study the object at that spot.
+This exact object does not appear in the plan: use Images 1 and 3 only to match the style, stone colour and level of detail of the castle.
 
 HOW TO USE THE REFERENCE IMAGES: use them ONLY to copy the design of this one object (its shape, proportions, details, ornaments and colours). Then draw a completely NEW, clean image of that object alone, following every rule below. Do NOT copy the grid lines, cell names, labels, label boxes, dots or legend. Do NOT copy the camera angle of the plan: the plan is an angled overview, but this asset must be redrawn exactly as described in VIEW. Do NOT include any other part of the castle, or any trees, water, grass or ground from the plan. Do NOT redraw the whole castle.
 

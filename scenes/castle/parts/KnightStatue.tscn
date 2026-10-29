@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/sprites/statues/knight_statue_dark.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/castle_hd/props/F1_knight_statue_shield.png" id="1"]
 
 [node name="KnightStatue" type="Sprite2D"]
 texture = ExtResource("1")

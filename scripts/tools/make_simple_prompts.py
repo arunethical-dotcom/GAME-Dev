@@ -262,10 +262,12 @@ add('R1B_rock_outcrop_small.png', 'Rock outcrop (small)', 'sprite', (3, 2), "a s
     "A small cluster of grey-blue rocks with a little moss on top, flat bottom edge. Only the rock.", ROCK + "; " + GRASS)
 add('R2_shore_edge.png', 'Shore edge', 'band', None, "a lake shoreline seen from above",
     "Green grass along the top edge of the strip turning into pebbles and wet sand along the bottom edge.", GRASS + "; pebbles #7a7470, #a39a90; wet sand #8f7a5e, #b8a080")
-add('T5A_corner_outer_90.png', 'Battlement corner (outer 90°)', 'sprite', (1, 1), "one castle battlement corner merlon",
-    "A single square stone merlon block at an outside 90-degree corner of a battlement, showing its lit top face and front face. Only this block.", STONE)
-add('T5B_corner_inner_90.png', 'Battlement corner (inner 90°)', 'sprite', (1, 1), "one inside corner of a castle battlement",
-    "Two short stone battlement pieces meeting at an inside 90-degree corner, with the lit tops visible. Only this corner.", STONE)
+add('T5A_corner_outer_90.png', 'Battlement corner (outer 90°)', 'sprite', (1, 1), "one square stone battlement block (merlon) for the outside corner of a castle wall",
+    "ONE square stone merlon block seen exactly from the FRONT, like a flat building drawing: we see its front face as an upright square of stone blocks and only a thin lit strip of its top face above it. "
+    "It must NOT look like a 3D cube turned at 45 degrees: no diamond shape, no two side faces, no isometric corner pointing at the viewer. Left and right edges are perfectly vertical. Only this one block.", STONE)
+add('T5B_corner_inner_90.png', 'Battlement corner (inner 90°)', 'sprite', (2, 1), "a short piece of castle battlement that turns an inside corner",
+    "Seen exactly from the FRONT, like a flat building drawing: two stone merlons side by side on a short straight stone base; the RIGHT merlon is set slightly further back (higher up in the image) to show the wall turning away from us. "
+    "It must NOT look isometric: no diamond or L shape on the floor, no faces turned at 45 degrees, all vertical edges perfectly vertical, the base perfectly horizontal.", STONE)
 
 # ---------------------------------------------------------------- prompt text
 NO_GROUND_RULE = {'T2', 'T14', 'R2', 'E1', 'E2', 'E4', 'R1A', 'R1B', 'F7C'}
@@ -295,6 +297,9 @@ wb = Workbook(); ws = wb.active; ws.title = 'Prompts'
 thin = Side(style='thin', color='9AA0B0'); BOX = Border(left=thin, right=thin, top=thin, bottom=thin)
 ws.column_dimensions['A'].width = 6; ws.column_dimensions['B'].width = 34; ws.column_dimensions['C'].width = 13
 ws.column_dimensions['D'].width = 120; ws.column_dimensions['E'].width = 16; ws.column_dimensions['F'].width = 10
+import json as _json
+_SP = os.path.join(OUT, 'status.json')
+STATUS = _json.load(open(_SP)) if os.path.exists(_SP) else {}   # SAVE AS -> "Done" / "Redo" (kept between rebuilds)
 PEOPLE = ['Gokhul', 'Bhuvanesh', 'Surendar']; PCOL = {'Gokhul': 'DDEBF7', 'Bhuvanesh': 'FCE4D6', 'Surendar': 'E2EFDA'}
 def who(n): return PEOPLE[min((n - 1) // 21, 2)]   # 1-21 Gokhul, 22-42 Bhuvanesh, 43-65 Surendar
 ws.merge_cells('A1:F1'); ws['A1'] = 'CASTLE ASSETS: copy the prompt, generate, save with the file name. That is all.'
@@ -304,7 +309,7 @@ steps = ('0) With EVERY prompt, attach these 3 images in this order: 1_castle_gr
          '1) Copy the whole cell in column "PROMPT" and paste it into the image generator as it is (do not shorten it).   '
          '2) Set the image shape shown in column "SHAPE" if the tool has that option.   '
          '3) Save the image as PNG with the exact name in column "SAVE AS" and put it in the shared folder.   '
-         '4) Only do the rows with YOUR name in column "ASSIGNED TO". Mark "Done" in the last column.   If an image looks tilted, has a person in it, or has more than one object: generate it again.')
+         '4) Only do the rows with YOUR name in column "ASSIGNED TO". Mark "Done" in the last column. Rows marked "Redo" (red) need a new image with the updated prompt.   If an image looks tilted, has a person in it, or has more than one object: generate it again.')
 ws.merge_cells('A2:F2'); ws['A2'] = steps; ws['A2'].font = Font(name=F, size=11); ws['A2'].alignment = Alignment(wrap_text=True, vertical='center', indent=1)
 ws['A2'].fill = PatternFill('solid', fgColor='FFF2B3'); ws.row_dimensions[2].height = 80
 hdr = ['No.', 'SAVE AS (exact file name)', 'SHAPE / LOOK AT CELL', 'PROMPT (copy everything in the cell) + attach the 3 images', 'ASSIGNED TO', 'Done']
@@ -318,16 +323,17 @@ txt = ['CASTLE ASSET PROMPTS', '=' * 60,
        'If an image is tilted, has a person, or has more than one object: generate it again.', '']
 for n, r in enumerate(L, 1):
     shape, p = build(r); row = n + 3
-    _cs = cells_for(r[0].split('_')[0]); vals = [n, r[0], shape + ('\n\nCell ' + _cs[0] if _cs else '\n\n(style only)'), p, who(n), None]
+    _cs = cells_for(r[0].split('_')[0]); vals = [n, r[0], shape + ('\n\nCell ' + _cs[0] if _cs else '\n\n(style only)'), p, who(n), STATUS.get(r[0])]
     for i, v in enumerate(vals, 1):
         c = ws.cell(row, i, v); c.border = BOX; c.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if i in (1, 3, 5, 6) else 'left')
         c.font = Font(name=F, size=10, bold=(i == 2))
     ws.cell(row, 2).value = f"{r[0]}\n\n{r[1]}"
     ws.row_dimensions[row].height = 409
-    txt += [f'#{n}  ASSIGNED TO: {who(n).upper()}   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
+    txt += [f'#{n}  ASSIGNED TO: {who(n).upper()}' + (f'   >>> {STATUS[r[0]].upper()} <<<' if r[0] in STATUS else '') + '   SAVE AS: {r[0]}   ({r[1]})   SHAPE: {shape}', '-' * 60, p, '', '']
 last = len(L) + 3
-dv = DataValidation(type='list', formula1='"Done"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'F4:F{last}')
+dv = DataValidation(type='list', formula1='"Done,Redo"', allow_blank=True); ws.add_data_validation(dv); dv.add(f'F4:F{last}')
 ws.conditional_formatting.add(f'A4:F{last}', FormulaRule(formula=[f'$F4="Done"'], fill=PatternFill('solid', fgColor='C6EFCE')))
+ws.conditional_formatting.add(f'A4:F{last}', FormulaRule(formula=[f'$F4="Redo"'], fill=PatternFill('solid', fgColor='FFC7CE')))
 for _r in range(4, last + 1):
     _c = ws.cell(_r, 5); _c.font = Font(name=F, size=11, bold=True); _c.fill = PatternFill('solid', fgColor=PCOL[_c.value]); _c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
 for _i, _p in enumerate(PEOPLE):

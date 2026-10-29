@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=3]
 
-[ext_resource type="Texture2D" path="res://assets/sprites/props/brazier.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/castle_hd/props/F3_brazier.png" id="1"]
 [ext_resource type="Texture2D" path="res://resources/light_radial.tres" id="light"]
 [ext_resource type="Script" path="res://scripts/castle/flicker_light.gd" id="flicker"]
-[ext_resource type="SpriteFrames" path="res://resources/flame_frames.tres" id="flames"]
-[ext_resource type="Script" path="res://scripts/castle/animated_offset.gd" id="anim"]
+[ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E5_flame.png" id="flames"]
+[ext_resource type="Script" path="res://scripts/castle/flame_flicker.gd" id="anim"]
 
 [node name="Brazier" type="Sprite2D"]
 texture = ExtResource("1")
-offset = Vector2(0, -112)
+offset = Vector2(0, -113)
 
 [node name="Light" type="PointLight2D" parent="."]
 position = Vector2(0, -185)
@@ -18,8 +18,8 @@ texture_scale = 4.0
 script = ExtResource("flicker")
 base_energy = 1.3
 
-[node name="Flame" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -160)
-sprite_frames = ExtResource("flames")
-offset = Vector2(0, -47)
+[node name="Flame" type="Sprite2D" parent="."]
+position = Vector2(0, -196)
+texture = ExtResource("flames")
+offset = Vector2(0, -46)
 script = ExtResource("anim")

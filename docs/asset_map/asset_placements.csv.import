@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dfxmmu5sjt7as"
+
+[deps]
+
+files=["res://docs/asset_map/asset_placements.plan.translation", "res://docs/asset_map/asset_placements.plan.translation", "res://docs/asset_map/asset_placements.grid.translation", "res://docs/asset_map/asset_placements.note.translation"]
+
+source_file="res://docs/asset_map/asset_placements.csv"
+dest_files=["res://docs/asset_map/asset_placements.plan.translation", "res://docs/asset_map/asset_placements.plan.translation", "res://docs/asset_map/asset_placements.grid.translation", "res://docs/asset_map/asset_placements.note.translation"]
+
+[params]
+
+compress=true
+delimiter=0

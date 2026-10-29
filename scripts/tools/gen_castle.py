@@ -98,7 +98,7 @@ TEX_FACE = T('res://assets/tilesets/castle/stone_face.png')
 TEX_MERLON = T('res://assets/tilesets/castle/merlon_band.png')
 TEX_CORBEL = T('res://assets/tilesets/castle/corbel_band.png')
 TEX_BRIDGE = T('res://assets/tilesets/castle/bridge_arch_face.png')
-TEX_CLIFF = T('res://assets/tilesets/terrain/cliff_face_strip.png')
+TEX_CLIFF = T('res://assets/castle_hd/wall_kit/T14_cliff_face.png')
 
 N('[node name="Castle" type="Node2D"]')
 X0, Y0, X1, Y1 = LY.WORLD_RECT
@@ -119,7 +119,7 @@ for nm, p in LANDO:
     N(f'[node name="{nm}Bank" type="Line2D" parent="Ground/SandBanks"]\nmaterial = SubResource("m_sand")\npoints = {fmt([W(q) for q in p + [p[0]]])}\nwidth = 110.0\njoint_mode = 2')
 # cliffs under camera-facing shores (vertical slices)
 N('[node name="Cliffs" type="Node2D" parent="Ground"]')
-CLIFF_H, TEXH = 440.0, 331.0
+CLIFF_H, TEXH = 440.0, 440.0
 for nm, p in LANDO:
     for j, r in enumerate(GH.south_runs(p)):
         pts = [W(r[0])]
@@ -209,7 +209,7 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
             if min(a[0], b[0]) + 90 < bx < max(a[0], b[0]) - 90:
                 t = (bx - a[0]) / (b[0] - a[0]); y = a[1] + t * (b[1] - a[1])
                 N(f'[node name="{nid("Banner")}" type="Sprite2D" parent="{parent}/Faces"]\nmaterial = ExtResource("{E("Material", "res://resources/banner_sway_material.tres")}")\n'
-                  f'position = Vector2({bx:.0f}, {y + CORBEL_H*0.7:.0f})\ntexture = {T("res://assets/sprites/banners/banner_red_cross_wall.png")}\noffset = Vector2(0, 145)')
+                  f'position = Vector2({bx:.0f}, {y + CORBEL_H*0.7:.0f})\ntexture = {T("res://assets/castle_hd/props/F5_wall_banner.png")}\noffset = Vector2(0, 130)')
                 break
     # floor
     N(f'[node name="Floor" type="Polygon2D" parent="{parent}"]\nmaterial = SubResource("{FLOORS[floor]}")\npolygon = {fmt(poly)}')

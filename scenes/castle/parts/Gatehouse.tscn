@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/gatehouse_grey.png" id="1"]
 [ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="2"]
 [ext_resource type="Texture2D" path="res://resources/light_radial.tres" id="light"]
 [ext_resource type="Script" path="res://scripts/castle/flicker_light.gd" id="flicker"]
+[ext_resource type="Script" path="res://scripts/castle/occluder_fade.gd" id="fade"]
 
 [sub_resource type="RectangleShape2D" id="left"]
 size = Vector2(308, 120)
@@ -12,6 +13,7 @@ size = Vector2(308, 120)
 size = Vector2(430, 120)
 
 [node name="Gatehouse" type="Node2D"]
+script = ExtResource("fade")
 
 [node name="WaterFoam" type="Line2D" parent="."]
 z_index = -85

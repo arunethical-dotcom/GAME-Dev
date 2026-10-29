@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/castle_hd/props/F3_brazier.png" id="1"]
 [ext_resource type="Texture2D" path="res://resources/light_radial.tres" id="light"]
 [ext_resource type="Script" path="res://scripts/castle/flicker_light.gd" id="flicker"]
 [ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E5_flame.png" id="flames"]
 [ext_resource type="Script" path="res://scripts/castle/flame_flicker.gd" id="anim"]
+
+[sub_resource type="RectangleShape2D" id="propshape"]
+size = Vector2(70, 30)
 
 [node name="Brazier" type="Sprite2D"]
 texture = ExtResource("1")
@@ -23,3 +26,9 @@ position = Vector2(0, -196)
 texture = ExtResource("flames")
 offset = Vector2(0, -46)
 script = ExtResource("anim")
+
+[node name="PropBody" type="StaticBody2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="PropBody"]
+position = Vector2(0, -15)
+shape = SubResource("propshape")

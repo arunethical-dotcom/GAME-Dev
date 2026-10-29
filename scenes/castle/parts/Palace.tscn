@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_keep_large_grey.png" id="1"]
 [ext_resource type="Texture2D" path="res://assets/sprites/buildings/palace_facade_grey.png" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Tower.tscn" id="3"]
 [ext_resource type="Material" path="res://resources/glow_palace_facade.tres" id="gw"]
 [ext_resource type="Material" path="res://resources/glow_palace_keep_large.tres" id="gk"]
+[ext_resource type="Script" path="res://scripts/castle/occluder_fade.gd" id="fade"]
 
 [sub_resource type="RectangleShape2D" id="keep"]
 size = Vector2(1400, 180)
@@ -16,6 +17,7 @@ size = Vector2(1624, 140)
 size = Vector2(1624, 140)
 
 [node name="Palace" type="Node2D"]
+script = ExtResource("fade")
 y_sort_enabled = true
 
 [node name="WingW2" type="Sprite2D" parent="."]

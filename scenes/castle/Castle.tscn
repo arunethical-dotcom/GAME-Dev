@@ -908,228 +908,288 @@ color = Color(0.826, 0.826, 0.843, 1)
 polygon = PackedVector2Array(12780.0, 5920.0, 13640.0, 5480.0, 13640.0, 5545.0, 12780.0, 5985.0)
 uv = PackedVector2Array(20875.4, 0.0, 21841.4, 0.0, 21841.4, 65.0, 20875.4, 65.0)
 
+[node name="EdgeBody62" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody62"]
+polygon = PackedVector2Array(7680.0, 1000.0, 3520.0, 1000.0, 3520.0, 1028.0, 7680.0, 1028.0)
+
+[node name="EdgeBody63" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody63"]
+polygon = PackedVector2Array(3520.0, 1000.0, 2620.0, 1600.0, 2635.5, 1623.3, 3535.5, 1023.3)
+
+[node name="EdgeBody64" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody64"]
+polygon = PackedVector2Array(2620.0, 1600.0, 2140.0, 2260.0, 2162.6, 2276.5, 2642.6, 1616.5)
+
+[node name="EdgeBody65" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody65"]
+polygon = PackedVector2Array(2140.0, 2260.0, 2140.0, 4200.0, 2168.0, 4200.0, 2168.0, 2260.0)
+
+[node name="EdgeBody66" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody66"]
+polygon = PackedVector2Array(2140.0, 4200.0, 1720.0, 4440.0, 1733.9, 4464.3, 2153.9, 4224.3)
+
+[node name="EdgeBody67" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody67"]
+polygon = PackedVector2Array(1720.0, 4440.0, 1720.0, 5480.0, 1748.0, 5480.0, 1748.0, 4440.0)
+
+[node name="EdgeBody68" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody68"]
+polygon = PackedVector2Array(13640.0, 5480.0, 13640.0, 4440.0, 13612.0, 4440.0, 13612.0, 5480.0)
+
+[node name="EdgeBody69" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody69"]
+polygon = PackedVector2Array(13640.0, 4440.0, 13220.0, 4200.0, 13206.1, 4224.3, 13626.1, 4464.3)
+
+[node name="EdgeBody70" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody70"]
+polygon = PackedVector2Array(13220.0, 4200.0, 13220.0, 2260.0, 13192.0, 2260.0, 13192.0, 4200.0)
+
+[node name="EdgeBody71" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody71"]
+polygon = PackedVector2Array(13220.0, 2260.0, 12740.0, 1600.0, 12717.4, 1616.5, 13197.4, 2276.5)
+
+[node name="EdgeBody72" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody72"]
+polygon = PackedVector2Array(12740.0, 1600.0, 11840.0, 1000.0, 11824.5, 1023.3, 12724.5, 1623.3)
+
+[node name="EdgeBody73" type="StaticBody2D" parent="CastleGeometry/LowerWard"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/LowerWard/EdgeBody73"]
+polygon = PackedVector2Array(11840.0, 1000.0, 7680.0, 1000.0, 7680.0, 1028.0, 11840.0, 1028.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/LowerWard"]
 
-[node name="SideParapet62" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet74" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2637.8, 1600.0, 2157.8, 2260.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip63" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip75" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(2655.6, 1600.0, 2175.6, 2260.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet64" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet76" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2162.0, 2260.0, 2162.0, 4200.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip65" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip77" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(2184.0, 2260.0, 2184.0, 4200.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet66" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet78" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(1742.0, 4440.0, 1742.0, 5480.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip67" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip79" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(1764.0, 4440.0, 1764.0, 5480.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet68" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet80" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13618.0, 5480.0, 13618.0, 4440.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip69" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip81" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(13596.0, 5480.0, 13596.0, 4440.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet70" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet82" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13198.0, 4200.0, 13198.0, 2260.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip71" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip83" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(13176.0, 4200.0, 13176.0, 2260.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet72" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideParapet84" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13202.2, 2260.0, 12722.2, 1600.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip73" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="SideLip85" type="Line2D" parent="CastleGeometry/LowerWard/Parapet"]
 points = PackedVector2Array(13184.4, 2260.0, 12704.4, 1600.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band74" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band86" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7680.0, 932.0, 3520.0, 932.0, 3520.0, 1000.0, 7680.0, 1000.0)
 uv = PackedVector2Array(0.0, 0.0, 4160.0, 0.0, 4160.0, 68.0, 0.0, 68.0)
 
-[node name="Band75" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band87" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(11840.0, 932.0, 7680.0, 932.0, 7680.0, 1000.0, 11840.0, 1000.0)
 uv = PackedVector2Array(27202.9, 0.0, 31362.9, 0.0, 31362.9, 68.0, 27202.9, 68.0)
 
-[node name="Band76" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band88" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(3520.0, 932.0, 2620.0, 1532.0, 2620.0, 1600.0, 3520.0, 1000.0)
 uv = PackedVector2Array(4160.0, 0.0, 5241.7, 0.0, 5241.7, 68.0, 4160.0, 68.0)
 
-[node name="Band77" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band89" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(12740.0, 1532.0, 11840.0, 932.0, 11840.0, 1000.0, 12740.0, 1600.0)
 uv = PackedVector2Array(26121.2, 0.0, 27202.9, 0.0, 27202.9, 68.0, 26121.2, 68.0)
 
-[node name="Band78" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band90" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2620.0, 1532.0, 2140.0, 2192.0, 2140.0, 2260.0, 2620.0, 1600.0)
 uv = PackedVector2Array(5241.7, 0.0, 6057.8, 0.0, 6057.8, 68.0, 5241.7, 68.0)
 
-[node name="Band79" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band91" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13220.0, 2192.0, 12740.0, 1532.0, 12740.0, 1600.0, 13220.0, 2260.0)
 uv = PackedVector2Array(25305.1, 0.0, 26121.2, 0.0, 26121.2, 68.0, 25305.1, 68.0)
 
-[node name="Band80" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band92" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2140.0, 2192.0, 2140.0, 4132.0, 2140.0, 4200.0, 2140.0, 2260.0)
 uv = PackedVector2Array(6057.8, 0.0, 7997.8, 0.0, 7997.8, 68.0, 6057.8, 68.0)
 
-[node name="Band81" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band93" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13220.0, 4132.0, 13220.0, 2192.0, 13220.0, 2260.0, 13220.0, 4200.0)
 uv = PackedVector2Array(23365.1, 0.0, 25305.1, 0.0, 25305.1, 68.0, 23365.1, 68.0)
 
-[node name="Band82" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band94" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2140.0, 4132.0, 1720.0, 4372.0, 1720.0, 4440.0, 2140.0, 4200.0)
 uv = PackedVector2Array(7997.8, 0.0, 8481.5, 0.0, 8481.5, 68.0, 7997.8, 68.0)
 
-[node name="Band83" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band95" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13640.0, 4372.0, 13220.0, 4132.0, 13220.0, 4200.0, 13640.0, 4440.0)
 uv = PackedVector2Array(22881.4, 0.0, 23365.1, 0.0, 23365.1, 68.0, 22881.4, 68.0)
 
-[node name="Band84" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band96" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(1720.0, 4372.0, 1720.0, 5412.0, 1720.0, 5480.0, 1720.0, 4440.0)
 uv = PackedVector2Array(8481.5, 0.0, 9521.5, 0.0, 9521.5, 68.0, 8481.5, 68.0)
 
-[node name="Band85" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band97" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13640.0, 5412.0, 13640.0, 4372.0, 13640.0, 4440.0, 13640.0, 5480.0)
 uv = PackedVector2Array(21841.4, 0.0, 22881.4, 0.0, 22881.4, 68.0, 21841.4, 68.0)
 
-[node name="Band86" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band98" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.045, 1.045, 1.066, 1)
 polygon = PackedVector2Array(1720.0, 5412.0, 2580.0, 5852.0, 2580.0, 5920.0, 1720.0, 5480.0)
 uv = PackedVector2Array(9521.5, 0.0, 10487.5, 0.0, 10487.5, 68.0, 9521.5, 68.0)
 
-[node name="Band87" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band99" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.826, 0.826, 0.843, 1)
 polygon = PackedVector2Array(12780.0, 5852.0, 13640.0, 5412.0, 13640.0, 5480.0, 12780.0, 5920.0)
 uv = PackedVector2Array(20875.4, 0.0, 21841.4, 0.0, 21841.4, 68.0, 20875.4, 68.0)
 
-[node name="Band88" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band100" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.043, 1.043, 1.064, 1)
 polygon = PackedVector2Array(2580.0, 5852.0, 2980.0, 6052.0, 2980.0, 6120.0, 2580.0, 5920.0)
 uv = PackedVector2Array(10487.5, 0.0, 10934.7, 0.0, 10934.7, 68.0, 10487.5, 68.0)
 
-[node name="Band89" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band101" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.828, 0.828, 0.845, 1)
 polygon = PackedVector2Array(12380.0, 6052.0, 12780.0, 5852.0, 12780.0, 5920.0, 12380.0, 6120.0)
 uv = PackedVector2Array(20428.2, 0.0, 20875.4, 0.0, 20875.4, 68.0, 20428.2, 68.0)
 
-[node name="Band90" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band102" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(2980.0, 6052.0, 4040.0, 6052.0, 4040.0, 6120.0, 2980.0, 6120.0)
 uv = PackedVector2Array(10934.7, 0.0, 11994.7, 0.0, 11994.7, 68.0, 10934.7, 68.0)
 
-[node name="Band91" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band103" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(11320.0, 6052.0, 12380.0, 6052.0, 12380.0, 6120.0, 11320.0, 6120.0)
 uv = PackedVector2Array(19368.2, 0.0, 20428.2, 0.0, 20428.2, 68.0, 19368.2, 68.0)
 
-[node name="Band92" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band104" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.021, 1.021, 1.041, 1)
 polygon = PackedVector2Array(4040.0, 6052.0, 4740.0, 6312.0, 4740.0, 6380.0, 4040.0, 6120.0)
 uv = PackedVector2Array(11994.7, 0.0, 12741.5, 0.0, 12741.5, 68.0, 11994.7, 68.0)
 
-[node name="Band93" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band105" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.854, 0.854, 0.871, 1)
 polygon = PackedVector2Array(10620.0, 6312.0, 11320.0, 6052.0, 11320.0, 6120.0, 10620.0, 6380.0)
 uv = PackedVector2Array(18621.5, 0.0, 19368.2, 0.0, 19368.2, 68.0, 18621.5, 68.0)
 
-[node name="Band94" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band106" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(4740.0, 6312.0, 7680.0, 6312.0, 7680.0, 6380.0, 4740.0, 6380.0)
 uv = PackedVector2Array(12741.5, 0.0, 15681.5, 0.0, 15681.5, 68.0, 12741.5, 68.0)
 
-[node name="Band95" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
+[node name="Band107" type="Polygon2D" parent="CastleGeometry/LowerWard/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1140,40 +1200,45 @@ uv = PackedVector2Array(15681.5, 0.0, 18621.5, 0.0, 18621.5, 68.0, 15681.5, 68.0
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/CathedralTerraceW"]
 
-[node name="Face96" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="Face108" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(2360.0, 4400.0, 2820.0, 4660.0, 2820.0, 4880.0, 2360.0, 4620.0)
 uv = PackedVector2Array(0.0, 0.0, 528.4, 0.0, 528.4, 220.0, 0.0, 220.0)
 vertex_colors = PackedColorArray(1.053, 1.053, 1.074, 1.000, 1.053, 1.053, 1.074, 1.000, 0.716, 0.716, 0.759, 1.000, 0.716, 0.716, 0.759, 1.000)
 
-[node name="FaceBody97" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="FaceBody109" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody97"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody109"]
 polygon = PackedVector2Array(2360.0, 4400.0, 2820.0, 4660.0, 2820.0, 4880.0, 2360.0, 4620.0)
 
-[node name="Face98" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="Face110" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(2820.0, 4660.0, 4300.0, 4660.0, 4300.0, 4880.0, 2820.0, 4880.0)
 uv = PackedVector2Array(528.4, 0.0, 2008.4, 0.0, 2008.4, 220.0, 528.4, 220.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody99" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="FaceBody111" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody99"]
-polygon = PackedVector2Array(2820.0, 4660.0, 4300.0, 4660.0, 4300.0, 4880.0, 2820.0, 4880.0)
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody111"]
+polygon = PackedVector2Array(2820.0, 4660.0, 3280.0, 4660.0, 3280.0, 4880.0, 2820.0, 4880.0)
 
-[node name="Face100" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="FaceBody112" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody112"]
+polygon = PackedVector2Array(3520.0, 4660.0, 4300.0, 4660.0, 4300.0, 4880.0, 3520.0, 4880.0)
+
+[node name="Face113" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(4300.0, 4660.0, 5200.0, 4000.0, 5200.0, 4220.0, 4300.0, 4880.0)
 uv = PackedVector2Array(2008.4, 0.0, 3124.5, 0.0, 3124.5, 220.0, 2008.4, 220.0)
 vertex_colors = PackedColorArray(0.790, 0.790, 0.806, 1.000, 0.790, 0.790, 0.806, 1.000, 0.537, 0.537, 0.570, 1.000, 0.537, 0.537, 0.570, 1.000)
 
-[node name="FaceBody101" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
+[node name="FaceBody114" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody101"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/Faces/FaceBody114"]
 polygon = PackedVector2Array(4300.0, 4660.0, 5200.0, 4000.0, 5200.0, 4220.0, 4300.0, 4880.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW"]
@@ -1187,94 +1252,119 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody115" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/EdgeBody115"]
+polygon = PackedVector2Array(5200.0, 4000.0, 4700.0, 3000.0, 4675.0, 3012.5, 5175.0, 4012.5)
+
+[node name="EdgeBody116" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/EdgeBody116"]
+polygon = PackedVector2Array(4700.0, 3000.0, 4400.0, 2320.0, 4374.4, 2331.3, 4674.4, 3011.3)
+
+[node name="EdgeBody117" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/EdgeBody117"]
+polygon = PackedVector2Array(4400.0, 2320.0, 3000.0, 2320.0, 3000.0, 2348.0, 4400.0, 2348.0)
+
+[node name="EdgeBody118" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/EdgeBody118"]
+polygon = PackedVector2Array(3000.0, 2320.0, 2360.0, 2320.0, 2360.0, 2348.0, 3000.0, 2348.0)
+
+[node name="EdgeBody119" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceW/EdgeBody119"]
+polygon = PackedVector2Array(2360.0, 2320.0, 2360.0, 4400.0, 2388.0, 4400.0, 2388.0, 2320.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/CathedralTerraceW"]
 
-[node name="SideParapet102" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideParapet120" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(5180.3, 4000.0, 4680.3, 3000.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip103" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideLip121" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 points = PackedVector2Array(5160.6, 4000.0, 4660.6, 3000.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet104" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideParapet122" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(4679.9, 3000.0, 4379.9, 2320.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip105" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideLip123" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 points = PackedVector2Array(4659.7, 3000.0, 4359.7, 2320.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet106" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideParapet124" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2382.0, 2320.0, 2382.0, 4400.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip107" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="SideLip125" type="Line2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 points = PackedVector2Array(2404.0, 2320.0, 2404.0, 4400.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band108" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band126" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(4400.0, 2252.0, 3000.0, 2252.0, 3000.0, 2320.0, 4400.0, 2320.0)
 uv = PackedVector2Array(4985.7, 0.0, 6385.7, 0.0, 6385.7, 68.0, 4985.7, 68.0)
 
-[node name="Band109" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band127" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(3000.0, 2252.0, 2360.0, 2252.0, 2360.0, 2320.0, 3000.0, 2320.0)
 uv = PackedVector2Array(6385.7, 0.0, 7025.7, 0.0, 7025.7, 68.0, 6385.7, 68.0)
 
-[node name="Band110" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band128" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(4700.0, 2932.0, 4400.0, 2252.0, 4400.0, 2320.0, 4700.0, 3000.0)
 uv = PackedVector2Array(4242.5, 0.0, 4985.7, 0.0, 4985.7, 68.0, 4242.5, 68.0)
 
-[node name="Band111" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band129" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2360.0, 2252.0, 2360.0, 4332.0, 2360.0, 4400.0, 2360.0, 2320.0)
 uv = PackedVector2Array(7025.7, 0.0, 9105.7, 0.0, 9105.7, 68.0, 7025.7, 68.0)
 
-[node name="Band112" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band130" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(5200.0, 3932.0, 4700.0, 2932.0, 4700.0, 3000.0, 5200.0, 4000.0)
 uv = PackedVector2Array(3124.5, 0.0, 4242.5, 0.0, 4242.5, 68.0, 3124.5, 68.0)
 
-[node name="Band113" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band131" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.790, 0.790, 0.806, 1)
 polygon = PackedVector2Array(4300.0, 4592.0, 5200.0, 3932.0, 5200.0, 4000.0, 4300.0, 4660.0)
 uv = PackedVector2Array(2008.4, 0.0, 3124.5, 0.0, 3124.5, 68.0, 2008.4, 68.0)
 
-[node name="Band114" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band132" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.053, 1.053, 1.074, 1)
 polygon = PackedVector2Array(2360.0, 4332.0, 2820.0, 4592.0, 2820.0, 4660.0, 2360.0, 4400.0)
 uv = PackedVector2Array(0.0, 0.0, 528.4, 0.0, 528.4, 68.0, 0.0, 68.0)
 
-[node name="Band115" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
+[node name="Band133" type="Polygon2D" parent="CastleGeometry/CathedralTerraceW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1285,40 +1375,45 @@ uv = PackedVector2Array(528.4, 0.0, 2008.4, 0.0, 2008.4, 68.0, 528.4, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/CathedralTerraceE"]
 
-[node name="Face116" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="Face134" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(10160.0, 4000.0, 11060.0, 4660.0, 11060.0, 4880.0, 10160.0, 4220.0)
 uv = PackedVector2Array(3901.3, 0.0, 5017.3, 0.0, 5017.3, 220.0, 3901.3, 220.0)
 vertex_colors = PackedColorArray(1.074, 1.074, 1.096, 1.000, 1.074, 1.074, 1.096, 1.000, 0.730, 0.730, 0.774, 1.000, 0.730, 0.730, 0.774, 1.000)
 
-[node name="FaceBody117" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="FaceBody135" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody117"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody135"]
 polygon = PackedVector2Array(10160.0, 4000.0, 11060.0, 4660.0, 11060.0, 4880.0, 10160.0, 4220.0)
 
-[node name="Face118" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="Face136" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(11060.0, 4660.0, 12540.0, 4660.0, 12540.0, 4880.0, 11060.0, 4880.0)
 uv = PackedVector2Array(5017.3, 0.0, 6497.3, 0.0, 6497.3, 220.0, 5017.3, 220.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody119" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="FaceBody137" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody119"]
-polygon = PackedVector2Array(11060.0, 4660.0, 12540.0, 4660.0, 12540.0, 4880.0, 11060.0, 4880.0)
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody137"]
+polygon = PackedVector2Array(11060.0, 4660.0, 11840.0, 4660.0, 11840.0, 4880.0, 11060.0, 4880.0)
 
-[node name="Face120" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="FaceBody138" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody138"]
+polygon = PackedVector2Array(12080.0, 4660.0, 12540.0, 4660.0, 12540.0, 4880.0, 12080.0, 4880.0)
+
+[node name="Face139" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(12540.0, 4660.0, 13000.0, 4400.0, 13000.0, 4620.0, 12540.0, 4880.0)
 uv = PackedVector2Array(6497.3, 0.0, 7025.7, 0.0, 7025.7, 220.0, 6497.3, 220.0)
 vertex_colors = PackedColorArray(0.817, 0.817, 0.833, 1.000, 0.817, 0.817, 0.833, 1.000, 0.555, 0.555, 0.589, 1.000, 0.555, 0.555, 0.589, 1.000)
 
-[node name="FaceBody121" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
+[node name="FaceBody140" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody121"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/Faces/FaceBody140"]
 polygon = PackedVector2Array(12540.0, 4660.0, 13000.0, 4400.0, 13000.0, 4620.0, 12540.0, 4880.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE"]
@@ -1332,94 +1427,119 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody141" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/EdgeBody141"]
+polygon = PackedVector2Array(13000.0, 2320.0, 12360.0, 2320.0, 12360.0, 2348.0, 13000.0, 2348.0)
+
+[node name="EdgeBody142" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/EdgeBody142"]
+polygon = PackedVector2Array(12360.0, 2320.0, 10960.0, 2320.0, 10960.0, 2348.0, 12360.0, 2348.0)
+
+[node name="EdgeBody143" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/EdgeBody143"]
+polygon = PackedVector2Array(10960.0, 2320.0, 10660.0, 3000.0, 10685.6, 3011.3, 10985.6, 2331.3)
+
+[node name="EdgeBody144" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/EdgeBody144"]
+polygon = PackedVector2Array(10660.0, 3000.0, 10160.0, 4000.0, 10185.0, 4012.5, 10685.0, 3012.5)
+
+[node name="EdgeBody145" type="StaticBody2D" parent="CastleGeometry/CathedralTerraceE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/CathedralTerraceE/EdgeBody145"]
+polygon = PackedVector2Array(13000.0, 4400.0, 13000.0, 2320.0, 12972.0, 2320.0, 12972.0, 4400.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/CathedralTerraceE"]
 
-[node name="SideParapet122" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideParapet146" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(10980.1, 2320.0, 10680.1, 3000.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip123" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideLip147" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 points = PackedVector2Array(11000.3, 2320.0, 10700.3, 3000.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet124" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideParapet148" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(10679.7, 3000.0, 10179.7, 4000.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip125" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideLip149" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 points = PackedVector2Array(10699.4, 3000.0, 10199.4, 4000.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet126" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideParapet150" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(12978.0, 4400.0, 12978.0, 2320.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip127" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="SideLip151" type="Line2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 points = PackedVector2Array(12956.0, 4400.0, 12956.0, 2320.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band128" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band152" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13000.0, 2252.0, 12360.0, 2252.0, 12360.0, 2320.0, 13000.0, 2320.0)
 uv = PackedVector2Array(0.0, 0.0, 640.0, 0.0, 640.0, 68.0, 0.0, 68.0)
 
-[node name="Band129" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band153" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(12360.0, 2252.0, 10960.0, 2252.0, 10960.0, 2320.0, 12360.0, 2320.0)
 uv = PackedVector2Array(640.0, 0.0, 2040.0, 0.0, 2040.0, 68.0, 640.0, 68.0)
 
-[node name="Band130" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band154" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10960.0, 2252.0, 10660.0, 2932.0, 10660.0, 3000.0, 10960.0, 2320.0)
 uv = PackedVector2Array(2040.0, 0.0, 2783.2, 0.0, 2783.2, 68.0, 2040.0, 68.0)
 
-[node name="Band131" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band155" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13000.0, 4332.0, 13000.0, 2252.0, 13000.0, 2320.0, 13000.0, 4400.0)
 uv = PackedVector2Array(7025.7, 0.0, 9105.7, 0.0, 9105.7, 68.0, 7025.7, 68.0)
 
-[node name="Band132" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band156" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10660.0, 2932.0, 10160.0, 3932.0, 10160.0, 4000.0, 10660.0, 3000.0)
 uv = PackedVector2Array(2783.2, 0.0, 3901.3, 0.0, 3901.3, 68.0, 2783.2, 68.0)
 
-[node name="Band133" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band157" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.074, 1.074, 1.096, 1)
 polygon = PackedVector2Array(10160.0, 3932.0, 11060.0, 4592.0, 11060.0, 4660.0, 10160.0, 4000.0)
 uv = PackedVector2Array(3901.3, 0.0, 5017.3, 0.0, 5017.3, 68.0, 3901.3, 68.0)
 
-[node name="Band134" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band158" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.817, 0.817, 0.833, 1)
 polygon = PackedVector2Array(12540.0, 4592.0, 13000.0, 4332.0, 13000.0, 4400.0, 12540.0, 4660.0)
 uv = PackedVector2Array(6497.3, 0.0, 7025.7, 0.0, 7025.7, 68.0, 6497.3, 68.0)
 
-[node name="Band135" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
+[node name="Band159" type="Polygon2D" parent="CastleGeometry/CathedralTerraceE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1430,16 +1550,16 @@ uv = PackedVector2Array(5017.3, 0.0, 6497.3, 0.0, 6497.3, 68.0, 5017.3, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/InnerGardenW"]
 
-[node name="Face136" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Faces"]
+[node name="Face160" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(6020.0, 4980.0, 6900.0, 4980.0, 6900.0, 5160.0, 6020.0, 5160.0)
 uv = PackedVector2Array(0.0, 0.0, 880.0, 0.0, 880.0, 180.0, 0.0, 180.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody137" type="StaticBody2D" parent="CastleGeometry/InnerGardenW/Faces"]
+[node name="FaceBody161" type="StaticBody2D" parent="CastleGeometry/InnerGardenW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenW/Faces/FaceBody137"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenW/Faces/FaceBody161"]
 polygon = PackedVector2Array(6020.0, 4980.0, 6900.0, 4980.0, 6900.0, 5160.0, 6020.0, 5160.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/InnerGardenW"]
@@ -1453,54 +1573,69 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody162" type="StaticBody2D" parent="CastleGeometry/InnerGardenW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenW/EdgeBody162"]
+polygon = PackedVector2Array(6900.0, 4980.0, 6900.0, 4100.0, 6872.0, 4100.0, 6872.0, 4980.0)
+
+[node name="EdgeBody163" type="StaticBody2D" parent="CastleGeometry/InnerGardenW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenW/EdgeBody163"]
+polygon = PackedVector2Array(6900.0, 4100.0, 6020.0, 4100.0, 6020.0, 4128.0, 6900.0, 4128.0)
+
+[node name="EdgeBody164" type="StaticBody2D" parent="CastleGeometry/InnerGardenW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenW/EdgeBody164"]
+polygon = PackedVector2Array(6020.0, 4100.0, 6020.0, 4980.0, 6048.0, 4980.0, 6048.0, 4100.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/InnerGardenW"]
 
-[node name="SideParapet138" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="SideParapet165" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(6878.0, 4980.0, 6878.0, 4100.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip139" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="SideLip166" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 points = PackedVector2Array(6856.0, 4980.0, 6856.0, 4100.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet140" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="SideParapet167" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(6042.0, 4100.0, 6042.0, 4980.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip141" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="SideLip168" type="Line2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 points = PackedVector2Array(6064.0, 4100.0, 6064.0, 4980.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band142" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="Band169" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6900.0, 4032.0, 6020.0, 4032.0, 6020.0, 4100.0, 6900.0, 4100.0)
 uv = PackedVector2Array(1760.0, 0.0, 2640.0, 0.0, 2640.0, 68.0, 1760.0, 68.0)
 
-[node name="Band143" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="Band170" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6900.0, 4912.0, 6900.0, 4032.0, 6900.0, 4100.0, 6900.0, 4980.0)
 uv = PackedVector2Array(880.0, 0.0, 1760.0, 0.0, 1760.0, 68.0, 880.0, 68.0)
 
-[node name="Band144" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="Band171" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6020.0, 4032.0, 6020.0, 4912.0, 6020.0, 4980.0, 6020.0, 4100.0)
 uv = PackedVector2Array(2640.0, 0.0, 3520.0, 0.0, 3520.0, 68.0, 2640.0, 68.0)
 
-[node name="Band145" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
+[node name="Band172" type="Polygon2D" parent="CastleGeometry/InnerGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1511,16 +1646,16 @@ uv = PackedVector2Array(0.0, 0.0, 880.0, 0.0, 880.0, 68.0, 0.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/InnerGardenE"]
 
-[node name="Face146" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Faces"]
+[node name="Face173" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(8460.0, 4980.0, 9340.0, 4980.0, 9340.0, 5160.0, 8460.0, 5160.0)
 uv = PackedVector2Array(1760.0, 0.0, 2640.0, 0.0, 2640.0, 180.0, 1760.0, 180.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody147" type="StaticBody2D" parent="CastleGeometry/InnerGardenE/Faces"]
+[node name="FaceBody174" type="StaticBody2D" parent="CastleGeometry/InnerGardenE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenE/Faces/FaceBody147"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenE/Faces/FaceBody174"]
 polygon = PackedVector2Array(8460.0, 4980.0, 9340.0, 4980.0, 9340.0, 5160.0, 8460.0, 5160.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/InnerGardenE"]
@@ -1534,54 +1669,69 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody175" type="StaticBody2D" parent="CastleGeometry/InnerGardenE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenE/EdgeBody175"]
+polygon = PackedVector2Array(9340.0, 4100.0, 8460.0, 4100.0, 8460.0, 4128.0, 9340.0, 4128.0)
+
+[node name="EdgeBody176" type="StaticBody2D" parent="CastleGeometry/InnerGardenE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenE/EdgeBody176"]
+polygon = PackedVector2Array(8460.0, 4100.0, 8460.0, 4980.0, 8488.0, 4980.0, 8488.0, 4100.0)
+
+[node name="EdgeBody177" type="StaticBody2D" parent="CastleGeometry/InnerGardenE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/InnerGardenE/EdgeBody177"]
+polygon = PackedVector2Array(9340.0, 4980.0, 9340.0, 4100.0, 9312.0, 4100.0, 9312.0, 4980.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/InnerGardenE"]
 
-[node name="SideParapet148" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="SideParapet178" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(8482.0, 4100.0, 8482.0, 4980.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip149" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="SideLip179" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 points = PackedVector2Array(8504.0, 4100.0, 8504.0, 4980.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet150" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="SideParapet180" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(9318.0, 4980.0, 9318.0, 4100.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip151" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="SideLip181" type="Line2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 points = PackedVector2Array(9296.0, 4980.0, 9296.0, 4100.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band152" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="Band182" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(9340.0, 4032.0, 8460.0, 4032.0, 8460.0, 4100.0, 9340.0, 4100.0)
 uv = PackedVector2Array(0.0, 0.0, 880.0, 0.0, 880.0, 68.0, 0.0, 68.0)
 
-[node name="Band153" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="Band183" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8460.0, 4032.0, 8460.0, 4912.0, 8460.0, 4980.0, 8460.0, 4100.0)
 uv = PackedVector2Array(880.0, 0.0, 1760.0, 0.0, 1760.0, 68.0, 880.0, 68.0)
 
-[node name="Band154" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="Band184" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(9340.0, 4912.0, 9340.0, 4032.0, 9340.0, 4100.0, 9340.0, 4980.0)
 uv = PackedVector2Array(2640.0, 0.0, 3520.0, 0.0, 3520.0, 68.0, 2640.0, 68.0)
 
-[node name="Band155" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
+[node name="Band185" type="Polygon2D" parent="CastleGeometry/InnerGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1592,28 +1742,28 @@ uv = PackedVector2Array(1760.0, 0.0, 2640.0, 0.0, 2640.0, 68.0, 1760.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/SouthGardenW"]
 
-[node name="Face156" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Faces"]
+[node name="Face186" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(4700.0, 5860.0, 6360.0, 5860.0, 6360.0, 6020.0, 4700.0, 6020.0)
 uv = PackedVector2Array(0.0, 0.0, 1660.0, 0.0, 1660.0, 160.0, 0.0, 160.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody157" type="StaticBody2D" parent="CastleGeometry/SouthGardenW/Faces"]
+[node name="FaceBody187" type="StaticBody2D" parent="CastleGeometry/SouthGardenW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/Faces/FaceBody157"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/Faces/FaceBody187"]
 polygon = PackedVector2Array(4700.0, 5860.0, 6360.0, 5860.0, 6360.0, 6020.0, 4700.0, 6020.0)
 
-[node name="Face158" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Faces"]
+[node name="Face188" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(4520.0, 5360.0, 4700.0, 5860.0, 4700.0, 6020.0, 4520.0, 5520.0)
 uv = PackedVector2Array(4000.0, 0.0, 4531.4, 0.0, 4531.4, 160.0, 4000.0, 160.0)
 vertex_colors = PackedColorArray(1.080, 1.080, 1.102, 1.000, 1.080, 1.080, 1.102, 1.000, 0.734, 0.734, 0.778, 1.000, 0.734, 0.734, 0.778, 1.000)
 
-[node name="FaceBody159" type="StaticBody2D" parent="CastleGeometry/SouthGardenW/Faces"]
+[node name="FaceBody189" type="StaticBody2D" parent="CastleGeometry/SouthGardenW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/Faces/FaceBody159"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/Faces/FaceBody189"]
 polygon = PackedVector2Array(4520.0, 5360.0, 4700.0, 5860.0, 4700.0, 6020.0, 4520.0, 5520.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/SouthGardenW"]
@@ -1627,54 +1777,64 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody190" type="StaticBody2D" parent="CastleGeometry/SouthGardenW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/EdgeBody190"]
+polygon = PackedVector2Array(6360.0, 5860.0, 6360.0, 5360.0, 6332.0, 5360.0, 6332.0, 5860.0)
+
+[node name="EdgeBody191" type="StaticBody2D" parent="CastleGeometry/SouthGardenW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenW/EdgeBody191"]
+polygon = PackedVector2Array(6360.0, 5360.0, 4520.0, 5360.0, 4520.0, 5388.0, 6360.0, 5388.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/SouthGardenW"]
 
-[node name="SideParapet160" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="SideParapet192" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(6338.0, 5860.0, 6338.0, 5360.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip161" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="SideLip193" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 points = PackedVector2Array(6316.0, 5860.0, 6316.0, 5360.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet162" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="SideParapet194" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(4540.7, 5360.0, 4720.7, 5860.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip163" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="SideLip195" type="Line2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 points = PackedVector2Array(4561.4, 5360.0, 4741.4, 5860.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band164" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="Band196" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6360.0, 5292.0, 4520.0, 5292.0, 4520.0, 5360.0, 6360.0, 5360.0)
 uv = PackedVector2Array(2160.0, 0.0, 4000.0, 0.0, 4000.0, 68.0, 2160.0, 68.0)
 
-[node name="Band165" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="Band197" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6360.0, 5792.0, 6360.0, 5292.0, 6360.0, 5360.0, 6360.0, 5860.0)
 uv = PackedVector2Array(1660.0, 0.0, 2160.0, 0.0, 2160.0, 68.0, 1660.0, 68.0)
 
-[node name="Band166" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="Band198" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.080, 1.080, 1.102, 1)
 polygon = PackedVector2Array(4520.0, 5292.0, 4700.0, 5792.0, 4700.0, 5860.0, 4520.0, 5360.0)
 uv = PackedVector2Array(4000.0, 0.0, 4531.4, 0.0, 4531.4, 68.0, 4000.0, 68.0)
 
-[node name="Band167" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
+[node name="Band199" type="Polygon2D" parent="CastleGeometry/SouthGardenW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1685,28 +1845,28 @@ uv = PackedVector2Array(0.0, 0.0, 1660.0, 0.0, 1660.0, 68.0, 0.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/SouthGardenE"]
 
-[node name="Face168" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Faces"]
+[node name="Face200" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(9000.0, 5860.0, 10660.0, 5860.0, 10660.0, 6020.0, 9000.0, 6020.0)
 uv = PackedVector2Array(2340.0, 0.0, 4000.0, 0.0, 4000.0, 160.0, 2340.0, 160.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody169" type="StaticBody2D" parent="CastleGeometry/SouthGardenE/Faces"]
+[node name="FaceBody201" type="StaticBody2D" parent="CastleGeometry/SouthGardenE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/Faces/FaceBody169"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/Faces/FaceBody201"]
 polygon = PackedVector2Array(9000.0, 5860.0, 10660.0, 5860.0, 10660.0, 6020.0, 9000.0, 6020.0)
 
-[node name="Face170" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Faces"]
+[node name="Face202" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(10660.0, 5860.0, 10840.0, 5360.0, 10840.0, 5520.0, 10660.0, 6020.0)
 uv = PackedVector2Array(4000.0, 0.0, 4531.4, 0.0, 4531.4, 160.0, 4000.0, 160.0)
 vertex_colors = PackedColorArray(0.688, 0.688, 0.701, 1.000, 0.688, 0.688, 0.701, 1.000, 0.468, 0.468, 0.496, 1.000, 0.468, 0.468, 0.496, 1.000)
 
-[node name="FaceBody171" type="StaticBody2D" parent="CastleGeometry/SouthGardenE/Faces"]
+[node name="FaceBody203" type="StaticBody2D" parent="CastleGeometry/SouthGardenE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/Faces/FaceBody171"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/Faces/FaceBody203"]
 polygon = PackedVector2Array(10660.0, 5860.0, 10840.0, 5360.0, 10840.0, 5520.0, 10660.0, 6020.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/SouthGardenE"]
@@ -1720,54 +1880,64 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody204" type="StaticBody2D" parent="CastleGeometry/SouthGardenE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/EdgeBody204"]
+polygon = PackedVector2Array(10840.0, 5360.0, 9000.0, 5360.0, 9000.0, 5388.0, 10840.0, 5388.0)
+
+[node name="EdgeBody205" type="StaticBody2D" parent="CastleGeometry/SouthGardenE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/SouthGardenE/EdgeBody205"]
+polygon = PackedVector2Array(9000.0, 5360.0, 9000.0, 5860.0, 9028.0, 5860.0, 9028.0, 5360.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/SouthGardenE"]
 
-[node name="SideParapet172" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="SideParapet206" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(9022.0, 5360.0, 9022.0, 5860.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip173" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="SideLip207" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 points = PackedVector2Array(9044.0, 5360.0, 9044.0, 5860.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet174" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="SideParapet208" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(10639.3, 5860.0, 10819.3, 5360.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip175" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="SideLip209" type="Line2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 points = PackedVector2Array(10618.6, 5860.0, 10798.6, 5360.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band176" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="Band210" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10840.0, 5292.0, 9000.0, 5292.0, 9000.0, 5360.0, 10840.0, 5360.0)
 uv = PackedVector2Array(0.0, 0.0, 1840.0, 0.0, 1840.0, 68.0, 0.0, 68.0)
 
-[node name="Band177" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="Band211" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(9000.0, 5292.0, 9000.0, 5792.0, 9000.0, 5860.0, 9000.0, 5360.0)
 uv = PackedVector2Array(1840.0, 0.0, 2340.0, 0.0, 2340.0, 68.0, 1840.0, 68.0)
 
-[node name="Band178" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="Band212" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.688, 0.688, 0.701, 1)
 polygon = PackedVector2Array(10660.0, 5792.0, 10840.0, 5292.0, 10840.0, 5360.0, 10660.0, 5860.0)
 uv = PackedVector2Array(4000.0, 0.0, 4531.4, 0.0, 4531.4, 68.0, 4000.0, 68.0)
 
-[node name="Band179" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
+[node name="Band213" type="Polygon2D" parent="CastleGeometry/SouthGardenE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1778,76 +1948,76 @@ uv = PackedVector2Array(2340.0, 0.0, 4000.0, 0.0, 4000.0, 68.0, 2340.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/PalaceTerrace"]
 
-[node name="Face180" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face214" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(4400.0, 2060.0, 5480.0, 2140.0, 5480.0, 2440.0, 4400.0, 2360.0)
 uv = PackedVector2Array(4340.0, 0.0, 5423.0, 0.0, 5423.0, 300.0, 4340.0, 300.0)
 vertex_colors = PackedColorArray(0.958, 0.958, 0.977, 1.000, 0.958, 0.958, 0.977, 1.000, 0.651, 0.651, 0.690, 1.000, 0.651, 0.651, 0.690, 1.000)
 
-[node name="FaceBody181" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody215" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody181"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody215"]
 polygon = PackedVector2Array(4400.0, 2060.0, 5480.0, 2140.0, 5480.0, 2440.0, 4400.0, 2360.0)
 
-[node name="Face182" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face216" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(5480.0, 2140.0, 5800.0, 3000.0, 5800.0, 3300.0, 5480.0, 2440.0)
 uv = PackedVector2Array(5423.0, 0.0, 6340.6, 0.0, 6340.6, 300.0, 5423.0, 300.0)
 vertex_colors = PackedColorArray(1.080, 1.080, 1.102, 1.000, 1.080, 1.080, 1.102, 1.000, 0.734, 0.734, 0.778, 1.000, 0.734, 0.734, 0.778, 1.000)
 
-[node name="FaceBody183" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody217" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody183"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody217"]
 polygon = PackedVector2Array(5480.0, 2140.0, 5800.0, 3000.0, 5800.0, 3300.0, 5480.0, 2440.0)
 
-[node name="Face184" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face218" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(5800.0, 3000.0, 7060.0, 3000.0, 7060.0, 3300.0, 5800.0, 3300.0)
 uv = PackedVector2Array(6340.6, 0.0, 7600.6, 0.0, 7600.6, 300.0, 6340.6, 300.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody185" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody219" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody185"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody219"]
 polygon = PackedVector2Array(5800.0, 3000.0, 7060.0, 3000.0, 7060.0, 3300.0, 5800.0, 3300.0)
 
-[node name="Face186" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face220" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(8300.0, 3000.0, 9560.0, 3000.0, 9560.0, 3300.0, 8300.0, 3300.0)
 uv = PackedVector2Array(8840.6, 0.0, 10100.6, 0.0, 10100.6, 300.0, 8840.6, 300.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody187" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody221" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody187"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody221"]
 polygon = PackedVector2Array(8300.0, 3000.0, 9560.0, 3000.0, 9560.0, 3300.0, 8300.0, 3300.0)
 
-[node name="Face188" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face222" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(9560.0, 3000.0, 9880.0, 2140.0, 9880.0, 2440.0, 9560.0, 3300.0)
 uv = PackedVector2Array(10100.6, 0.0, 11018.2, 0.0, 11018.2, 300.0, 10100.6, 300.0)
 vertex_colors = PackedColorArray(0.689, 0.689, 0.703, 1.000, 0.689, 0.689, 0.703, 1.000, 0.469, 0.469, 0.497, 1.000, 0.469, 0.469, 0.497, 1.000)
 
-[node name="FaceBody189" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody223" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody189"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody223"]
 polygon = PackedVector2Array(9560.0, 3000.0, 9880.0, 2140.0, 9880.0, 2440.0, 9560.0, 3300.0)
 
-[node name="Face190" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="Face224" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(9880.0, 2140.0, 10960.0, 2060.0, 10960.0, 2360.0, 9880.0, 2440.0)
 uv = PackedVector2Array(11018.2, 0.0, 12101.1, 0.0, 12101.1, 300.0, 11018.2, 300.0)
 vertex_colors = PackedColorArray(0.922, 0.922, 0.941, 1.000, 0.922, 0.922, 0.941, 1.000, 0.627, 0.627, 0.665, 1.000, 0.627, 0.627, 0.665, 1.000)
 
-[node name="FaceBody191" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
+[node name="FaceBody225" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody191"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/Faces/FaceBody225"]
 polygon = PackedVector2Array(9880.0, 2140.0, 10960.0, 2060.0, 10960.0, 2360.0, 9880.0, 2440.0)
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/PalaceTerrace"]
@@ -1861,120 +2031,140 @@ width = 130.0
 joint_mode = 0
 sharp_limit = 6.0
 
+[node name="EdgeBody226" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/EdgeBody226"]
+polygon = PackedVector2Array(7680.0, 1000.0, 4400.0, 1000.0, 4400.0, 1028.0, 7680.0, 1028.0)
+
+[node name="EdgeBody227" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/EdgeBody227"]
+polygon = PackedVector2Array(4400.0, 1000.0, 4400.0, 2060.0, 4428.0, 2060.0, 4428.0, 1000.0)
+
+[node name="EdgeBody228" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/EdgeBody228"]
+polygon = PackedVector2Array(10960.0, 2060.0, 10960.0, 1000.0, 10932.0, 1000.0, 10932.0, 2060.0)
+
+[node name="EdgeBody229" type="StaticBody2D" parent="CastleGeometry/PalaceTerrace"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/PalaceTerrace/EdgeBody229"]
+polygon = PackedVector2Array(10960.0, 1000.0, 7680.0, 1000.0, 7680.0, 1028.0, 10960.0, 1028.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/PalaceTerrace"]
 
-[node name="SideParapet192" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideParapet230" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(4422.0, 1000.0, 4422.0, 2060.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip193" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideLip231" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 points = PackedVector2Array(4444.0, 1000.0, 4444.0, 2060.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet194" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideParapet232" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(5500.6, 2140.0, 5820.6, 3000.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip195" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideLip233" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 points = PackedVector2Array(5521.2, 2140.0, 5841.2, 3000.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet196" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideParapet234" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(9539.4, 3000.0, 9859.4, 2140.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip197" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideLip235" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 points = PackedVector2Array(9518.8, 3000.0, 9838.8, 2140.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet198" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideParapet236" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(10938.0, 2060.0, 10938.0, 1000.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip199" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="SideLip237" type="Line2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 points = PackedVector2Array(10916.0, 2060.0, 10916.0, 1000.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band200" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band238" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7680.0, 932.0, 4400.0, 932.0, 4400.0, 1000.0, 7680.0, 1000.0)
 uv = PackedVector2Array(0.0, 0.0, 3280.0, 0.0, 3280.0, 68.0, 0.0, 68.0)
 
-[node name="Band201" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band239" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10960.0, 932.0, 7680.0, 932.0, 7680.0, 1000.0, 10960.0, 1000.0)
 uv = PackedVector2Array(13161.1, 0.0, 16441.1, 0.0, 16441.1, 68.0, 13161.1, 68.0)
 
-[node name="Band202" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band240" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(4400.0, 932.0, 4400.0, 1992.0, 4400.0, 2060.0, 4400.0, 1000.0)
 uv = PackedVector2Array(3280.0, 0.0, 4340.0, 0.0, 4340.0, 68.0, 3280.0, 68.0)
 
-[node name="Band203" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band241" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10960.0, 1992.0, 10960.0, 932.0, 10960.0, 1000.0, 10960.0, 2060.0)
 uv = PackedVector2Array(12101.1, 0.0, 13161.1, 0.0, 13161.1, 68.0, 12101.1, 68.0)
 
-[node name="Band204" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band242" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.958, 0.958, 0.977, 1)
 polygon = PackedVector2Array(4400.0, 1992.0, 5480.0, 2072.0, 5480.0, 2140.0, 4400.0, 2060.0)
 uv = PackedVector2Array(4340.0, 0.0, 5423.0, 0.0, 5423.0, 68.0, 4340.0, 68.0)
 
-[node name="Band205" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band243" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.922, 0.922, 0.941, 1)
 polygon = PackedVector2Array(9880.0, 2072.0, 10960.0, 1992.0, 10960.0, 2060.0, 9880.0, 2140.0)
 uv = PackedVector2Array(11018.2, 0.0, 12101.1, 0.0, 12101.1, 68.0, 11018.2, 68.0)
 
-[node name="Band206" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band244" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.080, 1.080, 1.102, 1)
 polygon = PackedVector2Array(5480.0, 2072.0, 5800.0, 2932.0, 5800.0, 3000.0, 5480.0, 2140.0)
 uv = PackedVector2Array(5423.0, 0.0, 6340.6, 0.0, 6340.6, 68.0, 5423.0, 68.0)
 
-[node name="Band207" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band245" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.689, 0.689, 0.703, 1)
 polygon = PackedVector2Array(9560.0, 2932.0, 9880.0, 2072.0, 9880.0, 2140.0, 9560.0, 3000.0)
 uv = PackedVector2Array(10100.6, 0.0, 11018.2, 0.0, 11018.2, 68.0, 10100.6, 68.0)
 
-[node name="Band208" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band246" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(5800.0, 2932.0, 7060.0, 2932.0, 7060.0, 3000.0, 5800.0, 3000.0)
 uv = PackedVector2Array(6340.6, 0.0, 7600.6, 0.0, 7600.6, 68.0, 6340.6, 68.0)
 
-[node name="Band209" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
+[node name="Band247" type="Polygon2D" parent="CastleGeometry/PalaceTerrace/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -1985,123 +2175,123 @@ uv = PackedVector2Array(8840.6, 0.0, 10100.6, 0.0, 10100.6, 68.0, 8840.6, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/BarbicanW"]
 
-[node name="Face210" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Face248" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(2927.8, 8080.0, 3926.5, 8679.2, 3926.5, 9259.2, 2927.8, 8699.2)
 uv = PackedVector2Array(0.0, 0.0, 1164.6, 0.0, 1164.6, 580.0, 0.0, 619.2)
 vertex_colors = PackedColorArray(1.058, 1.058, 1.079, 1.000, 1.058, 1.058, 1.079, 1.000, 0.719, 0.719, 0.762, 1.000, 0.719, 0.719, 0.762, 1.000)
 
-[node name="FaceBody211" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="FaceBody249" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody211"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody249"]
 polygon = PackedVector2Array(2927.8, 8080.0, 3926.5, 8679.2, 3926.5, 9259.2, 2927.8, 8699.2)
 
-[node name="Foam212" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam250" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(2927.8, 8691.2, 3926.5, 9251.2)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face213" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Face251" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(3926.5, 8679.2, 5027.8, 8720.0, 5027.8, 9180.0, 3926.5, 9259.2)
 uv = PackedVector2Array(1164.6, 0.0, 2266.6, 0.0, 2266.6, 460.0, 1164.6, 580.0)
 vertex_colors = PackedColorArray(0.949, 0.949, 0.968, 1.000, 0.949, 0.949, 0.968, 1.000, 0.645, 0.645, 0.684, 1.000, 0.645, 0.645, 0.684, 1.000)
 
-[node name="FaceBody214" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="FaceBody252" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody214"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody252"]
 polygon = PackedVector2Array(3926.5, 8679.2, 5027.8, 8720.0, 5027.8, 9180.0, 3926.5, 9259.2)
 
-[node name="Foam215" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam253" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(3926.5, 9251.2, 5027.8, 9172.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face216" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Face254" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(5027.8, 8720.0, 7118.5, 8760.0, 7118.5, 9160.0, 5027.8, 9180.0)
 uv = PackedVector2Array(2266.6, 0.0, 4357.7, 0.0, 4357.7, 400.0, 2266.6, 460.0)
 vertex_colors = PackedColorArray(0.945, 0.945, 0.963, 1.000, 0.945, 0.945, 0.963, 1.000, 0.642, 0.642, 0.681, 1.000, 0.642, 0.642, 0.681, 1.000)
 
-[node name="FaceBody217" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="FaceBody255" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody217"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody255"]
 polygon = PackedVector2Array(5027.8, 8720.0, 7118.5, 8760.0, 7118.5, 9160.0, 5027.8, 9180.0)
 
-[node name="Foam218" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam256" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(5027.8, 9172.0, 7118.5, 9152.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face219" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Face257" type="Polygon2D" parent="CastleGeometry/BarbicanW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(1500.0, 8080.0, 2927.8, 8080.0, 2927.8, 8699.2, 1500.0, 8700.0)
 uv = PackedVector2Array(10466.8, 0.0, 11894.6, 0.0, 11894.6, 619.2, 10466.8, 620.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody220" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="FaceBody258" type="StaticBody2D" parent="CastleGeometry/BarbicanW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody220"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/Faces/FaceBody258"]
 polygon = PackedVector2Array(1500.0, 8080.0, 2927.8, 8080.0, 2927.8, 8699.2, 1500.0, 8700.0)
 
-[node name="Foam221" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam259" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(1500.0, 8692.0, 2927.8, 8691.2)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Decal222" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Decal260" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
 position = Vector2(3151, 8442)
 texture = ExtResource("e16")
 
-[node name="Decal223" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Decal261" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
 position = Vector2(4186, 9057)
 texture = ExtResource("e15")
 
-[node name="Decal224" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Decal262" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
 position = Vector2(5288, 8984)
 texture = ExtResource("e18")
 
-[node name="Decal225" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(5613, 8910)
+[node name="Decal263" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(5617, 8985)
+texture = ExtResource("e18")
+
+[node name="Decal264" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(5994, 9031)
+texture = ExtResource("e15")
+
+[node name="Decal265" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(6337, 8917)
 texture = ExtResource("e16")
 
-[node name="Decal226" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(5930, 9031)
-texture = ExtResource("e15")
+[node name="Decal266" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(6705, 8921)
+texture = ExtResource("e16")
 
-[node name="Decal227" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(6338, 9032)
-texture = ExtResource("e15")
-
-[node name="Decal228" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(6648, 9032)
-texture = ExtResource("e15")
-
-[node name="Decal229" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Decal267" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
 position = Vector2(1760, 8312)
 texture = ExtResource("e16")
 
-[node name="Decal230" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(2068, 8312)
-texture = ExtResource("e16")
+[node name="Decal268" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(2136, 8489)
+texture = ExtResource("e15")
 
-[node name="Decal231" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
-position = Vector2(2382, 8339)
-texture = ExtResource("e17")
+[node name="Decal269" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+position = Vector2(2490, 8489)
+texture = ExtResource("e15")
 
-[node name="Banner232" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
+[node name="Banner270" type="Sprite2D" parent="CastleGeometry/BarbicanW/Faces"]
 material = ExtResource("e19")
 position = Vector2(3380, 8501)
 texture = ExtResource("e20")
@@ -2111,124 +2301,154 @@ offset = Vector2(0, 200)
 material = SubResource("m_walk")
 polygon = PackedVector2Array(2927.8, 8080.0, 3926.5, 8679.2, 5027.8, 8720.0, 7118.5, 8760.0, 7121.5, 8600.0, 5032.2, 8560.0, 3973.5, 8520.8, 2972.2, 7920.0, 1500.0, 7920.0, 1500.0, 8080.0)
 
-[node name="Band233" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
+[node name="Band271" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(1.058, 1.058, 1.079, 1)
 polygon = PackedVector2Array(2927.8, 8080.0, 3926.5, 8679.2, 3926.5, 8744.2, 2927.8, 8145.0)
 uv = PackedVector2Array(0.0, 0.0, 1164.6, 0.0, 1164.6, 65.0, 0.0, 65.0)
 
-[node name="Band234" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
+[node name="Band272" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.949, 0.949, 0.968, 1)
 polygon = PackedVector2Array(3926.5, 8679.2, 5027.8, 8720.0, 5027.8, 8785.0, 3926.5, 8744.2)
 uv = PackedVector2Array(1164.6, 0.0, 2266.6, 0.0, 2266.6, 65.0, 1164.6, 65.0)
 
-[node name="Band235" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
+[node name="Band273" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.945, 0.945, 0.963, 1)
 polygon = PackedVector2Array(5027.8, 8720.0, 7118.5, 8760.0, 7118.5, 8825.0, 5027.8, 8785.0)
 uv = PackedVector2Array(2266.6, 0.0, 4357.7, 0.0, 4357.7, 65.0, 2266.6, 65.0)
 
-[node name="Band236" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
+[node name="Band274" type="Polygon2D" parent="CastleGeometry/BarbicanW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(1500.0, 8080.0, 2927.8, 8080.0, 2927.8, 8145.0, 1500.0, 8145.0)
 uv = PackedVector2Array(10466.8, 0.0, 11894.6, 0.0, 11894.6, 65.0, 10466.8, 65.0)
 
+[node name="EdgeBody275" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody275"]
+polygon = PackedVector2Array(7118.5, 8760.0, 7121.5, 8600.0, 7093.5, 8599.5, 7090.5, 8759.4)
+
+[node name="EdgeBody276" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody276"]
+polygon = PackedVector2Array(7121.5, 8600.0, 5032.2, 8560.0, 5031.7, 8588.0, 7121.0, 8628.0)
+
+[node name="EdgeBody277" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody277"]
+polygon = PackedVector2Array(5032.2, 8560.0, 3973.5, 8520.8, 3972.5, 8548.8, 5031.2, 8588.0)
+
+[node name="EdgeBody278" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody278"]
+polygon = PackedVector2Array(3973.5, 8520.8, 2972.2, 7920.0, 2957.8, 7944.0, 3959.1, 8544.8)
+
+[node name="EdgeBody279" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody279"]
+polygon = PackedVector2Array(2972.2, 7920.0, 1500.0, 7920.0, 1500.0, 7948.0, 2972.2, 7948.0)
+
+[node name="EdgeBody280" type="StaticBody2D" parent="CastleGeometry/BarbicanW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanW/EdgeBody280"]
+polygon = PackedVector2Array(1500.0, 7920.0, 1500.0, 8080.0, 1528.0, 8080.0, 1528.0, 7920.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/BarbicanW"]
 
-[node name="SideParapet237" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="SideParapet281" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(7096.5, 8760.0, 7099.5, 8600.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip238" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="SideLip282" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
 points = PackedVector2Array(7074.5, 8760.0, 7077.5, 8600.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet239" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="SideParapet283" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(1522.0, 7920.0, 1522.0, 8080.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip240" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="SideLip284" type="Line2D" parent="CastleGeometry/BarbicanW/Parapet"]
 points = PackedVector2Array(1544.0, 7920.0, 1544.0, 8080.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band241" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band285" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2972.2, 7852.0, 1500.0, 7852.0, 1500.0, 7920.0, 2972.2, 7920.0)
 uv = PackedVector2Array(8834.6, 0.0, 10306.8, 0.0, 10306.8, 68.0, 8834.6, 68.0)
 
-[node name="Band242" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band286" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(1500.0, 7852.0, 1500.0, 8012.0, 1500.0, 8080.0, 1500.0, 7920.0)
 uv = PackedVector2Array(10306.8, 0.0, 10466.8, 0.0, 10466.8, 68.0, 10306.8, 68.0)
 
-[node name="Band243" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band287" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(1500.0, 8012.0, 2927.8, 8012.0, 2927.8, 8080.0, 1500.0, 8080.0)
 uv = PackedVector2Array(10466.8, 0.0, 11894.6, 0.0, 11894.6, 68.0, 10466.8, 68.0)
 
-[node name="Band244" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band288" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(3973.5, 8452.8, 2972.2, 7852.0, 2972.2, 7920.0, 3973.5, 8520.8)
 uv = PackedVector2Array(7666.9, 0.0, 8834.6, 0.0, 8834.6, 68.0, 7666.9, 68.0)
 
-[node name="Band245" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band289" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.058, 1.058, 1.079, 1)
 polygon = PackedVector2Array(2927.8, 8012.0, 3926.5, 8611.2, 3926.5, 8679.2, 2927.8, 8080.0)
 uv = PackedVector2Array(0.0, 0.0, 1164.6, 0.0, 1164.6, 68.0, 0.0, 68.0)
 
-[node name="Band246" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band290" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(5032.2, 8492.0, 3973.5, 8452.8, 3973.5, 8520.8, 5032.2, 8560.0)
 uv = PackedVector2Array(6607.4, 0.0, 7666.9, 0.0, 7666.9, 68.0, 6607.4, 68.0)
 
-[node name="Band247" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band291" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7121.5, 8532.0, 5032.2, 8492.0, 5032.2, 8560.0, 7121.5, 8600.0)
 uv = PackedVector2Array(4517.7, 0.0, 6607.4, 0.0, 6607.4, 68.0, 4517.7, 68.0)
 
-[node name="Band248" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band292" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7118.5, 8692.0, 7121.5, 8532.0, 7121.5, 8600.0, 7118.5, 8760.0)
 uv = PackedVector2Array(4357.7, 0.0, 4517.7, 0.0, 4517.7, 68.0, 4357.7, 68.0)
 
-[node name="Band249" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band293" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.949, 0.949, 0.968, 1)
 polygon = PackedVector2Array(3926.5, 8611.2, 5027.8, 8652.0, 5027.8, 8720.0, 3926.5, 8679.2)
 uv = PackedVector2Array(1164.6, 0.0, 2266.6, 0.0, 2266.6, 68.0, 1164.6, 68.0)
 
-[node name="Band250" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
+[node name="Band294" type="Polygon2D" parent="CastleGeometry/BarbicanW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.945, 0.945, 0.963, 1)
@@ -2239,127 +2459,123 @@ uv = PackedVector2Array(2266.6, 0.0, 4357.7, 0.0, 4357.7, 68.0, 2266.6, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/BarbicanE"]
 
-[node name="Face251" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Face295" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(10332.2, 8720.0, 11433.5, 8679.2, 11433.5, 9259.2, 10332.2, 9180.0)
 uv = PackedVector2Array(0.0, 0.0, 1102.0, 0.0, 1102.0, 580.0, 0.0, 460.0)
 vertex_colors = PackedColorArray(0.931, 0.931, 0.950, 1.000, 0.931, 0.931, 0.950, 1.000, 0.633, 0.633, 0.671, 1.000, 0.633, 0.633, 0.671, 1.000)
 
-[node name="FaceBody252" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="FaceBody296" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody252"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody296"]
 polygon = PackedVector2Array(10332.2, 8720.0, 11433.5, 8679.2, 11433.5, 9259.2, 10332.2, 9180.0)
 
-[node name="Foam253" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam297" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(10332.2, 9172.0, 11433.5, 9251.2)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face254" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Face298" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(11433.5, 8679.2, 12432.2, 8080.0, 12432.2, 8699.2, 11433.5, 9259.2)
 uv = PackedVector2Array(1102.0, 0.0, 2266.6, 0.0, 2266.6, 619.2, 1102.0, 580.0)
 vertex_colors = PackedColorArray(0.811, 0.811, 0.827, 1.000, 0.811, 0.811, 0.827, 1.000, 0.551, 0.551, 0.584, 1.000, 0.551, 0.551, 0.584, 1.000)
 
-[node name="FaceBody255" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="FaceBody299" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody255"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody299"]
 polygon = PackedVector2Array(11433.5, 8679.2, 12432.2, 8080.0, 12432.2, 8699.2, 11433.5, 9259.2)
 
-[node name="Foam256" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam300" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(11433.5, 9251.2, 12432.2, 8691.2)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face257" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Face301" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(12432.2, 8080.0, 13860.0, 8080.0, 13860.0, 8700.0, 12432.2, 8699.2)
 uv = PackedVector2Array(2266.6, 0.0, 3694.5, 0.0, 3694.5, 620.0, 2266.6, 619.2)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody258" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="FaceBody302" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody258"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody302"]
 polygon = PackedVector2Array(12432.2, 8080.0, 13860.0, 8080.0, 13860.0, 8700.0, 12432.2, 8699.2)
 
-[node name="Foam259" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam303" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(12432.2, 8691.2, 13860.0, 8692.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face260" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Face304" type="Polygon2D" parent="CastleGeometry/BarbicanE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(8241.5, 8760.0, 10332.2, 8720.0, 10332.2, 9180.0, 8241.5, 9160.0)
 uv = PackedVector2Array(9803.5, 0.0, 11894.6, 0.0, 11894.6, 460.0, 9803.5, 400.0)
 vertex_colors = PackedColorArray(0.935, 0.935, 0.954, 1.000, 0.935, 0.935, 0.954, 1.000, 0.636, 0.636, 0.674, 1.000, 0.636, 0.636, 0.674, 1.000)
 
-[node name="FaceBody261" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="FaceBody305" type="StaticBody2D" parent="CastleGeometry/BarbicanE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody261"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/Faces/FaceBody305"]
 polygon = PackedVector2Array(8241.5, 8760.0, 10332.2, 8720.0, 10332.2, 9180.0, 8241.5, 9160.0)
 
-[node name="Foam262" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam306" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(8241.5, 9152.0, 10332.2, 9172.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Decal263" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Decal307" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
 position = Vector2(10592, 8987)
 texture = ExtResource("e18")
 
-[node name="Decal264" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(10991, 9051)
-texture = ExtResource("e15")
-
-[node name="Decal265" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Decal308" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
 position = Vector2(11656, 8935)
 texture = ExtResource("e15")
 
-[node name="Decal266" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Decal309" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
 position = Vector2(12692, 8422)
 texture = ExtResource("e18")
 
-[node name="Decal267" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(13068, 8339)
-texture = ExtResource("e17")
-
-[node name="Decal268" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(13420, 8422)
+[node name="Decal310" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(13026, 8422)
 texture = ExtResource("e18")
 
-[node name="Decal269" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Decal311" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(13404, 8489)
+texture = ExtResource("e15")
+
+[node name="Decal312" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
 position = Vector2(8501, 9032)
 texture = ExtResource("e15")
 
-[node name="Decal270" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(8897, 8989)
+[node name="Decal313" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(8810, 9032)
+texture = ExtResource("e15")
+
+[node name="Decal314" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(9170, 8988)
 texture = ExtResource("e18")
 
-[node name="Decal271" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(9221, 8988)
-texture = ExtResource("e18")
-
-[node name="Decal272" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(9532, 8931)
+[node name="Decal315" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(9556, 8930)
 texture = ExtResource("e17")
 
-[node name="Decal273" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
-position = Vector2(9877, 8908)
+[node name="Decal316" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+position = Vector2(9895, 8908)
 texture = ExtResource("e16")
 
-[node name="Banner274" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
+[node name="Banner317" type="Sprite2D" parent="CastleGeometry/BarbicanE/Faces"]
 material = ExtResource("e19")
 position = Vector2(11980, 8501)
 texture = ExtResource("e20")
@@ -2369,124 +2585,154 @@ offset = Vector2(0, 200)
 material = SubResource("m_walk")
 polygon = PackedVector2Array(10332.2, 8720.0, 11433.5, 8679.2, 12432.2, 8080.0, 13860.0, 8080.0, 13860.0, 7920.0, 12387.8, 7920.0, 11386.5, 8520.8, 10327.8, 8560.0, 8238.5, 8600.0, 8241.5, 8760.0)
 
-[node name="Band275" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
+[node name="Band318" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.931, 0.931, 0.950, 1)
 polygon = PackedVector2Array(10332.2, 8720.0, 11433.5, 8679.2, 11433.5, 8744.2, 10332.2, 8785.0)
 uv = PackedVector2Array(0.0, 0.0, 1102.0, 0.0, 1102.0, 65.0, 0.0, 65.0)
 
-[node name="Band276" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
+[node name="Band319" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.811, 0.811, 0.827, 1)
 polygon = PackedVector2Array(11433.5, 8679.2, 12432.2, 8080.0, 12432.2, 8145.0, 11433.5, 8744.2)
 uv = PackedVector2Array(1102.0, 0.0, 2266.6, 0.0, 2266.6, 65.0, 1102.0, 65.0)
 
-[node name="Band277" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
+[node name="Band320" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(12432.2, 8080.0, 13860.0, 8080.0, 13860.0, 8145.0, 12432.2, 8145.0)
 uv = PackedVector2Array(2266.6, 0.0, 3694.5, 0.0, 3694.5, 65.0, 2266.6, 65.0)
 
-[node name="Band278" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
+[node name="Band321" type="Polygon2D" parent="CastleGeometry/BarbicanE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.935, 0.935, 0.954, 1)
 polygon = PackedVector2Array(8241.5, 8760.0, 10332.2, 8720.0, 10332.2, 8785.0, 8241.5, 8825.0)
 uv = PackedVector2Array(9803.5, 0.0, 11894.6, 0.0, 11894.6, 65.0, 9803.5, 65.0)
 
+[node name="EdgeBody322" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody322"]
+polygon = PackedVector2Array(13860.0, 8080.0, 13860.0, 7920.0, 13832.0, 7920.0, 13832.0, 8080.0)
+
+[node name="EdgeBody323" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody323"]
+polygon = PackedVector2Array(13860.0, 7920.0, 12387.8, 7920.0, 12387.8, 7948.0, 13860.0, 7948.0)
+
+[node name="EdgeBody324" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody324"]
+polygon = PackedVector2Array(12387.8, 7920.0, 11386.5, 8520.8, 11400.9, 8544.8, 12402.2, 7944.0)
+
+[node name="EdgeBody325" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody325"]
+polygon = PackedVector2Array(11386.5, 8520.8, 10327.8, 8560.0, 10328.8, 8588.0, 11387.5, 8548.8)
+
+[node name="EdgeBody326" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody326"]
+polygon = PackedVector2Array(10327.8, 8560.0, 8238.5, 8600.0, 8239.0, 8628.0, 10328.3, 8588.0)
+
+[node name="EdgeBody327" type="StaticBody2D" parent="CastleGeometry/BarbicanE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/BarbicanE/EdgeBody327"]
+polygon = PackedVector2Array(8238.5, 8600.0, 8241.5, 8760.0, 8269.5, 8759.4, 8266.5, 8599.5)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/BarbicanE"]
 
-[node name="SideParapet279" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="SideParapet328" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13838.0, 8080.0, 13838.0, 7920.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip280" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="SideLip329" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
 points = PackedVector2Array(13816.0, 8080.0, 13816.0, 7920.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet281" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="SideParapet330" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(8260.5, 8600.0, 8263.5, 8760.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip282" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="SideLip331" type="Line2D" parent="CastleGeometry/BarbicanE/Parapet"]
 points = PackedVector2Array(8282.5, 8600.0, 8285.5, 8760.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band283" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band332" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13860.0, 7852.0, 12387.8, 7852.0, 12387.8, 7920.0, 13860.0, 7920.0)
 uv = PackedVector2Array(3854.5, 0.0, 5326.6, 0.0, 5326.6, 68.0, 3854.5, 68.0)
 
-[node name="Band284" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band333" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13860.0, 8012.0, 13860.0, 7852.0, 13860.0, 7920.0, 13860.0, 8080.0)
 uv = PackedVector2Array(3694.5, 0.0, 3854.5, 0.0, 3854.5, 68.0, 3694.5, 68.0)
 
-[node name="Band285" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band334" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(12432.2, 8012.0, 13860.0, 8012.0, 13860.0, 8080.0, 12432.2, 8080.0)
 uv = PackedVector2Array(2266.6, 0.0, 3694.5, 0.0, 3694.5, 68.0, 2266.6, 68.0)
 
-[node name="Band286" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band335" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(12387.8, 7852.0, 11386.5, 8452.8, 11386.5, 8520.8, 12387.8, 7920.0)
 uv = PackedVector2Array(5326.6, 0.0, 6494.4, 0.0, 6494.4, 68.0, 5326.6, 68.0)
 
-[node name="Band287" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band336" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.811, 0.811, 0.827, 1)
 polygon = PackedVector2Array(11433.5, 8611.2, 12432.2, 8012.0, 12432.2, 8080.0, 11433.5, 8679.2)
 uv = PackedVector2Array(1102.0, 0.0, 2266.6, 0.0, 2266.6, 68.0, 1102.0, 68.0)
 
-[node name="Band288" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band337" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(11386.5, 8452.8, 10327.8, 8492.0, 10327.8, 8560.0, 11386.5, 8520.8)
 uv = PackedVector2Array(6494.4, 0.0, 7553.9, 0.0, 7553.9, 68.0, 6494.4, 68.0)
 
-[node name="Band289" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band338" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(10327.8, 8492.0, 8238.5, 8532.0, 8238.5, 8600.0, 10327.8, 8560.0)
 uv = PackedVector2Array(7553.9, 0.0, 9643.5, 0.0, 9643.5, 68.0, 7553.9, 68.0)
 
-[node name="Band290" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band339" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8238.5, 8532.0, 8241.5, 8692.0, 8241.5, 8760.0, 8238.5, 8600.0)
 uv = PackedVector2Array(9643.5, 0.0, 9803.5, 0.0, 9803.5, 68.0, 9643.5, 68.0)
 
-[node name="Band291" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band340" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.931, 0.931, 0.950, 1)
 polygon = PackedVector2Array(10332.2, 8652.0, 11433.5, 8611.2, 11433.5, 8679.2, 10332.2, 8720.0)
 uv = PackedVector2Array(0.0, 0.0, 1102.0, 0.0, 1102.0, 68.0, 0.0, 68.0)
 
-[node name="Band292" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
+[node name="Band341" type="Polygon2D" parent="CastleGeometry/BarbicanE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.935, 0.935, 0.954, 1)
@@ -2497,118 +2743,128 @@ uv = PackedVector2Array(9803.5, 0.0, 11894.6, 0.0, 11894.6, 68.0, 9803.5, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/NorthWestLinkW"]
 
-[node name="Face293" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+[node name="Face342" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(2320.9, 1599.0, 2399.1, 1761.0, 2399.1, 2361.0, 2320.9, 2199.0)
 uv = PackedVector2Array(1468.1, 0.0, 1648.1, 0.0, 1648.1, 600.0, 1468.1, 600.0)
 vertex_colors = PackedColorArray(1.080, 1.080, 1.102, 1.000, 1.080, 1.080, 1.102, 1.000, 0.734, 0.734, 0.778, 1.000, 0.734, 0.734, 0.778, 1.000)
 
-[node name="FaceBody294" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+[node name="FaceBody343" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/Faces/FaceBody294"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/Faces/FaceBody343"]
 polygon = PackedVector2Array(2320.9, 1599.0, 2399.1, 1761.0, 2399.1, 2361.0, 2320.9, 2199.0)
 
-[node name="Foam295" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam344" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(2320.9, 2191.0, 2399.1, 2353.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face296" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+[node name="Face345" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(2399.1, 1761.0, 3559.1, 1201.0, 3559.1, 1801.0, 2399.1, 2361.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 600.0, 1648.1, 600.0)
 vertex_colors = PackedColorArray(0.832, 0.832, 0.848, 1.000, 0.832, 0.832, 0.848, 1.000, 0.566, 0.566, 0.599, 1.000, 0.566, 0.566, 0.599, 1.000)
 
-[node name="FaceBody297" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+[node name="FaceBody346" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/Faces/FaceBody297"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/Faces/FaceBody346"]
 polygon = PackedVector2Array(2399.1, 1761.0, 3559.1, 1201.0, 3559.1, 1801.0, 2399.1, 2361.0)
 
-[node name="Foam298" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam347" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(2399.1, 2353.0, 3559.1, 1793.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Decal299" type="Sprite2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+[node name="Decal348" type="Sprite2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
 position = Vector2(2633, 1874)
 texture = ExtResource("e16")
 
-[node name="Decal300" type="Sprite2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
-position = Vector2(3192, 1711)
-texture = ExtResource("e18")
+[node name="Decal349" type="Sprite2D" parent="CastleGeometry/NorthWestLinkW/Faces"]
+position = Vector2(3315, 1715)
+texture = ExtResource("e15")
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW"]
 material = SubResource("m_walk")
 polygon = PackedVector2Array(3559.1, 1201.0, 3480.9, 1039.0, 2320.9, 1599.0, 2399.1, 1761.0)
 
-[node name="Band301" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW"]
+[node name="Band350" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(1.080, 1.080, 1.102, 1)
 polygon = PackedVector2Array(2320.9, 1599.0, 2399.1, 1761.0, 2399.1, 1826.0, 2320.9, 1664.0)
 uv = PackedVector2Array(1468.1, 0.0, 1648.1, 0.0, 1648.1, 65.0, 1468.1, 65.0)
 
-[node name="Band302" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW"]
+[node name="Band351" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.832, 0.832, 0.848, 1)
 polygon = PackedVector2Array(2399.1, 1761.0, 3559.1, 1201.0, 3559.1, 1266.0, 2399.1, 1826.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 65.0, 1648.1, 65.0)
 
+[node name="EdgeBody352" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/EdgeBody352"]
+polygon = PackedVector2Array(3559.1, 1201.0, 3480.9, 1039.0, 3455.7, 1051.1, 3533.9, 1213.2)
+
+[node name="EdgeBody353" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkW/EdgeBody353"]
+polygon = PackedVector2Array(3480.9, 1039.0, 2320.9, 1599.0, 2333.0, 1624.2, 3493.0, 1064.2)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/NorthWestLinkW"]
 
-[node name="SideParapet303" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="SideParapet354" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(3539.3, 1201.0, 3461.1, 1039.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip304" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="SideLip355" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 points = PackedVector2Array(3519.5, 1201.0, 3441.2, 1039.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet305" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="SideParapet356" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2340.7, 1599.0, 2418.9, 1761.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip306" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="SideLip357" type="Line2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 points = PackedVector2Array(2360.5, 1599.0, 2438.8, 1761.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band307" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="Band358" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(3559.1, 1133.0, 3480.9, 971.0, 3480.9, 1039.0, 3559.1, 1201.0)
 uv = PackedVector2Array(0.0, 0.0, 180.0, 0.0, 180.0, 68.0, 0.0, 68.0)
 
-[node name="Band308" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="Band359" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(3480.9, 971.0, 2320.9, 1531.0, 2320.9, 1599.0, 3480.9, 1039.0)
 uv = PackedVector2Array(180.0, 0.0, 1468.1, 0.0, 1468.1, 68.0, 180.0, 68.0)
 
-[node name="Band309" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="Band360" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.832, 0.832, 0.848, 1)
 polygon = PackedVector2Array(2399.1, 1693.0, 3559.1, 1133.0, 3559.1, 1201.0, 2399.1, 1761.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 68.0, 1648.1, 68.0)
 
-[node name="Band310" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
+[node name="Band361" type="Polygon2D" parent="CastleGeometry/NorthWestLinkW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.080, 1.080, 1.102, 1)
@@ -2619,118 +2875,128 @@ uv = PackedVector2Array(1468.1, 0.0, 1648.1, 0.0, 1648.1, 68.0, 1468.1, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/NorthWestLinkE"]
 
-[node name="Face311" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+[node name="Face362" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(12960.9, 1761.0, 13039.1, 1599.0, 13039.1, 2199.0, 12960.9, 2361.0)
 uv = PackedVector2Array(0.0, 0.0, 180.0, 0.0, 180.0, 600.0, 0.0, 600.0)
 vertex_colors = PackedColorArray(0.701, 0.701, 0.715, 1.000, 0.701, 0.701, 0.715, 1.000, 0.477, 0.477, 0.505, 1.000, 0.477, 0.477, 0.505, 1.000)
 
-[node name="FaceBody312" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+[node name="FaceBody363" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/Faces/FaceBody312"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/Faces/FaceBody363"]
 polygon = PackedVector2Array(12960.9, 1761.0, 13039.1, 1599.0, 13039.1, 2199.0, 12960.9, 2361.0)
 
-[node name="Foam313" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam364" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(12960.9, 2353.0, 13039.1, 2191.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Face314" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+[node name="Face365" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(11800.9, 1201.0, 12960.9, 1761.0, 12960.9, 2361.0, 11800.9, 1801.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 600.0, 1648.1, 600.0)
 vertex_colors = PackedColorArray(1.040, 1.040, 1.061, 1.000, 1.040, 1.040, 1.061, 1.000, 0.707, 0.707, 0.750, 1.000, 0.707, 0.707, 0.750, 1.000)
 
-[node name="FaceBody315" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+[node name="FaceBody366" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/Faces/FaceBody315"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/Faces/FaceBody366"]
 polygon = PackedVector2Array(11800.9, 1201.0, 12960.9, 1761.0, 12960.9, 2361.0, 11800.9, 1801.0)
 
-[node name="Foam316" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam367" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(11800.9, 1793.0, 12960.9, 2353.0)
 width = 200.0
 texture_mode = 1
 joint_mode = 2
 
-[node name="Decal317" type="Sprite2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+[node name="Decal368" type="Sprite2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
 position = Vector2(12035, 1540)
 texture = ExtResource("e16")
 
-[node name="Decal318" type="Sprite2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
-position = Vector2(12688, 1855)
-texture = ExtResource("e16")
+[node name="Decal369" type="Sprite2D" parent="CastleGeometry/NorthWestLinkE/Faces"]
+position = Vector2(12676, 2020)
+texture = ExtResource("e15")
 
 [node name="Floor" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE"]
 material = SubResource("m_walk")
 polygon = PackedVector2Array(12960.9, 1761.0, 13039.1, 1599.0, 11879.1, 1039.0, 11800.9, 1201.0)
 
-[node name="Band319" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE"]
+[node name="Band370" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.701, 0.701, 0.715, 1)
 polygon = PackedVector2Array(12960.9, 1761.0, 13039.1, 1599.0, 13039.1, 1664.0, 12960.9, 1826.0)
 uv = PackedVector2Array(0.0, 0.0, 180.0, 0.0, 180.0, 65.0, 0.0, 65.0)
 
-[node name="Band320" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE"]
+[node name="Band371" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(1.040, 1.040, 1.061, 1)
 polygon = PackedVector2Array(11800.9, 1201.0, 12960.9, 1761.0, 12960.9, 1826.0, 11800.9, 1266.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 65.0, 1648.1, 65.0)
 
+[node name="EdgeBody372" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/EdgeBody372"]
+polygon = PackedVector2Array(13039.1, 1599.0, 11879.1, 1039.0, 11867.0, 1064.2, 13027.0, 1624.2)
+
+[node name="EdgeBody373" type="StaticBody2D" parent="CastleGeometry/NorthWestLinkE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/NorthWestLinkE/EdgeBody373"]
+polygon = PackedVector2Array(11879.1, 1039.0, 11800.9, 1201.0, 11826.1, 1213.2, 11904.3, 1051.1)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/NorthWestLinkE"]
 
-[node name="SideParapet321" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="SideParapet374" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(12941.1, 1761.0, 13019.3, 1599.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip322" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="SideLip375" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 points = PackedVector2Array(12921.2, 1761.0, 12999.5, 1599.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet323" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="SideParapet376" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(11898.9, 1039.0, 11820.7, 1201.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip324" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="SideLip377" type="Line2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 points = PackedVector2Array(11918.8, 1039.0, 11840.5, 1201.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band325" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="Band378" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(11879.1, 971.0, 11800.9, 1133.0, 11800.9, 1201.0, 11879.1, 1039.0)
 uv = PackedVector2Array(1468.1, 0.0, 1648.1, 0.0, 1648.1, 68.0, 1468.1, 68.0)
 
-[node name="Band326" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="Band379" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13039.1, 1531.0, 11879.1, 971.0, 11879.1, 1039.0, 13039.1, 1599.0)
 uv = PackedVector2Array(180.0, 0.0, 1468.1, 0.0, 1468.1, 68.0, 180.0, 68.0)
 
-[node name="Band327" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="Band380" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(1.040, 1.040, 1.061, 1)
 polygon = PackedVector2Array(11800.9, 1133.0, 12960.9, 1693.0, 12960.9, 1761.0, 11800.9, 1201.0)
 uv = PackedVector2Array(1648.1, 0.0, 2936.2, 0.0, 2936.2, 68.0, 1648.1, 68.0)
 
-[node name="Band328" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
+[node name="Band381" type="Polygon2D" parent="CastleGeometry/NorthWestLinkE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.701, 0.701, 0.715, 1)
@@ -2741,19 +3007,19 @@ uv = PackedVector2Array(0.0, 0.0, 180.0, 0.0, 180.0, 68.0, 0.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeLowerW"]
 
-[node name="Face329" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Faces"]
+[node name="Face382" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(700.0, 5400.0, 1720.0, 5400.0, 1720.0, 6100.0, 700.0, 6100.0)
 uv = PackedVector2Array(1505.9, 0.0, 2529.9, 0.0, 2529.9, 720.0, 1505.9, 720.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody330" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerW/Faces"]
+[node name="FaceBody383" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerW/Faces/FaceBody330"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerW/Faces/FaceBody383"]
 polygon = PackedVector2Array(700.0, 5400.0, 1720.0, 5400.0, 1720.0, 6100.0, 700.0, 6100.0)
 
-[node name="Foam331" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam384" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(700.0, 6092.0, 1720.0, 6092.0)
 width = 200.0
@@ -2764,54 +3030,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(1720.0, 5400.0, 1720.0, 5160.0, 700.0, 5160.0, 700.0, 5400.0)
 
+[node name="EdgeBody385" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerW/EdgeBody385"]
+polygon = PackedVector2Array(1720.0, 5400.0, 1720.0, 5160.0, 1692.0, 5160.0, 1692.0, 5400.0)
+
+[node name="EdgeBody386" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerW/EdgeBody386"]
+polygon = PackedVector2Array(1720.0, 5160.0, 700.0, 5160.0, 700.0, 5188.0, 1720.0, 5188.0)
+
+[node name="EdgeBody387" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerW/EdgeBody387"]
+polygon = PackedVector2Array(700.0, 5160.0, 700.0, 5400.0, 728.0, 5400.0, 728.0, 5160.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeLowerW"]
 
-[node name="SideParapet332" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="SideParapet388" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(1698.0, 5400.0, 1698.0, 5160.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip333" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="SideLip389" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 points = PackedVector2Array(1676.0, 5400.0, 1676.0, 5160.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet334" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="SideParapet390" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(722.0, 5160.0, 722.0, 5400.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip335" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="SideLip391" type="Line2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 points = PackedVector2Array(744.0, 5160.0, 744.0, 5400.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band336" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="Band392" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(1720.0, 5092.0, 700.0, 5092.0, 700.0, 5160.0, 1720.0, 5160.0)
 uv = PackedVector2Array(240.0, 0.0, 1260.0, 0.0, 1260.0, 68.0, 240.0, 68.0)
 
-[node name="Band337" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="Band393" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(1720.0, 5332.0, 1720.0, 5092.0, 1720.0, 5160.0, 1720.0, 5400.0)
 uv = PackedVector2Array(0.0, 0.0, 240.0, 0.0, 240.0, 68.0, 0.0, 68.0)
 
-[node name="Band338" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="Band394" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(700.0, 5092.0, 700.0, 5332.0, 700.0, 5400.0, 700.0, 5160.0)
 uv = PackedVector2Array(1260.0, 0.0, 1500.0, 0.0, 1500.0, 68.0, 1260.0, 68.0)
 
-[node name="Band339" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
+[node name="Band395" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -2822,19 +3103,19 @@ uv = PackedVector2Array(1500.0, 0.0, 2520.0, 0.0, 2520.0, 68.0, 1500.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeLowerE"]
 
-[node name="Face340" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Faces"]
+[node name="Face396" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(13640.0, 5400.0, 14660.0, 5400.0, 14660.0, 6100.0, 13640.0, 6100.0)
 uv = PackedVector2Array(1505.9, 0.0, 2529.9, 0.0, 2529.9, 720.0, 1505.9, 720.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody341" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerE/Faces"]
+[node name="FaceBody397" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerE/Faces/FaceBody341"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerE/Faces/FaceBody397"]
 polygon = PackedVector2Array(13640.0, 5400.0, 14660.0, 5400.0, 14660.0, 6100.0, 13640.0, 6100.0)
 
-[node name="Foam342" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam398" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(13640.0, 6092.0, 14660.0, 6092.0)
 width = 200.0
@@ -2845,54 +3126,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(14660.0, 5400.0, 14660.0, 5160.0, 13640.0, 5160.0, 13640.0, 5400.0)
 
+[node name="EdgeBody399" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerE/EdgeBody399"]
+polygon = PackedVector2Array(14660.0, 5400.0, 14660.0, 5160.0, 14632.0, 5160.0, 14632.0, 5400.0)
+
+[node name="EdgeBody400" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerE/EdgeBody400"]
+polygon = PackedVector2Array(14660.0, 5160.0, 13640.0, 5160.0, 13640.0, 5188.0, 14660.0, 5188.0)
+
+[node name="EdgeBody401" type="StaticBody2D" parent="CastleGeometry/FlankBridgeLowerE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeLowerE/EdgeBody401"]
+polygon = PackedVector2Array(13640.0, 5160.0, 13640.0, 5400.0, 13668.0, 5400.0, 13668.0, 5160.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeLowerE"]
 
-[node name="SideParapet343" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="SideParapet402" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(14638.0, 5400.0, 14638.0, 5160.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip344" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="SideLip403" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 points = PackedVector2Array(14616.0, 5400.0, 14616.0, 5160.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet345" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="SideParapet404" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13662.0, 5160.0, 13662.0, 5400.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip346" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="SideLip405" type="Line2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 points = PackedVector2Array(13684.0, 5160.0, 13684.0, 5400.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band347" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="Band406" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(14660.0, 5092.0, 13640.0, 5092.0, 13640.0, 5160.0, 14660.0, 5160.0)
 uv = PackedVector2Array(240.0, 0.0, 1260.0, 0.0, 1260.0, 68.0, 240.0, 68.0)
 
-[node name="Band348" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="Band407" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(14660.0, 5332.0, 14660.0, 5092.0, 14660.0, 5160.0, 14660.0, 5400.0)
 uv = PackedVector2Array(0.0, 0.0, 240.0, 0.0, 240.0, 68.0, 0.0, 68.0)
 
-[node name="Band349" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="Band408" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13640.0, 5092.0, 13640.0, 5332.0, 13640.0, 5400.0, 13640.0, 5160.0)
 uv = PackedVector2Array(1260.0, 0.0, 1500.0, 0.0, 1500.0, 68.0, 1260.0, 68.0)
 
-[node name="Band350" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
+[node name="Band409" type="Polygon2D" parent="CastleGeometry/FlankBridgeLowerE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -2903,19 +3199,19 @@ uv = PackedVector2Array(1500.0, 0.0, 2520.0, 0.0, 2520.0, 68.0, 1500.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeUpperW"]
 
-[node name="Face351" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Faces"]
+[node name="Face410" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(960.0, 3380.0, 2140.0, 3380.0, 2140.0, 4000.0, 960.0, 4000.0)
 uv = PackedVector2Array(1440.5, 0.0, 2464.5, 0.0, 2464.5, 720.0, 1440.5, 720.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody352" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperW/Faces"]
+[node name="FaceBody411" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperW/Faces/FaceBody352"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperW/Faces/FaceBody411"]
 polygon = PackedVector2Array(960.0, 3380.0, 2140.0, 3380.0, 2140.0, 4000.0, 960.0, 4000.0)
 
-[node name="Foam353" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam412" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(960.0, 3992.0, 2140.0, 3992.0)
 width = 200.0
@@ -2926,54 +3222,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(2140.0, 3380.0, 2140.0, 3140.0, 960.0, 3140.0, 960.0, 3380.0)
 
+[node name="EdgeBody413" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperW/EdgeBody413"]
+polygon = PackedVector2Array(2140.0, 3380.0, 2140.0, 3140.0, 2112.0, 3140.0, 2112.0, 3380.0)
+
+[node name="EdgeBody414" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperW/EdgeBody414"]
+polygon = PackedVector2Array(2140.0, 3140.0, 960.0, 3140.0, 960.0, 3168.0, 2140.0, 3168.0)
+
+[node name="EdgeBody415" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperW/EdgeBody415"]
+polygon = PackedVector2Array(960.0, 3140.0, 960.0, 3380.0, 988.0, 3380.0, 988.0, 3140.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeUpperW"]
 
-[node name="SideParapet354" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="SideParapet416" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2118.0, 3380.0, 2118.0, 3140.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip355" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="SideLip417" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 points = PackedVector2Array(2096.0, 3380.0, 2096.0, 3140.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet356" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="SideParapet418" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(982.0, 3140.0, 982.0, 3380.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip357" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="SideLip419" type="Line2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 points = PackedVector2Array(1004.0, 3140.0, 1004.0, 3380.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band358" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="Band420" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2140.0, 3072.0, 960.0, 3072.0, 960.0, 3140.0, 2140.0, 3140.0)
 uv = PackedVector2Array(240.0, 0.0, 1420.0, 0.0, 1420.0, 68.0, 240.0, 68.0)
 
-[node name="Band359" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="Band421" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2140.0, 3312.0, 2140.0, 3072.0, 2140.0, 3140.0, 2140.0, 3380.0)
 uv = PackedVector2Array(0.0, 0.0, 240.0, 0.0, 240.0, 68.0, 0.0, 68.0)
 
-[node name="Band360" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="Band422" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(960.0, 3072.0, 960.0, 3312.0, 960.0, 3380.0, 960.0, 3140.0)
 uv = PackedVector2Array(1420.0, 0.0, 1660.0, 0.0, 1660.0, 68.0, 1420.0, 68.0)
 
-[node name="Band361" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
+[node name="Band423" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -2984,19 +3295,19 @@ uv = PackedVector2Array(1660.0, 0.0, 2840.0, 0.0, 2840.0, 68.0, 1660.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeUpperE"]
 
-[node name="Face362" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Faces"]
+[node name="Face424" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(13220.0, 3380.0, 14400.0, 3380.0, 14400.0, 4000.0, 13220.0, 4000.0)
 uv = PackedVector2Array(1440.5, 0.0, 2464.5, 0.0, 2464.5, 720.0, 1440.5, 720.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody363" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperE/Faces"]
+[node name="FaceBody425" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperE/Faces/FaceBody363"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperE/Faces/FaceBody425"]
 polygon = PackedVector2Array(13220.0, 3380.0, 14400.0, 3380.0, 14400.0, 4000.0, 13220.0, 4000.0)
 
-[node name="Foam364" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam426" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(13220.0, 3992.0, 14400.0, 3992.0)
 width = 200.0
@@ -3007,54 +3318,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(14400.0, 3380.0, 14400.0, 3140.0, 13220.0, 3140.0, 13220.0, 3380.0)
 
+[node name="EdgeBody427" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperE/EdgeBody427"]
+polygon = PackedVector2Array(14400.0, 3380.0, 14400.0, 3140.0, 14372.0, 3140.0, 14372.0, 3380.0)
+
+[node name="EdgeBody428" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperE/EdgeBody428"]
+polygon = PackedVector2Array(14400.0, 3140.0, 13220.0, 3140.0, 13220.0, 3168.0, 14400.0, 3168.0)
+
+[node name="EdgeBody429" type="StaticBody2D" parent="CastleGeometry/FlankBridgeUpperE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeUpperE/EdgeBody429"]
+polygon = PackedVector2Array(13220.0, 3140.0, 13220.0, 3380.0, 13248.0, 3380.0, 13248.0, 3140.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeUpperE"]
 
-[node name="SideParapet365" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="SideParapet430" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(14378.0, 3380.0, 14378.0, 3140.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip366" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="SideLip431" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 points = PackedVector2Array(14356.0, 3380.0, 14356.0, 3140.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet367" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="SideParapet432" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13242.0, 3140.0, 13242.0, 3380.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip368" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="SideLip433" type="Line2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 points = PackedVector2Array(13264.0, 3140.0, 13264.0, 3380.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band369" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="Band434" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(14400.0, 3072.0, 13220.0, 3072.0, 13220.0, 3140.0, 14400.0, 3140.0)
 uv = PackedVector2Array(240.0, 0.0, 1420.0, 0.0, 1420.0, 68.0, 240.0, 68.0)
 
-[node name="Band370" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="Band435" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(14400.0, 3312.0, 14400.0, 3072.0, 14400.0, 3140.0, 14400.0, 3380.0)
 uv = PackedVector2Array(0.0, 0.0, 240.0, 0.0, 240.0, 68.0, 0.0, 68.0)
 
-[node name="Band371" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="Band436" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13220.0, 3072.0, 13220.0, 3312.0, 13220.0, 3380.0, 13220.0, 3140.0)
 uv = PackedVector2Array(1420.0, 0.0, 1660.0, 0.0, 1660.0, 68.0, 1420.0, 68.0)
 
-[node name="Band372" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
+[node name="Band437" type="Polygon2D" parent="CastleGeometry/FlankBridgeUpperE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -3065,19 +3391,19 @@ uv = PackedVector2Array(1660.0, 0.0, 2840.0, 0.0, 2840.0, 68.0, 1660.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeTopW"]
 
-[node name="Face373" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Faces"]
+[node name="Face438" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(1418.1, 2068.5, 2378.1, 1908.5, 2378.1, 2408.5, 1418.1, 2568.5)
 uv = PackedVector2Array(1486.9, 0.0, 2510.9, 0.0, 2510.9, 720.0, 1486.9, 720.0)
 vertex_colors = PackedColorArray(0.900, 0.900, 0.918, 1.000, 0.900, 0.900, 0.918, 1.000, 0.612, 0.612, 0.649, 1.000, 0.612, 0.612, 0.649, 1.000)
 
-[node name="FaceBody374" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopW/Faces"]
+[node name="FaceBody439" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopW/Faces/FaceBody374"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopW/Faces/FaceBody439"]
 polygon = PackedVector2Array(1418.1, 2068.5, 2378.1, 1908.5, 2378.1, 2408.5, 1418.1, 2568.5)
 
-[node name="Foam375" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam440" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(1418.1, 2560.5, 2378.1, 2400.5)
 width = 200.0
@@ -3088,54 +3414,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(2378.1, 1908.5, 2341.9, 1691.5, 1381.9, 1851.5, 1418.1, 2068.5)
 
+[node name="EdgeBody441" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopW/EdgeBody441"]
+polygon = PackedVector2Array(2378.1, 1908.5, 2341.9, 1691.5, 2314.3, 1696.1, 2350.5, 1913.1)
+
+[node name="EdgeBody442" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopW/EdgeBody442"]
+polygon = PackedVector2Array(2341.9, 1691.5, 1381.9, 1851.5, 1386.5, 1879.1, 2346.5, 1719.1)
+
+[node name="EdgeBody443" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopW/EdgeBody443"]
+polygon = PackedVector2Array(1381.9, 1851.5, 1418.1, 2068.5, 1445.7, 2063.9, 1409.5, 1846.9)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeTopW"]
 
-[node name="SideParapet376" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="SideParapet444" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2356.4, 1908.5, 2320.2, 1691.5)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip377" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="SideLip445" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 points = PackedVector2Array(2334.7, 1908.5, 2298.5, 1691.5)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet378" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="SideParapet446" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(1403.6, 1851.5, 1439.8, 2068.5)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip379" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="SideLip447" type="Line2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 points = PackedVector2Array(1425.3, 1851.5, 1461.5, 2068.5)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band380" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="Band448" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2341.9, 1623.5, 1381.9, 1783.5, 1381.9, 1851.5, 2341.9, 1691.5)
 uv = PackedVector2Array(220.0, 0.0, 1193.2, 0.0, 1193.2, 68.0, 220.0, 68.0)
 
-[node name="Band381" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="Band449" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(2378.1, 1840.5, 2341.9, 1623.5, 2341.9, 1691.5, 2378.1, 1908.5)
 uv = PackedVector2Array(0.0, 0.0, 220.0, 0.0, 220.0, 68.0, 0.0, 68.0)
 
-[node name="Band382" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="Band450" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(1381.9, 1783.5, 1418.1, 2000.5, 1418.1, 2068.5, 1381.9, 1851.5)
 uv = PackedVector2Array(1193.2, 0.0, 1413.2, 0.0, 1413.2, 68.0, 1193.2, 68.0)
 
-[node name="Band383" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
+[node name="Band451" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.900, 0.900, 0.918, 1)
@@ -3146,19 +3487,19 @@ uv = PackedVector2Array(1413.2, 0.0, 2386.5, 0.0, 2386.5, 68.0, 1413.2, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/FlankBridgeTopE"]
 
-[node name="Face384" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Faces"]
+[node name="Face452" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(12981.9, 1908.5, 13941.9, 2068.5, 13941.9, 2568.5, 12981.9, 2408.5)
 uv = PackedVector2Array(1486.9, 0.0, 2510.9, 0.0, 2510.9, 720.0, 1486.9, 720.0)
 vertex_colors = PackedColorArray(0.979, 0.979, 0.998, 1.000, 0.979, 0.979, 0.998, 1.000, 0.666, 0.666, 0.706, 1.000, 0.666, 0.666, 0.706, 1.000)
 
-[node name="FaceBody385" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopE/Faces"]
+[node name="FaceBody453" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopE/Faces/FaceBody385"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopE/Faces/FaceBody453"]
 polygon = PackedVector2Array(12981.9, 1908.5, 13941.9, 2068.5, 13941.9, 2568.5, 12981.9, 2408.5)
 
-[node name="Foam386" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam454" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(12981.9, 2400.5, 13941.9, 2560.5)
 width = 200.0
@@ -3169,54 +3510,69 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(13941.9, 2068.5, 13978.1, 1851.5, 13018.1, 1691.5, 12981.9, 1908.5)
 
+[node name="EdgeBody455" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopE/EdgeBody455"]
+polygon = PackedVector2Array(13941.9, 2068.5, 13978.1, 1851.5, 13950.5, 1846.9, 13914.3, 2063.9)
+
+[node name="EdgeBody456" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopE/EdgeBody456"]
+polygon = PackedVector2Array(13978.1, 1851.5, 13018.1, 1691.5, 13013.5, 1719.1, 13973.5, 1879.1)
+
+[node name="EdgeBody457" type="StaticBody2D" parent="CastleGeometry/FlankBridgeTopE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/FlankBridgeTopE/EdgeBody457"]
+polygon = PackedVector2Array(13018.1, 1691.5, 12981.9, 1908.5, 13009.5, 1913.1, 13045.7, 1696.1)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/FlankBridgeTopE"]
 
-[node name="SideParapet387" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="SideParapet458" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13920.2, 2068.5, 13956.4, 1851.5)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip388" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="SideLip459" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 points = PackedVector2Array(13898.5, 2068.5, 13934.7, 1851.5)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet389" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="SideParapet460" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(13039.8, 1691.5, 13003.6, 1908.5)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip390" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="SideLip461" type="Line2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 points = PackedVector2Array(13061.5, 1691.5, 13025.3, 1908.5)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band391" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="Band462" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13978.1, 1783.5, 13018.1, 1623.5, 13018.1, 1691.5, 13978.1, 1851.5)
 uv = PackedVector2Array(220.0, 0.0, 1193.2, 0.0, 1193.2, 68.0, 220.0, 68.0)
 
-[node name="Band392" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="Band463" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13018.1, 1623.5, 12981.9, 1840.5, 12981.9, 1908.5, 13018.1, 1691.5)
 uv = PackedVector2Array(1193.2, 0.0, 1413.2, 0.0, 1413.2, 68.0, 1193.2, 68.0)
 
-[node name="Band393" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="Band464" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(13941.9, 2000.5, 13978.1, 1783.5, 13978.1, 1851.5, 13941.9, 2068.5)
 uv = PackedVector2Array(0.0, 0.0, 220.0, 0.0, 220.0, 68.0, 0.0, 68.0)
 
-[node name="Band394" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
+[node name="Band465" type="Polygon2D" parent="CastleGeometry/FlankBridgeTopE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.979, 0.979, 0.998, 1)
@@ -3225,37 +3581,42 @@ uv = PackedVector2Array(1413.2, 0.0, 2386.5, 0.0, 2386.5, 68.0, 1413.2, 68.0)
 
 [node name="Details" type="Node2D" parent="CastleGeometry"]
 
-[node name="Yard395" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Yard466" type="Polygon2D" parent="CastleGeometry/Details"]
 material = SubResource("m_dirt")
 polygon = PackedVector2Array(2300.0, 4940.0, 4020.0, 4820.0, 4240.0, 5900.0, 2620.0, 5900.0)
 
-[node name="YardEdge396" type="Line2D" parent="CastleGeometry/Details"]
+[node name="YardEdge467" type="Line2D" parent="CastleGeometry/Details"]
 material = SubResource("m_walk")
 points = PackedVector2Array(2300.0, 4940.0, 4020.0, 4820.0, 4240.0, 5900.0, 2620.0, 5900.0, 2300.0, 4940.0)
 width = 36.0
 joint_mode = 0
 sharp_limit = 6.0
 
-[node name="Yard397" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Yard468" type="Polygon2D" parent="CastleGeometry/Details"]
 material = SubResource("m_dirt")
 polygon = PackedVector2Array(12740.0, 5900.0, 11120.0, 5900.0, 11340.0, 4820.0, 13060.0, 4940.0)
 
-[node name="YardEdge398" type="Line2D" parent="CastleGeometry/Details"]
+[node name="YardEdge469" type="Line2D" parent="CastleGeometry/Details"]
 material = SubResource("m_walk")
 points = PackedVector2Array(12740.0, 5900.0, 11120.0, 5900.0, 11340.0, 4820.0, 13060.0, 4940.0, 12740.0, 5900.0)
 width = 36.0
 joint_mode = 0
 sharp_limit = 6.0
 
-[node name="PoolRimBack399" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="PoolRimBack470" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.3, 0.31, 0.4, 1)
 polygon = PackedVector2Array(5050.0, 4796.0, 5600.0, 4796.0, 5600.0, 5096.0, 5050.0, 5096.0)
 
-[node name="Pool400" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Pool471" type="Polygon2D" parent="CastleGeometry/Details"]
 material = SubResource("m_water")
 polygon = PackedVector2Array(5050.0, 4820.0, 5600.0, 4820.0, 5600.0, 5120.0, 5050.0, 5120.0)
 
-[node name="PoolRim401" type="Line2D" parent="CastleGeometry/Details"]
+[node name="PoolBody472" type="StaticBody2D" parent="CastleGeometry/Details"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Details/PoolBody472"]
+polygon = PackedVector2Array(5050.0, 4820.0, 5600.0, 4820.0, 5600.0, 5120.0, 5050.0, 5120.0)
+
+[node name="PoolRim473" type="Line2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e21")
 texture_mode = 1
@@ -3264,15 +3625,20 @@ width = 48.0
 joint_mode = 0
 sharp_limit = 6.0
 
-[node name="PoolRimBack402" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="PoolRimBack474" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.3, 0.31, 0.4, 1)
 polygon = PackedVector2Array(10310.0, 5096.0, 9760.0, 5096.0, 9760.0, 4796.0, 10310.0, 4796.0)
 
-[node name="Pool403" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Pool475" type="Polygon2D" parent="CastleGeometry/Details"]
 material = SubResource("m_water")
 polygon = PackedVector2Array(10310.0, 5120.0, 9760.0, 5120.0, 9760.0, 4820.0, 10310.0, 4820.0)
 
-[node name="PoolRim404" type="Line2D" parent="CastleGeometry/Details"]
+[node name="PoolBody476" type="StaticBody2D" parent="CastleGeometry/Details"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Details/PoolBody476"]
+polygon = PackedVector2Array(10310.0, 5120.0, 9760.0, 5120.0, 9760.0, 4820.0, 10310.0, 4820.0)
+
+[node name="PoolRim477" type="Line2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e21")
 texture_mode = 1
@@ -3281,95 +3647,105 @@ width = 48.0
 joint_mode = 0
 sharp_limit = 6.0
 
-[node name="ColonnadeBack405" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="ColonnadeBack478" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.1, 0.11, 0.17, 1)
 polygon = PackedVector2Array(5070.0, 4320.0, 5860.0, 4320.0, 5860.0, 4700.0, 5070.0, 4700.0)
 
-[node name="Colonnade406" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="ColonnadeBody479" type="StaticBody2D" parent="CastleGeometry/Details"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Details/ColonnadeBody479"]
+polygon = PackedVector2Array(5070.0, 4320.0, 5860.0, 4320.0, 5860.0, 4700.0, 5070.0, 4700.0)
+
+[node name="Colonnade480" type="Polygon2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(5070.0, 4320.0, 5860.0, 4320.0, 5860.0, 4700.0, 5070.0, 4700.0)
 uv = PackedVector2Array(0.0, 0.0, 3072.0, 0.0, 3072.0, 720.0, 0.0, 720.0)
 
-[node name="Band407" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Band481" type="Polygon2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.950, 0.950, 0.969, 1)
 polygon = PackedVector2Array(5070.0, 4252.0, 5860.0, 4252.0, 5860.0, 4320.0, 5070.0, 4320.0)
 uv = PackedVector2Array(0.0, 0.0, 790.0, 0.0, 790.0, 68.0, 0.0, 68.0)
 
-[node name="ColonnadeBack408" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="ColonnadeBack482" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.1, 0.11, 0.17, 1)
 polygon = PackedVector2Array(9500.0, 4320.0, 10290.0, 4320.0, 10290.0, 4700.0, 9500.0, 4700.0)
 
-[node name="Colonnade409" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="ColonnadeBody483" type="StaticBody2D" parent="CastleGeometry/Details"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Details/ColonnadeBody483"]
+polygon = PackedVector2Array(9500.0, 4320.0, 10290.0, 4320.0, 10290.0, 4700.0, 9500.0, 4700.0)
+
+[node name="Colonnade484" type="Polygon2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e12")
 polygon = PackedVector2Array(9500.0, 4320.0, 10290.0, 4320.0, 10290.0, 4700.0, 9500.0, 4700.0)
 uv = PackedVector2Array(0.0, 0.0, 3072.0, 0.0, 3072.0, 720.0, 0.0, 720.0)
 
-[node name="Band410" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Band485" type="Polygon2D" parent="CastleGeometry/Details"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.950, 0.950, 0.969, 1)
 polygon = PackedVector2Array(9500.0, 4252.0, 10290.0, 4252.0, 10290.0, 4320.0, 9500.0, 4320.0)
 uv = PackedVector2Array(0.0, 0.0, 790.0, 0.0, 790.0, 68.0, 0.0, 68.0)
 
-[node name="Sluice411" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice486" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(2022.4, 8620.0, 2022.4, 8490.9, 2024.8, 8472.6, 2031.9, 8455.5, 2043.2, 8440.8, 2057.9, 8429.5, 2075.0, 8422.4, 2093.3, 8420.0, 2111.7, 8422.4, 2128.8, 8429.5, 2143.5, 8440.8, 2154.8, 8455.5, 2161.8, 8472.6, 2164.3, 8490.9, 2164.3, 8620.0)
 
-[node name="SluiceGrate412" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate487" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(2093, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
 offset = Vector2(0, -30)
 
-[node name="Sluice413" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice488" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(2209.1, 8620.0, 2209.1, 8490.9, 2211.5, 8472.6, 2218.6, 8455.5, 2229.8, 8440.8, 2244.5, 8429.5, 2261.6, 8422.4, 2280.0, 8420.0, 2298.4, 8422.4, 2315.5, 8429.5, 2330.2, 8440.8, 2341.4, 8455.5, 2348.5, 8472.6, 2350.9, 8490.9, 2350.9, 8620.0)
 
-[node name="SluiceGrate414" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate489" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(2280, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
 offset = Vector2(0, -30)
 
-[node name="Sluice415" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice490" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(2395.7, 8620.0, 2395.7, 8490.9, 2398.2, 8472.6, 2405.2, 8455.5, 2416.5, 8440.8, 2431.2, 8429.5, 2448.3, 8422.4, 2466.7, 8420.0, 2485.0, 8422.4, 2502.1, 8429.5, 2516.8, 8440.8, 2528.1, 8455.5, 2535.2, 8472.6, 2537.6, 8490.9, 2537.6, 8620.0)
 
-[node name="SluiceGrate416" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate491" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(2467, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
 offset = Vector2(0, -30)
 
-[node name="Sluice417" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice492" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(12822.4, 8620.0, 12822.4, 8490.9, 12824.8, 8472.6, 12831.9, 8455.5, 12843.2, 8440.8, 12857.9, 8429.5, 12875.0, 8422.4, 12893.3, 8420.0, 12911.7, 8422.4, 12928.8, 8429.5, 12943.5, 8440.8, 12954.8, 8455.5, 12961.8, 8472.6, 12964.3, 8490.9, 12964.3, 8620.0)
 
-[node name="SluiceGrate418" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate493" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(12893, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
 offset = Vector2(0, -30)
 
-[node name="Sluice419" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice494" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(13009.1, 8620.0, 13009.1, 8490.9, 13011.5, 8472.6, 13018.6, 8455.5, 13029.8, 8440.8, 13044.5, 8429.5, 13061.6, 8422.4, 13080.0, 8420.0, 13098.4, 8422.4, 13115.5, 8429.5, 13130.2, 8440.8, 13141.4, 8455.5, 13148.5, 8472.6, 13150.9, 8490.9, 13150.9, 8620.0)
 
-[node name="SluiceGrate420" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate495" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(13080, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
 offset = Vector2(0, -30)
 
-[node name="Sluice421" type="Polygon2D" parent="CastleGeometry/Details"]
+[node name="Sluice496" type="Polygon2D" parent="CastleGeometry/Details"]
 color = Color(0.07, 0.09, 0.16, 1)
 polygon = PackedVector2Array(13195.7, 8620.0, 13195.7, 8490.9, 13198.2, 8472.6, 13205.2, 8455.5, 13216.5, 8440.8, 13231.2, 8429.5, 13248.3, 8422.4, 13266.7, 8420.0, 13285.0, 8422.4, 13302.1, 8429.5, 13316.8, 8440.8, 13328.1, 8455.5, 13335.2, 8472.6, 13337.6, 8490.9, 13337.6, 8620.0)
 
-[node name="SluiceGrate422" type="Sprite2D" parent="CastleGeometry/Details"]
+[node name="SluiceGrate497" type="Sprite2D" parent="CastleGeometry/Details"]
 position = Vector2(13267, 8620)
 scale = Vector2(2.0, 2.0)
 texture = ExtResource("e22")
@@ -3383,40 +3759,50 @@ offset = Vector2(0, -30)
 material = SubResource("m_court_light")
 polygon = PackedVector2Array(7160.0, 10350.0, 8200.0, 10350.0, 8200.0, 6400.0, 7160.0, 6400.0)
 
+[node name="EdgeBody498" type="StaticBody2D" parent="CastleGeometry/Causeway"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Causeway/EdgeBody498"]
+polygon = PackedVector2Array(8200.0, 10350.0, 8200.0, 6400.0, 8172.0, 6400.0, 8172.0, 10350.0)
+
+[node name="EdgeBody499" type="StaticBody2D" parent="CastleGeometry/Causeway"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/Causeway/EdgeBody499"]
+polygon = PackedVector2Array(7160.0, 6400.0, 7160.0, 10350.0, 7188.0, 10350.0, 7188.0, 6400.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/Causeway"]
 
-[node name="SideParapet423" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="SideParapet500" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(8178.0, 10350.0, 8178.0, 6400.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip424" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="SideLip501" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
 points = PackedVector2Array(8156.0, 10350.0, 8156.0, 6400.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet425" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="SideParapet502" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(7182.0, 6400.0, 7182.0, 10350.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip426" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="SideLip503" type="Line2D" parent="CastleGeometry/Causeway/Parapet"]
 points = PackedVector2Array(7204.0, 6400.0, 7204.0, 10350.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band427" type="Polygon2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="Band504" type="Polygon2D" parent="CastleGeometry/Causeway/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8200.0, 10282.0, 8200.0, 6332.0, 8200.0, 6400.0, 8200.0, 10350.0)
 uv = PackedVector2Array(1040.0, 0.0, 4990.0, 0.0, 4990.0, 68.0, 1040.0, 68.0)
 
-[node name="Band428" type="Polygon2D" parent="CastleGeometry/Causeway/Parapet"]
+[node name="Band505" type="Polygon2D" parent="CastleGeometry/Causeway/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
@@ -3427,19 +3813,19 @@ uv = PackedVector2Array(6030.0, 0.0, 9980.0, 0.0, 9980.0, 68.0, 6030.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/GateLandingW"]
 
-[node name="Face429" type="Polygon2D" parent="CastleGeometry/GateLandingW/Faces"]
+[node name="Face506" type="Polygon2D" parent="CastleGeometry/GateLandingW/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(6640.0, 10020.0, 7160.0, 10020.0, 7160.0, 10360.0, 6640.0, 10360.0)
 uv = PackedVector2Array(0.0, 0.0, 520.0, 0.0, 520.0, 340.0, 0.0, 340.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody430" type="StaticBody2D" parent="CastleGeometry/GateLandingW/Faces"]
+[node name="FaceBody507" type="StaticBody2D" parent="CastleGeometry/GateLandingW/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingW/Faces/FaceBody430"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingW/Faces/FaceBody507"]
 polygon = PackedVector2Array(6640.0, 10020.0, 7160.0, 10020.0, 7160.0, 10360.0, 6640.0, 10360.0)
 
-[node name="Foam431" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam508" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(6640.0, 10352.0, 7160.0, 10352.0)
 width = 200.0
@@ -3450,61 +3836,76 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(6640.0, 10020.0, 7160.0, 10020.0, 7160.0, 8920.0, 6640.0, 8920.0)
 
-[node name="Band432" type="Polygon2D" parent="CastleGeometry/GateLandingW"]
+[node name="Band509" type="Polygon2D" parent="CastleGeometry/GateLandingW"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(6640.0, 10020.0, 7160.0, 10020.0, 7160.0, 10085.0, 6640.0, 10085.0)
 uv = PackedVector2Array(0.0, 0.0, 520.0, 0.0, 520.0, 65.0, 0.0, 65.0)
 
+[node name="EdgeBody510" type="StaticBody2D" parent="CastleGeometry/GateLandingW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingW/EdgeBody510"]
+polygon = PackedVector2Array(7160.0, 10020.0, 7160.0, 8920.0, 7132.0, 8920.0, 7132.0, 10020.0)
+
+[node name="EdgeBody511" type="StaticBody2D" parent="CastleGeometry/GateLandingW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingW/EdgeBody511"]
+polygon = PackedVector2Array(7160.0, 8920.0, 6640.0, 8920.0, 6640.0, 8948.0, 7160.0, 8948.0)
+
+[node name="EdgeBody512" type="StaticBody2D" parent="CastleGeometry/GateLandingW"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingW/EdgeBody512"]
+polygon = PackedVector2Array(6640.0, 8920.0, 6640.0, 10020.0, 6668.0, 10020.0, 6668.0, 8920.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/GateLandingW"]
 
-[node name="SideParapet433" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="SideParapet513" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(7138.0, 10020.0, 7138.0, 8920.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip434" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="SideLip514" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
 points = PackedVector2Array(7116.0, 10020.0, 7116.0, 8920.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet435" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="SideParapet515" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(6662.0, 8920.0, 6662.0, 10020.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip436" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="SideLip516" type="Line2D" parent="CastleGeometry/GateLandingW/Parapet"]
 points = PackedVector2Array(6684.0, 8920.0, 6684.0, 10020.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band437" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="Band517" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7160.0, 8852.0, 6640.0, 8852.0, 6640.0, 8920.0, 7160.0, 8920.0)
 uv = PackedVector2Array(1620.0, 0.0, 2140.0, 0.0, 2140.0, 68.0, 1620.0, 68.0)
 
-[node name="Band438" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="Band518" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(7160.0, 9952.0, 7160.0, 8852.0, 7160.0, 8920.0, 7160.0, 10020.0)
 uv = PackedVector2Array(520.0, 0.0, 1620.0, 0.0, 1620.0, 68.0, 520.0, 68.0)
 
-[node name="Band439" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="Band519" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(6640.0, 8852.0, 6640.0, 9952.0, 6640.0, 10020.0, 6640.0, 8920.0)
 uv = PackedVector2Array(2140.0, 0.0, 3240.0, 0.0, 3240.0, 68.0, 2140.0, 68.0)
 
-[node name="Band440" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
+[node name="Band520" type="Polygon2D" parent="CastleGeometry/GateLandingW/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -3515,19 +3916,19 @@ uv = PackedVector2Array(0.0, 0.0, 520.0, 0.0, 520.0, 68.0, 0.0, 68.0)
 
 [node name="Faces" type="Node2D" parent="CastleGeometry/GateLandingE"]
 
-[node name="Face441" type="Polygon2D" parent="CastleGeometry/GateLandingE/Faces"]
+[node name="Face521" type="Polygon2D" parent="CastleGeometry/GateLandingE/Faces"]
 texture_repeat = 2
 texture = ExtResource("e9")
 polygon = PackedVector2Array(8200.0, 10020.0, 8720.0, 10020.0, 8720.0, 10360.0, 8200.0, 10360.0)
 uv = PackedVector2Array(1620.0, 0.0, 2140.0, 0.0, 2140.0, 340.0, 1620.0, 340.0)
 vertex_colors = PackedColorArray(0.940, 0.940, 0.959, 1.000, 0.940, 0.940, 0.959, 1.000, 0.639, 0.639, 0.678, 1.000, 0.639, 0.639, 0.678, 1.000)
 
-[node name="FaceBody442" type="StaticBody2D" parent="CastleGeometry/GateLandingE/Faces"]
+[node name="FaceBody522" type="StaticBody2D" parent="CastleGeometry/GateLandingE/Faces"]
 
-[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingE/Faces/FaceBody442"]
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingE/Faces/FaceBody522"]
 polygon = PackedVector2Array(8200.0, 10020.0, 8720.0, 10020.0, 8720.0, 10360.0, 8200.0, 10360.0)
 
-[node name="Foam443" type="Line2D" parent="CastleGeometry/Waterline"]
+[node name="Foam523" type="Line2D" parent="CastleGeometry/Waterline"]
 material = SubResource("m_foam")
 points = PackedVector2Array(8200.0, 10352.0, 8720.0, 10352.0)
 width = 200.0
@@ -3538,61 +3939,76 @@ joint_mode = 2
 material = SubResource("m_walk")
 polygon = PackedVector2Array(8720.0, 8920.0, 8200.0, 8920.0, 8200.0, 10020.0, 8720.0, 10020.0)
 
-[node name="Band444" type="Polygon2D" parent="CastleGeometry/GateLandingE"]
+[node name="Band524" type="Polygon2D" parent="CastleGeometry/GateLandingE"]
 texture_repeat = 2
 texture = ExtResource("e11")
 color = Color(0.940, 0.940, 0.959, 1)
 polygon = PackedVector2Array(8200.0, 10020.0, 8720.0, 10020.0, 8720.0, 10085.0, 8200.0, 10085.0)
 uv = PackedVector2Array(1620.0, 0.0, 2140.0, 0.0, 2140.0, 65.0, 1620.0, 65.0)
 
+[node name="EdgeBody525" type="StaticBody2D" parent="CastleGeometry/GateLandingE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingE/EdgeBody525"]
+polygon = PackedVector2Array(8720.0, 8920.0, 8200.0, 8920.0, 8200.0, 8948.0, 8720.0, 8948.0)
+
+[node name="EdgeBody526" type="StaticBody2D" parent="CastleGeometry/GateLandingE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingE/EdgeBody526"]
+polygon = PackedVector2Array(8200.0, 8920.0, 8200.0, 10020.0, 8228.0, 10020.0, 8228.0, 8920.0)
+
+[node name="EdgeBody527" type="StaticBody2D" parent="CastleGeometry/GateLandingE"]
+
+[node name="Shape" type="CollisionPolygon2D" parent="CastleGeometry/GateLandingE/EdgeBody527"]
+polygon = PackedVector2Array(8720.0, 10020.0, 8720.0, 8920.0, 8692.0, 8920.0, 8692.0, 10020.0)
+
 [node name="Parapet" type="Node2D" parent="CastleGeometry/GateLandingE"]
 
-[node name="SideParapet445" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="SideParapet528" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(8222.0, 8920.0, 8222.0, 10020.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip446" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="SideLip529" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
 points = PackedVector2Array(8244.0, 8920.0, 8244.0, 10020.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="SideParapet447" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="SideParapet530" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
 material = SubResource("m_walk")
 points = PackedVector2Array(8698.0, 10020.0, 8698.0, 8920.0)
 width = 44.0
 default_color = Color(1, 1, 1, 1)
 modulate = Color(0.78, 0.76, 0.8, 1)
 
-[node name="SideLip448" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="SideLip531" type="Line2D" parent="CastleGeometry/GateLandingE/Parapet"]
 points = PackedVector2Array(8676.0, 10020.0, 8676.0, 8920.0)
 width = 6.0
 default_color = Color(0.17, 0.18, 0.26, 0.85)
 
-[node name="Band449" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="Band532" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8720.0, 8852.0, 8200.0, 8852.0, 8200.0, 8920.0, 8720.0, 8920.0)
 uv = PackedVector2Array(0.0, 0.0, 520.0, 0.0, 520.0, 68.0, 0.0, 68.0)
 
-[node name="Band450" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="Band533" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8200.0, 8852.0, 8200.0, 9952.0, 8200.0, 10020.0, 8200.0, 8920.0)
 uv = PackedVector2Array(520.0, 0.0, 1620.0, 0.0, 1620.0, 68.0, 520.0, 68.0)
 
-[node name="Band451" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="Band534" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.860, 0.860, 0.877, 1)
 polygon = PackedVector2Array(8720.0, 9952.0, 8720.0, 8852.0, 8720.0, 8920.0, 8720.0, 10020.0)
 uv = PackedVector2Array(2140.0, 0.0, 3240.0, 0.0, 3240.0, 68.0, 2140.0, 68.0)
 
-[node name="Band452" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
+[node name="Band535" type="Polygon2D" parent="CastleGeometry/GateLandingE/Parapet"]
 texture_repeat = 2
 texture = ExtResource("e10")
 color = Color(0.940, 0.940, 0.959, 1)
@@ -3862,6 +4278,14 @@ scale = Vector2(0.624, 0.808)
 [node name="StairsLower" parent="YSorted/SetPieces" instance=ExtResource("e28")]
 position = Vector2(7680, 3600)
 scale = Vector2(0.624, 1.010)
+
+[node name="EntranceStairs0" parent="YSorted/SetPieces" instance=ExtResource("e29")]
+position = Vector2(3400, 4880)
+scale = Vector2(0.265, 0.370)
+
+[node name="EntranceStairs1" parent="YSorted/SetPieces" instance=ExtResource("e29")]
+position = Vector2(11960, 4880)
+scale = Vector2(0.265, 0.370)
 
 [node name="Fountain" parent="YSorted/SetPieces" instance=ExtResource("e30")]
 position = Vector2(7680, 4480)

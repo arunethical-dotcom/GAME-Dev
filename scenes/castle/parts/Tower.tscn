@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/castle/tower.gd" id="1"]
 [ext_resource type="Texture2D" path="res://assets/sprites/towers/tower_grey.png" id="2"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" path="res://assets/sprites/banners/banner_red_cross_tower.png" id="4"]
 [ext_resource type="Material" path="res://resources/shore_foam_material.tres" id="5"]
 [ext_resource type="Material" path="res://resources/banner_sway_material.tres" id="sway"]
+[ext_resource type="Script" path="res://scripts/castle/occluder_fade.gd" id="fade"]
 
 [sub_resource type="CircleShape2D" id="shape"]
 radius = 210.0
@@ -41,3 +42,7 @@ scale = Vector2(1, 0.35)
 [node name="Shape" type="CollisionShape2D" parent="Collision"]
 position = Vector2(0, -120)
 shape = SubResource("shape")
+
+[node name="Fade" type="Node2D" parent="."]
+script = ExtResource("fade")
+fade_parent = true

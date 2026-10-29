@@ -27,7 +27,7 @@ TERRACES = [
          # the main island inside the curtain wall; mirrored + joined at the axis
          top=[(768, 100), (352, 100), (262, 160), (214, 226), (214, 420), (172, 444),
               (172, 548), (258, 592), (298, 612), (404, 612), (474, 638), (768, 638)]),
-    dict(name="CathedralTerrace", level=2, drop=22, floor="grass",
+    dict(name="CathedralTerrace", level=2, drop=22, floor="grass", entrances=[340],
          top=[(236, 232), (300, 232), (440, 232), (470, 300), (520, 400), (430, 466),
               (282, 466), (236, 440)]),
     dict(name="InnerGarden", level=2, drop=18, floor="grass",

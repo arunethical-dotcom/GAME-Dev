@@ -152,7 +152,7 @@ def shade_for(nx, ny):
     """Light from the upper-left: faces turned left are lit, faces turned right are in shadow."""
     return max(0.62, min(1.08, 0.9 - 0.24 * nx + 0.04 * ny))
 
-def face_strip(parent, a, b, u0, drop, nx, ny, tex=None, tex_h=720.0, rail=0.0, uv_scale=1.0, base_dark=0.68, drop_b=None, tex_k=None):
+def face_strip(parent, a, b, u0, drop, nx, ny, tex=None, tex_h=720.0, rail=0.0, uv_scale=1.0, base_dark=0.68, drop_b=None, tex_k=None, gaps=()):
     """Vertical face hanging from the top edge a->b by `drop`."""
     (x0, y0), (x1, y1) = a, b
     L = math.hypot(x1-x0, y1-y0)
@@ -171,7 +171,8 @@ def face_strip(parent, a, b, u0, drop, nx, ny, tex=None, tex_h=720.0, rail=0.0, 
       f'polygon = {fmt([top0, top1, bot1, bot0])}\nuv = {fmt(uv)}\nvertex_colors = PackedColorArray({", ".join(fcol(c)[6:-1] for c in cols)})')
     # collision: the face is a vertical wall in 3/4 view, so its on-screen area is not walkable.
     # Gap where the gatehouse arch is, so the player can enter the castle.
-    GX0, GX1 = (BP.AXIS - 24) * K, (BP.AXIS + 24) * K
+    GAPS = [((BP.AXIS - 24) * K, (BP.AXIS + 24) * K)] + [((ex - 12) * K, (ex + 12) * K) for ex in gaps]
+    GX0, GX1 = GAPS[0]
     lo, hi = min(x0, x1), max(x0, x1)
     def seg(xa, xb):
         if xb - xa < 4: return
@@ -185,10 +186,12 @@ def face_strip(parent, a, b, u0, drop, nx, ny, tex=None, tex_h=720.0, rail=0.0, 
     if abs(x1 - x0) < 1:
         body = nid('FaceBody'); N(f'[node name="{body}" type="StaticBody2D" parent="{parent}"]')
         N(f'[node name="Shape" type="CollisionPolygon2D" parent="{parent}/{body}"]\npolygon = {fmt([top0, top1, bot1, bot0])}')
-    elif hi > GX0 and lo < GX1:
-        seg(lo, GX0); seg(GX1, hi)
     else:
-        seg(lo, hi)
+        cuts = sorted(g for g in GAPS if g[1] > lo and g[0] < hi)
+        x = lo
+        for g0, g1 in cuts:
+            seg(x, max(lo, g0)); x = min(hi, g1)
+        seg(x, hi)
 
 def band(parent, a, b, u0, h, tex, up=True, shade=1.0, period=275.0):
     (x0, y0), (x1, y1) = a, b
@@ -203,7 +206,7 @@ def foam_line(pts):
     N(f'[node name="{nid("Foam")}" type="Line2D" parent="{CG}/Waterline"]\nmaterial = SubResource("m_foam")\npoints = {fmt(pts)}\nwidth = 200.0\ntexture_mode = 1\njoint_mode = 2')
 
 def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, open_edges=(), in_water=False,
-                face_tex=None, rail=0.0, walkway=True, merlon_all=True, vdrop=None, tex_k=None, banners=()):
+                face_tex=None, rail=0.0, walkway=True, merlon_all=True, vdrop=None, tex_k=None, banners=(), collide_edges=True, entrances=()):
     poly = ccw([W(p) for p in poly_ref])
     drop = drop_ref * K
     vd = (lambda p: vdrop(p) * K) if vdrop else (lambda p: drop)
@@ -222,7 +225,7 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
     for i in front:
         if i in open_set and not face_tex: continue
         a, b = poly[i], poly[(i+1) % n]
-        face_strip(f'{parent}/Faces', a, b, cum[i], vd(a), *normals[i], tex=face_tex, rail=rail, drop_b=vd(b), tex_k=tex_k)
+        face_strip(f'{parent}/Faces', a, b, cum[i], vd(a), *normals[i], tex=face_tex, rail=rail, drop_b=vd(b), tex_k=tex_k, gaps=entrances)
         if in_water: foam_line([(a[0], a[1]+vd(a)-8), (b[0], b[1]+vd(b)-8)])
     # wall details (Surendar F7): arrow slits high, ivy / spouts low; deterministic
     if corbels and in_water and not face_tex:
@@ -262,6 +265,15 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
             if i in open_set: continue
             a, b = poly[i], poly[(i+1) % n]
             band(parent, a, b, cum[i], CORBEL_H, TEX_CORBEL, up=False, shade=shade_for(*normals[i]))
+    if parapet or collide_edges:
+        for i in range(n):
+            if i in open_set or i in front: continue
+            a, b = poly[i], poly[(i+1) % n]
+            nx, ny = normals[i]; t = 28.0
+            q = [a, b, (b[0] - nx*t, b[1] - ny*t), (a[0] - nx*t, a[1] - ny*t)]
+            body = nid('EdgeBody')
+            N(f'[node name="{body}" type="StaticBody2D" parent="{parent}"]')
+            N(f'[node name="Shape" type="CollisionPolygon2D" parent="{parent}/{body}"]\npolygon = {fmt(q)}')
     if parapet:
         N(f'[node name="Parapet" type="Node2D" parent="{parent}"]')
         for i in range(n):
@@ -284,6 +296,7 @@ def line_block(line_ref, thick_ref):
     ls = LineString([W(p) for p in line_ref]).buffer(thick_ref*K/2, cap_style=2, join_style=2)
     return [(x/K, y/K) for x, y in list(ls.exterior.coords)[:-1]]
 
+ENTRANCE_STAIRS = []   # (x, base_y, height) in plan px, filled while building terraces
 # terraces, low to high, back to front within a level
 items = []
 for t in BP.TERRACES:
@@ -307,7 +320,17 @@ for lvl, _, name, poly, t in items:
             for i in range(n):
                 a, b = P[i], P[(i+1) % n]
                 if (round(a[0]), round(a[1])) in keys and (round(b[0]), round(b[1])) in keys: open_idx.append(i)
-        build_block(name, poly, t['drop'], t['floor'], corbels=False, open_edges=open_idx)
+        ent = t.get('entrances', [])
+        if name.endswith('E'): ent = [2 * BP.AXIS - x for x in ent]
+        build_block(name, poly, t['drop'], t['floor'], corbels=False, open_edges=open_idx, entrances=ent)
+        for ex in ent:
+            ey = None
+            P_ = poly
+            for (ax_, ay_), (bx_, by_) in zip(P_, P_[1:] + P_[:1]):
+                if min(ax_, bx_) <= ex <= max(ax_, bx_) and ax_ != bx_:
+                    yy = ay_ + (ex - ax_) / (bx_ - ax_) * (by_ - ay_)
+                    if ey is None or yy > ey: ey = yy
+            if ey is not None: ENTRANCE_STAIRS.append((ex, ey + t['drop'], t['drop']))
 
 def drop_along(line, drops):
     ls = LineString(line); cum = [0.0]
@@ -346,6 +369,7 @@ for pool in BP.POOLS:
         P = [W(p) for p in poly]
         N(f'[node name="{nid("PoolRimBack")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.3, 0.31, 0.4, 1)\npolygon = {fmt([(x, y-24) for x, y in P])}')
         N(f'[node name="{nid("Pool")}" type="Polygon2D" parent="{DT}"]\nmaterial = SubResource("m_water")\npolygon = {fmt(P)}')
+        b_ = nid('PoolBody'); N(f'[node name="{b_}" type="StaticBody2D" parent="{DT}"]'); N(f'[node name="Shape" type="CollisionPolygon2D" parent="{DT}/{b_}"]\npolygon = {fmt(P)}')
         N(f'[node name="{nid("PoolRim")}" type="Line2D" parent="{DT}"]\ntexture_repeat = 2\ntexture = {T("res://assets/castle_hd/wall_kit/T15_pool_rim.png")}\ntexture_mode = 1\npoints = {fmt(P + [P[0]])}\nwidth = 48.0\njoint_mode = 0\nsharp_limit = 6.0')
 for c in BP.COLONNADES:
     for line in mirrored(c['line']):
@@ -353,6 +377,7 @@ for c in BP.COLONNADES:
         if x0 > x1: (x0, y0), (x1, y1) = (x1, y1), (x0, y0)
         top = y0 - c['drop'] * K
         N(f'[node name="{nid("ColonnadeBack")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.1, 0.11, 0.17, 1)\npolygon = {fmt([(x0, top), (x1, top), (x1, y0), (x0, y0)])}')
+        b_ = nid('ColonnadeBody'); N(f'[node name="{b_}" type="StaticBody2D" parent="{DT}"]'); N(f'[node name="Shape" type="CollisionPolygon2D" parent="{DT}/{b_}"]\npolygon = {fmt([(x0, top), (x1, top), (x1, y0), (x0, y0)])}')
         span = x1 - x0; kx = 1024.0 * c['arches'] / span
         N(f'[node name="{nid("Colonnade")}" type="Polygon2D" parent="{DT}"]\ntexture_repeat = 2\ntexture = {TEX_BRIDGE}\npolygon = {fmt([(x0, top), (x1, top), (x1, y0), (x0, y0)])}\n'
           f'uv = {fmt([(0, 0), (span*kx, 0), (span*kx, 720), (0, 720)])}')
@@ -401,6 +426,8 @@ P_STP = E('PackedScene', 'res://scenes/castle/parts/GrandStairsPlain.tscn')
 for nm, d, pid in (('StairsUpper', BP.STAIRS_UPPER, P_STP), ('StairsLower', BP.STAIRS_LOWER, P_ST)):
     sxs = d['half_w'] * 2 * K / 1057.0; sys_ = (d['base'] - d['top']) * K / 594.0
     N(f'[node name="{nm}" parent="YSorted/SetPieces" instance=ExtResource("{pid}")]\nposition = Vector2({d["x"]*K}, {d["base"]*K})\nscale = Vector2({sxs:.3f}, {sys_:.3f})')
+for j, (ex, ey, h) in enumerate(ENTRANCE_STAIRS):
+    N(f'[node name="EntranceStairs{j}" parent="YSorted/SetPieces" instance=ExtResource("{P_STP}")]\nposition = Vector2({ex*K:.0f}, {ey*K:.0f})\nscale = Vector2({28*K/1057:.3f}, {h*K/594:.3f})')
 fx, fy = BP.FOUNTAIN
 N(f'[node name="Fountain" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/FountainPlaza.tscn")}")]\nposition = Vector2({fx*K}, {fy*K})\nscale = Vector2(0.85, 0.85)')
 for nm, x, y in BP.BUILDINGS:

@@ -1,7 +1,16 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/statues/knight_statue_tall.png" id="1"]
+
+[sub_resource type="RectangleShape2D" id="propshape"]
+size = Vector2(120, 50)
 
 [node name="KnightStatueTall" type="Sprite2D"]
 texture = ExtResource("1")
 offset = Vector2(0, -127)
+
+[node name="PropBody" type="StaticBody2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="PropBody"]
+position = Vector2(0, -25)
+shape = SubResource("propshape")

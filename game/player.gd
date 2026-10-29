@@ -9,12 +9,15 @@ const BLOCK_X0 := 25000.0                # block castle offset (same as gen_cast
 @export var run_mult := 1.8
 
 var _mask: Image
+var _mask_block: Image
 var _facing := "down"
 @onready var _sprite: AnimatedSprite2D = $Sprite
 @onready var _cam: Camera2D = $Camera
 
 func _ready() -> void:
+	add_to_group("player")
 	_mask = (load("res://game/walk_mask.png") as Texture2D).get_image()
+	_mask_block = (load("res://game/walk_mask_block.png") as Texture2D).get_image()
 	_cam.make_current()
 	var dbg := get_tree().current_scene.find_child("DebugCamera", true, false)
 	if dbg:
@@ -24,11 +27,14 @@ func _ready() -> void:
 
 func walkable(p: Vector2) -> bool:
 	var x := p.x
-	if x >= BLOCK_X0 - 1000.0: x -= BLOCK_X0
+	var m := _mask
+	if x >= BLOCK_X0 - 1000.0:
+		x -= BLOCK_X0
+		m = _mask_block       # my block castle has no colliders: its mask also blocks walls, towers and roofs
 	var px := Vector2i(int(x / PLAN_SCALE), int(p.y / PLAN_SCALE))
-	if px.x < 0 or px.y < 0 or px.x >= _mask.get_width() or px.y >= _mask.get_height():
+	if px.x < 0 or px.y < 0 or px.x >= m.get_width() or px.y >= m.get_height():
 		return true
-	return _mask.get_pixelv(px).r > 0.5
+	return m.get_pixelv(px).r > 0.5
 
 func _physics_process(_delta: float) -> void:
 	var dir := Input.get_vector("cam_left", "cam_right", "cam_up", "cam_down")

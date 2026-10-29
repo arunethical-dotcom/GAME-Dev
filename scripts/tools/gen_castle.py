@@ -431,7 +431,7 @@ for j, (ex, ey, h) in enumerate(ENTRANCE_STAIRS):
 fx, fy = BP.FOUNTAIN
 N(f'[node name="Fountain" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/FountainPlaza.tscn")}")]\nposition = Vector2({fx*K}, {fy*K})\nscale = Vector2(0.85, 0.85)')
 for nm, x, y in BP.BUILDINGS:
-    N(f'[node name="{nm}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", f"res://scenes/castle/parts/{nm}.tscn")}")]\nposition = Vector2({x*K}, {y*K})' + ('\nscale = Vector2(1.3, 1.3)' if nm in ('Cathedral', 'DomedHall') else ''))
+    N(f'[node name="{nm}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", f"res://scenes/castle/parts/{nm}.tscn")}")]\nposition = Vector2({x*K}, {y*K})' + ({'Cathedral': '\nscale = Vector2(2.1, 2.1)', 'DomedHall': '\nscale = Vector2(1.3, 1.3)'}.get(nm, '')))   # cathedral fills its terrace like the plan
 P_G = E('PackedScene', 'res://scenes/castle/parts/Gargoyle.tscn'); P_KN = E('PackedScene', 'res://scenes/castle/parts/KnightStatueTall.tscn')
 P_KD = E('PackedScene', 'res://scenes/castle/parts/KnightStatue.tscn'); P_BR = E('PackedScene', 'res://scenes/castle/parts/Brazier.tscn')
 for side in (1, -1):

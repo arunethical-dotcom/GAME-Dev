@@ -169,6 +169,26 @@ def face_strip(parent, a, b, u0, drop, nx, ny, tex=None, tex_h=720.0, rail=0.0, 
     cols = [(s*1.0, s*1.0, s*1.02, 1), (s, s, s*1.02, 1), (s*base_dark, s*base_dark, s*base_dark*1.06, 1), (s*base_dark, s*base_dark, s*base_dark*1.06, 1)]
     N(f'[node name="{nid("Face")}" type="Polygon2D" parent="{parent}"]\ntexture_repeat = 2\ntexture = {tex or TEX_FACE}\n'
       f'polygon = {fmt([top0, top1, bot1, bot0])}\nuv = {fmt(uv)}\nvertex_colors = PackedColorArray({", ".join(fcol(c)[6:-1] for c in cols)})')
+    # collision: the face is a vertical wall in 3/4 view, so its on-screen area is not walkable.
+    # Gap where the gatehouse arch is, so the player can enter the castle.
+    GX0, GX1 = (BP.AXIS - 24) * K, (BP.AXIS + 24) * K
+    lo, hi = min(x0, x1), max(x0, x1)
+    def seg(xa, xb):
+        if xb - xa < 4: return
+        def at(x):
+            t = 0 if x1 == x0 else (x - x0) / (x1 - x0)
+            return (x, y0 + t * (y1 - y0)), (x, y0 + t * (y1 - y0) + drop + t * (drop_b - drop))
+        (ta, ba), (tb, bb) = at(xa), at(xb)
+        body = nid('FaceBody')
+        N(f'[node name="{body}" type="StaticBody2D" parent="{parent}"]')
+        N(f'[node name="Shape" type="CollisionPolygon2D" parent="{parent}/{body}"]\npolygon = {fmt([ta, tb, bb, ba])}')
+    if abs(x1 - x0) < 1:
+        body = nid('FaceBody'); N(f'[node name="{body}" type="StaticBody2D" parent="{parent}"]')
+        N(f'[node name="Shape" type="CollisionPolygon2D" parent="{parent}/{body}"]\npolygon = {fmt([top0, top1, bot1, bot0])}')
+    elif hi > GX0 and lo < GX1:
+        seg(lo, GX0); seg(GX1, hi)
+    else:
+        seg(lo, hi)
 
 def band(parent, a, b, u0, h, tex, up=True, shade=1.0, period=275.0):
     (x0, y0), (x1, y1) = a, b

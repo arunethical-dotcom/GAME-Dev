@@ -6,6 +6,13 @@ A 2D HD pixel-art game built in **Godot 4** (4.4+). Step 1: build the castle wor
 
 Reference artwork: `docs/reference/castle_reference.png`
 
+## Play
+Press **F5**. You start on the causeway of the Godot castle.
+- **WASD / arrows**: walk · **Shift**: run · **mouse wheel**: zoom
+- **T**: travel between the Godot castle and my block castle (built beside it)
+- **N**: day → golden hour → night
+Water is not walkable; walls and towers of the Godot castle block you, the gatehouse lets you in.
+
 ## Open it
 1. `git clone` / `git pull` this repo.
 2. Godot → **Import** → select `project.godot`.

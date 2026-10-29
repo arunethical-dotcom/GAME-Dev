@@ -7,7 +7,7 @@ config_version=5
 
 config/name="Grand Castle Island"
 config/description="2D HD pixel-art castle world"
-run/main_scene="res://scenes/castle/Castle.tscn"
+run/main_scene="res://game/Game.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [display]

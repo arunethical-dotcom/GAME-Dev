@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E1_waterfall.png" id="fall"]
+[ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E2_splash.png" id="splash"]
+[ext_resource type="Shader" path="res://shaders/waterfall_flow.gdshader" id="sh_fall"]
+[ext_resource type="Shader" path="res://shaders/splash_churn.gdshader" id="sh_splash"]
+[ext_resource type="NoiseTexture2D" path="res://resources/noise_tex.tres" id="noise"]
+
+[sub_resource type="ShaderMaterial" id="m_fall"]
+shader = ExtResource("sh_fall")
+shader_parameter/noise_tex = ExtResource("noise")
+
+[sub_resource type="ShaderMaterial" id="m_splash"]
+shader = ExtResource("sh_splash")
+shader_parameter/noise_tex = ExtResource("noise")
+
+[node name="BarbicanWaterfall" type="Node2D"]
+
+[node name="Fall" type="Sprite2D" parent="."]
+material = SubResource("m_fall")
+texture = ExtResource("fall")
+offset = Vector2(0, -440)
+
+[node name="Splash" type="Sprite2D" parent="."]
+material = SubResource("m_splash")
+position = Vector2(0, 40)
+texture = ExtResource("splash")
+offset = Vector2(0, -90)

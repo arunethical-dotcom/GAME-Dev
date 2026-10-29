@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E7A_seagull_wings_up.png" id="up"]
+[ext_resource type="Texture2D" path="res://assets/castle_hd/effects/E7B_seagull_wings_down.png" id="down"]
+[ext_resource type="Script" path="res://scripts/castle/seagull.gd" id="s"]
+
+[node name="Seagull" type="Sprite2D"]
+z_index = 50
+texture = ExtResource("up")
+script = ExtResource("s")
+wings_up = ExtResource("up")
+wings_down = ExtResource("down")

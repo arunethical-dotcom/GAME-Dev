@@ -114,9 +114,12 @@ for i, r in enumerate(BP.ROCKS):
     LANDO.append((f'RockE{i}', GH.organic([BP.mirror_pt(p) for p in reversed(r)], step=8, amp=3.0, seed=50+i)))
 for nm, p in LANDO:
     N(f'[node name="{nm}Foam" type="Line2D" parent="Ground/ShoreFoam"]\nmaterial = SubResource("m_foam")\npoints = {fmt([W(q) for q in p + [p[0]]])}\nwidth = 420.0\ntexture_mode = 1\njoint_mode = 2')
+SHORE_FLIP = False
 N('[node name="SandBanks" type="Node2D" parent="Ground"]')
 for nm, p in LANDO:
-    N(f'[node name="{nm}Bank" type="Line2D" parent="Ground/SandBanks"]\nmaterial = SubResource("m_sand")\npoints = {fmt([W(q) for q in p + [p[0]]])}\nwidth = 110.0\njoint_mode = 2')
+    q = p if sum(x0*y1 - x1*y0 for (x0, y0), (x1, y1) in zip(p, p[1:] + p[:1])) < 0 else p[::-1]
+    if SHORE_FLIP: q = q[::-1]
+    N(f'[node name="{nm}Bank" type="Line2D" parent="Ground/SandBanks"]\ntexture_repeat = 2\ntexture = {T("res://assets/castle_hd/terrain/R2_shore_edge.png")}\ntexture_mode = 1\npoints = {fmt([W(v) for v in q + [q[0]]])}\nwidth = 128.0\njoint_mode = 2')
 # cliffs under camera-facing shores (vertical slices)
 N('[node name="Cliffs" type="Node2D" parent="Ground"]')
 CLIFF_H, TEXH = 440.0, 440.0
@@ -201,6 +204,20 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
         a, b = poly[i], poly[(i+1) % n]
         face_strip(f'{parent}/Faces', a, b, cum[i], vd(a), *normals[i], tex=face_tex, rail=rail, drop_b=vd(b), tex_k=tex_k)
         if in_water: foam_line([(a[0], a[1]+vd(a)-8), (b[0], b[1]+vd(b)-8)])
+    # wall details (Surendar F7): arrow slits high, ivy / spouts low; deterministic
+    if corbels and in_water and not face_tex:
+        rnd = random.Random(len(nodes))
+        DEC = [('F7A_arrow_slit', 0.30), ('F7C_ivy_patch', 0.62), ('F7B_drain_spout', 0.50), ('F7A_arrow_slit', 0.30), ('F7D_barred_window', 0.35)]
+        for i in front:
+            a, b = poly[i], poly[(i+1) % n]; L = math.hypot(b[0]-a[0], b[1]-a[1])
+            k = 0; t = 260.0
+            while t < L - 260:
+                x = a[0] + (b[0]-a[0]) * t / L; y = a[1] + (b[1]-a[1]) * t / L
+                if all(abs(x - bx*K) > 130 for bx in banners) and all(abs(x - tx*K) > 150 and abs(x - (2*BP.AXIS - tx)*K) > 150 for tx, _ in BP.WALL_TORCHES):
+                    name_, frac = DEC[(k + int(x)) % len(DEC)]; d_ = vd((x, y))
+                    N(f'[node name="{nid("Decal")}" type="Sprite2D" parent="{parent}/Faces"]\nposition = Vector2({x:.0f}, {y + CORBEL_H + (d_ - CORBEL_H) * frac:.0f})\ntexture = {T("res://assets/castle_hd/props/" + name_ + ".png")}')
+                    k += 1
+                t += rnd.uniform(300, 420)
     # banners hanging on camera-facing faces
     for bx in banners:
         bx *= K
@@ -309,7 +326,7 @@ for pool in BP.POOLS:
         P = [W(p) for p in poly]
         N(f'[node name="{nid("PoolRimBack")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.3, 0.31, 0.4, 1)\npolygon = {fmt([(x, y-24) for x, y in P])}')
         N(f'[node name="{nid("Pool")}" type="Polygon2D" parent="{DT}"]\nmaterial = SubResource("m_water")\npolygon = {fmt(P)}')
-        N(f'[node name="{nid("PoolRim")}" type="Line2D" parent="{DT}"]\nmaterial = SubResource("m_walk")\npoints = {fmt(P + [P[0]])}\nwidth = 44.0\njoint_mode = 0\nsharp_limit = 6.0')
+        N(f'[node name="{nid("PoolRim")}" type="Line2D" parent="{DT}"]\ntexture_repeat = 2\ntexture = {T("res://assets/castle_hd/wall_kit/T15_pool_rim.png")}\ntexture_mode = 1\npoints = {fmt(P + [P[0]])}\nwidth = 48.0\njoint_mode = 0\nsharp_limit = 6.0')
 for c in BP.COLONNADES:
     for line in mirrored(c['line']):
         (x0, y0), (x1, y1) = W(line[0]), W(line[1])
@@ -328,6 +345,8 @@ for f in BP.BARBICAN_FALLS:
             ax = cxp - f['width'] * K / 2 + j * w + w * 0.12; aw = w * 0.76; r = aw / 2
             pts = [(ax, y1s)] + [(ax + r - r * math.cos(t * math.pi / 12), y0s + r - r * math.sin(t * math.pi / 12)) for t in range(13)] + [(ax + aw, y1s)]
             N(f'[node name="{nid("Sluice")}" type="Polygon2D" parent="{DT}"]\ncolor = Color(0.07, 0.09, 0.16, 1)\npolygon = {fmt(pts)}')
+            gs = 2.0
+            N(f'[node name="{nid("SluiceGrate")}" type="Sprite2D" parent="{DT}"]\nposition = Vector2({ax + aw / 2:.0f}, {y1s:.0f})\nscale = Vector2({gs}, {gs})\ntexture = {T("res://assets/castle_hd/props/F6_sluice_grate.png")}\noffset = Vector2(0, -30)')
 
 # causeway: raised stone road from the gate to the south shore
 cx0, cx1, cy0, cy1 = BP.CAUSEWAY
@@ -379,11 +398,23 @@ for side in (1, -1):
     N(f'[node name="LandingKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KD}")]\nposition = Vector2({X(kx_)}, {ky_*K}){flip}')
     N(f'[node name="LandingLantern{side}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/LanternPillar.tscn")}")]\nposition = Vector2({X(lx_)}, {ly_*K})\nscale = Vector2(1.3, 1.3)')
     for f in BP.BARBICAN_FALLS:
-        sxf = f['width'] * K / 627.0; syf = (f['base'] - f['sluice_y'][1] + 4) * K / 603.0
-        N(f'[node name="BarbicanFall{side}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/WideWaterfall.tscn")}")]\nposition = Vector2({X(f["x"])}, {f["base"]*K})\nscale = Vector2({sxf:.3f}, {syf:.3f})')
+        N(f'[node name="BarbicanFall{side}" parent="YSorted/SetPieces" instance=ExtResource("{E("PackedScene", "res://scenes/castle/parts/BarbicanWaterfall.tscn")}")]\nposition = Vector2({X(f["x"])}, {f["base"]*K})' + ('\nscale = Vector2(-1, 1)' if side < 0 else ''))
     N(f'[node name="GateKnight{side}" parent="YSorted/SetPieces" instance=ExtResource("{P_KD}")]\nposition = Vector2({X(722)}, {722*K}){flip}')
     for j, y in enumerate(range(760, 1020, 62)):
         N(f'[node name="CausewayBrazier{side}_{j}" parent="YSorted/SetPieces" instance=ExtResource("{P_BR}")]\nposition = Vector2({X(cx0+7)}, {y*K})')
+
+# ---- Surendar pieces: rocks on the outcrops, wall torches, seagulls
+P_RL = E('PackedScene', 'res://scenes/castle/parts/RockLarge.tscn'); P_RS = E('PackedScene', 'res://scenes/castle/parts/RockSmall.tscn')
+P_WT = E('PackedScene', 'res://scenes/castle/parts/WallTorch.tscn'); P_SG = E('PackedScene', 'res://scenes/castle/parts/Seagull.tscn')
+for side in (1, -1):
+    def X(x): return (BP.AXIS + (x - BP.AXIS) * side) * K
+    flip = '\nflip_h = true' if side < 0 else ''
+    for j, (x, y, big) in enumerate(BP.ROCK_SPRITES):
+        N(f'[node name="Rock{side}_{j}" parent="YSorted/SetPieces" instance=ExtResource("{P_RL if big else P_RS}")]\nposition = Vector2({X(x)}, {y*K}){flip}')
+    for j, (x, y) in enumerate(BP.WALL_TORCHES):
+        N(f'[node name="WallTorch{side}_{j}" parent="{CG}/Details" instance=ExtResource("{P_WT}")]\nposition = Vector2({X(x)}, {y*K})')
+for j, (x, y) in enumerate(BP.SEAGULLS):
+    N(f'[node name="Seagull{j}" parent="." instance=ExtResource("{P_SG}")]\nposition = Vector2({x*K}, {y*K})\nspeed = {0.08 + 0.02*j:.2f}')
 
 # ------------------------------------------------------------------ lighting, camera, reference
 N(f'[node name="WorldTint" type="CanvasModulate" parent="."]\ncolor = Color(1, 0.9, 0.78, 1)')

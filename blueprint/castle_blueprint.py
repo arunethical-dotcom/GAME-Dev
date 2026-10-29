@@ -94,3 +94,8 @@ ROCKS = [  # rocky outcrops under the barbican (plan px), get cliff faces automa
 ]
 BARBICAN_FALLS = [dict(x=228, base=946, sluice_y=(842, 862), arches=3, width=56)]
 GATE_LANDING = dict(knight=(690, 934), lantern=(692, 996), block=[(664, 892), (716, 892), (716, 1002), (664, 1002)], drop=34)
+
+# ---------------------------------------------------------------- Surendar batch placements (west half; mirrored)
+ROCK_SPRITES = [(205, 905, True), (150, 912, False), (415, 948, True), (480, 950, False), (115, 700, False)]
+WALL_TORCHES = [(722, 318), (538, 650), (360, 628)]       # palace terrace by the stairs, curtain wall faces
+SEAGULLS = [(330, 750), (1200, 760), (560, 800), (1000, 690), (140, 560)]   # centres of their flight loops (both halves)

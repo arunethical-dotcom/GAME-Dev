@@ -205,3 +205,22 @@ Trees are cut from `trees_pines_cypress_bushes` into `sprites/vegetation/trees/`
 | `shaders/path.gdshader` | Dirt and cobble roads drawn along lines, textured in world space with soft, ragged edges |
 
 The generator fills all outer land with forest. Density varies so there are clearings, it keeps clear of roads and the stream, and edges get boulders and reeds. Placement is seeded, so it comes out the same every time.
+
+## Surendar's batch (23/23 approved) — where each piece is used
+| ID | Used in the castle |
+|---|---|
+| F1 knight statue | Gate and barbican landings |
+| F2 lantern pillar | Barbican landings (with light) |
+| F3 brazier + E5 flame | Causeway braziers; flame flickers in code (`flame_flicker.gd`) |
+| F4 wall torch + E5 | `WallTorch` part on the curtain wall and by the palace stairs |
+| F5 wall banner | Every banner on wall faces |
+| F6 sluice grate | In the 3 sluice arches above each barbican waterfall |
+| F7A–D decals | Arrow slits, ivy, spouts, barred windows spread along curtain and barbican faces |
+| E1 waterfall + E2 splash | `BarbicanWaterfall` part, flowing via `waterfall_flow` / `splash_churn` shaders |
+| E7A/B seagulls | 5 gulls looping over the moat, flapping (`seagull.gd`) |
+| R1A/B rocks | On the rock outcrops under the barbican and on the shore |
+| R2 shore edge | Every shoreline (grass to water) |
+| T14 cliff | Every cliff face |
+| T15 pool rim | Reflecting pool edges |
+| E4 fountain water | Waiting for B6 (dry fountain, Bhuvanesh): goes on top of it |
+| T5A/B corner caps | Kept for the wall-kit pass with Gokhul's merlon strips (T3/T4) so the stone matches |

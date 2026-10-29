@@ -1547,7 +1547,7 @@ IMAGE SHAPE: 16:9 wide.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off at the top or bottom of the strip.
 
 
-#64  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: T5A_corner_outer_90.png   (Battlement corner (outer 90°))   SHAPE: 1:1 square
+#64  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: T5A_corner_outer_90.png   (Battlement corner (outer 90°))   SHAPE: 1:1 square
 ------------------------------------------------------------
 Create ONE pixel-art game asset: one square stone battlement block (merlon) for the outside corner of a castle wall.
 
@@ -1572,7 +1572,7 @@ IMAGE SHAPE: 1:1 square.
 DO NOT include: people, characters, an adventurer or any figure for scale; text, labels, numbers, arrows, grids or rulers; a second object, copies or variations; a floor, ground, grass or water under the object; shadows on the background; pink, magenta or purple colours inside the object; any tilt, rotation, isometric or angled view; anything cut off by the image edge.
 
 
-#65  ASSIGNED TO: SURENDAR   >>> REDO <<<   SAVE AS: T5B_corner_inner_90.png   (Battlement corner (inner 90°))   SHAPE: 2:1 wide
+#65  ASSIGNED TO: SURENDAR   >>> DONE <<<   SAVE AS: T5B_corner_inner_90.png   (Battlement corner (inner 90°))   SHAPE: 2:1 wide
 ------------------------------------------------------------
 Create ONE pixel-art game asset: a short piece of castle battlement that turns an inside corner.
 

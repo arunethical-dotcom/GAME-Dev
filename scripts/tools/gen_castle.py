@@ -213,7 +213,7 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
             k = 0; t = 260.0
             while t < L - 260:
                 x = a[0] + (b[0]-a[0]) * t / L; y = a[1] + (b[1]-a[1]) * t / L
-                if all(abs(x - bx*K) > 130 for bx in banners) and all(abs(x - tx*K) > 150 and abs(x - (2*BP.AXIS - tx)*K) > 150 for tx, _ in BP.WALL_TORCHES):
+                if all(abs(x - bx*K) > 200 for bx in banners) and all(abs(x - tx*K) > 150 and abs(x - (2*BP.AXIS - tx)*K) > 150 for tx, _ in BP.WALL_TORCHES):
                     name_, frac = DEC[(k + int(x)) % len(DEC)]; d_ = vd((x, y))
                     N(f'[node name="{nid("Decal")}" type="Sprite2D" parent="{parent}/Faces"]\nposition = Vector2({x:.0f}, {y + CORBEL_H + (d_ - CORBEL_H) * frac:.0f})\ntexture = {T("res://assets/castle_hd/props/" + name_ + ".png")}')
                     k += 1
@@ -226,7 +226,7 @@ def build_block(name, poly_ref, drop_ref, floor, parapet=True, corbels=False, op
             if min(a[0], b[0]) + 90 < bx < max(a[0], b[0]) - 90:
                 t = (bx - a[0]) / (b[0] - a[0]); y = a[1] + t * (b[1] - a[1])
                 N(f'[node name="{nid("Banner")}" type="Sprite2D" parent="{parent}/Faces"]\nmaterial = ExtResource("{E("Material", "res://resources/banner_sway_material.tres")}")\n'
-                  f'position = Vector2({bx:.0f}, {y + CORBEL_H*0.7:.0f})\ntexture = {T("res://assets/castle_hd/props/F5_wall_banner.png")}\noffset = Vector2(0, 130)')
+                  f'position = Vector2({bx:.0f}, {y + 150:.0f})\ntexture = {T("res://assets/castle_hd/props/F5_wall_banner.png")}\noffset = Vector2(0, 200)')
                 break
     # floor
     N(f'[node name="Floor" type="Polygon2D" parent="{parent}"]\nmaterial = SubResource("{FLOORS[floor]}")\npolygon = {fmt(poly)}')

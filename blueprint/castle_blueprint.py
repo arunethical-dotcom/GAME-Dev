@@ -77,8 +77,8 @@ PALACE = (768, 225)
 BUILDINGS = [("Cathedral", 340, 440), ("Chapel", 380, 236), ("DomedHall", 1192, 300), ("Manor", 1170, 445)]
 
 # red banners hanging on the curtain wall face (x positions, west half; mirrored)
-CURTAIN_BANNERS = [205, 330, 375, 520, 555, 650]
-BARBICAN_BANNERS = [225, 345, 455, 580]
+CURTAIN_BANNERS = [222, 383, 530]          # measured from the plan (red blobs on the wall faces)
+BARBICAN_BANNERS = [338]
 
 # ---------------------------------------------------------------- details (pass 2, from the 50% overlay)
 STAIRS_UPPER = dict(x=768, top=228, base=276, half_w=33)     # plain flight, palace door -> landing
@@ -89,13 +89,13 @@ COLONNADES = [dict(line=[(507, 470), (586, 470)], drop=38, arches=3)]
 POOLS = [[(505, 482), (560, 482), (560, 512), (505, 512)]]
 YARDS = [[(230, 494), (402, 482), (424, 590), (262, 590)]]     # dirt floor: market (west), training yard (mirrored)
 ROCKS = [  # rocky outcrops under the barbican (plan px), get cliff faces automatically
-    [(112, 852), (300, 850), (312, 880), (290, 905), (150, 908), (110, 890)],
+    [(112, 852), (192, 858), (198, 900), (188, 945), (150, 972), (110, 940)],   # left of the barbican waterfall: the fall drops into open water (plan)
     [(330, 902), (470, 900), (505, 925), (470, 948), (345, 946), (322, 925)],
 ]
 BARBICAN_FALLS = [dict(x=228, base=946, sluice_y=(842, 862), arches=3, width=56)]
 GATE_LANDING = dict(knight=(690, 934), lantern=(692, 996), block=[(664, 892), (716, 892), (716, 1002), (664, 1002)], drop=34)
 
 # ---------------------------------------------------------------- Surendar batch placements (west half; mirrored)
-ROCK_SPRITES = [(205, 905, True), (150, 912, False), (415, 948, True), (480, 950, False), (115, 700, False)]
-WALL_TORCHES = [(722, 318), (538, 650), (360, 628)]       # palace terrace by the stairs, curtain wall faces
+ROCK_SPRITES = [(152, 925, True), (128, 968, False), (415, 948, True), (480, 950, False)]
+WALL_TORCHES = [(722, 318), (458, 634), (300, 618)]       # palace terrace by the stairs, curtain wall faces
 SEAGULLS = [(330, 750), (1200, 760), (560, 800), (1000, 690), (140, 560)]   # centres of their flight loops (both halves)

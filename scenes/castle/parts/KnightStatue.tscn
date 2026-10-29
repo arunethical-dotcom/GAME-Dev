@@ -4,4 +4,4 @@
 
 [node name="KnightStatue" type="Sprite2D"]
 texture = ExtResource("1")
-offset = Vector2(0, -142)
+offset = Vector2(0, -270)

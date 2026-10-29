@@ -23,8 +23,8 @@ HD = os.path.join(ROOT, 'assets', 'castle_hd')
 
 # final in-game size (px) per ID: sprites = fit inside (w, h); bands = target height, width follows aspect
 SPEC = {
- 'F1': ('sprite', 142, 285, True), 'F2': ('sprite', 156, 390, True), 'F3': ('sprite', 100, 225, False), 'F4': ('sprite', 40, 90, False),
- 'F5': ('sprite', 130, 290, False), 'F6': ('sprite', 60, 70, True), 'F7A': ('sprite', 60, 120, True), 'F7B': ('sprite', 120, 120, True),
+ 'F1': ('sprite', 180, 540, True), 'F2': ('sprite', 156, 390, True), 'F3': ('sprite', 100, 225, False), 'F4': ('sprite', 40, 90, False),
+ 'F5': ('sprite', 200, 400, False), 'F6': ('sprite', 60, 70, True), 'F7A': ('sprite', 60, 120, True), 'F7B': ('sprite', 120, 120, True),
  'F7C': ('sprite', 120, 120, False), 'F7D': ('sprite', 120, 120, True),
  'E1': ('sprite', 560, 880, False), 'E2': ('sprite', 600, 200, False), 'E4': ('sprite', 570, 480, False), 'E5': ('sprite', 44, 100, False),
  'E7A': ('sprite', 48, 32, False), 'E7B': ('sprite', 48, 32, False),
@@ -122,13 +122,29 @@ def process(src, save_as):
         out = resize_art(a, max(2, int(round(w * s / 2) * 2)), max(2, int(round(h * s / 2) * 2)))
     return out
 
+KEEP_SPARKS = {'E5', 'E2'}          # flames and spray keep their loose droplets
+def final_clean(out, i):
+    a = out.astype(int); op = a[..., 3] > 0
+    r, g, b = a[..., 0], a[..., 1], a[..., 2]
+    edge = op & ndi.binary_dilation(~op)
+    tint = edge & (np.minimum(r, b) - g > 30)
+    if tint.any():   # pull magenta-tinted outline pixels to the neutral grey of their own brightness
+        L = (r * 0.299 + g * 0.587 + b * 0.114)
+        for c in range(3): a[..., c] = np.where(tint, L, a[..., c])
+    if i not in KEEP_SPARKS:
+        lab, n = ndi.label(op)
+        if n > 1:
+            sz = ndi.sum(op, lab, range(1, n + 1)); small = np.isin(lab, [k + 1 for k, v in enumerate(sz) if v < 40])
+            a[small] = 0
+    return np.clip(a, 0, 255).astype(np.uint8)
+
 def main(batch, mapping, author):
     M = json.load(open(mapping)); report = []
     os.makedirs(os.path.join(HD, '_raw', author), exist_ok=True)
     for src, save_as in M.items():
         i = asset_id(save_as)
         if i not in SPEC: report.append((save_as, 'skipped: no size spec')); continue
-        out = process(os.path.join(batch, src), save_as)
+        out = final_clean(process(os.path.join(batch, src), save_as), i)
         d = os.path.join(HD, category(i)); os.makedirs(d, exist_ok=True)
         Image.fromarray(out).save(os.path.join(d, save_as), optimize=True)
         shutil.copy(os.path.join(batch, src), os.path.join(HD, '_raw', author, save_as))

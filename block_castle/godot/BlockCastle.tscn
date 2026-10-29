@@ -1,0 +1,26 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Shader" path="res://block_castle/godot/block_castle.gdshader" id="sh"]
+[ext_resource type="Texture2D" path="res://block_castle/godot/blockmap.png" id="bm"]
+[ext_resource type="Texture2D" path="res://block_castle/godot/matmap.png" id="mm"]
+[ext_resource type="Texture2D" path="res://block_castle/godot/palette.png" id="pal"]
+[ext_resource type="Texture2D" path="res://block_castle/godot/shapes.png" id="shp"]
+[ext_resource type="Texture2D" path="res://block_castle/godot/materials.png" id="mat"]
+
+[sub_resource type="ShaderMaterial" id="m"]
+shader = ExtResource("sh")
+shader_parameter/blockmap = ExtResource("bm")
+shader_parameter/matmap = ExtResource("mm")
+shader_parameter/palette = ExtResource("pal")
+shader_parameter/shapes = ExtResource("shp")
+shader_parameter/materials = ExtResource("mat")
+shader_parameter/cell = 4
+shader_parameter/plan_size = Vector2(1536, 1024)
+shader_parameter/detail = 0.06
+
+[node name="BlockCastle" type="Sprite2D"]
+texture_filter = 1
+material = SubResource("m")
+texture = ExtResource("bm")
+centered = false
+scale = Vector2(40, 40)

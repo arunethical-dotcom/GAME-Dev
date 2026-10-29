@@ -416,6 +416,10 @@ for side in (1, -1):
 for j, (x, y) in enumerate(BP.SEAGULLS):
     N(f'[node name="Seagull{j}" parent="." instance=ExtResource("{P_SG}")]\nposition = Vector2({x*K}, {y*K})\nspeed = {0.08 + 0.02*j:.2f}')
 
+# ---- my block castle, built from my own pixel blocks, beside this one with a gap (block_castle/)
+BLOCK_X0 = 25000   # world x of the block castle's left edge (this castle + its land end at 22400)
+N(f'[node name="BlockCastle" parent="." instance=ExtResource("{E("PackedScene", "res://block_castle/godot/BlockCastle.tscn")}")]\nposition = Vector2({BLOCK_X0}, 0)\nz_index = -100')
+
 # ------------------------------------------------------------------ lighting, camera, reference
 N(f'[node name="WorldTint" type="CanvasModulate" parent="."]\ncolor = Color(1, 0.9, 0.78, 1)')
 N(f'[node name="DayNight" type="Node" parent="."]\nscript = ExtResource("{E("Script", "res://scripts/castle/day_night.gd")}")\ncanvas_modulate = NodePath("../WorldTint")')
@@ -424,7 +428,7 @@ N('[node name="Environment" type="WorldEnvironment" parent="."]\nenvironment = S
 N(f'[node name="Reference" type="Sprite2D" parent="."]\nvisible = false\nmodulate = Color(1, 1, 1, 0.45)\nz_index = 100\nscale = Vector2({K}, {K})\ntexture = ExtResource("{E("Texture2D", "res://docs/reference/castle_reference.png")}")\ncentered = false')
 L0, T0, R0, B0 = LY.CAMERA_LIMITS
 N(f'[node name="DebugCamera" type="Camera2D" parent="."]\nposition = Vector2({768*K}, {600*K})\nzoom = Vector2(0.25, 0.25)\nscript = ExtResource("{E("Script", "res://scripts/debug_camera.gd")}")\n'
-  f'reference_path = NodePath("../Reference")\nlimit_left = {L0}\nlimit_top = {T0}\nlimit_right = {R0}\nlimit_bottom = {B0}')
+  f'reference_path = NodePath("../Reference")\nlimit_left = {L0}\nlimit_top = {T0}\nlimit_right = {max(R0, BLOCK_X0 + 15360 + 3000)}\nlimit_bottom = {B0}')
 
 head = f'[gd_scene load_steps={len(ext)+len(sub)+1} format=3]\n'
 body = head + '\n' + '\n'.join(f'[ext_resource type="{t}" path="{p}" id="{i}"]' for t, p, i in ext) + '\n\n' + '\n\n'.join(sub) + '\n\n' + '\n\n'.join(nodes) + '\n'

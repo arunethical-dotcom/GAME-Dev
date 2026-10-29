@@ -1,0 +1,15 @@
+{
+ "cell": 4,
+ "grid": [
+  384,
+  256
+ ],
+ "palette": 255,
+ "shapes": 49,
+ "detail": 0.06,
+ "shapes_kind": "extended",
+ "world_size": [
+  15360,
+  10240
+ ]
+}

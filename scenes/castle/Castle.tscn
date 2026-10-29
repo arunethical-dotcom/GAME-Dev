@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3]
+[gd_scene load_steps=61 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/tilesets/water/deep_water.png" id="e1"]
 [ext_resource type="Shader" path="res://shaders/water.gdshader" id="e2"]
@@ -44,9 +44,10 @@
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/RockSmall.tscn" id="e42"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/WallTorch.tscn" id="e43"]
 [ext_resource type="PackedScene" path="res://scenes/castle/parts/Seagull.tscn" id="e44"]
-[ext_resource type="Script" path="res://scripts/castle/day_night.gd" id="e45"]
-[ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="e46"]
-[ext_resource type="Script" path="res://scripts/debug_camera.gd" id="e47"]
+[ext_resource type="PackedScene" path="res://block_castle/godot/BlockCastle.tscn" id="e45"]
+[ext_resource type="Script" path="res://scripts/castle/day_night.gd" id="e46"]
+[ext_resource type="Texture2D" path="res://docs/reference/castle_reference.png" id="e47"]
+[ext_resource type="Script" path="res://scripts/debug_camera.gd" id="e48"]
 
 [sub_resource type="FastNoiseLite" id="noise"]
 noise_type = 3
@@ -3777,11 +3778,15 @@ speed = 0.14
 position = Vector2(1400, 5600)
 speed = 0.16
 
+[node name="BlockCastle" parent="." instance=ExtResource("e45")]
+position = Vector2(25000, 0)
+z_index = -100
+
 [node name="WorldTint" type="CanvasModulate" parent="."]
 color = Color(1, 0.9, 0.78, 1)
 
 [node name="DayNight" type="Node" parent="."]
-script = ExtResource("e45")
+script = ExtResource("e46")
 canvas_modulate = NodePath("../WorldTint")
 
 [node name="Environment" type="WorldEnvironment" parent="."]
@@ -3792,15 +3797,15 @@ visible = false
 modulate = Color(1, 1, 1, 0.45)
 z_index = 100
 scale = Vector2(10, 10)
-texture = ExtResource("e46")
+texture = ExtResource("e47")
 centered = false
 
 [node name="DebugCamera" type="Camera2D" parent="."]
 position = Vector2(7680, 6000)
 zoom = Vector2(0.25, 0.25)
-script = ExtResource("e47")
+script = ExtResource("e48")
 reference_path = NodePath("../Reference")
 limit_left = -4300
 limit_top = -4100
-limit_right = 19660
+limit_right = 43360
 limit_bottom = 14300

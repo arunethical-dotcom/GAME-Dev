@@ -9,3 +9,4 @@ export_credentials.cfg
 .DS_Store
 Thumbs.db
 __pycache__/
+block_castle/__pycache__/
